@@ -1,0 +1,613 @@
+{
+  "head": {
+    "vars": [
+      "OhdAB_ID",
+      "OhdAB_Schluessel",
+      "OhdAB_SchluesselLabel",
+      "Normansetzung",
+      "Weiblich",
+      "Maennlich",
+      "OhdAB_01",
+      "OhdAB_02",
+      "OhdAB_03",
+      "OhdAB_04",
+      "OhdAB_05",
+      "OhdAB_AB",
+      "AnforderungLabel"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "OhdAB_Schluessel": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522821"
+        },
+        "OhdAB_01": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q518460"
+        },
+        "OhdAB_02": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q521579"
+        },
+        "OhdAB_03": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522495"
+        },
+        "OhdAB_04": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522734"
+        },
+        "OhdAB_05": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522803"
+        },
+        "OhdAB_AB": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522819"
+        },
+        "Normansetzung": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "Unbekannte Bezeichnung"
+        },
+        "OhdAB_ID": {
+          "type": "literal",
+          "value": "A 10000-101"
+        },
+        "Weiblich": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "-"
+        },
+        "Maennlich": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "-"
+        },
+        "OhdAB_SchluesselLabel": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "A 10000-101: Unbekannte Bezeichnung"
+        },
+        "AnforderungLabel": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "Kein Anforderungsniveau"
+        }
+      },
+      {
+        "OhdAB_Schluessel": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522822"
+        },
+        "OhdAB_01": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q518460"
+        },
+        "OhdAB_02": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q521579"
+        },
+        "OhdAB_03": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522495"
+        },
+        "OhdAB_04": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522734"
+        },
+        "OhdAB_05": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522803"
+        },
+        "OhdAB_AB": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522819"
+        },
+        "Normansetzung": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "Bisher nicht aufgelöste Abkürzung"
+        },
+        "OhdAB_ID": {
+          "type": "literal",
+          "value": "A 10000-102"
+        },
+        "Weiblich": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "-"
+        },
+        "Maennlich": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "-"
+        },
+        "OhdAB_SchluesselLabel": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "A 10000-102: Bisher nicht aufgelöste Abkürzung"
+        },
+        "AnforderungLabel": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "Kein Anforderungsniveau"
+        }
+      },
+      {
+        "OhdAB_Schluessel": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522823"
+        },
+        "OhdAB_01": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q518461"
+        },
+        "OhdAB_02": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q521579"
+        },
+        "OhdAB_03": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522495"
+        },
+        "OhdAB_04": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522734"
+        },
+        "OhdAB_05": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522803"
+        },
+        "OhdAB_AB": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522819"
+        },
+        "Normansetzung": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "Ortsbezeichnung"
+        },
+        "OhdAB_ID": {
+          "type": "literal",
+          "value": "A 10010-100"
+        },
+        "Weiblich": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "-"
+        },
+        "Maennlich": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "-"
+        },
+        "OhdAB_SchluesselLabel": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "A 10010-100: Ortsbezeichnung"
+        },
+        "AnforderungLabel": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "Kein Anforderungsniveau"
+        }
+      },
+      {
+        "OhdAB_Schluessel": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522824"
+        },
+        "OhdAB_01": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q518461"
+        },
+        "OhdAB_02": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q521579"
+        },
+        "OhdAB_03": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522495"
+        },
+        "OhdAB_04": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522734"
+        },
+        "OhdAB_05": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522803"
+        },
+        "OhdAB_AB": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522819"
+        },
+        "Normansetzung": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "Herkunft/Region"
+        },
+        "OhdAB_ID": {
+          "type": "literal",
+          "value": "A 10010-103"
+        },
+        "Weiblich": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "-"
+        },
+        "Maennlich": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "-"
+        },
+        "OhdAB_SchluesselLabel": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "A 10010-103: Herkunft/Region"
+        },
+        "AnforderungLabel": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "Kein Anforderungsniveau"
+        }
+      },
+      {
+        "OhdAB_Schluessel": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522825"
+        },
+        "OhdAB_01": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q518461"
+        },
+        "OhdAB_02": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q521579"
+        },
+        "OhdAB_03": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522495"
+        },
+        "OhdAB_04": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522734"
+        },
+        "OhdAB_05": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522803"
+        },
+        "OhdAB_AB": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522819"
+        },
+        "Normansetzung": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "Demografische Angabe"
+        },
+        "OhdAB_ID": {
+          "type": "literal",
+          "value": "A 10010-104"
+        },
+        "Weiblich": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "-"
+        },
+        "Maennlich": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "-"
+        },
+        "OhdAB_SchluesselLabel": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "A 10010-104: Demografische Angabe"
+        },
+        "AnforderungLabel": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "Kein Anforderungsniveau"
+        }
+      },
+      {
+        "OhdAB_Schluessel": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522826"
+        },
+        "OhdAB_01": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q518461"
+        },
+        "OhdAB_02": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q521579"
+        },
+        "OhdAB_03": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522495"
+        },
+        "OhdAB_04": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522734"
+        },
+        "OhdAB_05": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522803"
+        },
+        "OhdAB_AB": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522819"
+        },
+        "Normansetzung": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "Bemerkung"
+        },
+        "OhdAB_ID": {
+          "type": "literal",
+          "value": "A 10010-105"
+        },
+        "Weiblich": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "-"
+        },
+        "Maennlich": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "-"
+        },
+        "OhdAB_SchluesselLabel": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "A 10010-105: Bemerkung"
+        },
+        "AnforderungLabel": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "Kein Anforderungsniveau"
+        }
+      },
+      {
+        "OhdAB_Schluessel": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522827"
+        },
+        "OhdAB_01": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q518461"
+        },
+        "OhdAB_02": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q521579"
+        },
+        "OhdAB_03": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522495"
+        },
+        "OhdAB_04": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522734"
+        },
+        "OhdAB_05": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522803"
+        },
+        "OhdAB_AB": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522819"
+        },
+        "Normansetzung": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "Personenname"
+        },
+        "OhdAB_ID": {
+          "type": "literal",
+          "value": "A 10010-106"
+        },
+        "Weiblich": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "-"
+        },
+        "Maennlich": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "-"
+        },
+        "OhdAB_SchluesselLabel": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "A 10010-106: Personenname"
+        },
+        "AnforderungLabel": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "Kein Anforderungsniveau"
+        }
+      },
+      {
+        "OhdAB_Schluessel": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522828"
+        },
+        "OhdAB_01": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q518461"
+        },
+        "OhdAB_02": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q521579"
+        },
+        "OhdAB_03": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522495"
+        },
+        "OhdAB_04": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522734"
+        },
+        "OhdAB_05": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522803"
+        },
+        "OhdAB_AB": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522819"
+        },
+        "Normansetzung": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "Sonstige Bezeichnungen"
+        },
+        "OhdAB_ID": {
+          "type": "literal",
+          "value": "A 10010-107"
+        },
+        "Weiblich": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "-"
+        },
+        "Maennlich": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "-"
+        },
+        "OhdAB_SchluesselLabel": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "A 10010-107: Sonstige Bezeichnungen"
+        },
+        "AnforderungLabel": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "Kein Anforderungsniveau"
+        }
+      },
+      {
+        "OhdAB_Schluessel": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522829"
+        },
+        "OhdAB_01": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q518461"
+        },
+        "OhdAB_02": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q521579"
+        },
+        "OhdAB_03": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522495"
+        },
+        "OhdAB_04": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522734"
+        },
+        "OhdAB_05": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522803"
+        },
+        "OhdAB_AB": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522819"
+        },
+        "Normansetzung": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "Fehlende Bezeichnung"
+        },
+        "OhdAB_ID": {
+          "type": "literal",
+          "value": "A 10010-108"
+        },
+        "Weiblich": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "-"
+        },
+        "Maennlich": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "-"
+        },
+        "OhdAB_SchluesselLabel": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "A 10010-108: Fehlende Bezeichnung"
+        },
+        "AnforderungLabel": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "Kein Anforderungsniveau"
+        }
+      },
+      {
+        "OhdAB_Schluessel": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522830"
+        },
+        "OhdAB_01": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q518461"
+        },
+        "OhdAB_02": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q521579"
+        },
+        "OhdAB_03": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522495"
+        },
+        "OhdAB_04": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522734"
+        },
+        "OhdAB_05": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522803"
+        },
+        "OhdAB_AB": {
+          "type": "uri",
+          "value": "https://database.factgrid.de/entity/Q522819"
+        },
+        "Normansetzung": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "Nicht zutreffend"
+        },
+        "OhdAB_ID": {
+          "type": "literal",
+          "value": "A 10010-109"
+        },
+        "Weiblich": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "-"
+        },
+        "Maennlich": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "-"
+        },
+        "OhdAB_SchluesselLabel": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "A 10010-109: Nicht zutreffend"
+        },
+        "AnforderungLabel": {
+          "xml:lang": "de",
+          "type": "literal",
+          "value": "Kein Anforderungsniveau"
+        }
+      }
+    ]
+  }
+}

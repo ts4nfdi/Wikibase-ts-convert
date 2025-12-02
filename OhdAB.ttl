@@ -1,0 +1,83 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix omw: <https://w3id.org/omw/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://database.factgrid.de/entity/Q522821> a omw:term ;
+    omw:altLabel "A 10000-101"@de ;
+    omw:broader <https://database.factgrid.de/entity/Q518460> ;
+    omw:preferredLabel "Unbekannte Bezeichnung"@de .
+
+<https://database.factgrid.de/entity/Q522822> a omw:term ;
+    omw:altLabel "A 10000-102"@de ;
+    omw:broader <https://database.factgrid.de/entity/Q518460> ;
+    omw:preferredLabel "Bisher nicht aufgelöste Abkürzung"@de .
+
+<https://database.factgrid.de/entity/Q522823> a omw:term ;
+    omw:altLabel "A 10010-100"@de ;
+    omw:broader <https://database.factgrid.de/entity/Q518461> ;
+    omw:preferredLabel "Ortsbezeichnung"@de .
+
+<https://database.factgrid.de/entity/Q522824> a omw:term ;
+    omw:altLabel "A 10010-103"@de ;
+    omw:broader <https://database.factgrid.de/entity/Q518461> ;
+    omw:preferredLabel "Herkunft/Region"@de .
+
+<https://database.factgrid.de/entity/Q522825> a omw:term ;
+    omw:altLabel "A 10010-104"@de ;
+    omw:broader <https://database.factgrid.de/entity/Q518461> ;
+    omw:preferredLabel "Demografische Angabe"@de .
+
+<https://database.factgrid.de/entity/Q522826> a omw:term ;
+    omw:altLabel "A 10010-105"@de ;
+    omw:broader <https://database.factgrid.de/entity/Q518461> ;
+    omw:preferredLabel "Bemerkung"@de .
+
+<https://database.factgrid.de/entity/Q522827> a omw:term ;
+    omw:altLabel "A 10010-106"@de ;
+    omw:broader <https://database.factgrid.de/entity/Q518461> ;
+    omw:preferredLabel "Personenname"@de .
+
+<https://database.factgrid.de/entity/Q522828> a omw:term ;
+    omw:altLabel "A 10010-107"@de ;
+    omw:broader <https://database.factgrid.de/entity/Q518461> ;
+    omw:preferredLabel "Sonstige Bezeichnungen"@de .
+
+<https://database.factgrid.de/entity/Q522829> a omw:term ;
+    omw:altLabel "A 10010-108"@de ;
+    omw:broader <https://database.factgrid.de/entity/Q518461> ;
+    omw:preferredLabel "Fehlende Bezeichnung"@de .
+
+<https://database.factgrid.de/entity/Q522830> a omw:term ;
+    omw:altLabel "A 10010-109"@de ;
+    omw:broader <https://database.factgrid.de/entity/Q518461> ;
+    omw:preferredLabel "Nicht zutreffend"@de .
+
+omw:ohdab a omw:Ontology ;
+    dcterms:creator "Katrin Moeller" ;
+    dcterms:description "Automatically generated terminology from FactGrid OhdAB."@de ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:publisher "Olaf Simons" ;
+    omw:ontologyTitle "Ontology of the historical German-language nomenclature for offices and professions | OhdAB"@de ;
+    omw:releaseDate "2023-01-01"^^xsd:date ;
+    omw:revision "1.0.0"^^xsd:string .
+
+<https://database.factgrid.de/entity/Q522495> a omw:term ;
+    omw:broader <https://database.factgrid.de/entity/Q522734> .
+
+<https://database.factgrid.de/entity/Q522734> a omw:term ;
+    omw:broader <https://database.factgrid.de/entity/Q522803> .
+
+<https://database.factgrid.de/entity/Q522803> a omw:term ;
+    omw:broader <https://database.factgrid.de/entity/Q522819> .
+
+<https://database.factgrid.de/entity/Q522819> a omw:term .
+
+<https://database.factgrid.de/entity/Q518460> a omw:term ;
+    omw:broader <https://database.factgrid.de/entity/Q521579> .
+
+<https://database.factgrid.de/entity/Q521579> a omw:term ;
+    omw:broader <https://database.factgrid.de/entity/Q522495> .
+
+<https://database.factgrid.de/entity/Q518461> a omw:term ;
+    omw:broader <https://database.factgrid.de/entity/Q521579> .
+
