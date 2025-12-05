@@ -1,6 +1,6 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 from rdflib import Graph, Namespace, Literal, URIRef
-from rdflib.namespace import RDF, DCTERMS, XSD
+from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD
 
 import json
 import os
@@ -11,15 +11,11 @@ ENDPOINT = "https://database.factgrid.de/sparql"
 CACHE_FILE = "resources/fetchresult.json"
 
 # SPARQL query
+# NOTE: If you change the query, delete the caching file "resources/fetchresult.json" to get updated results !!!
 QUERY = """
-SELECT ?OhdAB_ID ?OhdAB_Schluessel ?OhdAB_SchluesselLabel ?Normansetzung ?Weiblich ?Maennlich
-       ?OhdAB_01 ?OhdAB_02 ?OhdAB_03 ?OhdAB_04 ?OhdAB_05 ?OhdAB_AB
-       ?AnforderungLabel
-WHERE {
+SELECT ?OhdAB_ID ?OhdAB_Schluessel ?OhdAB_SchluesselLabel ?Normansetzung ?Weiblich ?Maennlich ?OhdAB_01 ?OhdAB_01Label ?OhdAB_02 ?OhdAB_02Label ?OhdAB_03 ?OhdAB_03Label ?OhdAB_04 ?OhdAB_04Label ?OhdAB_05 ?OhdAB_05Label ?OhdAB_AB ?OhdAB_ABLabel ?AnforderungLabel WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "de". }
-  
   ?OhdAB_Schluessel wdt:P2 wd:Q647777.
-  
   OPTIONAL { ?OhdAB_Schluessel wdt:P904 ?OhdAB_ID. }
   OPTIONAL {
     ?OhdAB_Schluessel wdt:P914 ?Normansetzung.
@@ -27,31 +23,31 @@ WHERE {
   }
   OPTIONAL { ?OhdAB_Schluessel wdt:P888 ?Weiblich. }
   OPTIONAL { ?OhdAB_Schluessel wdt:P889 ?Maennlich. }
-
-  OPTIONAL {
-    ?OhdAB_Schluessel wdt:P1007 ?OhdAB_01.
-    ?OhdAB_01 wdt:P1007 ?OhdAB_02.
-    ?OhdAB_02 wdt:P1007 ?OhdAB_03.
-    ?OhdAB_03 wdt:P1007 ?OhdAB_04.
-    ?OhdAB_04 wdt:P1007 ?OhdAB_05.
-    ?OhdAB_05 wdt:P1007 ?OhdAB_AB.
-  }
-
-  OPTIONAL { ?OhdAB_Schluessel wdt:P911 ?Anforderung. }
+  OPTIONAL { ?OhdAB_Schluessel wdt:P1007 ?OhdAB_01.
+           ?OhdAB_01 wdt:P1007 ?OhdAB_02.
+           ?OhdAB_02 wdt:P1007 ?OhdAB_03.
+           ?OhdAB_03 wdt:P1007 ?OhdAB_04.
+           ?OhdAB_04 wdt:P1007 ?OhdAB_05.
+           ?OhdAB_05 wdt:P1007 ?OhdAB_AB.
+           }
+ OPTIONAL { ?OhdAB_Schluessel wdt:P911 ?Anforderung. }           
 }
 ORDER BY (?OhdAB_ID)
-LIMIT 10
+
+
 """
 
 # Namespaces
-OMW = Namespace("https://w3id.org/omw/")
+OMW = Namespace("https://database.factgrid.de")
 
 # The ontology URI (choose one)
-ONTOLOGY_URI = URIRef("https://w3id.org/omw/ohdab")   # or your preferred URI
+ONTOLOGY_URI = URIRef("https://database.factgrid.de/ohdab")
 
 def add_ontology_metadata(G: Graph):
 
     G.add((ONTOLOGY_URI, RDF.type, OMW["Ontology"]))
+
+    G.add((ONTOLOGY_URI, OWL.versionIRI, URIRef(f"{ONTOLOGY_URI}/1.0.0")))
 
     # ---- Mandatory Elements ----
     G.add((ONTOLOGY_URI, OMW["ontologyTitle"],
@@ -112,24 +108,9 @@ def run_query(query: str):
 def val(row, key):
     return row.get(key, {}).get("value")
 
-
-if __name__ == "__main__":
-
-    # Namespaces
-    OMW = Namespace("https://w3id.org/omw/")  # adjust if your omw namespace is different
-    G = Graph()
-    G.bind("omw", OMW)
-
-    results = run_query(QUERY)
-
-    # Print raw JSON
-    print("=== Raw JSON ===")
-    print(results)
-
-    # Print results in a readable table
-    print("\n=== Results ===")
+def createAsTerms(G, results):
     for row in results["results"]["bindings"]:
-        print({k: v.get("value") for k, v in row.items()})
+        #print({k: v.get("value") for k, v in row.items()})
         term_uri = URIRef(val(row, "OhdAB_Schluessel"))
 
         G.add((term_uri, RDF.type, OMW["term"]))
@@ -159,6 +140,57 @@ if __name__ == "__main__":
                 G.add((lvl_uri, RDF.type, OMW["term"]))
 
                 prev_uri = lvl_uri
+
+
+def createAsClasses(G, results):
+    for row in results["results"]["bindings"]:
+
+        class_uri = URIRef(val(row, "OhdAB_Schluessel"))
+
+        # add as class
+        G.add((class_uri, RDF.type, RDFS.Class))
+
+        # set rdfs:label for class
+        if val(row, "OhdAB_SchluesselLabel"):
+            G.add((class_uri, RDFS.label,
+                   Literal(val(row, "OhdAB_SchluesselLabel"), lang="de")))
+
+        # Build class hierarchy using rdfs:subClassOf
+        levels = ["OhdAB_01", "OhdAB_02", "OhdAB_03", "OhdAB_04", "OhdAB_05", "OhdAB_AB"]
+
+        prev_uri = class_uri
+
+        for lvl in levels:
+            uri = val(row, lvl)
+            if uri:
+                lvl_uri = URIRef(uri)
+
+                # Class hierarchy: prev is subclass of current
+                G.add((prev_uri, RDFS.subClassOf, lvl_uri))
+
+                # Ensure the parent is declared as a class
+                G.add((lvl_uri, RDF.type, RDFS.Class))
+                G.add((lvl_uri, RDFS.label, Literal(val(row, lvl+"Label"), lang="de")))
+
+
+                prev_uri = lvl_uri
+
+
+if __name__ == "__main__":
+
+    # Namespaces
+    G = Graph()
+    G.bind("omw", OMW)
+
+    results = run_query(QUERY)
+
+    # Print raw JSON
+    print("=== Raw JSON ===")
+    print(results)
+
+    print("\n=== Results ===")
+    #createAsTerms(G, results)
+    createAsClasses(G, results)
 
     # Save file
     add_ontology_metadata(G)
