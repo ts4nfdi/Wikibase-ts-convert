@@ -51,6 +51,8 @@ def add_ontology_metadata(G: Graph):
 
     # ---- Mandatory Elements ----
     G.add((ONTOLOGY_URI, OMW["ontologyTitle"],
+           Literal("Ontologie der historischen, deutschsprachigen Amts- und Berufsbezeichnungen | OhdAB", lang="en")))
+    G.add((ONTOLOGY_URI, OMW["ontologyTitle"],
            Literal("Ontology of the historical German-language nomenclature for offices and professions | OhdAB", lang="de")))
 
     G.add((ONTOLOGY_URI, DCTERMS.creator,
