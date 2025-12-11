@@ -2,19 +2,17 @@
   "ontologies": [
     {
       "id": "ohdab",
-      "preferredPrefix": "OhdAB",
-      "title": "Ontology of the historical German-language nomenclature for offices and professions | OhdAB",
+      "preferredPrefix":"OhdAB",
+      "title":"Ontology of the historical German-language nomenclature for offices and professions | OhdAB",
       "uri": "https://database.factgrid.de/ohdab",
-      "description": "Automatically generated terminology from FactGrid OhdAB",
-      "homepage": "https://database.factgrid.de",
+      "description":"This version of the historical German-language nomenclature for offices and professions (OhdAB) was automatically generated via a script from FactGrid.",
+      "homepage":"https://database.factgrid.de",
       "hierarchical_property": [
-        "https://w3id.org/omw/broader"
+          "https://w3id.org/omw/broader"
       ],
       "base_uri": [
-        "https://database.factgrid.de"
+          "https://database.factgrid.de"
       ],
-      "reasoner": "OWL2",
-      "oboSlims": false,
       "ontology_purl": "https://raw.githubusercontent.com/ts4nfdi/Wikibase-ts-convert/refs/heads/main/OhdAB.ttl"
     }
   ]

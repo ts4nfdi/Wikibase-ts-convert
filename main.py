@@ -74,7 +74,9 @@ def add_ontology_metadata(G: Graph):
 
     # Optional but recommended
     G.add((ONTOLOGY_URI, DCTERMS.description,
-           Literal("Automatically generated terminology from FactGrid OhdAB.", lang="de")))
+           Literal("Diese Version der Ontologie der historischen, deutschsprachigen Amts- und Berufsbezeichnungen (OhdAB) wurde über ein Skript automatisch aus FactGrid generiert.", lang="de")))
+    G.add((ONTOLOGY_URI, DCTERMS.description,
+           Literal("This version of the historical German-language nomenclature for offices and professions (OhdAB) was automatically generated via a script from FactGrid.", lang="en")))
 
 def run_query(query: str):
     # ---------------------------------------------
