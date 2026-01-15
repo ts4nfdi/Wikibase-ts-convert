@@ -12,30 +12,47 @@ CACHE_FILE = "resources/fetchresult.json"
 
 # SPARQL query
 # NOTE: If you change the query, delete the caching file "resources/fetchresult.json" to get updated results !!!
-QUERY = """
-SELECT ?OhdAB_ID ?OhdAB_Schluessel ?OhdAB_SchluesselLabel ?Normansetzung ?Weiblich ?Maennlich ?OhdAB_01 ?OhdAB_01Label ?OhdAB_02 ?OhdAB_02Label ?OhdAB_03 ?OhdAB_03Label ?OhdAB_04 ?OhdAB_04Label ?OhdAB_05 ?OhdAB_05Label ?OhdAB_AB ?OhdAB_ABLabel ?AnforderungLabel WHERE {
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "de". }
+QUERY_TEMPLATE = """
+SELECT ?OhdAB_ID ?OhdAB_Schluessel ?OhdAB_SchluesselLabel ?Normansetzung
+       ?Weiblich ?Maennlich
+       ?OhdAB_01 ?OhdAB_01Label
+       ?OhdAB_02 ?OhdAB_02Label
+       ?OhdAB_03 ?OhdAB_03Label
+       ?OhdAB_04 ?OhdAB_04Label
+       ?OhdAB_05 ?OhdAB_05Label
+       ?OhdAB_AB ?OhdAB_ABLabel
+       ?AnforderungLabel
+WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "%LANG%". }
+
   ?OhdAB_Schluessel wdt:P2 wd:Q647777.
   OPTIONAL { ?OhdAB_Schluessel wdt:P904 ?OhdAB_ID. }
+
   OPTIONAL {
     ?OhdAB_Schluessel wdt:P914 ?Normansetzung.
-    FILTER((LANG(?Normansetzung)) = "de")
+    FILTER (LANG(?Normansetzung) = "%LANG%")
   }
+
   OPTIONAL { ?OhdAB_Schluessel wdt:P888 ?Weiblich. }
   OPTIONAL { ?OhdAB_Schluessel wdt:P889 ?Maennlich. }
-  OPTIONAL { ?OhdAB_Schluessel wdt:P1007 ?OhdAB_01.
-           ?OhdAB_01 wdt:P1007 ?OhdAB_02.
-           ?OhdAB_02 wdt:P1007 ?OhdAB_03.
-           ?OhdAB_03 wdt:P1007 ?OhdAB_04.
-           ?OhdAB_04 wdt:P1007 ?OhdAB_05.
-           ?OhdAB_05 wdt:P1007 ?OhdAB_AB.
-           }
- OPTIONAL { ?OhdAB_Schluessel wdt:P911 ?Anforderung. }           
+
+  OPTIONAL {
+    ?OhdAB_Schluessel wdt:P1007 ?OhdAB_01.
+    ?OhdAB_01 wdt:P1007 ?OhdAB_02.
+    ?OhdAB_02 wdt:P1007 ?OhdAB_03.
+    ?OhdAB_03 wdt:P1007 ?OhdAB_04.
+    ?OhdAB_04 wdt:P1007 ?OhdAB_05.
+    ?OhdAB_05 wdt:P1007 ?OhdAB_AB.
+  }
+
+  OPTIONAL { ?OhdAB_Schluessel wdt:P911 ?Anforderung. }
 }
 ORDER BY (?OhdAB_ID)
 
-
 """
+
+
+
 
 # Namespaces
 OMW = Namespace("https://database.factgrid.de")
@@ -51,9 +68,9 @@ def add_ontology_metadata(G: Graph):
 
     # ---- Mandatory Elements ----
     G.add((ONTOLOGY_URI, OMW["ontologyTitle"],
-           Literal("Ontologie der historischen, deutschsprachigen Amts- und Berufsbezeichnungen | OhdAB", lang="en")))
+           Literal("Ontologie der historischen, deutschsprachigen Amts- und Berufsbezeichnungen | OhdAB", lang="de")))
     G.add((ONTOLOGY_URI, OMW["ontologyTitle"],
-           Literal("Ontology of the historical German-language nomenclature for offices and professions | OhdAB", lang="de")))
+           Literal("Ontology of the historical German-language nomenclature for offices and professions | OhdAB", lang="en")))
 
     G.add((ONTOLOGY_URI, DCTERMS.creator,
            Literal("Katrin Moeller")))     # adjust
@@ -78,11 +95,11 @@ def add_ontology_metadata(G: Graph):
     G.add((ONTOLOGY_URI, DCTERMS.description,
            Literal("This version of the historical German-language nomenclature for offices and professions (OhdAB) was automatically generated via a script from FactGrid.", lang="en")))
 
-def run_query(query: str):
+def run_query(query: str, cache: bool):
     # ---------------------------------------------
     # 1. If file exists → load cached JSON
     # ---------------------------------------------
-    if os.path.exists(CACHE_FILE):
+    if cache and os.path.exists(CACHE_FILE):
         print(f"✔ Loading cached SPARQL result from {CACHE_FILE}")
         with open(CACHE_FILE, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -146,38 +163,71 @@ def createAsTerms(G, results):
                 prev_uri = lvl_uri
 
 
-def createAsClasses(G, results):
-    for row in results["results"]["bindings"]:
+def createAsClasses(G, merged_results):
 
-        class_uri = URIRef(val(row, "OhdAB_Schluessel"))
+    for entry in merged_results.values():
 
-        # add as class
+        # Use DE URI (same as EN)
+        class_uri = URIRef(entry["OhdAB_Schluessel_de"])
+
         G.add((class_uri, RDF.type, RDFS.Class))
 
-        # set rdfs:label for class
-        if val(row, "OhdAB_SchluesselLabel"):
+        # -------------------------
+        # Class labels
+        # -------------------------
+        if "OhdAB_SchluesselLabel_de" in entry:
             G.add((class_uri, RDFS.label,
-                   Literal(val(row, "OhdAB_SchluesselLabel"), lang="de")))
+                   Literal(entry["OhdAB_SchluesselLabel_de"], lang="de")))
 
-        # Build class hierarchy using rdfs:subClassOf
+        if "OhdAB_SchluesselLabel_en" in entry:
+            G.add((class_uri, RDFS.label,
+                   Literal(entry["OhdAB_SchluesselLabel_en"], lang="en")))
+
+        # -------------------------
+        # Hierarchy
+        # -------------------------
         levels = ["OhdAB_01", "OhdAB_02", "OhdAB_03", "OhdAB_04", "OhdAB_05", "OhdAB_AB"]
 
         prev_uri = class_uri
 
         for lvl in levels:
-            uri = val(row, lvl)
-            if uri:
-                lvl_uri = URIRef(uri)
+            key_de = f"{lvl}_de"
+            key_label_de = f"{lvl}Label_de"
+            key_label_en = f"{lvl}Label_en"
 
-                # Class hierarchy: prev is subclass of current
+            if key_de in entry:
+                lvl_uri = URIRef(entry[key_de])
+
                 G.add((prev_uri, RDFS.subClassOf, lvl_uri))
-
-                # Ensure the parent is declared as a class
                 G.add((lvl_uri, RDF.type, RDFS.Class))
-                G.add((lvl_uri, RDFS.label, Literal(val(row, lvl+"Label"), lang="de")))
 
+                if key_label_de in entry:
+                    G.add((lvl_uri, RDFS.label,
+                           Literal(entry[key_label_de], lang="de")))
+
+                if key_label_en in entry:
+                    G.add((lvl_uri, RDFS.label,
+                           Literal(entry[key_label_en], lang="en")))
 
                 prev_uri = lvl_uri
+
+
+def merge_results(results_de, results_en):
+    merged = {}
+
+    def add_row(row, lang):
+        key = row["OhdAB_Schluessel"]["value"]
+        entry = merged.setdefault(key, {})
+        for k, v in row.items():
+            entry[f"{k}_{lang}"] = v["value"]
+
+    for row in results_de["results"]["bindings"]:
+        add_row(row, "de")
+
+    for row in results_en["results"]["bindings"]:
+        add_row(row, "en")
+
+    return merged
 
 
 if __name__ == "__main__":
@@ -186,7 +236,11 @@ if __name__ == "__main__":
     G = Graph()
     G.bind("omw", OMW)
 
-    results = run_query(QUERY)
+    #results = run_query(QUERY)
+    results_de = run_query(QUERY_TEMPLATE.replace("%LANG%", "de"), False)
+    results_en = run_query(QUERY_TEMPLATE.replace("%LANG%", "en"), False)
+    results = merge_results(results_de, results_en)
+
 
     # Print raw JSON
     print("=== Raw JSON ===")
