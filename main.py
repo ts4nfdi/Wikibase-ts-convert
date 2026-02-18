@@ -62,6 +62,7 @@ ORDER BY (?OhdAB_ID)
 # Namespaces
 OMW = Namespace("https://database.factgrid.de")
 
+
 # The ontology URI (choose one)
 ONTOLOGY_URI = URIRef("https://database.factgrid.de/ohdab")
 
@@ -202,19 +203,19 @@ def create_as_classes(g, merged_results):
         # -------------------------
 
         if "Weiblich_de" in entry:
-            G.add((class_uri, OMW["altLabel"],
+            G.add((class_uri, RDFS.label,
                    Literal(entry["Weiblich_de"], lang="de")))
 
         if "Maennlich_de" in entry:
-            G.add((class_uri, OMW["altLabel"],
+            G.add((class_uri, RDFS.label,
                    Literal(entry["Maennlich_de"], lang="de")))
 
         if "Weiblich_en" in entry:
-            G.add((class_uri, OMW["altLabel"],
+            G.add((class_uri, RDFS.label,
                    Literal(entry["Weiblich_en"], lang="en")))
 
         if "Maennlich_en" in entry:
-            G.add((class_uri, OMW["altLabel"],
+            G.add((class_uri, RDFS.label,
                    Literal(entry["Maennlich_en"], lang="en")))
 
         # -------------------------
@@ -267,7 +268,7 @@ def merge_results(results_de, results_en):
 if __name__ == "__main__":
     # Namespaces
     G = Graph()
-    G.bind("omw", OMW)
+    G.bind("ohdab", OMW)
 
     # results = run_query(QUERY)
     results_de = run_query(QUERY_TEMPLATE.replace("%LANG%", "de"), False)
