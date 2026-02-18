@@ -59,49 +59,54 @@ ORDER BY (?OhdAB_ID)
 
 """
 
-
-
-
 # Namespaces
 OMW = Namespace("https://database.factgrid.de")
 
 # The ontology URI (choose one)
 ONTOLOGY_URI = URIRef("https://database.factgrid.de/ohdab")
 
-def add_ontology_metadata(G: Graph):
 
-    G.add((ONTOLOGY_URI, RDF.type, OMW["Ontology"]))
+def add_ontology_metadata(g: Graph):
+    g.add((ONTOLOGY_URI, RDF.type, OMW["Ontology"]))
 
-    G.add((ONTOLOGY_URI, OWL.versionIRI, URIRef(f"{ONTOLOGY_URI}/1.0.0")))
+    g.add((ONTOLOGY_URI, OWL.versionIRI, URIRef(f"{ONTOLOGY_URI}/1.0.0")))
 
     # ---- Mandatory Elements ----
-    G.add((ONTOLOGY_URI, OMW["ontologyTitle"],
-           Literal("Ontologie der historischen, deutschsprachigen Amts- und Berufsbezeichnungen | OhdAB", lang="de")))
-    G.add((ONTOLOGY_URI, OMW["ontologyTitle"],
-           Literal("Ontology of the historical German-language nomenclature for offices and professions | OhdAB", lang="en")))
+    g.add((ONTOLOGY_URI, OMW["ontologyTitle"],
+           Literal("Ontologie der historischen, deutschsprachigen Amts- und Berufsbezeichnungen | OhdAB",
+                   lang="de")))
+    g.add((ONTOLOGY_URI, OMW["ontologyTitle"],
+           Literal("Ontology of the historical German-language nomenclature for offices and professions "
+                   "| OhdAB", lang="en")))
 
-    G.add((ONTOLOGY_URI, DCTERMS.creator,
-           Literal("Katrin Moeller")))     # adjust
+    g.add((ONTOLOGY_URI, DCTERMS.creator,
+           Literal("Katrin Moeller")))  # adjust
 
-    G.add((ONTOLOGY_URI, DCTERMS.publisher,
-           Literal("Olaf Simons")))    # adjust
+    g.add((ONTOLOGY_URI, DCTERMS.publisher,
+           Literal("Olaf Simons")))  # adjust
 
-
-#TODO: select license properly
-    G.add((ONTOLOGY_URI, DCTERMS.license,
+    # TODO: select license properly
+    g.add((ONTOLOGY_URI, DCTERMS.license,
            URIRef("https://creativecommons.org/licenses/by/4.0/")))  # CC-BY default
 
-    G.add((ONTOLOGY_URI, OMW["revision"],
+    g.add((ONTOLOGY_URI, OMW["revision"],
            Literal("1.0.0", datatype=XSD.string)))
 
-    G.add((ONTOLOGY_URI, OMW["releaseDate"],
-           Literal("2023-01-01", datatype=XSD.date)))   # adjust
+    g.add((ONTOLOGY_URI, OMW["releaseDate"],
+           Literal("2023-01-01", datatype=XSD.date)))  # adjust
 
     # Optional but recommended
-    G.add((ONTOLOGY_URI, DCTERMS.description,
-           Literal("Diese Version der Ontologie der historischen, deutschsprachigen Amts- und Berufsbezeichnungen (OhdAB) wurde über ein Skript automatisch aus FactGrid generiert.", lang="de")))
-    G.add((ONTOLOGY_URI, DCTERMS.description,
-           Literal("This version of the historical German-language nomenclature for offices and professions (OhdAB) was automatically generated via a script from FactGrid.", lang="en")))
+    g.add((ONTOLOGY_URI, DCTERMS.description,
+           Literal(
+               "Diese Version der Ontologie der historischen, deutschsprachigen Amts- und "
+               "Berufsbezeichnungen (OhdAB) wurde über ein Skript automatisch aus FactGrid generiert.",
+               lang="de")))
+    g.add((ONTOLOGY_URI, DCTERMS.description,
+           Literal(
+               "This version of the historical German-language nomenclature for offices and professions "
+               "(OhdAB) was automatically generated via a script from FactGrid.",
+               lang="en")))
+
 
 def run_query(query: str, cache: bool):
     # ---------------------------------------------
@@ -134,22 +139,24 @@ def run_query(query: str, cache: bool):
 
     return results
 
+
 def val(row, key):
     return row.get(key, {}).get("value")
 
-def createAsTerms(G, results):
+
+def create_as_terms(g, results):
     for row in results["results"]["bindings"]:
-        #print({k: v.get("value") for k, v in row.items()})
+        # print({k: v.get("value") for k, v in row.items()})
         term_uri = URIRef(val(row, "OhdAB_Schluessel"))
 
-        G.add((term_uri, RDF.type, OMW["term"]))
+        g.add((term_uri, RDF.type, OMW["term"]))
 
         if val(row, "Normansetzung"):
-            G.add((term_uri, OMW["preferredLabel"],
+            g.add((term_uri, OMW["preferredLabel"],
                    Literal(val(row, "Normansetzung"), lang="de")))
 
         if val(row, "OhdAB_ID"):
-            G.add((term_uri, OMW["altLabel"],
+            g.add((term_uri, OMW["altLabel"],
                    Literal(val(row, "OhdAB_ID"), lang="de")))
 
         # hierarchy relations (broader)
@@ -163,32 +170,31 @@ def createAsTerms(G, results):
                 lvl_uri = URIRef(uri)
 
                 # add broader relation
-                G.add((prev_uri, OMW.broader, lvl_uri))
+                g.add((prev_uri, OMW.broader, lvl_uri))
 
                 # declare the broader term as omw:Term as well
-                G.add((lvl_uri, RDF.type, OMW["term"]))
+                g.add((lvl_uri, RDF.type, OMW["term"]))
 
                 prev_uri = lvl_uri
 
 
-def createAsClasses(G, merged_results):
-
+def create_as_classes(g, merged_results):
     for entry in merged_results.values():
 
         # Use DE URI (same as EN)
         class_uri = URIRef(entry["OhdAB_Schluessel_de"])
 
-        G.add((class_uri, RDF.type, RDFS.Class))
+        g.add((class_uri, RDF.type, RDFS.Class))
 
         # -------------------------
         # Class labels
         # -------------------------
         if "OhdAB_SchluesselLabel_de" in entry:
-            G.add((class_uri, RDFS.label,
+            g.add((class_uri, RDFS.label,
                    Literal(entry["OhdAB_SchluesselLabel_de"], lang="de")))
 
         if "OhdAB_SchluesselLabel_en" in entry:
-            G.add((class_uri, RDFS.label,
+            g.add((class_uri, RDFS.label,
                    Literal(entry["OhdAB_SchluesselLabel_en"], lang="en")))
 
         # -------------------------
@@ -226,15 +232,15 @@ def createAsClasses(G, merged_results):
             if key_de in entry:
                 lvl_uri = URIRef(entry[key_de])
 
-                G.add((prev_uri, RDFS.subClassOf, lvl_uri))
-                G.add((lvl_uri, RDF.type, RDFS.Class))
+                g.add((prev_uri, RDFS.subClassOf, lvl_uri))
+                g.add((lvl_uri, RDF.type, RDFS.Class))
 
                 if key_label_de in entry:
-                    G.add((lvl_uri, RDFS.label,
+                    g.add((lvl_uri, RDFS.label,
                            Literal(entry[key_label_de], lang="de")))
 
                 if key_label_en in entry:
-                    G.add((lvl_uri, RDFS.label,
+                    g.add((lvl_uri, RDFS.label,
                            Literal(entry[key_label_en], lang="en")))
 
                 prev_uri = lvl_uri
@@ -259,24 +265,22 @@ def merge_results(results_de, results_en):
 
 
 if __name__ == "__main__":
-
     # Namespaces
     G = Graph()
     G.bind("omw", OMW)
 
-    #results = run_query(QUERY)
+    # results = run_query(QUERY)
     results_de = run_query(QUERY_TEMPLATE.replace("%LANG%", "de"), False)
     results_en = run_query(QUERY_TEMPLATE.replace("%LANG%", "en"), False)
     results = merge_results(results_de, results_en)
-
 
     # Print raw JSON
     print("=== Raw JSON ===")
     print(results)
 
     print("\n=== Results ===")
-    #createAsTerms(G, results)
-    createAsClasses(G, results)
+    # create_as_terms(G, results)
+    create_as_classes(G, results)
 
     # Save file
     add_ontology_metadata(G)
