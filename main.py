@@ -33,8 +33,16 @@ WHERE {
     FILTER (LANG(?Normansetzung) = "%LANG%")
   }
 
-  OPTIONAL { ?OhdAB_Schluessel wdt:P888 ?Weiblich. }
-  OPTIONAL { ?OhdAB_Schluessel wdt:P889 ?Maennlich. }
+  
+  OPTIONAL {
+    ?OhdAB_Schluessel wdt:P888 ?Weiblich.
+    FILTER (LANG(?Weiblich) = "%LANG%")
+  }
+    
+  OPTIONAL {
+    ?OhdAB_Schluessel wdt:P889 ?Maennlich.
+    FILTER (LANG(?Maennlich) = "%LANG%")
+  }
 
   OPTIONAL {
     ?OhdAB_Schluessel wdt:P1007 ?OhdAB_01.
@@ -182,6 +190,26 @@ def createAsClasses(G, merged_results):
         if "OhdAB_SchluesselLabel_en" in entry:
             G.add((class_uri, RDFS.label,
                    Literal(entry["OhdAB_SchluesselLabel_en"], lang="en")))
+
+        # -------------------------
+        # Gender-specific altLabels (P888 / P889)
+        # -------------------------
+
+        if "Weiblich_de" in entry:
+            G.add((class_uri, OMW["altLabel"],
+                   Literal(entry["Weiblich_de"], lang="de")))
+
+        if "Maennlich_de" in entry:
+            G.add((class_uri, OMW["altLabel"],
+                   Literal(entry["Maennlich_de"], lang="de")))
+
+        if "Weiblich_en" in entry:
+            G.add((class_uri, OMW["altLabel"],
+                   Literal(entry["Weiblich_en"], lang="en")))
+
+        if "Maennlich_en" in entry:
+            G.add((class_uri, OMW["altLabel"],
+                   Literal(entry["Maennlich_en"], lang="en")))
 
         # -------------------------
         # Hierarchy
