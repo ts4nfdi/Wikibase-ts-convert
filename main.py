@@ -121,6 +121,9 @@ def add_ontology_metadata(g: Graph):
     g.add((URIRef("https://database.factgrid.de/wiki/Property:P889"), RDFS.label,
            Literal("Male form of label", lang="en")))
 
+    g.add((ONTOLOGY_URI, DCTERMS.isVersionOf,
+           URIRef("https://database.factgrid.de/wiki/Item:Q518459")))
+
 
 def run_query(query: str, cache: bool):
     # ---------------------------------------------
