@@ -281,7 +281,8 @@ def merge_results(results_de, results_en):
 if __name__ == "__main__":
     # Namespaces
     G = Graph()
-    G.bind("ohdab", OMW)
+    G.bind("ohdab", "https://database.factgrid.de/entity/")
+    G.bind("ohdab-prop", "https://database.factgrid.de/wiki/Property:")
 
     # results = run_query(QUERY)
     results_de = run_query(QUERY_TEMPLATE.replace("%LANG%", "de"), False)
