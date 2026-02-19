@@ -14,7 +14,8 @@
           "https://database.factgrid.de/entity/"
       ],
       "synonym_property": [
-                "http://www.w3.org/2004/02/skos/core#altLabel"
+          "https://database.factgrid.de/wiki/Property:P888",
+          "https://database.factgrid.de/wiki/Property:P889"
       ],
       "ontology_purl": "https://raw.githubusercontent.com/ts4nfdi/Wikibase-ts-convert/refs/heads/main/OhdAB.ttl"
     }

@@ -1,5 +1,4 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix ohdab: <https://database.factgrid.de> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -76,6 +75,11 @@
     rdfs:subClassOf <https://database.factgrid.de/entity/Q519996> ;
     skos:altLabel "Militärhandwerker"@de,
         "Militärhandwerkerin"@de .
+
+<https://database.factgrid.de/entity/Q1298583> a rdfs:Class ;
+    rdfs:label "B 82323: Berufe in der Kosmetik - komplexe Spezialistentätigkeiten"@de,
+        "B 82323: Professions in cosmetics-skilled tasks"@en ;
+    rdfs:subClassOf <https://database.factgrid.de/entity/Q522334> .
 
 <https://database.factgrid.de/entity/Q1307439> a rdfs:Class ;
     rdfs:label "B 61213-552: Mineralwassergroßhändler/in"@de,
@@ -282118,6 +282122,7 @@
 <https://database.factgrid.de/entity/Q693401> a rdfs:Class ;
     rdfs:label "B 82323-501: Hofkoiffeur/in  - herrschaftliche/r"@de,
         "B 82323-501: Court Couturier - manorial"@en ;
+    rdfs:subClassOf <https://database.factgrid.de/entity/Q1298583> ;
     skos:altLabel "Hofkoiffeur"@de,
         "Hofkoiffeurin"@de .
 
@@ -336646,15 +336651,23 @@
     skos:altLabel "Grenzbeamte"@de,
         "Grenzbeamter"@de .
 
-<https://database.factgrid.de/ohdab> a ohdab:Ontology ;
+<https://database.factgrid.de/ohdab> a owl:Ontology ;
     dcterms:creator "Katrin Moeller" ;
+    dcterms:date "2023-01-01"^^xsd:date ;
     dcterms:description "Diese Version der Ontologie der historischen, deutschsprachigen Amts- und Berufsbezeichnungen (OhdAB) wurde über ein Skript automatisch aus FactGrid generiert."@de,
         "This version of the historical German-language nomenclature for offices and professions (OhdAB) was automatically generated via a script from FactGrid."@en ;
+    dcterms:hasVersion "1.0.0"^^xsd:string ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:publisher "Olaf Simons" ;
-    owl:versionIRI <https://database.factgrid.de/ohdab/1.0.0> ;
-    ohdab:ontologyTitle "Ontologie der historischen, deutschsprachigen Amts- und Berufsbezeichnungen | OhdAB"@de,
+    dcterms:title "Ontologie der historischen, deutschsprachigen Amts- und Berufsbezeichnungen | OhdAB"@de,
         "Ontology of the historical German-language nomenclature for offices and professions | OhdAB"@en ;
-    ohdab:releaseDate "2023-01-01"^^xsd:date ;
-    ohdab:revision "1.0.0"^^xsd:string .
+    owl:versionIRI <https://database.factgrid.de/ohdab/1.0.0> .
+
+<https://database.factgrid.de/wiki/Property:P888> a owl:ObjectProperty ;
+    rdfs:label "Weibliche Form des Labels"@de,
+        "Female form of label"@en .
+
+<https://database.factgrid.de/wiki/Property:P889> a owl:ObjectProperty ;
+    rdfs:label "Männliche Form des Labels"@de,
+        "Male form of label"@en .
 

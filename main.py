@@ -73,10 +73,10 @@ def add_ontology_metadata(g: Graph):
     g.add((ONTOLOGY_URI, OWL.versionIRI, URIRef(f"{ONTOLOGY_URI}/1.0.0")))
 
     # ---- Mandatory Elements ----
-    g.add((ONTOLOGY_URI, OMW["ontologyTitle"],
+    g.add((ONTOLOGY_URI, DCTERMS.title,
            Literal("Ontologie der historischen, deutschsprachigen Amts- und Berufsbezeichnungen | OhdAB",
                    lang="de")))
-    g.add((ONTOLOGY_URI, OMW["ontologyTitle"],
+    g.add((ONTOLOGY_URI, DCTERMS.title,
            Literal("Ontology of the historical German-language nomenclature for offices and professions "
                    "| OhdAB", lang="en")))
 
@@ -90,10 +90,10 @@ def add_ontology_metadata(g: Graph):
     g.add((ONTOLOGY_URI, DCTERMS.license,
            URIRef("https://creativecommons.org/licenses/by/4.0/")))  # CC-BY default
 
-    g.add((ONTOLOGY_URI, OMW["revision"],
+    g.add((ONTOLOGY_URI, DCTERMS.hasVersion,
            Literal("1.0.0", datatype=XSD.string)))
 
-    g.add((ONTOLOGY_URI, OMW["releaseDate"],
+    g.add((ONTOLOGY_URI, DCTERMS.date,
            Literal("2023-01-01", datatype=XSD.date)))  # adjust
 
     # Optional but recommended
@@ -107,6 +107,19 @@ def add_ontology_metadata(g: Graph):
                "This version of the historical German-language nomenclature for offices and professions "
                "(OhdAB) was automatically generated via a script from FactGrid.",
                lang="en")))
+
+    # additional properties from FactGrid
+    g.add((URIRef("https://database.factgrid.de/wiki/Property:P888"), RDF.type, OWL.ObjectProperty))
+    g.add((URIRef("https://database.factgrid.de/wiki/Property:P888"), RDFS.label,
+           Literal("Weibliche Form des Labels", lang="de")))
+    g.add((URIRef("https://database.factgrid.de/wiki/Property:P888"), RDFS.label,
+           Literal("Female form of label", lang="en")))
+
+    g.add((URIRef("https://database.factgrid.de/wiki/Property:P889"), RDF.type, OWL.ObjectProperty))
+    g.add((URIRef("https://database.factgrid.de/wiki/Property:P889"), RDFS.label,
+           Literal("Männliche Form des Labels", lang="de")))
+    g.add((URIRef("https://database.factgrid.de/wiki/Property:P889"), RDFS.label,
+           Literal("Male form of label", lang="en")))
 
 
 def run_query(query: str, cache: bool):
