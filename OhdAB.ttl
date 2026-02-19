@@ -336651,7 +336651,7 @@
     skos:altLabel "Grenzbeamte"@de,
         "Grenzbeamter"@de .
 
-<https://database.factgrid.de/ohdab> a owl:Ontology ;
+<https://database.factgrid.de/wiki/FactGrid:OhdAB-Datenbank> a owl:Ontology ;
     dcterms:creator "Katrin Moeller" ;
     dcterms:date "2023-01-01"^^xsd:date ;
     dcterms:description "Diese Version der Ontologie der historischen, deutschsprachigen Amts- und Berufsbezeichnungen (OhdAB) wurde über ein Skript automatisch aus FactGrid generiert."@de,
@@ -336661,7 +336661,7 @@
     dcterms:publisher "Olaf Simons" ;
     dcterms:title "Ontologie der historischen, deutschsprachigen Amts- und Berufsbezeichnungen | OhdAB"@de,
         "Ontology of the historical German-language nomenclature for offices and professions | OhdAB"@en ;
-    owl:versionIRI <https://database.factgrid.de/ohdab/1.0.0> .
+    owl:versionIRI <https://database.factgrid.de/wiki/FactGrid:OhdAB-Datenbank/1.0.0> .
 
 <https://database.factgrid.de/wiki/Property:P888> a owl:ObjectProperty ;
     rdfs:label "Weibliche Form des Labels"@de,

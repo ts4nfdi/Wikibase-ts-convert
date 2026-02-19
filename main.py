@@ -64,7 +64,7 @@ OMW = Namespace("https://database.factgrid.de")
 
 
 # The ontology URI (choose one)
-ONTOLOGY_URI = URIRef("https://database.factgrid.de/ohdab")
+ONTOLOGY_URI = URIRef("https://database.factgrid.de/wiki/FactGrid:OhdAB-Datenbank")
 
 
 def add_ontology_metadata(g: Graph):

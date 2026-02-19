@@ -11,7 +11,8 @@
           "https://w3id.org/omw/broader"
       ],
       "base_uri": [
-          "https://database.factgrid.de/entity/"
+          "https://database.factgrid.de/entity/",
+          "https://database.factgrid.de/wiki/Property:"
       ],
       "synonym_property": [
           "https://database.factgrid.de/wiki/Property:P888",
