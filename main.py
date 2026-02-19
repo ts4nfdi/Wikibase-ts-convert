@@ -1,6 +1,6 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 from rdflib import Graph, Namespace, Literal, URIRef
-from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD
+from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD, SKOS
 
 import json
 import os
@@ -203,19 +203,19 @@ def create_as_classes(g, merged_results):
         # -------------------------
 
         if "Weiblich_de" in entry:
-            G.add((class_uri, RDFS.label,
+            G.add((class_uri, SKOS.altLabel,
                    Literal(entry["Weiblich_de"], lang="de")))
 
         if "Maennlich_de" in entry:
-            G.add((class_uri, RDFS.label,
+            G.add((class_uri, SKOS.altLabel,
                    Literal(entry["Maennlich_de"], lang="de")))
 
         if "Weiblich_en" in entry:
-            G.add((class_uri, RDFS.label,
+            G.add((class_uri, SKOS.altLabel,
                    Literal(entry["Weiblich_en"], lang="en")))
 
         if "Maennlich_en" in entry:
-            G.add((class_uri, RDFS.label,
+            G.add((class_uri, SKOS.altLabel,
                    Literal(entry["Maennlich_en"], lang="en")))
 
         # -------------------------
