@@ -68,7 +68,7 @@ ONTOLOGY_URI = URIRef("https://database.factgrid.de/ohdab")
 
 
 def add_ontology_metadata(g: Graph):
-    g.add((ONTOLOGY_URI, RDF.type, OMW["Ontology"]))
+    g.add((ONTOLOGY_URI, RDF.type, OWL.Ontology))
 
     g.add((ONTOLOGY_URI, OWL.versionIRI, URIRef(f"{ONTOLOGY_URI}/1.0.0")))
 

@@ -11,7 +11,7 @@
           "https://w3id.org/omw/broader"
       ],
       "base_uri": [
-          "https://database.factgrid.de"
+          "https://database.factgrid.de/entity/"
       ],
       "synonym_property": [
                 "http://www.w3.org/2004/02/skos/core#altLabel"
