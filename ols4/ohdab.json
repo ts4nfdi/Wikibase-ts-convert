@@ -7,6 +7,7 @@
       "uri": "https://database.factgrid.de/ohdab",
       "description":"This version of the historical German-language nomenclature for offices and professions (OhdAB) was automatically generated via a script from FactGrid.",
       "homepage":"https://database.factgrid.de",
+      "depicted_by": "https://www.geschichte.uni-halle.de/im/1750321064_320_0.png",
       "hierarchical_property": [
           "https://w3id.org/omw/broader"
       ],
