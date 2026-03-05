@@ -1,0 +1,64 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix mathmoddb: <https://portal.mardi4nfdi.de> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://portal.mardi4nfdi.de/entity/Q6481152> a rdfs:Class ;
+    rdfs:label "mathematical expression"@en ;
+    rdfs:subClassOf <https://portal.mardi4nfdi.de/entity/Q6534281> ;
+    mathmoddb:description "formula that represents a mathematical object"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6481481> a rdfs:Class ;
+    rdfs:label "value"@en ;
+    mathmoddb:description "notion in mathematics"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6534237> a rdfs:Class ;
+    rdfs:label "quantity"@en ;
+    rdfs:subClassOf <https://portal.mardi4nfdi.de/entity/Q6481481> ;
+    mathmoddb:description "property that exists in a range of magnitudes or multitudes; property that can exist as a magnitude or multitude"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6534281> a rdfs:Class ;
+    rdfs:label "mathematical object"@en ;
+    mathmoddb:description "abstract object in mathematics"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6672110> a rdfs:Class ;
+    rdfs:label "nonlinear model"@en ;
+    rdfs:subClassOf <https://portal.mardi4nfdi.de/entity/Q68663> ;
+    mathmoddb:description "mathematical model that describes a time-independent system"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6822211> a rdfs:Class ;
+    rdfs:label "differential equation"@en ;
+    mathmoddb:description "mathematical equation involving derivatives of an unknown function"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6822213> a rdfs:Class ;
+    rdfs:label "partial differential equation"@en ;
+    rdfs:subClassOf <https://portal.mardi4nfdi.de/entity/Q6822211> ;
+    mathmoddb:description "differential equation that contains unknown multivariable functions and their partial derivatives"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q68663> a rdfs:Class ;
+    rdfs:label "mathematical model"@en ;
+    mathmoddb:description "description of a system using mathematical concepts and language"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673736> a <https://portal.mardi4nfdi.de/entity/Q6534237> ;
+    mathmoddb:description "population density below which growth becomes negative"@en ;
+    mathmoddb:preferredLabel "Allee threshold"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6674126> a <https://portal.mardi4nfdi.de/entity/Q6481152> ;
+    mathmoddb:description "effect to model the infection rate as a function of population density"@en ;
+    mathmoddb:preferredLabel "Allee effect"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6674127> a <https://portal.mardi4nfdi.de/entity/Q6822213> ;
+    mathmoddb:description "Ampère's circuital law (with Maxwell's addition) relates the integrated magnetic field around a closed loop to the electric current passing through the loop"@en ;
+    mathmoddb:preferredLabel "Ampère's circuital law"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6775654> a <https://portal.mardi4nfdi.de/entity/Q6672110> ;
+    mathmoddb:description "microbial growth model accounting for substrate inhibition"@en ;
+    mathmoddb:preferredLabel "Andrews model"@en .
+
+<https://portal.mardi4nfdi.de/wiki/> a mathmoddb:Ontology ;
+    dcterms:description "MathModDB defines a data model with classes (Mathematical Model, Mathematical Expression, Academic Discipline, Research Problem, Quantity (Kind), Computational Task, Scholarly Article), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph"@en ;
+    owl:versionIRI <https://portal.mardi4nfdi.de/wiki//1.0.0> ;
+    mathmoddb:ontologyTitle "MathModDB Knowledge Graph of Mathematical Models | MathModDB"@en ;
+    mathmoddb:revision "1.0.0"^^xsd:string .
+

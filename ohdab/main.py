@@ -8,7 +8,7 @@ import os
 # FactGrid SPARQL endpoint
 ENDPOINT = "https://database.factgrid.de/sparql"
 
-CACHE_FILE = "resources/fetchresult.json"
+CACHE_FILE = "../resources/fetchresult.json"
 
 # SPARQL query
 # NOTE: If you change the query, delete the caching file "resources/fetchresult.json" to get updated results !!!
@@ -131,7 +131,7 @@ def run_query(query: str, cache: bool):
     # ---------------------------------------------
     # 3. Save result to cache file
     # ---------------------------------------------
-    os.makedirs("resources", exist_ok=True)
+    os.makedirs("../resources", exist_ok=True)
 
     with open(CACHE_FILE, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
