@@ -1,6 +1,6 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 from rdflib import Graph, Namespace, Literal, URIRef
-from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD
+from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD, SKOS
 
 import json
 import os
@@ -64,19 +64,19 @@ OMW = Namespace("https://database.factgrid.de")
 
 
 # The ontology URI (choose one)
-ONTOLOGY_URI = URIRef("https://database.factgrid.de/ohdab")
+ONTOLOGY_URI = URIRef("https://database.factgrid.de/wiki/FactGrid:OhdAB-Datenbank")
 
 
 def add_ontology_metadata(g: Graph):
-    g.add((ONTOLOGY_URI, RDF.type, OMW["Ontology"]))
+    g.add((ONTOLOGY_URI, RDF.type, OWL.Ontology))
 
     g.add((ONTOLOGY_URI, OWL.versionIRI, URIRef(f"{ONTOLOGY_URI}/1.0.0")))
 
     # ---- Mandatory Elements ----
-    g.add((ONTOLOGY_URI, OMW["ontologyTitle"],
+    g.add((ONTOLOGY_URI, DCTERMS.title,
            Literal("Ontologie der historischen, deutschsprachigen Amts- und Berufsbezeichnungen | OhdAB",
                    lang="de")))
-    g.add((ONTOLOGY_URI, OMW["ontologyTitle"],
+    g.add((ONTOLOGY_URI, DCTERMS.title,
            Literal("Ontology of the historical German-language nomenclature for offices and professions "
                    "| OhdAB", lang="en")))
 
@@ -90,10 +90,10 @@ def add_ontology_metadata(g: Graph):
     g.add((ONTOLOGY_URI, DCTERMS.license,
            URIRef("https://creativecommons.org/licenses/by/4.0/")))  # CC-BY default
 
-    g.add((ONTOLOGY_URI, OMW["revision"],
+    g.add((ONTOLOGY_URI, DCTERMS.hasVersion,
            Literal("1.0.0", datatype=XSD.string)))
 
-    g.add((ONTOLOGY_URI, OMW["releaseDate"],
+    g.add((ONTOLOGY_URI, DCTERMS.date,
            Literal("2023-01-01", datatype=XSD.date)))  # adjust
 
     # Optional but recommended
@@ -107,6 +107,22 @@ def add_ontology_metadata(g: Graph):
                "This version of the historical German-language nomenclature for offices and professions "
                "(OhdAB) was automatically generated via a script from FactGrid.",
                lang="en")))
+
+    # additional properties from FactGrid
+    g.add((URIRef("https://database.factgrid.de/wiki/Property:P888"), RDF.type, OWL.ObjectProperty))
+    g.add((URIRef("https://database.factgrid.de/wiki/Property:P888"), RDFS.label,
+           Literal("Weibliche Form des Labels", lang="de")))
+    g.add((URIRef("https://database.factgrid.de/wiki/Property:P888"), RDFS.label,
+           Literal("Female form of label", lang="en")))
+
+    g.add((URIRef("https://database.factgrid.de/wiki/Property:P889"), RDF.type, OWL.ObjectProperty))
+    g.add((URIRef("https://database.factgrid.de/wiki/Property:P889"), RDFS.label,
+           Literal("Männliche Form des Labels", lang="de")))
+    g.add((URIRef("https://database.factgrid.de/wiki/Property:P889"), RDFS.label,
+           Literal("Male form of label", lang="en")))
+
+    g.add((ONTOLOGY_URI, DCTERMS.isVersionOf,
+           URIRef("https://database.factgrid.de/wiki/Item:Q518459")))
 
 
 def run_query(query: str, cache: bool):
@@ -203,19 +219,19 @@ def create_as_classes(g, merged_results):
         # -------------------------
 
         if "Weiblich_de" in entry:
-            G.add((class_uri, RDFS.label,
+            G.add((class_uri, SKOS.altLabel,
                    Literal(entry["Weiblich_de"], lang="de")))
 
         if "Maennlich_de" in entry:
-            G.add((class_uri, RDFS.label,
+            G.add((class_uri, SKOS.altLabel,
                    Literal(entry["Maennlich_de"], lang="de")))
 
         if "Weiblich_en" in entry:
-            G.add((class_uri, RDFS.label,
+            G.add((class_uri, SKOS.altLabel,
                    Literal(entry["Weiblich_en"], lang="en")))
 
         if "Maennlich_en" in entry:
-            G.add((class_uri, RDFS.label,
+            G.add((class_uri, SKOS.altLabel,
                    Literal(entry["Maennlich_en"], lang="en")))
 
         # -------------------------
@@ -268,7 +284,8 @@ def merge_results(results_de, results_en):
 if __name__ == "__main__":
     # Namespaces
     G = Graph()
-    G.bind("ohdab", OMW)
+    G.bind("ohdab", "https://database.factgrid.de/entity/")
+    G.bind("ohdab-prop", "https://database.factgrid.de/wiki/Property:")
 
     # results = run_query(QUERY)
     results_de = run_query(QUERY_TEMPLATE.replace("%LANG%", "de"), False)
