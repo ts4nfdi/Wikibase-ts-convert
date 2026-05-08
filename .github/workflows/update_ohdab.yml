@@ -1,5 +1,8 @@
 name: Update OhdAB ontology
 on:
+  push:
+    branches:
+      - 12-github-action-to-update-ohdab
   schedule:
     - cron: "4 5 * * 0"
   workflow_dispatch:
