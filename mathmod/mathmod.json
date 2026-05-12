@@ -2,18 +2,28 @@
   "ontologies": [
     {
       "id": "mathmod",
-      "preferredPrefix": "MathModDB",
+      "preferredPrefix": "MathModDB-sparql",
       "title": "Ontology and knowledge graph of mathematical models, developed and maintained by task area 4 of MaRDI",
       "uri": "https://portal.mardi4nfdi.de/wiki/Item:Q6534265",
       "description": "Automatically generated terminology from https://portal.mardi4nfdi.de/",
       "homepage": "https://portal.mardi4nfdi.de/",
+      "label_property": [
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ],
+      "synonym_property": [
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ],
       "hierarchical_property": [
-        "https://w3id.org/omw/broader"
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+      ],
+      "definition_property": [
+        "http://purl.org/dc/terms/description",
+        "http://schema.org/description"
       ],
       "base_uri": [
         "https://portal.mardi4nfdi.de/wiki/"
       ],
-      "reasoner": "OWL2",
       "oboSlims": false,
       "ontology_purl": "https://raw.githubusercontent.com/ts4nfdi/Wikibase-ts-convert/refs/heads/main/mathmod/MathModDB.ttl"
     }

@@ -108,7 +108,7 @@ def create_as_terms(g, results):
                    Literal(entry["itemLabel"], lang="en")))
 
         if "itemDescription" in entry:
-            g.add((term_uri, OMW["description"],
+            g.add((term_uri, URIRef("http://schema.org/description"),
                    Literal(entry["itemDescription"], lang="en")))
 
         if "itemDepiction" in entry:
@@ -133,7 +133,7 @@ def create_as_terms(g, results):
                    Literal(entry["classLabel"], lang="en")))
 
             if "classDescription" in entry:
-                g.add((class_uri, OMW["description"],
+                g.add((class_uri, URIRef("http://schema.org/description"),
                    Literal(entry["classDescription"], lang="en")))
 
             if "superClass" in entry:
@@ -149,7 +149,7 @@ def create_as_terms(g, results):
                            Literal(entry["superClassLabel"], lang="en")))
 
                 if "classDescription" in entry:
-                    g.add((superclass_uri, OMW["description"],
+                    g.add((superclass_uri, URIRef("http://schema.org/description"),
                            Literal(entry["superClassDescription"], lang="en")))
 
         #    uri = val(entry, lvl)
@@ -251,6 +251,8 @@ if __name__ == "__main__":
     # Namespaces
     G = Graph()
     G.bind("mathmoddb", OMW)
+    G.bind("schema", "http://schema.org/")
+
 
     # results = run_query(QUERY)
     #results_de = run_query(QUERY_TEMPLATE.replace("%LANG%", "de"), False)
