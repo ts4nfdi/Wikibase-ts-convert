@@ -37,12 +37,12 @@ ONTOLOGY_URI = URIRef("https://portal.mardi4nfdi.de/wiki/")
 
 
 def add_ontology_metadata(g: Graph):
-    g.add((ONTOLOGY_URI, RDF.type, OMW["Ontology"]))
+    g.add((ONTOLOGY_URI, RDF.type, OWL.Ontology))
 
     g.add((ONTOLOGY_URI, OWL.versionIRI, URIRef(f"{ONTOLOGY_URI}/1.0.0")))
 
     # ---- Mandatory Elements ----
-    g.add((ONTOLOGY_URI, OMW["ontologyTitle"],
+    g.add((ONTOLOGY_URI, DCTERMS.title,
            Literal("MathModDB Knowledge Graph of Mathematical Models | MathModDB",
                    lang="en")))
 
@@ -53,7 +53,7 @@ def add_ontology_metadata(g: Graph):
     # TODO: select license properly
     #g.add((ONTOLOGY_URI, DCTERMS.license, URIRef("https://creativecommons.org/licenses/by/4.0/")))  # CC-BY default
 
-    g.add((ONTOLOGY_URI, OMW["revision"], Literal("1.0.0", datatype=XSD.string)))
+    g.add((ONTOLOGY_URI, DCTERMS.hasVersion, Literal("1.0.0", datatype=XSD.string)))
 
     #g.add((ONTOLOGY_URI, OMW["releaseDate"],Literal("2023-01-01", datatype=XSD.date)))  # adjust
 
