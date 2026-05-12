@@ -13,12 +13,14 @@ CACHE_FILE = "./fetchresult.json"
 # SPARQL query
 # NOTE: If you change the query, delete the caching file "fetchresult.json" to get updated results !!!
 QUERY_TEMPLATE = """
-SELECT DISTINCT ?itemLabel ?item ?itemDescription ?class ?classLabel ?classDescription ?superClass ?superClassLabel ?superClassDescription
+SELECT DISTINCT ?itemLabel ?item ?itemDescription ?itemDepiction ?class ?classLabel ?classDescription ?superClass ?superClassLabel ?superClassDescription 
 WHERE {
-  ?item wdt:P1495 wd:Q6534265 .
-
-  OPTIONAL { ?item wdt:P31 ?class . }
+  
+  ?item wdt:P1495 wd:Q6534265.
+ 
+  OPTIONAL { ?item wdt:P31 ?class . wd:Q6534265 wdt:P265 ?class. }
   OPTIONAL { ?class wdt:P36 ?superClass . }
+  ?item wdt:P356 ?itemDepiction.
   
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
@@ -74,7 +76,7 @@ def run_query(query: str, cache: bool):
     # ---------------------------------------------
     # 2. Otherwise → fetch from SPARQL endpoint
     # ---------------------------------------------
-    print("↻ Fetching SPARQL result from FactGrid…")
+    print("↻ Fetching SPARQL result…")
 
     sparql = SPARQLWrapper(ENDPOINT)
     sparql.setQuery(query)
@@ -108,6 +110,13 @@ def create_as_terms(g, results):
         if "itemDescription" in entry:
             g.add((term_uri, OMW["description"],
                    Literal(entry["itemDescription"], lang="en")))
+
+        if "itemDepiction" in entry:
+            depictions = entry["itemDepiction"]
+            if not isinstance(depictions, list):
+                depictions = [depictions]
+            g.add((term_uri, OMW["depiction"],
+                   Literal(json.dumps(depictions))))
 
         # hierarchy relations (broader)
 

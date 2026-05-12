@@ -1,0 +1,21 @@
+{
+  "ontologies": [
+    {
+      "id": "mathmod",
+      "preferredPrefix": "MathModDB",
+      "title": "Ontology and knowledge graph of mathematical models, developed and maintained by task area 4 of MaRDI",
+      "uri": "https://portal.mardi4nfdi.de/wiki/Item:Q6534265",
+      "description": "Automatically generated terminology from https://portal.mardi4nfdi.de/",
+      "homepage": "https://portal.mardi4nfdi.de/",
+      "hierarchical_property": [
+        "https://w3id.org/omw/broader"
+      ],
+      "base_uri": [
+        "https://portal.mardi4nfdi.de/wiki/"
+      ],
+      "reasoner": "OWL2",
+      "oboSlims": false,
+      "ontology_purl": "https://raw.githubusercontent.com/ts4nfdi/Wikibase-ts-convert/refs/heads/main/mathmod/MathModDB.ttl"
+    }
+  ]
+}
