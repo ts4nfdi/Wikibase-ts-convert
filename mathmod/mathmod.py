@@ -1,6 +1,6 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 from rdflib import Graph, Namespace, Literal, URIRef
-from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD
+from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD, FOAF
 
 import json
 import os
@@ -118,8 +118,8 @@ def create_as_terms(g, results):
             depictions = entry["itemDepiction"]
             if not isinstance(depictions, list):
                 depictions = [depictions]
-            g.add((term_uri, OMW["depiction"],
-                   Literal(json.dumps(depictions))))
+            g.add((term_uri, FOAF.depiction,
+                   Literal(json.dumps(depictions)[2:-2])))
 
         # hierarchy relations (broader)
 
@@ -255,7 +255,7 @@ if __name__ == "__main__":
     # Namespaces
     G = Graph()
     G.bind("mathmoddb", OMW)
-    G.bind("schema", "http://schema.org/")
+    G.bind("schemaorg", "http://schema.org/")
 
 
     # results = run_query(QUERY)
