@@ -102,8 +102,11 @@ def create_as_terms(g, results):
         term_uri = URIRef(uri)
 
         #g.add((term_uri, RDF.type, OMW["term"]))
+        g.add((term_uri, RDF.type, OWL.NamedIndividual))
 
         if "itemLabel" in entry:
+            g.add((term_uri, RDFS.label,
+                   Literal(entry["itemLabel"], lang="en")))
             g.add((term_uri, RDFS.label,
                    Literal(entry["itemLabel"], lang="en")))
 
