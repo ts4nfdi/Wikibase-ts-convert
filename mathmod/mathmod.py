@@ -104,7 +104,7 @@ def create_as_terms(g, results):
         #g.add((term_uri, RDF.type, OMW["term"]))
 
         if "itemLabel" in entry:
-            g.add((term_uri, OMW["preferredLabel"],
+            g.add((term_uri, RDFS.label,
                    Literal(entry["itemLabel"], lang="en")))
 
         if "itemDescription" in entry:
@@ -124,6 +124,7 @@ def create_as_terms(g, results):
             class_uri = URIRef(entry["class"])
             #add relation
             g.add((term_uri, RDF.type, class_uri))
+            g.add((term_uri, RDF.type, OWL.NamedIndividual))
 
             #add class
             g.add((class_uri, RDF.type, RDFS.Class))
