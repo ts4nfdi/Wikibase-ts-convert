@@ -107,6 +107,8 @@ def create_as_terms(g, results):
         if "itemLabel" in entry:
             g.add((term_uri, OMW["preferredLabel"],
                    Literal(entry["itemLabel"], lang="en")))
+            g.add((term_uri, RDFS.label,
+                   Literal(entry["itemLabel"], lang="en")))
 
         if "itemDescription" in entry:
             g.add((term_uri, URIRef("http://schema.org/description"),
