@@ -1,6 +1,5 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix mathmoddb: <https://portal.mardi4nfdi.de> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schemaorg: <http://schema.org/> .
@@ -547,9 +546,9 @@
     schemaorg:description "scientific study of celestial objects and phenomena"@en ;
     foaf:depiction "http://commons.wikimedia.org/wiki/Special:FilePath/Laser%20Towards%20Milky%20Ways%20Centre.jpg" .
 
-<https://portal.mardi4nfdi.de/wiki/> a mathmoddb:Ontology ;
+<https://portal.mardi4nfdi.de/wiki/> a owl:Ontology ;
     dcterms:description "MathModDB defines a data model with classes (Mathematical Model, Mathematical Expression, Academic Discipline, Research Problem, Quantity (Kind), Computational Task, Scholarly Article), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph"@en ;
-    owl:versionIRI <https://portal.mardi4nfdi.de/wiki//1.0.0> ;
-    mathmoddb:ontologyTitle "MathModDB Knowledge Graph of Mathematical Models | MathModDB"@en ;
-    mathmoddb:revision "1.0.0"^^xsd:string .
+    dcterms:hasVersion "1.0.0"^^xsd:string ;
+    dcterms:title "MathModDB Knowledge Graph of Mathematical Models | MathModDB"@en ;
+    owl:versionIRI <https://portal.mardi4nfdi.de/wiki//1.0.0> .
 
