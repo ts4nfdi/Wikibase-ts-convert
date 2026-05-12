@@ -25,7 +25,7 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ORDER BY ?itemLabel
-LIMIT 10
+
 """
 
 # Namespaces

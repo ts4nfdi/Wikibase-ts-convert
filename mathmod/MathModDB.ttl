@@ -54,10 +54,200 @@
     schema1:description "equation using mathematical or scientific notation"@en ;
     rdfs:subClassOf <https://portal.mardi4nfdi.de/entity/Q6481152> .
 
+<https://portal.mardi4nfdi.de/entity/Q116324> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "statistical and theoretical study of populations: size, composition, and how they change through fertility, mortality, and migration"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Global%20Population-Pyramid-1950-to-2100.jpg\"]" ;
+    mathmoddb:preferredLabel "demography"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q133773> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "subdiscipline at the intersection of physics and chemistry, describing chemical concepts utilizing the principles of physics"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Lomonosov%20Chymiae%20Physicae%201752.jpg\"]" ;
+    mathmoddb:preferredLabel "physical chemistry"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q57236> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "study of the collection, analysis, interpretation, and presentation of data"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Standard%20Normal%20Distribution.png\"]" ;
+    mathmoddb:preferredLabel "statistics"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q59308> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "branch of physical science concerned with the composition, structure and properties of matter"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Ca%27%20Rezzonico%20-%20Gli%20alchimisti%201757%20-%20Pietro%20Longhi.jpg\"]" ;
+    mathmoddb:preferredLabel "chemistry"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q59666> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "scientific study of living things, especially their structure, function, growth, evolution, and distribution"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Biology-0001.jpg\"]" ;
+    mathmoddb:preferredLabel "biology"@en .
+
 <https://portal.mardi4nfdi.de/entity/Q6032633> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
     schema1:description "scientific study of ancient Egypt"@en ;
     mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Tuts%20Tomb%20Opened.JPG\"]" ;
     mathmoddb:preferredLabel "Egyptology"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q65133> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "study of the past via material culture"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Foundation%20nail%20IMG%200073-black.jpg\"]" ;
+    mathmoddb:preferredLabel "archaeology"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6534304> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "dimension in which events can be ordered from the past through the present into the future"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/MontreGousset001.jpg\"]" ;
+    mathmoddb:preferredLabel "time"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6534323> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "physical property that quantifies an object's interaction with electric fields"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Cargas%20electricas.png\"]" ;
+    mathmoddb:preferredLabel "electric charge"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6534344> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "study of semiconductor materials and devices"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Monokristalines%20Silizium%20f%C3%BCr%20die%20Waferherstellung.jpg\"]" ;
+    mathmoddb:preferredLabel "semiconductor physics"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673689> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "vector field representing the force applied to a charged test particle"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Van%20de%20Graaff%20Generator%20-%20Science%20City%20-%20Calcutta%201997%20444.JPG\"]" ;
+    mathmoddb:preferredLabel "electric field"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673690> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "spatial distribution of vectors allowing the calculation of the magnetic force on a test particle"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/DipolMagnet.svg\"]" ;
+    mathmoddb:preferredLabel "magnetic field"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673691> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "measure of the extent to which an object will continue to rotate in the absence of an applied torque"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Angular%20momentum%20circle.png\"]" ;
+    mathmoddb:preferredLabel "angular momentum"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673693> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "quantity that expresses the extent of a two-dimensional surface or shape, or planar lamina, in the plane"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Squaring%20the%20circle.svg\"]" ;
+    mathmoddb:preferredLabel "area"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673695> a <https://portal.mardi4nfdi.de/entity/Q6534237> ;
+    schema1:description "angle in the spherical coordinate system"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Azimuth-Altitude%20schematic.svg\"]" ;
+    mathmoddb:preferredLabel "azimuthal angle"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673696> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "quantitative property of a physical system, recognizable in the performance of work and in the form of heat and light"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Electric%20power%20transmission.jpg\"]" ;
+    mathmoddb:preferredLabel "energy"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673697> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "physical property of matter that quantitatively expresses the common notions of hot and cold"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Thermometer%20CF.svg\"]" ;
+    mathmoddb:preferredLabel "temperature"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673699> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "abundance of a constituent divided by the total volume of a mixture"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Dilution-concentration%20simple%20example.jpg\"]" ;
+    mathmoddb:preferredLabel "concentration"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673701> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "ability of a body to store electrical charge"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Capacitance%20Meter%2009%20%2817640441390%29.jpg\"]" ;
+    mathmoddb:preferredLabel "capacitance"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673704> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "physical influence that tends to cause an object to change motion unless opposed by other forces"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Force%20examples.svg\"]" ;
+    mathmoddb:preferredLabel "force"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673705> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "property of matter to resist changes of the state of motion and to attract other bodies"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/CGKilogram.jpg\"]" ;
+    mathmoddb:preferredLabel "mass"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673706> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "conserved physical quantity related to the motion of a body"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Billard.JPG\"]" ;
+    mathmoddb:preferredLabel "momentum"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673707> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "rate of change of the position of an object as a function of time, and the direction of that change"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Kinematics.svg\"]" ;
+    mathmoddb:preferredLabel "velocity"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673708> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "number that can be put in the form a + bi, where a and b are real numbers and i is called the imaginary unit"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/A%20plus%20bi.svg\"]" ;
+    mathmoddb:preferredLabel "complex number"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673710> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "base quantity of the International System of Quantities (ISQ), measured in ampere (A)"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Ohm%27s%20Law%20with%20Voltage%20source%20TeX.svg\"]" ;
+    mathmoddb:preferredLabel "electric current"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673712> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "mass per volume of a substance"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Density%20column.JPG\"]" ;
+    mathmoddb:preferredLabel "mass density"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673716> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "force applied over an area"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Pressure%20exerted%20by%20collisions.svg\"]" ;
+    mathmoddb:preferredLabel "pressure"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673717> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "quantity along a continuous line"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Real%20number%20line.svg\"]" ;
+    mathmoddb:preferredLabel "real number"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673721> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "expectation of the squared deviation of a random variable from its mean"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Comparison%20standard%20deviations.svg\"]" ;
+    mathmoddb:preferredLabel "variance"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673724> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "number that can be written without a fractional or decimal component"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Number-line.svg\"]" ;
+    mathmoddb:preferredLabel "integer"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673725> a <https://portal.mardi4nfdi.de/entity/Q6534237> ;
+    schema1:description "angle in polar or spherical coordinate system"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/3D%20Spherical%202.svg\"]" ;
+    mathmoddb:preferredLabel "polar angle"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673726> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "mathematical object used to count, label, and measure"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/NumberSetinC.svg\"]" ;
+    mathmoddb:preferredLabel "number"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673728> a <https://portal.mardi4nfdi.de/entity/Q6534237> ;
+    schema1:description "coordinate in the polar or spherical coordinate system"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Circle-withsegments.svg\"]" ;
+    mathmoddb:preferredLabel "radial coordinate"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673737> a <https://portal.mardi4nfdi.de/entity/Q6534237> ;
+    schema1:description "measure of the number of individuals per unit area"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/PopulationDensityMapPerSquareKilometre.png\"]" ;
+    mathmoddb:preferredLabel "population density"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673861> a <https://portal.mardi4nfdi.de/entity/Q6534237> ;
+    schema1:description "wavelength of matter waves in quantum mechanics"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Propagation%20of%20a%20de%20broglie%20plane%20wave.svg\"]" ;
+    mathmoddb:preferredLabel "de Broglie wavelength"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673945> a <https://portal.mardi4nfdi.de/entity/Q6534237> ;
+    schema1:description "electric charge per volume"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Universal%20charge%20distribution.svg\"]" ;
+    mathmoddb:preferredLabel "electric charge density"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673957> a <https://portal.mardi4nfdi.de/entity/Q6534237> ;
+    schema1:description "speed at which a chemical reaction proceeds"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Rust03102006.JPG\"]" ;
+    mathmoddb:preferredLabel "reaction rate"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6673974> a <https://portal.mardi4nfdi.de/entity/Q6534237> ;
+    schema1:description "relative change of length with respect the original length"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Strain.jpg\"]" ;
+    mathmoddb:preferredLabel "linear strain"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6674002> a <https://portal.mardi4nfdi.de/entity/Q6534237> ;
+    schema1:description "continuous probability distribution that is symmetric and bell-shaped"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Normal%20Distribution%20PDF.svg\"]" ;
+    mathmoddb:preferredLabel "normal distribution"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6674104> a <https://portal.mardi4nfdi.de/entity/Q6534237> ;
     schema1:description "discrete probability distribution that models the number of events occurring in a fixed interval of time or space, given a constant mean rate of occurrence"@en ;
@@ -69,25 +259,210 @@
     mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/A%20graph%20showing%20the%20difference%20between%20strong%20and%20weak%20Allee%20effects.svg\"]" ;
     mathmoddb:preferredLabel "Allee effect"@en .
 
+<https://portal.mardi4nfdi.de/entity/Q6675431> a <https://portal.mardi4nfdi.de/entity/Q68663> ;
+    schema1:description "hybrid quantum-classical model for a system with fast and slow degrees of freedom"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Na-mqc-scheme.jpg\"]" ;
+    mathmoddb:preferredLabel "mixed quantum-classical dynamics"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6684656> a <https://portal.mardi4nfdi.de/entity/Q6534292> ;
+    schema1:description "studying how fruits are falling from trees, which supposedly inspired Newton's law of gravitation"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Newton%27s-apple.jpg\"]" ;
+    mathmoddb:preferredLabel "gravitational effects on fruit"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6684695> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "study of rates of enzyme-catalyzed reactions"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/EcDHFR%20raytraced.png\"]" ;
+    mathmoddb:preferredLabel "enzyme kinetics"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6684696> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "study of the structure and function of the mechanical aspects of biological systems"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Borelli%20-%20lim%20joints%20%28De%20Motu%20Animalium%29.jpg\"]" ;
+    mathmoddb:preferredLabel "biomechanics"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6684697> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "study of biological systems using methods from the physical sciences"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Protein%20translation.gif\"]" ;
+    mathmoddb:preferredLabel "biophysics"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6684698> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "branch of astronomy that deals with the motions of objects in outer space"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Angular%20Parameters%20of%20Elliptical%20Orbit.png\"]" ;
+    mathmoddb:preferredLabel "celestial mechanics"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6684699> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "sub-field of mechanics, which is concerned with the set of physical laws describing the motion of bodies under the action of a system of forces"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Newtons%20cradle.gif\"]" ;
+    mathmoddb:preferredLabel "classical mechanics"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6684700> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "branch of mechanics that deals with the analysis of the kinematics and the mechanical behavior of materials modeled as a continuous mass"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Displacement%20of%20a%20continuum.svg\"]" ;
+    mathmoddb:preferredLabel "continuum mechanics"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6684701> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "study of the rates of chemical reactions"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Activation%20energy.svg\"]" ;
+    mathmoddb:preferredLabel "chemical kinetics"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6684702> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "engineering discipline specializing in design, construction and maintenance of the built environment"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/TVA%20engineers%20monitoring%20Tellico%20Dam%20model.jpg\"]" ;
+    mathmoddb:preferredLabel "civil engineering"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6684703> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "academic sub-discipline concerned with computational approaches to the social sciences"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Social%20Network%20Diagram%20%28segment%29.svg\"]" ;
+    mathmoddb:preferredLabel "social science"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6684704> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "branch of theoretical physics that studies consequences of the electromagnetic forces between electric charges and currents"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/VFPt%20Solenoid%20correct2.svg\"]" ;
+    mathmoddb:preferredLabel "classical electromagnetism"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6684705> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "study of the patterns, causes, and effects of health and disease conditions"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/3548786222%207a3d3208d3%20bInfluenzaGrippe.jpg\"]" ;
+    mathmoddb:preferredLabel "epidemiology"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6684706> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "branch of botany that studies fruits and their cultivation"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Malus%20domestica%20-%20K%C3%B6hler%E2%80%93s%20Medizinal-Pflanzen-108.jpg\"]" ;
+    mathmoddb:preferredLabel "pomology"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6684707> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "technique and process of creating visual representations of the interior of a body"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/RupturedAAA.png\"]" ;
+    mathmoddb:preferredLabel "medical imaging"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6684708> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "uses the propagation of electron waves through magnetic lenses to create images of, e.g., the crystallographic structure of materials down to an atomic scale"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Polio%20EM%20PHIL%201875%20lores.PNG\"]" ;
+    mathmoddb:preferredLabel "transmission electron microscopy"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6684709> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "planning of transportation networks and traffic"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/1948%20San%20Francisco%20trafficways%20plan.jpg\"]" ;
+    mathmoddb:preferredLabel "transportation planning"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6684710> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "study of the physical properties of molecules and chemical reactions"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Thermally%20Agitated%20Molecule.gif\"]" ;
+    mathmoddb:preferredLabel "molecular physics"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6775292> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "research, discovery and design of physical materials (especially solids)"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Diamond%20cuboctahedron.jpg\"]" ;
+    mathmoddb:preferredLabel "materials science"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6775293> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "methods of calculating displacements, stresses, and strains in deformable bodies"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Discorsi%20e%20dimostrazioni%20matematiche%20intorno%20%C3%A0%20due%20nuoue%20scienze%20di%20Galileo%20Galilei%20%28Leida%2C%201638%29.tif\"]" ;
+    mathmoddb:preferredLabel "strength of materials"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6775338> a <https://portal.mardi4nfdi.de/entity/Q6534237> ;
+    schema1:description "intensity of the radiant power in relation to the solid angle"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Photometry%20radiometry%20units.svg\"]" ;
+    mathmoddb:preferredLabel "radiant intensity"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6775507> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "branch of medical imaging and therapy method that utilizes radiopharmaceuticals to diagnose, monitor, and treat various diseases at the molecular level"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Viewer%20medecine%20nucleaire%20keosys.JPG\"]" ;
+    mathmoddb:preferredLabel "nuclear medicine"@en .
+
 <https://portal.mardi4nfdi.de/entity/Q6775580> a <https://portal.mardi4nfdi.de/entity/Q6534237> ;
     schema1:description "parameter of elastic materials: ratio of transverse strain to axial strain"@en ;
     mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Poisson%20ratio%20compression%20example.svg\"]" ;
     mathmoddb:preferredLabel "Poisson's ratio"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6775590> a <https://portal.mardi4nfdi.de/entity/Q96183> ;
+    schema1:description "condition where the stress vector is zero across a particular plane"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Stress%20transformation%202D.svg\"]" ;
+    mathmoddb:preferredLabel "plane stress"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6775593> a <https://portal.mardi4nfdi.de/entity/Q68663> ;
     schema1:description "biomechanical paradigm explaining how muscles work"@en ;
     mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Hill%20muscle%20model.svg\"]" ;
     mathmoddb:preferredLabel "Hill's muscle model"@en .
 
+<https://portal.mardi4nfdi.de/entity/Q6775604> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "two-dimensional coordinate system where each point is determined by a distance from reference point and an angle from a reference direction"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Examples%20of%20Polar%20Coordinates.svg\"]" ;
+    mathmoddb:preferredLabel "polar coordinate system"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6775605> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
+    schema1:description "coordinate system based around angle and distance from the origin"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Spherical%20Coordinates%20%28Colatitude%2C%20Longitude%29%20%28b%29.svg\"]" ;
+    mathmoddb:preferredLabel "spherical coordinate system"@en .
+
 <https://portal.mardi4nfdi.de/entity/Q6775606> a <https://portal.mardi4nfdi.de/entity/Q6534245> ;
     schema1:description "coordinate system that specifies each point uniquely by a pair or triple of real numbers called coordinates"@en ;
     mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Kartesisches%20system.svg\"]" ;
     mathmoddb:preferredLabel "Cartesian coordinate system"@en .
 
+<https://portal.mardi4nfdi.de/entity/Q6775630> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "branch of chemistry which develops and applies theoretical concepts"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Sampling%20in%20Monte%20Carlo%20and%20molecular%20dynamics.png\"]" ;
+    mathmoddb:preferredLabel "theoretical chemistry"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6775632> a <https://portal.mardi4nfdi.de/entity/Q6534292> ;
+    schema1:description "molecular dynamics simulations including nonadiabatic transitions"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Na-mqc-scheme.jpg\"]" ;
+    mathmoddb:preferredLabel "nonadiabatic molecular dynamics"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6775633> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "branch of physics dealing with a state of matter consisting of ionized gas"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/TCABR%20lab.jpg\"]" ;
+    mathmoddb:preferredLabel "plasma physics"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6775642> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "study of microscopic organisms"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Agar%20plate%20with%20colonies.jpg\"]" ;
+    mathmoddb:preferredLabel "microbiology"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6775711> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "professional engineering discipline related to environmental science"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Schematic%20view%20of%20a%20successful%20reforestation%20programme%20-%20Gcb15498-fig-0005-m.webp\"]" ;
+    mathmoddb:preferredLabel "environmental engineering"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6775778> a <https://portal.mardi4nfdi.de/entity/Q6534237> ;
+    schema1:description "physical constant; the molar equivalent to the Boltzmann constant"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Heating-gas-at-constant-pressure-and-constant-volume.svg\"]" ;
+    mathmoddb:preferredLabel "molar gas constant"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6821150> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "science concerned with physical bodies subjected to forces or displacements"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Arabic%20machine%20manuscript%20-%20Anonym%20-%20Ms.%20or.%20fol.%203306%20c.jpg\"]" ;
+    mathmoddb:preferredLabel "mechanics"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6821151> a <https://portal.mardi4nfdi.de/entity/Q6534292> ;
+    schema1:description "idealized concept of a pendulum"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Simple%20gravity%20pendulum.svg\"]" ;
+    mathmoddb:preferredLabel "pendulum"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6822205> a <https://portal.mardi4nfdi.de/entity/Q68663> ;
+    schema1:description "solving equations of motion that describe the state of a plasma"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Plasma%20Modeling%20Table.png\"]" ;
+    mathmoddb:preferredLabel "plasma modeling"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q6830604> a <https://portal.mardi4nfdi.de/entity/Q6534237> ;
+    schema1:description "force exerted on an object by a body with which it is in contact, and vice versa"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Incline.svg\"]" ;
+    mathmoddb:preferredLabel "normal force"@en .
+
 <https://portal.mardi4nfdi.de/entity/Q6830614> a <https://portal.mardi4nfdi.de/entity/Q6534292> ;
     schema1:description "viscous fluid confined in the gap between two rotating cylinders of different radii and angular velocities"@en ;
     mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/CouetteTaylorSystem.png\"]" ;
     mathmoddb:preferredLabel "Taylor–Couette flow"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q68779> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "use of living systems and organisms to develop or make useful products"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Faculty%20of%20Food%20Engineering%20and%20Biotechnology%204.jpg\"]" ;
+    mathmoddb:preferredLabel "biotechnology"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q71225> a <https://portal.mardi4nfdi.de/entity/Q60231> ;
+    schema1:description "scientific study of celestial objects and phenomena"@en ;
+    mathmoddb:depiction "[\"http://commons.wikimedia.org/wiki/Special:FilePath/Laser%20Towards%20Milky%20Ways%20Centre.jpg\"]" ;
+    mathmoddb:preferredLabel "astronomy"@en .
 
 <https://portal.mardi4nfdi.de/wiki/> a mathmoddb:Ontology ;
     dcterms:description "MathModDB defines a data model with classes (Mathematical Model, Mathematical Expression, Academic Discipline, Research Problem, Quantity (Kind), Computational Task, Scholarly Article), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph"@en ;
