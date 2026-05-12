@@ -17,10 +17,9 @@ SELECT DISTINCT ?itemLabel ?item ?itemDescription ?itemDepiction ?class ?classLa
 WHERE {
   
   ?item wdt:P1495 wd:Q6534265.
- 
-  OPTIONAL { ?item wdt:P31 ?class . wd:Q6534265 wdt:P265 ?class. }
-  OPTIONAL { ?class wdt:P36 ?superClass . }
-  ?item wdt:P356 ?itemDepiction.
+  ?item wdt:P31 ?class.
+  wd:Q6534265 wdt:P265 ?class.
+  OPTIONAL { ?item wdt:P356 ?itemDepiction.}
   
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
@@ -140,21 +139,7 @@ def create_as_terms(g, results):
                 g.add((class_uri, URIRef("http://schema.org/description"),
                    Literal(entry["classDescription"], lang="en")))
 
-            if "superClass" in entry:
-                superclass_uri = URIRef(entry["superClass"])
-                # add superclass
-                g.add((superclass_uri, RDF.type, RDFS.Class))
 
-                # add relation class -> superclass
-                g.add((class_uri, RDFS.subClassOf, superclass_uri))
-
-                if "superClassLabel" in entry:
-                    g.add((superclass_uri, RDFS.label,
-                           Literal(entry["superClassLabel"], lang="en")))
-
-                if "classDescription" in entry:
-                    g.add((superclass_uri, URIRef("http://schema.org/description"),
-                           Literal(entry["superClassDescription"], lang="en")))
 
         #    uri = val(entry, lvl)
         #    if uri:
