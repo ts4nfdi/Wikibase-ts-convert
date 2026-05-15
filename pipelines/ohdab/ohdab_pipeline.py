@@ -5,10 +5,15 @@ from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD, SKOS
 import json
 import os
 
+# Path to folder of this file
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# Resource folder
+RESOURCES_DIR = os.path.join(BASE_DIR, "resources")
+
 # FactGrid SPARQL endpoint
 ENDPOINT = "https://database.factgrid.de/sparql"
 
-CACHE_FILE = "../resources/fetchresult.json"
+CACHE_FILE = os.path.join(RESOURCES_DIR, "fetchresult.json")
 
 # SPARQL query
 # NOTE: If you change the query, delete the caching file "resources/fetchresult.json" to get updated results !!!
@@ -56,7 +61,6 @@ WHERE {
   OPTIONAL { ?OhdAB_Schluessel wdt:P911 ?Anforderung. }
 }
 ORDER BY (?OhdAB_ID)
-
 """
 
 # Namespaces
@@ -147,7 +151,7 @@ def run_query(query: str, cache: bool):
     # ---------------------------------------------
     # 3. Save result to cache file
     # ---------------------------------------------
-    os.makedirs("../resources", exist_ok=True)
+    os.makedirs(RESOURCES_DIR, exist_ok=True)
 
     with open(CACHE_FILE, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
@@ -219,19 +223,19 @@ def create_as_classes(g, merged_results):
         # -------------------------
 
         if "Weiblich_de" in entry:
-            G.add((class_uri, SKOS.altLabel,
+            g.add((class_uri, SKOS.altLabel,
                    Literal(entry["Weiblich_de"], lang="de")))
 
         if "Maennlich_de" in entry:
-            G.add((class_uri, SKOS.altLabel,
+            g.add((class_uri, SKOS.altLabel,
                    Literal(entry["Maennlich_de"], lang="de")))
 
         if "Weiblich_en" in entry:
-            G.add((class_uri, SKOS.altLabel,
+            g.add((class_uri, SKOS.altLabel,
                    Literal(entry["Weiblich_en"], lang="en")))
 
         if "Maennlich_en" in entry:
-            G.add((class_uri, SKOS.altLabel,
+            g.add((class_uri, SKOS.altLabel,
                    Literal(entry["Maennlich_en"], lang="en")))
 
         # -------------------------
@@ -280,8 +284,7 @@ def merge_results(results_de, results_en):
 
     return merged
 
-
-if __name__ == "__main__":
+def main():
     # Namespaces
     G = Graph()
     G.bind("ohdab", "https://database.factgrid.de/entity/")
@@ -302,5 +305,11 @@ if __name__ == "__main__":
 
     # Save file
     add_ontology_metadata(G)
-    G.serialize("OhdAB.ttl", format="turtle")
+    OUT_DIR = os.path.join(BASE_DIR, "out")
+    os.makedirs(OUT_DIR, exist_ok=True)
+    G.serialize(os.path.join(OUT_DIR, "OhdAB.ttl"), format="turtle")
     print("RDF exported to OhdAB.ttl")
+
+
+if __name__ == "__main__":
+    main()
