@@ -27,6 +27,6 @@ This pipeline should be executed from `main.py` in the `Wikibase-ts-convert` dir
 To execute only this pipeline:
 
 ```
-# this command has to be executed from the ontology-pipelines folder
+# this command has to be executed from the Wikibase-ts-convert folder
 python main.py mathmod
 ```
