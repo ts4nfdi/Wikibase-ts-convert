@@ -1,0 +1,36 @@
+name: Update OhdAB ontology
+on:
+  schedule:
+    - cron: "4 5 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run-python-file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"
+
+      - name: install dependencies
+        run: pip install -r requirements.txt
+
+      - name: run ohdab/main.py
+        working-directory: ./ohdab
+        run: python main.py
+
+      - name: commit OhdAB.ttl
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add ./ohdab/OhdAB.ttl
+          git commit -m "Update OhdAB.ttl" || echo "No changes to commit"
+          git push
