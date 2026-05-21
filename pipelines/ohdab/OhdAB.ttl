@@ -609,6 +609,1725 @@ ohdab:Q1868840 a rdfs:Class ;
     skos:altLabel "Klinker"@de,
         "Klinkerin"@de .
 
+ohdab:Q1874499 a rdfs:Class ;
+    rdfs:label "B 53323-501: Tierhygieniker/in"@de,
+        "B 53323-501: Animal hygienist"@en ;
+    rdfs:subClassOf ohdab:Q520823 ;
+    skos:altLabel "Tierhygieniker"@de,
+        "Tierhygienikerin"@de .
+
+ohdab:Q1874500 a rdfs:Class ;
+    rdfs:label "B 94493-502: Theaterpächter/in"@de,
+        "B 94493-502: Theatre manager"@en ;
+    rdfs:subClassOf ohdab:Q521551 ;
+    skos:altLabel "Theaterpächter"@de,
+        "Theaterpächterin"@de .
+
+ohdab:Q1874501 a rdfs:Class ;
+    rdfs:label "B 83314-656: Geistliche/r, katholische/r"@de,
+        "B 83314-656: Clergy, Catholic"@en ;
+    rdfs:subClassOf ohdab:Q521315 ;
+    skos:altLabel "Geistliche, katholische"@de,
+        "Geistlicher, katholischer"@de .
+
+ohdab:Q1874502 a rdfs:Class ;
+    rdfs:label "B 83314-654: Geistliche/r, evangelische/r"@de,
+        "B 83314-654: Clergy, Protestant"@en ;
+    rdfs:subClassOf ohdab:Q521315 ;
+    skos:altLabel "Geistliche, evangelische"@de,
+        "Geistlicher, evangelischer"@de .
+
+ohdab:Q1874508 a rdfs:Class ;
+    rdfs:label "B 71223-541: Interessensvertreter/in"@de,
+        "B 71223-541: Stakeholder representative"@en ;
+    rdfs:subClassOf ohdab:Q520978 ;
+    skos:altLabel "Interessensvertreter"@de,
+        "Interessensvertreterin"@de .
+
+ohdab:Q1874511 a rdfs:Class ;
+    rdfs:label "B 32103-508: Festungsbautechniker/in"@de,
+        "B 32103-508: Fortification Engineer"@en ;
+    rdfs:subClassOf ohdab:Q520431 ;
+    skos:altLabel "Festungsbautechniker"@de,
+        "Festungsbautechnikerin"@de .
+
+ohdab:Q1874513 a rdfs:Class ;
+    rdfs:label "B 73282-594: Depositenamtsoffizial/in"@de,
+        "B 73282-594: Deposit Office Clerk"@en ;
+    rdfs:subClassOf ohdab:Q521104 ;
+    skos:altLabel "Depositenamtsoffizial"@de,
+        "Depositenamtsoffizialin"@de .
+
+ohdab:Q1874514 a rdfs:Class ;
+    rdfs:label "B 73284-642: Depositenamtsrevisor/in"@de,
+        "B 73284-642: Deposits Office Auditor"@en ;
+    rdfs:subClassOf ohdab:Q521106 ;
+    skos:altLabel "Depositenamtsrevisor"@de,
+        "Depositenamtsrevisorin"@de .
+
+ohdab:Q1874516 a rdfs:Class ;
+    rdfs:label "B 73283-694: Depositenamtskontrolleur/in"@de,
+        "B 73283-694: Deposits office inspector"@en ;
+    rdfs:subClassOf ohdab:Q521105 ;
+    skos:altLabel "Depositenamtskontrolleur"@de,
+        "Depositenamtskontrolleurin"@de .
+
+ohdab:Q1874525 a rdfs:Class ;
+    rdfs:label "B 93523-506: Hofwappensteinschneider/in"@de,
+        "B 93523-506: Court coat of arms engraver"@en ;
+    rdfs:subClassOf ohdab:Q521482 .
+
+ohdab:Q1874531 a rdfs:Class ;
+    rdfs:label "B 01704-527: Militäroberintendant/in"@de,
+        "B 01704-527: Military Superintendent"@en ;
+    rdfs:subClassOf ohdab:Q519887 ;
+    skos:altLabel "Militäroberintendant"@de,
+        "Militäroberintendantin"@de .
+
+ohdab:Q1874533 a rdfs:Class ;
+    rdfs:label "B 81782-500: Pedikeur/in"@de,
+        "B 81782-500: Pedicurist"@en ;
+    rdfs:subClassOf ohdab:Q521221 ;
+    skos:altLabel "Pedikeur"@de,
+        "Pedikeurin"@de .
+
+ohdab:Q1874536 a rdfs:Class ;
+    rdfs:label "B 41254-508: Koleopterologe/-login"@de,
+        "B 41254-508: Coleopterologist"@en ;
+    rdfs:subClassOf ohdab:Q520562 ;
+    skos:altLabel "Koleopterologe"@de,
+        "Koleopterologin"@de .
+
+ohdab:Q1874541 a rdfs:Class ;
+    rdfs:label "B 73103-510: Konzipist/in"@de,
+        "B 73103-510: Draftsman/woman"@en ;
+    rdfs:subClassOf ohdab:Q521058 ;
+    skos:altLabel "Konzipist"@de,
+        "Konzipistin"@de .
+
+ohdab:Q1874546 a rdfs:Class ;
+    rdfs:label "B 41484-502: Kosmologe/-login"@de,
+        "B 41484-502: Cosmologist"@en ;
+    rdfs:subClassOf ohdab:Q520601 ;
+    skos:altLabel "Kosmologe"@de,
+        "Kosmologin"@de .
+
+ohdab:Q1874554 a rdfs:Class ;
+    rdfs:label "B 83332-580: Redemptorist/in"@de,
+        "B 83332-580: Redemptorist/in"@en ;
+    rdfs:subClassOf ohdab:Q521321 ;
+    skos:altLabel "Redemptorist"@de,
+        "Redemptoristin"@de .
+
+ohdab:Q1874557 a rdfs:Class ;
+    rdfs:label "B 33222-503: Stuckgießer/in"@de,
+        "B 33222-503: Stucco moulder"@en ;
+    rdfs:subClassOf ohdab:Q520480 ;
+    skos:altLabel "Stuckgießer"@de,
+        "Stuckgießerin"@de .
+
+ohdab:Q1874563 a rdfs:Class ;
+    rdfs:label "B 63194-505: Fremdenverkehrsdirektor/in"@de,
+        "B 63194-505: Tourism director"@en ;
+    rdfs:subClassOf ohdab:Q520935 ;
+    skos:altLabel "Fremdenverkehrsdirektor"@de,
+        "Fremdenverkehrsdirektorin"@de .
+
+ohdab:Q1874566 a rdfs:Class ;
+    rdfs:label "B 94243-543: Judoka"@de,
+        "B 94243-543: Judoka"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Judoka"@de .
+
+ohdab:Q1874585 a rdfs:Class ;
+    rdfs:label "B 41284-501: Paläobiologe/-login"@de,
+        "B 41284-501: Palaeobiologist"@en ;
+    rdfs:subClassOf ohdab:Q520567 ;
+    skos:altLabel "Paläobiologe"@de,
+        "Paläobiologin"@de .
+
+ohdab:Q1874587 a rdfs:Class ;
+    rdfs:label "B 94243-544: Langstreckenläufer/in"@de,
+        "B 94243-544: Long-distance runner"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Langstreckenläufer"@de,
+        "Langstreckenläuferin"@de .
+
+ohdab:Q1874706 a rdfs:Class ;
+    rdfs:label "B 28122-689: Dessinschläger/in"@de,
+        "B 28122-689: Pattern maker"@en ;
+    rdfs:subClassOf ohdab:Q520305 ;
+    skos:altLabel "Dessinschläger"@de,
+        "Dessinschlägerin"@de .
+
+ohdab:Q1874710 a rdfs:Class ;
+    rdfs:label "B 94414-505: Hörspielregisseur/in"@de,
+        "B 94414-505: Radio play director"@en ;
+    rdfs:subClassOf ohdab:Q521547 ;
+    skos:altLabel "Hörspielregisseur"@de,
+        "Hörspielregisseurin"@de .
+
+ohdab:Q1874711 a rdfs:Class ;
+    rdfs:label "B 91384-502: Futurologe/-login"@de,
+        "B 91384-502: Futurologist"@en ;
+    rdfs:subClassOf ohdab:Q521406 ;
+    skos:altLabel "Futurologe"@de,
+        "Futurologin"@de .
+
+ohdab:Q1874712 a rdfs:Class ;
+    rdfs:label "B 11794-510: Forstdirektor/in"@de,
+        "B 11794-510: Forestry Director"@en ;
+    rdfs:subClassOf ohdab:Q519969 ;
+    skos:altLabel "Forstdirektor"@de,
+        "Forstdirektorin"@de .
+
+ohdab:Q1874714 a rdfs:Class ;
+    rdfs:label "A 57704-500: Märtyrer/in"@de,
+        "A 57704-500: Martyr"@en ;
+    rdfs:subClassOf ohdab:Q1874716 ;
+    skos:altLabel "Märtyrer"@de,
+        "Märtyrerin"@de .
+
+ohdab:Q1874716 a rdfs:Class ;
+    rdfs:label "A 57704: Opfer/Widerstandskämpfer (allgemein) - führende Positionen"@de,
+        "A 57704: Victims/resistance fighters (general) – leading positions"@en ;
+    rdfs:subClassOf ohdab:Q521714 .
+
+ohdab:Q1874717 a rdfs:Class ;
+    rdfs:label "B 83332-581: Malteser/in"@de,
+        "B 83332-581: Maltese"@en ;
+    rdfs:subClassOf ohdab:Q521321 ;
+    skos:altLabel "Malteser"@de,
+        "Malteserin"@de .
+
+ohdab:Q1874918 a rdfs:Class ;
+    rdfs:label "B 81883-504: Pharmakognost/in"@de,
+        "B 81883-504: Pharmacognosist"@en ;
+    rdfs:subClassOf ohdab:Q521230 ;
+    skos:altLabel "Pharmakognost"@de,
+        "Pharmakognostin"@de .
+
+ohdab:Q1874927 a rdfs:Class ;
+    rdfs:label "B 81313-508: Obervater/-mutter"@de,
+        "B 81313-508: Headmaster/Headmistress"@en ;
+    rdfs:subClassOf ohdab:Q521167 ;
+    skos:altLabel "Obermutter"@de,
+        "Obervater"@de .
+
+ohdab:Q1874928 a rdfs:Class ;
+    rdfs:label "B 71223-537: Verbandsobmann/-frau"@de,
+        "B 71223-537: Association chairperson"@en ;
+    rdfs:subClassOf ohdab:Q520978 ;
+    skos:altLabel "Verbandsobfrau"@de,
+        "Verbandsobmann"@de .
+
+ohdab:Q1874930 a rdfs:Class ;
+    rdfs:label "A 14302-503: Mittelschüler/in"@de,
+        "A 14302-503: Secondary school pupil"@en ;
+    rdfs:subClassOf ohdab:Q519738 ;
+    skos:altLabel "Mittelschüler"@de,
+        "Mittelschülerin"@de .
+
+ohdab:Q1874932 a rdfs:Class ;
+    rdfs:label "B 73232-580: Steuermanipulant/in"@de,
+        "B 73232-580: Tax manipulator"@en ;
+    rdfs:subClassOf ohdab:Q521092 ;
+    skos:altLabel "Steuermanipulant"@de,
+        "Steuermanipulantin"@de .
+
+ohdab:Q1874936 a rdfs:Class ;
+    rdfs:label "B 73294-649: Steuerherr/in"@de,
+        "B 73294-649: Tax officer"@en ;
+    rdfs:subClassOf ohdab:Q521108 ;
+    skos:altLabel "Steuerherr"@de,
+        "Steuerherrin"@de .
+
+ohdab:Q1874941 a rdfs:Class ;
+    rdfs:label "A 20000-532: Supercentenarius/-aria"@de,
+        "A 20000-532: Supercentenarius/-aria"@en ;
+    rdfs:subClassOf ohdab:Q519749 ;
+    skos:altLabel "Supercentenaria"@de,
+        "Supercentenarius"@de .
+
+ohdab:Q1875249 a rdfs:Class ;
+    rdfs:label "B 72212-562: Buchhaltungsexpeditor/in"@de,
+        "B 72212-562: Accounting clerk"@en ;
+    rdfs:subClassOf ohdab:Q521040 ;
+    skos:altLabel "Buchhaltungsexpeditor"@de,
+        "Buchhaltungsexpeditorin"@de .
+
+ohdab:Q1875250 a rdfs:Class ;
+    rdfs:label "A 5768: Aufständische spezifischer Ereignisse"@de,
+        "A 5768: Insurgents of specific events"@en ;
+    rdfs:subClassOf ohdab:Q522570 .
+
+ohdab:Q1875251 a rdfs:Class ;
+    rdfs:label "A 57682-500: Februarkämpfer/in"@de,
+        "A 57682-500: February fighter"@en ;
+    rdfs:subClassOf ohdab:Q1875252 ;
+    skos:altLabel "Februarkämpfer"@de,
+        "Februarkämpferin"@de .
+
+ohdab:Q1875252 a rdfs:Class ;
+    rdfs:label "A 57682: Aufständische spezifischer Ereignisse (allgemeine Beteiligung)"@de,
+        "A 57682: Insurgents of specific events (general participation)"@en ;
+    rdfs:subClassOf ohdab:Q1875250 .
+
+ohdab:Q1875253 a rdfs:Class ;
+    rdfs:label "B 94243-545: Kanute/Kanutin"@de,
+        "B 94243-545: Canoeist"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Kanute"@de,
+        "Kanutin"@de .
+
+ohdab:Q1875254 a rdfs:Class ;
+    rdfs:label "B 94114-621: Keyboarder/in"@de,
+        "B 94114-621: Keyboarder"@en ;
+    rdfs:subClassOf ohdab:Q521511 ;
+    skos:altLabel "Keyboarder"@de,
+        "Keyboarderin"@de .
+
+ohdab:Q1875255 a rdfs:Class ;
+    rdfs:label "A 14702-511: Kriegsdienstverweigerer/-in"@de,
+        "A 14702-511: Conscientious objector"@en ;
+    rdfs:subClassOf ohdab:Q519741 ;
+    skos:altLabel "Kriegsdienstverweigerer"@de,
+        "Kriegsdienstverweigerin"@de .
+
+ohdab:Q1875256 a rdfs:Class ;
+    rdfs:label "B 29232-527: Peler/in (Fleischhacker/in)"@de,
+        "B 29232-527: Peler (meat cutter)"@en ;
+    rdfs:subClassOf ohdab:Q520371 ;
+    skos:altLabel "Peler (Fleischhacker)"@de,
+        "Pelerin (Fleischhackerin)"@de .
+
+ohdab:Q1875261 a rdfs:Class ;
+    rdfs:label "B 71223-538: Organisationssekretär/in"@de,
+        "B 71223-538: Organisational secretary"@en ;
+    rdfs:subClassOf ohdab:Q520978 ;
+    skos:altLabel "Organisationssekretär"@de,
+        "Organisationssekretärin"@de .
+
+ohdab:Q1875264 a rdfs:Class ;
+    rdfs:label "B 81493-501: Stadtoberphysikus/-physika"@de,
+        "B 81493-501: City physician"@en ;
+    rdfs:subClassOf ohdab:Q521192 ;
+    skos:altLabel "Stadtoberphysika"@de,
+        "Stadtoberphysikus"@de .
+
+ohdab:Q1875268 a rdfs:Class ;
+    rdfs:label "B 94114-622: Csakanspieler/in"@de,
+        "B 94114-622: Chak player"@en ;
+    rdfs:subClassOf ohdab:Q521511 ;
+    skos:altLabel "Casakanspieler"@de,
+        "Casakanspielerin"@de .
+
+ohdab:Q1875298 a rdfs:Class ;
+    rdfs:label "B 75393-525: Banus (Vizekönig/in)"@de,
+        "B 75393-525: Banus (viceroy)"@en ;
+    rdfs:subClassOf ohdab:Q521138 ;
+    skos:altLabel "Bana (Vizekönigin)"@de,
+        "Banus (Vizekönig)"@de .
+
+ohdab:Q1875312 a rdfs:Class ;
+    rdfs:label "A 5441: Kreative, Schöpferische Akteure"@de,
+        "A 5441: Creative, inventive individuals"@en ;
+    rdfs:subClassOf ohdab:Q1875313 .
+
+ohdab:Q1875313 a rdfs:Class ;
+    rdfs:label "A 544: Kreative (ohne Organisationen)"@de,
+        "A 544: Creative professionals (excluding organisations)"@en ;
+    rdfs:subClassOf ohdab:Q522751 .
+
+ohdab:Q1875314 a rdfs:Class ;
+    rdfs:label "A 54413-500: Filmamateur/in"@de,
+        "A 54413-500: Amateur filmmaker"@en ;
+    rdfs:subClassOf ohdab:Q1875315 ;
+    skos:altLabel "Filmamateur"@de,
+        "Filmamateurin"@de .
+
+ohdab:Q1875315 a rdfs:Class ;
+    rdfs:label "A 54413: Kreative in Kunst, Kultur und Wissenschaft (komplex, speziell)"@de,
+        "A 54413: Creative professionals in art, culture and science (complex, specialised)"@en ;
+    rdfs:subClassOf ohdab:Q1875312 .
+
+ohdab:Q1875325 a rdfs:Class ;
+    rdfs:label "A 54413-501: Avantgardist/in"@de,
+        "A 54413-501: Avant-gardist"@en ;
+    rdfs:subClassOf ohdab:Q1875315 ;
+    skos:altLabel "Avantgardist"@de,
+        "Avantgardistin"@de .
+
+ohdab:Q1875326 a rdfs:Class ;
+    rdfs:label "B 12122-505: Baumchirurg/in"@de,
+        "B 12122-505: Tree surgeon"@en ;
+    rdfs:subClassOf ohdab:Q519982 ;
+    skos:altLabel "Baumchirurg"@de,
+        "Baumchirurgin"@de .
+
+ohdab:Q1875327 a rdfs:Class ;
+    rdfs:label "B 71222-521: Genossenschaftsangestellte/r"@de,
+        "B 71222-521: Cooperative employee"@en ;
+    rdfs:subClassOf ohdab:Q520977 ;
+    skos:altLabel "Genossenschaftsangestellte"@de,
+        "Genossenschaftsangestellter"@de .
+
+ohdab:Q1875328 a rdfs:Class ;
+    rdfs:label "B 94612-502: Figurinenbildner/in"@de,
+        "B 94612-502: Figurine maker"@en ;
+    rdfs:subClassOf ohdab:Q521565 ;
+    skos:altLabel "Figurinenbildner"@de,
+        "Figurinenbildnerin"@de .
+
+ohdab:Q1876320 a rdfs:Class ;
+    rdfs:label "B 01653-503: Schutzbundführer/in"@de,
+        "B 01653-503: Protection League leader"@en ;
+    rdfs:subClassOf ohdab:Q519882 ;
+    skos:altLabel "Schutzbundführer"@de,
+        "Schutzbundführerin"@de .
+
+ohdab:Q1876366 a rdfs:Class ;
+    rdfs:label "B 01702-653: Konskriptionskommissär/in"@de,
+        "B 01702-653: Conscription officer"@en ;
+    rdfs:subClassOf ohdab:Q519885 ;
+    skos:altLabel "Konskriptionskommissär"@de,
+        "Konskriptionskommissärin"@de .
+
+ohdab:Q1876370 a rdfs:Class ;
+    rdfs:label "B 61294-524: Großhandlungsgesellschafter/in"@de,
+        "B 61294-524: Wholesale partner"@en ;
+    rdfs:subClassOf ohdab:Q520870 ;
+    skos:altLabel "Großhandlungsgesellschafter"@de,
+        "Großhandlungsgesellschafterin"@de .
+
+ohdab:Q1876374 a rdfs:Class ;
+    rdfs:label "B 01524-533: Burghauptmann/in"@de,
+        "B 01524-533: Castle captain"@en ;
+    rdfs:subClassOf ohdab:Q519874 ;
+    skos:altLabel "Burghauptmann"@de,
+        "Burghauptmannin"@de .
+
+ohdab:Q1876375 a rdfs:Class ;
+    rdfs:label "B 12194-516: Önologie- und Pomologiedirektor/in"@de,
+        "B 12194-516: Director of Oenology and Pomology"@en ;
+    rdfs:subClassOf ohdab:Q519990 ;
+    skos:altLabel "Önologie- und Pomologiedirektor"@de,
+        "Önologie- und Pomologiedirektorin"@de .
+
+ohdab:Q1876380 a rdfs:Class ;
+    rdfs:label "B 84224-505: Fachvorstand/vorständin Lehr- und Versuchsanstalten"@de,
+        "B 84224-505: Head of Teaching and Research Institutes"@en ;
+    rdfs:subClassOf ohdab:Q521347 ;
+    skos:altLabel "Fachvorstand Lehr- und Versuchsanstalten"@de,
+        "Fachvorständin Lehr- und Versuchsanstalten"@de .
+
+ohdab:Q1876382 a rdfs:Class ;
+    rdfs:label "A 54412-500: Kulturaktivist/in"@de,
+        "A 54412-500: Cultural activist"@en ;
+    rdfs:subClassOf ohdab:Q1876383 ;
+    skos:altLabel "Kulturaktivist"@de,
+        "Kulturaktivistin"@de .
+
+ohdab:Q1876383 a rdfs:Class ;
+    rdfs:label "A 54412: Kreative in Kunst, Kultur und Wissenschaft (allgemein)"@de,
+        "A 54412: Creative professionals in art, culture and science (general)"@en ;
+    rdfs:subClassOf ohdab:Q1875312 .
+
+ohdab:Q1876426 a rdfs:Class ;
+    rdfs:label "B 93513-501: Hofkunstschlosser/in"@de,
+        "B 93513-501: Court metalworker"@en ;
+    rdfs:subClassOf ohdab:Q521480 ;
+    skos:altLabel "Hofkunstschlosser"@de,
+        "Hofkunstschlosserin"@de .
+
+ohdab:Q1876428 a rdfs:Class ;
+    rdfs:label "B 93323-541: Groteskenmaler/in"@de,
+        "B 93323-541: Grotesque painter"@en ;
+    rdfs:subClassOf ohdab:Q521456 ;
+    skos:altLabel "Groteskenmaler"@de,
+        "Groteskenmalerin"@de .
+
+ohdab:Q1876429 a rdfs:Class ;
+    rdfs:label "B 84294-528: Modeschulbesitzer/in"@de,
+        "B 84294-528: Fashion school owner"@en ;
+    rdfs:subClassOf ohdab:Q521349 ;
+    skos:altLabel "Modeschulbesitzer"@de,
+        "Modeschulbesitzerin"@de .
+
+ohdab:Q1876430 a rdfs:Class ;
+    rdfs:label "B 61294-523: Handelsunternehmer/in"@de,
+        "B 61294-523: Business entrepreneur"@en ;
+    rdfs:subClassOf ohdab:Q520870 ;
+    skos:altLabel "Handelsunternehmer"@de,
+        "Handelsunternehmerin"@de .
+
+ohdab:Q1876432 a rdfs:Class ;
+    rdfs:label "A 40200-504: Immobilienspekulant/in"@de,
+        "A 40200-504: Property speculator"@en ;
+    rdfs:subClassOf ohdab:Q519790 ;
+    skos:altLabel "Immobilienspekulant"@de,
+        "Immobilienspekulantin"@de .
+
+ohdab:Q1876433 a rdfs:Class ;
+    rdfs:label "B 81424-501: Pulmologe/Pulmologin"@de,
+        "B 81424-501: Pulmonologist"@en ;
+    rdfs:subClassOf ohdab:Q521185 ;
+    skos:altLabel "Pulmologe"@de,
+        "Pulmologin"@de .
+
+ohdab:Q1876436 a rdfs:Class ;
+    rdfs:label "B 21424-501: Porzellanexperte/-expertin"@de,
+        "B 21424-501: Porcelain expert"@en ;
+    rdfs:subClassOf ohdab:Q520045 ;
+    skos:altLabel "Porzellanexperte"@de,
+        "Porzellanexpertin"@de .
+
+ohdab:Q1876441 a rdfs:Class ;
+    rdfs:label "B 63293-509: Pilgramshausverweser/in"@de,
+        "B 63293-509: Pilgrim house administrator"@en ;
+    rdfs:subClassOf ohdab:Q520941 ;
+    skos:altLabel "Pilgramshausverweser"@de,
+        "Pilgramshausverweserin"@de .
+
+ohdab:Q1876495 a rdfs:Class ;
+    rdfs:label "B 73154-605: Richter/in der jüdischen Gemeinde"@de,
+        "B 73154-605: Judge of the Jewish community"@en ;
+    rdfs:subClassOf ohdab:Q521067 ;
+    skos:altLabel "Judenrichter"@de,
+        "Judenrichterin"@de .
+
+ohdab:Q1876496 a rdfs:Class ;
+    rdfs:label "B 63494-501: Konzertdirektionsbesitzer/in"@de,
+        "B 63494-501: Concert agency owner"@en ;
+    rdfs:subClassOf ohdab:Q520958 ;
+    skos:altLabel "Konzertdirektionsbesitzer"@de,
+        "Konzertdirektionsbesitzerin"@de .
+
+ohdab:Q1876497 a rdfs:Class ;
+    rdfs:label "B 20093-517: Industriemanager/in"@de,
+        "B 20093-517: Industrial manager"@en ;
+    rdfs:subClassOf ohdab:Q519999 ;
+    skos:altLabel "Industriemanager"@de,
+        "Industriemanagerin"@de .
+
+ohdab:Q1876498 a rdfs:Class ;
+    rdfs:label "B 72213-583: Hubschreiber/in (Buchhaltung)"@de,
+        "B 72213-583: Hubschreiber (accounting)"@en ;
+    rdfs:subClassOf ohdab:Q521041 ;
+    skos:altLabel "Hubschreiber"@de,
+        "Hubschreiberin"@de .
+
+ohdab:Q1876499 a rdfs:Class ;
+    rdfs:label "B 73293-542: Kammergraf/-gräfin"@de,
+        "B 73293-542: Chamberlain"@en ;
+    rdfs:subClassOf ohdab:Q521107 ;
+    skos:altLabel "Kammergraf"@de,
+        "Kammergräfin"@de .
+
+ohdab:Q1876501 a rdfs:Class ;
+    rdfs:label "B 71213-513: Kabinettssekretär/in"@de,
+        "B 71213-513: Cabinet secretary"@en ;
+    rdfs:subClassOf ohdab:Q520974 ;
+    skos:altLabel "Kabinettssekretär"@de,
+        "Kabinettssekretärin"@de .
+
+ohdab:Q1876503 a rdfs:Class ;
+    rdfs:label "B 24193-547: Hochofenbetriebsleiter/in"@de,
+        "B 24193-547: Blast furnace operations manager"@en ;
+    rdfs:subClassOf ohdab:Q520135 ;
+    skos:altLabel "Hochofenbetriebsleiter"@de,
+        "Hochofenbetriebsleiterin"@de .
+
+ohdab:Q1876506 a rdfs:Class ;
+    rdfs:label "B 29252-518: Käsestecher/in"@de,
+        "B 29252-518: Cheese cutter"@en ;
+    rdfs:subClassOf ohdab:Q520376 ;
+    skos:altLabel "Käsestecher"@de,
+        "Käsestecherin"@de .
+
+ohdab:Q1876507 a rdfs:Class ;
+    rdfs:label "B 73283-695: Kassenamtsoffizier/in"@de,
+        "B 73283-695: Cashier officer"@en ;
+    rdfs:subClassOf ohdab:Q521105 ;
+    skos:altLabel "Kassenamtsoffizier"@de,
+        "Kassenamtsoffizierin"@de .
+
+ohdab:Q1876517 a rdfs:Class ;
+    rdfs:label "B 73154-606: Studierendenrichter/in"@de,
+        "B 73154-606: Student judge"@en ;
+    rdfs:subClassOf ohdab:Q521067 ;
+    skos:altLabel "Studentenrichter"@de,
+        "Studentenrichterin"@de .
+
+ohdab:Q1876518 a rdfs:Class ;
+    rdfs:label "A 40294-501: Patrizier/in"@de,
+        "A 40294-501: Patrician"@en ;
+    rdfs:subClassOf ohdab:Q519793 ;
+    skos:altLabel "Patrizier"@de,
+        "Patrizierin"@de .
+
+ohdab:Q1876520 a rdfs:Class ;
+    rdfs:label "B 71223-539: Politikagitator/in"@de,
+        "B 71223-539: Political agitator"@en ;
+    rdfs:subClassOf ohdab:Q520978 ;
+    skos:altLabel "Politikagitator"@de,
+        "Politikagitatorin"@de .
+
+ohdab:Q1876521 a rdfs:Class ;
+    rdfs:label "B 73184-540: Polizeijurist/in"@de,
+        "B 73184-540: Police lawyer"@en ;
+    rdfs:subClassOf ohdab:Q521076 ;
+    skos:altLabel "Polizeijurist"@de,
+        "Polizeijuristin"@de .
+
+ohdab:Q1876522 a rdfs:Class ;
+    rdfs:label "B 83394-637: Religionsgemeindepräsident/in"@de,
+        "B 83394-637: President of the religious community"@en ;
+    rdfs:subClassOf ohdab:Q521330 ;
+    skos:altLabel "Religionsgemeindepräsident"@de,
+        "Religionsgemeindepräsidentin"@de .
+
+ohdab:Q1876523 a rdfs:Class ;
+    rdfs:label "B 62382-631: Methändler/in"@de,
+        "B 62382-631: Mead merchant"@en ;
+    rdfs:subClassOf ohdab:Q520908 ;
+    skos:altLabel "Methändler"@de,
+        "Methändlerin"@de .
+
+ohdab:Q1876524 a rdfs:Class ;
+    rdfs:label "B 71303-506: Kaufmännische/r Beamte/r"@de,
+        "B 71303-506: Commercial clerk"@en ;
+    rdfs:subClassOf ohdab:Q520987 ;
+    skos:altLabel "Kaufmännische Beamte"@de,
+        "Kaufmännischer Beamter"@de .
+
+ohdab:Q1876525 a rdfs:Class ;
+    rdfs:label "B 74104-520: Kirchenkämmerer/-kämmerin"@de,
+        "B 74104-520: Church treasurer"@en ;
+    rdfs:subClassOf ohdab:Q521128 ;
+    skos:altLabel "Kirchenkämmerer"@de,
+        "Kirchenkämmerin"@de .
+
+ohdab:Q1876526 a rdfs:Class ;
+    rdfs:label "B 83314-655: Kirchenverweser/in"@de,
+        "B 83314-655: Church administrator"@en ;
+    rdfs:subClassOf ohdab:Q521315 ;
+    skos:altLabel "Kirchenverweser"@de,
+        "Kirchenverweserin"@de .
+
+ohdab:Q1876527 a rdfs:Class ;
+    rdfs:label "B 74103-521: Kindergarteninspektor/in"@de,
+        "B 74103-521: Kindergarten inspector"@en ;
+    rdfs:subClassOf ohdab:Q521127 ;
+    skos:altLabel "Kindergarteninspektor"@de,
+        "Kindergarteninspektorin"@de .
+
+ohdab:Q1876528 a rdfs:Class ;
+    rdfs:label "B 62232-517: Lehrmittelhändler/in"@de,
+        "B 62232-517: Educational materials retailer"@en ;
+    rdfs:subClassOf ohdab:Q520892 ;
+    skos:altLabel "Lehrmittelhändler"@de,
+        "Lehrmittelhändlerin"@de .
+
+ohdab:Q1876529 a rdfs:Class ;
+    rdfs:label "B 93304-505: Konzeptkünstler/in"@de,
+        "B 93304-505: Conceptual artist"@en ;
+    rdfs:subClassOf ohdab:Q521450 ;
+    skos:altLabel "Konzeptkünstler"@de,
+        "Konzeptkünstlerin"@de .
+
+ohdab:Q1876531 a rdfs:Class ;
+    rdfs:label "B 73284-643: Konsulatsverweser/in"@de,
+        "B 73284-643: Consulate manager"@en ;
+    rdfs:subClassOf ohdab:Q521106 ;
+    skos:altLabel "Konsulatsverweser"@de,
+        "Konsulatsverweserin"@de .
+
+ohdab:Q1876532 a rdfs:Class ;
+    rdfs:label "B 23322-504: Lichtbildner/in"@de,
+        "B 23322-504: Photographer"@en ;
+    rdfs:subClassOf ohdab:Q520110 ;
+    skos:altLabel "Lichtbildner"@de,
+        "Lichtbildnerin"@de .
+
+ohdab:Q1876534 a rdfs:Class ;
+    rdfs:label "B 84394-531: Theologieseminarrektor/in"@de,
+        "B 84394-531: Theological seminary rector"@en ;
+    rdfs:subClassOf ohdab:Q521353 ;
+    skos:altLabel "Theologieseminarrektor"@de,
+        "Theologieseminarrektorin"@de .
+
+ohdab:Q1876535 a rdfs:Class ;
+    rdfs:label "B 73294-650: Spitalobermeister/in"@de,
+        "B 73294-650: Chief hospital administrator"@en ;
+    rdfs:subClassOf ohdab:Q521108 ;
+    skos:altLabel "Spitalobermeister"@de,
+        "Spitalobermeisterin"@de .
+
+ohdab:Q1876536 a rdfs:Class ;
+    rdfs:label "B 71223-540: Interessensvertreter/in für Blinde"@de,
+        "B 71223-540: Advocate for the blind"@en ;
+    rdfs:subClassOf ohdab:Q520978 ;
+    skos:altLabel "Interessensvertreter für Blinde"@de,
+        "Interessensvertreterin für Blinde"@de .
+
+ohdab:Q1876537 a rdfs:Class ;
+    rdfs:label "B 94483-502: Musikagent/in"@de,
+        "B 94483-502: Music agent"@en ;
+    rdfs:subClassOf ohdab:Q521549 ;
+    skos:altLabel "Musikagent"@de,
+        "Musikagentin"@de .
+
+ohdab:Q1876547 a rdfs:Class ;
+    rdfs:label "B 94124-544: Singschauspieler/in"@de,
+        "B 94124-544: Singing actor/actress"@en ;
+    rdfs:subClassOf ohdab:Q521513 ;
+    skos:altLabel "Singschauspieler"@de,
+        "Singschauspielerin"@de .
+
+ohdab:Q1876549 a rdfs:Class ;
+    rdfs:label "B 93323-542: Stillebenmaler/in"@de,
+        "B 93323-542: Still life painter"@en ;
+    rdfs:subClassOf ohdab:Q521456 .
+
+ohdab:Q1876555 a rdfs:Class ;
+    rdfs:label "B 26313-528: Rechentechniker/in"@de,
+        "B 26313-528: Computing technician"@en ;
+    rdfs:subClassOf ohdab:Q520256 ;
+    skos:altLabel "Rechentechniker"@de,
+        "Rechentechnikerin"@de .
+
+ohdab:Q1876557 a rdfs:Class ;
+    rdfs:label "B 22332-525: Pfeilschnitzer/in"@de,
+        "B 22332-525: Arrow carver"@en ;
+    rdfs:subClassOf ohdab:Q520075 ;
+    skos:altLabel "Pfeilschnitzer"@de,
+        "Pfeilschnitzerin"@de .
+
+ohdab:Q1876558 a rdfs:Class ;
+    rdfs:label "B 71294-516: Reichspräsident/in"@de,
+        "B 71294-516: President of the Reich"@en ;
+    rdfs:subClassOf ohdab:Q520985 ;
+    skos:altLabel "Reichspräsident"@de,
+        "Reichspräsidentin"@de .
+
+ohdab:Q1876560 a rdfs:Class ;
+    rdfs:label "B 01704-528: Konskriptionsoffizier/in"@de,
+        "B 01704-528: Conscription officer"@en ;
+    rdfs:subClassOf ohdab:Q519887 ;
+    skos:altLabel "Konskriptionsoffizier"@de,
+        "Konskriptionsoffizierin"@de .
+
+ohdab:Q1876563 a rdfs:Class ;
+    rdfs:label "B 73234-517: Steuerhändler/in"@de,
+        "B 73234-517: Tax agent"@en ;
+    rdfs:subClassOf ohdab:Q521094 ;
+    skos:altLabel "Steuerhändler"@de,
+        "Steuerhändlerin"@de .
+
+ohdab:Q1876565 a rdfs:Class ;
+    rdfs:label "B 81484-545: Pastoralmediziner/in"@de,
+        "B 81484-545: Pastoral physician"@en ;
+    rdfs:subClassOf ohdab:Q521191 ;
+    skos:altLabel "Pastoralmediziner"@de,
+        "Pastoralmedizinerin"@de .
+
+ohdab:Q1876566 a rdfs:Class ;
+    rdfs:label "A 20100-510: Standesperson"@de,
+        "A 20100-510: Stand position"@en ;
+    rdfs:subClassOf ohdab:Q519751 ;
+    skos:altLabel "Standesperson"@de .
+
+ohdab:Q1883098 a rdfs:Class ;
+    rdfs:label "A 52712: Verbandsmitglieder: Sport- und Wanderverbände (allgemein)"@de,
+        "A 52712: Association members: Sports and hiking associations (general)"@en ;
+    rdfs:subClassOf ohdab:Q521682 .
+
+ohdab:Q1883099 a rdfs:Class ;
+    rdfs:label "A 52712-500: Amateursportler/in"@de,
+        "A 52712-500: Amateur sportsman/sportswoman"@en ;
+    rdfs:subClassOf ohdab:Q1883098 ;
+    skos:altLabel "Amateursportler"@de,
+        "Amateursportlerin"@de .
+
+ohdab:Q1895908 a rdfs:Class ;
+    rdfs:label "B 91224-541: Koptologe/-login"@de,
+        "B 91224-541: Coptologist"@en ;
+    rdfs:subClassOf ohdab:Q521392 ;
+    skos:altLabel "Koptologe"@de,
+        "Koptologin"@de .
+
+ohdab:Q1895909 a rdfs:Class ;
+    rdfs:label "A 32494: Götter/Göttinnen (Höchste Positionen in religiösen Vorstellungen)"@de,
+        "A 32494: Gods/Goddesses (Highest positions in religious beliefs)"@en ;
+    rdfs:subClassOf ohdab:Q1895910 .
+
+ohdab:Q1895910 a rdfs:Class ;
+    rdfs:label "A 3249: Höchste Positionen religiöser Sonderbezeichnungen"@de,
+        "A 3249: Highest-ranking positions with specific religious titles"@en ;
+    rdfs:subClassOf ohdab:Q522539 .
+
+ohdab:Q1895911 a rdfs:Class ;
+    rdfs:label "A 32494-500: Friedensgott/-göttin"@de,
+        "A 32494-500: God or Goddess of Peace"@en ;
+    rdfs:subClassOf ohdab:Q1895909 ;
+    skos:altLabel "Friedensgott"@de,
+        "Friedensgöttin"@de .
+
+ohdab:Q1895914 a rdfs:Class ;
+    rdfs:label "A 32494-501: Fruchtbarkeitsgott/-göttin"@de,
+        "A 32494-501: God/Goddess of Fertility"@en ;
+    rdfs:subClassOf ohdab:Q1895909 ;
+    skos:altLabel "Fruchtbarkeitsgott"@de,
+        "Fruchtbarkeitsgöttin"@de .
+
+ohdab:Q1895916 a rdfs:Class ;
+    rdfs:label "A 32494-502: Gegengott/-göttin"@de,
+        "A 32494-502: Antagonist"@en ;
+    rdfs:subClassOf ohdab:Q1895909 ;
+    skos:altLabel "Gegengott"@de,
+        "Gegengöttin"@de .
+
+ohdab:Q1895917 a rdfs:Class ;
+    rdfs:label "A 32494-503: Liebesgott/-göttin"@de,
+        "A 32494-503: God/Goddess of Love"@en ;
+    rdfs:subClassOf ohdab:Q1895909 ;
+    skos:altLabel "Liebesgott"@de,
+        "Liebesgöttin"@de .
+
+ohdab:Q1895918 a rdfs:Class ;
+    rdfs:label "A 32494-504: Meergott/-göttin"@de,
+        "A 32494-504: Sea god/goddess"@en ;
+    rdfs:subClassOf ohdab:Q1895909 ;
+    skos:altLabel "Meergott"@de,
+        "Meergöttin"@de .
+
+ohdab:Q1895919 a rdfs:Class ;
+    rdfs:label "A 32494-505: Mondgott/-göttin"@de,
+        "A 32494-505: Moon god/goddess"@en ;
+    rdfs:subClassOf ohdab:Q1895909 ;
+    skos:altLabel "Mondgott"@de,
+        "Mondgöttin"@de .
+
+ohdab:Q1895920 a rdfs:Class ;
+    rdfs:label "A 32494-506: Schicksalsgott/-göttin"@de,
+        "A 32494-506: God or goddess of fate"@en ;
+    rdfs:subClassOf ohdab:Q1895909 ;
+    skos:altLabel "Schicksalsgott"@de,
+        "Schicksalsgöttin"@de .
+
+ohdab:Q1895921 a rdfs:Class ;
+    rdfs:label "A 32494-507: Schlangengott/-göttin"@de,
+        "A 32494-507: Snake god/goddess"@en ;
+    rdfs:subClassOf ohdab:Q1895909 ;
+    skos:altLabel "Schlangengott"@de,
+        "Schlangengöttin"@de .
+
+ohdab:Q1895922 a rdfs:Class ;
+    rdfs:label "A 32494-508: Wassergott/-göttin"@de,
+        "A 32494-508: Water god/goddess"@en ;
+    rdfs:subClassOf ohdab:Q1895909 ;
+    skos:altLabel "Wassergott"@de,
+        "Wassergöttin"@de .
+
+ohdab:Q1895923 a rdfs:Class ;
+    rdfs:label "A 32494-509: Höchstes Wesen"@de,
+        "A 32494-509: The Supreme Being"@en ;
+    rdfs:subClassOf ohdab:Q1895909 ;
+    skos:altLabel "Höchstes Wesen"@de .
+
+ohdab:Q1895924 a rdfs:Class ;
+    rdfs:label "A 32494-510: Vatergott/Muttergöttin"@de,
+        "A 32494-510: Mother Goddess"@en ;
+    rdfs:subClassOf ohdab:Q1895909 ;
+    skos:altLabel "Muttergöttin"@de,
+        "Vatergott"@de .
+
+ohdab:Q1895934 a rdfs:Class ;
+    rdfs:label "A 32352-502: Judenchrist/in"@de,
+        "A 32352-502: Jewish Christian"@en ;
+    rdfs:subClassOf ohdab:Q519776 ;
+    skos:altLabel "Judenchrist"@de,
+        "Judenchristin"@de .
+
+ohdab:Q1895935 a rdfs:Class ;
+    rdfs:label "A 32352-503: Christ/in"@de,
+        "A 32352-503: Christian"@en ;
+    rdfs:subClassOf ohdab:Q519776 ;
+    skos:altLabel "Christ"@de,
+        "Christin"@de .
+
+ohdab:Q1895936 a rdfs:Class ;
+    rdfs:label "A 32404-503: Brückenheilige/r"@de,
+        "A 32404-503: Patron saint of bridges"@en ;
+    rdfs:subClassOf ohdab:Q519783 ;
+    skos:altLabel "Brückenheilige"@de,
+        "Brückenheiliger"@de .
+
+ohdab:Q1895938 a rdfs:Class ;
+    rdfs:label "A 32303-500: Jünger/in"@de,
+        "A 32303-500: Disciple"@en ;
+    rdfs:subClassOf ohdab:Q1895939 ;
+    skos:altLabel "Jünger"@de,
+        "Jüngerin"@de .
+
+ohdab:Q1895939 a rdfs:Class ;
+    rdfs:label "A 32303: Aktive Angehörige von Religionsgemeinschaften (allgemein)"@de,
+        "A 32303: Active members of religious communities (in general)"@en ;
+    rdfs:subClassOf ohdab:Q521649 .
+
+ohdab:Q1895940 a rdfs:Class ;
+    rdfs:label "A 32322-501: Orthodoxe/r Christ/in"@de,
+        "A 32322-501: Orthodox Christian"@en ;
+    rdfs:subClassOf ohdab:Q901408 ;
+    skos:altLabel "Orthodoxe Christin"@de,
+        "Orthodoxer Christ"@de .
+
+ohdab:Q1895941 a rdfs:Class ;
+    rdfs:label "A 32303-501: Asket/in"@de,
+        "A 32303-501: Ascetic"@en ;
+    rdfs:subClassOf ohdab:Q1895939 ;
+    skos:altLabel "Asket"@de,
+        "Asketin"@de .
+
+ohdab:Q1895943 a rdfs:Class ;
+    rdfs:label "A 32332-507: Baptist/in"@de,
+        "A 32332-507: Baptist"@en ;
+    rdfs:subClassOf ohdab:Q519774 ;
+    skos:altLabel "Baptist"@de,
+        "Baptistin"@de .
+
+ohdab:Q1895944 a rdfs:Class ;
+    rdfs:label "A 32392-503: Bahai"@de,
+        "A 32392-503: Bahá'í"@en ;
+    rdfs:subClassOf ohdab:Q519780 ;
+    skos:altLabel "Bahai"@de .
+
+ohdab:Q1895945 a rdfs:Class ;
+    rdfs:label "A 32422-500: Biblische Person"@de,
+        "A 32422-500: Biblical figure"@en ;
+    rdfs:subClassOf ohdab:Q1895946 ;
+    skos:altLabel "Biblische Person"@de .
+
+ohdab:Q1895946 a rdfs:Class ;
+    rdfs:label "A 32422: Personen in religiösen Texten (fiktional)"@de,
+        "A 32422: Characters in religious texts (fictional)"@en ;
+    rdfs:subClassOf ohdab:Q1895947 .
+
+ohdab:Q1895947 a rdfs:Class ;
+    rdfs:label "A 3242: Personen in religiösen Texten"@de,
+        "A 3242: People in religious texts"@en ;
+    rdfs:subClassOf ohdab:Q522539 .
+
+ohdab:Q1895948 a rdfs:Class ;
+    rdfs:label "A 32404-504: Stammapostel/in"@de,
+        "A 32404-504: Chief Apostle"@en ;
+    rdfs:subClassOf ohdab:Q519783 ;
+    skos:altLabel "Stammapostel"@de,
+        "Stammapostelin"@de .
+
+ohdab:Q1895949 a rdfs:Class ;
+    rdfs:label "A 32392-504: Zeugen Jehovas"@de,
+        "A 32392-504: Jehovah's Witnesses"@en ;
+    rdfs:subClassOf ohdab:Q519780 ;
+    skos:altLabel "Zeuge Jehovas"@de,
+        "Zeugin Jehovas"@de .
+
+ohdab:Q1895950 a rdfs:Class ;
+    rdfs:label "A 32404-505: Schutzpatron/in"@de,
+        "A 32404-505: Patron saint"@en ;
+    rdfs:subClassOf ohdab:Q519783 ;
+    skos:altLabel "Schutzpatron"@de,
+        "Schutzpatronin"@de .
+
+ohdab:Q1895951 a rdfs:Class ;
+    rdfs:label "A 32494-511: Gott/Göttin"@de,
+        "A 32494-511: God/Goddess"@en ;
+    rdfs:subClassOf ohdab:Q1895909 ;
+    skos:altLabel "Gott"@de,
+        "Göttin"@de .
+
+ohdab:Q1895953 a rdfs:Class ;
+    rdfs:label "B 83394-638: Katholikos (Patriarch)"@de,
+        "B 83394-638: Catholicos (Patriarch)"@en ;
+    rdfs:subClassOf ohdab:Q521330 ;
+    skos:altLabel "Katholikos (Patriarch)"@de,
+        "nicht zutreffend"@de .
+
+ohdab:Q1895955 a rdfs:Class ;
+    rdfs:label "A 14102-527: Austauschschüler/in"@de,
+        "A 14102-527: Exchange student"@en ;
+    rdfs:subClassOf ohdab:Q519735 ;
+    skos:altLabel "Austauschschüler"@de,
+        "Austauschschülerin"@de .
+
+ohdab:Q1895956 a rdfs:Class ;
+    rdfs:label "A 14102-528: Ausländische/r Schüler/in"@de,
+        "A 14102-528: International pupil"@en ;
+    rdfs:subClassOf ohdab:Q519735 ;
+    skos:altLabel "Ausländische Schülerin"@de,
+        "Ausländischer Schüler"@de .
+
+ohdab:Q1895958 a rdfs:Class ;
+    rdfs:label "A 14602-508: Auszubildende/r"@de,
+        "A 14602-508: Trainee"@en ;
+    rdfs:subClassOf ohdab:Q519740 ;
+    skos:altLabel "Auszubildende"@de,
+        "Auszubildender"@de .
+
+ohdab:Q1895960 a rdfs:Class ;
+    rdfs:label "A 14102-529: Fahrschüler/in (Schule)"@de,
+        "A 14102-529: Learner driver (school)"@en ;
+    rdfs:subClassOf ohdab:Q519735 ;
+    skos:altLabel "Fahrschüler (Schule)"@de,
+        "Fahrschülerin (Schule)"@de .
+
+ohdab:Q1895961 a rdfs:Class ;
+    rdfs:label "A 14102-530: Internatsschüler/in"@de,
+        "A 14102-530: Boarding school pupil"@en ;
+    rdfs:subClassOf ohdab:Q519735 ;
+    skos:altLabel "Internatsschüler"@de,
+        "Internatsschülerin"@de .
+
+ohdab:Q1895962 a rdfs:Class ;
+    rdfs:label "A 14102-531: Mitschüler/in"@de,
+        "A 14102-531: Classmate"@en ;
+    rdfs:subClassOf ohdab:Q519735 ;
+    skos:altLabel "Mitschüler"@de,
+        "Mitschülerin"@de .
+
+ohdab:Q1895963 a rdfs:Class ;
+    rdfs:label "A 14202-504: Volksschüler/in"@de,
+        "A 14202-504: Primary school pupil"@en ;
+    rdfs:subClassOf ohdab:Q519737 ;
+    skos:altLabel "Volksschüler"@de,
+        "Volksschülerin"@de .
+
+ohdab:Q1895964 a rdfs:Class ;
+    rdfs:label "A 14102-532: Waldorfschüler/in"@de,
+        "A 14102-532: Waldorf pupil"@en ;
+    rdfs:subClassOf ohdab:Q519735 ;
+    skos:altLabel "Waldorfschüler"@de,
+        "Waldorfschülerin"@de .
+
+ohdab:Q1895977 a rdfs:Class ;
+    rdfs:label "A 14502-510: Oberstufenschüler/in"@de,
+        "A 14502-510: Sixth-form student"@en ;
+    rdfs:subClassOf ohdab:Q519739 ;
+    skos:altLabel "Oberstufenschüler"@de,
+        "Oberstufenschülerin"@de .
+
+ohdab:Q1895978 a rdfs:Class ;
+    rdfs:label "A 14102-533: Gesamtschüler/in"@de,
+        "A 14102-533: Comprehensive school pupil"@en ;
+    rdfs:subClassOf ohdab:Q519735 ;
+    skos:altLabel "Gesamtschüler"@de,
+        "Gesamtschülerin"@de .
+
+ohdab:Q1895979 a rdfs:Class ;
+    rdfs:label "A 14202-505: Grundschulkind"@de,
+        "A 14202-505: Primary school pupil"@en ;
+    rdfs:subClassOf ohdab:Q519737 ;
+    skos:altLabel "Grundschüler"@de,
+        "Grundschülerin"@de .
+
+ohdab:Q1895980 a rdfs:Class ;
+    rdfs:label "A 14602-509: Schulabgänger/in"@de,
+        "A 14602-509: School leaver"@en ;
+    rdfs:subClassOf ohdab:Q519740 ;
+    skos:altLabel "Schulabgänger"@de,
+        "Schulabgängerin"@de .
+
+ohdab:Q1895981 a rdfs:Class ;
+    rdfs:label "A 14602-510: Studienbewerber/in"@de,
+        "A 14602-510: Prospective student"@en ;
+    rdfs:subClassOf ohdab:Q519740 ;
+    skos:altLabel "Studienbewerber"@de,
+        "Studienbewerberin"@de .
+
+ohdab:Q1895982 a rdfs:Class ;
+    rdfs:label "A 14602-511: Fernschüler/in"@de,
+        "A 14602-511: Distance learner"@en ;
+    rdfs:subClassOf ohdab:Q519740 ;
+    skos:altLabel "Fernschüler"@de,
+        "Fernschülerin"@de .
+
+ohdab:Q1895983 a rdfs:Class ;
+    rdfs:label "A 14602-512: Berufsfachschüler/in"@de,
+        "A 14602-512: Vocational school student"@en ;
+    rdfs:subClassOf ohdab:Q519740 ;
+    skos:altLabel "Berufsfachschüler"@de,
+        "Berufsfachschülerin"@de .
+
+ohdab:Q1895984 a rdfs:Class ;
+    rdfs:label "A 14602-513: Berufsschüler/in"@de,
+        "A 14602-513: Vocational student"@en ;
+    rdfs:subClassOf ohdab:Q519740 ;
+    skos:altLabel "Berufsschüler"@de,
+        "Berufsschülerin"@de .
+
+ohdab:Q1895985 a rdfs:Class ;
+    rdfs:label "A 14602-514: Fachoberschüler/in"@de,
+        "A 14602-514: Student at a technical college"@en ;
+    rdfs:subClassOf ohdab:Q519740 ;
+    skos:altLabel "Fachoberschüler"@de,
+        "Fachoberschülerin"@de .
+
+ohdab:Q1895986 a rdfs:Class ;
+    rdfs:label "A 14502-511: Lateinschüler/in"@de,
+        "A 14502-511: Latin student"@en ;
+    rdfs:subClassOf ohdab:Q519739 ;
+    skos:altLabel "Lateinschüler"@de,
+        "Lateinschülerin"@de .
+
+ohdab:Q1895987 a rdfs:Class ;
+    rdfs:label "B 11102-638: Landwirtschaftsschüler/in"@de,
+        "B 11102-638: Agricultural student"@en ;
+    rdfs:subClassOf ohdab:Q519891 ;
+    skos:altLabel "Landwirtschaftsschüler"@de,
+        "Landwirtschaftsschülerin"@de .
+
+ohdab:Q1895988 a rdfs:Class ;
+    rdfs:label "A 12002-505: Seeräuber/in"@de,
+        "A 12002-505: Pirate"@en ;
+    rdfs:subClassOf ohdab:Q519714 ;
+    skos:altLabel "Seeräuber"@de,
+        "Seeräuberin"@de .
+
+ohdab:Q1895994 a rdfs:Class ;
+    rdfs:label "A 12002-506: Vitalienbrüder/-schwestern"@de,
+        "A 12002-506: Vitalienbrüder/-schwestern"@en ;
+    rdfs:subClassOf ohdab:Q519714 ;
+    skos:altLabel "Vitalienbrüder"@de,
+        "Vitalienschwestern"@de .
+
+ohdab:Q1895997 a rdfs:Class ;
+    rdfs:label "B 83314-657: Alttestamentler/in"@de,
+        "B 83314-657: Old Testament scholar"@en ;
+    rdfs:subClassOf ohdab:Q521315 ;
+    skos:altLabel "Alttestamentler"@de,
+        "Alttestamentlerin"@de .
+
+ohdab:Q1895999 a rdfs:Class ;
+    rdfs:label "A 52722-500: Amateurfußballspieler/in (Breitensport)"@de,
+        "A 52722-500: Amateur footballer (recreational sport)"@en ;
+    rdfs:subClassOf ohdab:Q1900285 ;
+    skos:altLabel "Amateurfußballspieler (Breitensport)"@de,
+        "Amateurfußballspielerin (Breitensport)"@de .
+
+ohdab:Q1896017 a rdfs:Class ;
+    rdfs:label "A 53412-501: Amateurastronom/in"@de,
+        "A 53412-501: Amateur astronomer"@en ;
+    rdfs:subClassOf ohdab:Q519814 ;
+    skos:altLabel "Amateurastronom"@de,
+        "Amateurastronomin"@de .
+
+ohdab:Q1896018 a rdfs:Class ;
+    rdfs:label "B 94124-545: Volksliedersänger/in"@de,
+        "B 94124-545: Folk singer"@en ;
+    rdfs:subClassOf ohdab:Q521513 ;
+    skos:altLabel "Volksliedersänger"@de,
+        "Volksliedersängerin"@de .
+
+ohdab:Q1896019 a rdfs:Class ;
+    rdfs:label "B 01114-700: Kosakenführer/in (Ataman)"@de,
+        "B 01114-700: Cossack leader (Ataman)"@en ;
+    rdfs:subClassOf ohdab:Q519858 ;
+    skos:altLabel "Kosakenführer (Ataman)"@de,
+        "Kosakenführerin (Ataman)"@de .
+
+ohdab:Q1896023 a rdfs:Class ;
+    rdfs:label "B 83314-658: Augur/in (Priester/in)"@de,
+        "B 83314-658: Augur (priest)"@en ;
+    rdfs:subClassOf ohdab:Q521315 ;
+    skos:altLabel "Augur (Priester)"@de,
+        "Augurin (Priesterin)"@de .
+
+ohdab:Q1896024 a rdfs:Class ;
+    rdfs:label "B 20002-581: Angestellte/r, außertarifliche/r"@de,
+        "B 20002-581: Employee, non-scale"@en ;
+    rdfs:subClassOf ohdab:Q519996 ;
+    skos:altLabel "Angestellte, außertarifliche"@de,
+        "Angestellter, außertariflicher"@de .
+
+ohdab:Q1896028 a rdfs:Class ;
+    rdfs:label "B 73103-511: Basoche (Gerichtsschreiber/in)"@de,
+        "B 73103-511: Basoche (Court clerk)"@en ;
+    rdfs:subClassOf ohdab:Q521058 ;
+    skos:altLabel "Basoche (Gerichtsschreiber)"@de,
+        "Basoche (Gerichtsschreiberin)"@de .
+
+ohdab:Q1896030 a rdfs:Class ;
+    rdfs:label "B 70002-514: Beamte/r (auf Probe, auf Zeit)"@de,
+        "B 70002-514: Civil servant (on probation, on a fixed-term contract)"@en ;
+    rdfs:subClassOf ohdab:Q520965 ;
+    skos:altLabel "Beamter (auf Probe, auf Zeit)"@de,
+        "Beamtin (auf Probe, auf Zeit)"@de .
+
+ohdab:Q1896033 a rdfs:Class ;
+    rdfs:label "A 32403-504: Bekenner/in"@de,
+        "A 32403-504: Confessor"@en ;
+    rdfs:subClassOf ohdab:Q519782 ;
+    skos:altLabel "Bekenner"@de,
+        "Bekennerin"@de .
+
+ohdab:Q1896058 a rdfs:Class ;
+    rdfs:label "B 41114-503: Datenanalyst/in"@de,
+        "B 41114-503: Data Analyst"@en ;
+    rdfs:subClassOf ohdab:Q520549 ;
+    skos:altLabel "Datenanalyst"@de,
+        "Datenanalystin"@de .
+
+ohdab:Q1896061 a rdfs:Class ;
+    rdfs:label "B 94383-503: YouTuber/in"@de,
+        "B 94383-503: YouTuber"@en ;
+    rdfs:subClassOf ohdab:Q521538 ;
+    skos:altLabel "YouTuber"@de,
+        "YouTuberin"@de .
+
+ohdab:Q1896062 a rdfs:Class ;
+    rdfs:label "B 92413-511: Blogger/in"@de,
+        "B 92413-511: Blogger"@en ;
+    rdfs:subClassOf ohdab:Q521429 ;
+    skos:altLabel "Blogger"@de,
+        "Bloggerin"@de .
+
+ohdab:Q1896063 a rdfs:Class ;
+    rdfs:label "A 33: Fiktionale Rollen, Personen und Gestalten (außer Religion)"@de,
+        "A 33: Fictional roles, characters and figures (except religion)"@en ;
+    rdfs:subClassOf ohdab:Q522805 .
+
+ohdab:Q1896065 a rdfs:Class ;
+    rdfs:label "A 331: Fiktionale Rollen, Personen und Gestalten (allgemein)"@de,
+        "A 331: Fictional roles, characters and figures (general)"@en ;
+    rdfs:subClassOf ohdab:Q1896063 .
+
+ohdab:Q1896067 a rdfs:Class ;
+    rdfs:label "A 3311: Fiktionen in Kunst, Kultur und Literatur (außer Religion)"@de,
+        "A 3311: Fiction in Art, Culture and Literature (excluding religion)"@en ;
+    rdfs:subClassOf ohdab:Q1896065 .
+
+ohdab:Q1896069 a rdfs:Class ;
+    rdfs:label "A 33112: Rollen in fiktionalen Kontexten von Kunst, Kultur und Literatur (fachliche Rollen)"@de,
+        "A 33112: Roles in fictional contexts of art, culture and literature (professional roles)"@en ;
+    rdfs:subClassOf ohdab:Q1896067 .
+
+ohdab:Q1896070 a rdfs:Class ;
+    rdfs:label "A 33112-500: Comicfigur"@de,
+        "A 33112-500: Comic character"@en ;
+    rdfs:subClassOf ohdab:Q1896069 ;
+    skos:altLabel "Comicfigur"@de .
+
+ohdab:Q1896074 a rdfs:Class ;
+    rdfs:label "B 92414-513: Content Creator/in"@de,
+        "B 92414-513: Content Creator"@en ;
+    rdfs:subClassOf ohdab:Q521430 ;
+    skos:altLabel "Content Creator"@de,
+        "Content Creatorin"@de .
+
+ohdab:Q1896079 a rdfs:Class ;
+    rdfs:label "A 54413-502: Weinkönig/in"@de,
+        "A 54413-502: Wine King/Queen"@en ;
+    rdfs:subClassOf ohdab:Q1875315 ;
+    skos:altLabel "Weinkönig"@de,
+        "Weinkönigin"@de .
+
+ohdab:Q1896081 a rdfs:Class ;
+    rdfs:label "B 81352-505: Doula"@de,
+        "B 81352-505: Doula"@en ;
+    rdfs:subClassOf ohdab:Q521174 ;
+    skos:altLabel "Doula"@de,
+        "Doula (männliche Bezeichnung)"@de .
+
+ohdab:Q1896082 a rdfs:Class ;
+    rdfs:label "A 53002-502: Ehrenamtliche/r Mitarbeiter/in"@de,
+        "A 53002-502: Volunteer staff"@en ;
+    rdfs:subClassOf ohdab:Q519810 ;
+    skos:altLabel "Ehrenamtliche Mitarbeiterin"@de,
+        "Ehrenamtlicher Mitarbeiter"@de .
+
+ohdab:Q1896083 a rdfs:Class ;
+    rdfs:label "A 53002-503: Ehrenamtler/in"@de,
+        "A 53002-503: Volunteer"@en ;
+    rdfs:subClassOf ohdab:Q519810 ;
+    skos:altLabel "Ehrenamtler"@de,
+        "Ehrenamtlerin"@de .
+
+ohdab:Q1896086 a rdfs:Class ;
+    rdfs:label "A 61024-500: Ehrenbeamte/r"@de,
+        "A 61024-500: Honorary official"@en ;
+    rdfs:subClassOf ohdab:Q1896087 ;
+    skos:altLabel "Ehrenbeamte"@de,
+        "Ehrenbeamter"@de .
+
+ohdab:Q1896087 a rdfs:Class ;
+    rdfs:label "A 61024: Allgemeine Bezeichungen für temporäre Arbeitsbeziehungen - hoch komplexe Tätigkeiten"@de,
+        "A 61024: General classifications for temporary employment relationships – highly complex tasks"@en ;
+    rdfs:subClassOf ohdab:Q901426 .
+
+ohdab:Q1896088 a rdfs:Class ;
+    rdfs:label "B 53322-500: Gesundheitsfachmann/-frau"@de,
+        "B 53322-500: Healthcare Professional"@en ;
+    rdfs:subClassOf ohdab:Q520822 ;
+    skos:altLabel "Gesundheitsfachfrau"@de,
+        "Gesundheitsfachmann"@de .
+
+ohdab:Q1896089 a rdfs:Class ;
+    rdfs:label "A 61103-509: Fachreferent/in"@de,
+        "A 61103-509: Specialist Officer"@en ;
+    rdfs:subClassOf ohdab:Q519855 ;
+    skos:altLabel "Fachreferent"@de,
+        "Fachreferentin"@de .
+
+ohdab:Q1896091 a rdfs:Class ;
+    rdfs:label "A 54912-503: Flugpassagier/in"@de,
+        "A 54912-503: Air passenger"@en ;
+    rdfs:subClassOf ohdab:Q519822 ;
+    skos:altLabel "Flugpassagier"@de,
+        "Flugpassagierin"@de .
+
+ohdab:Q1896092 a rdfs:Class ;
+    rdfs:label "B 26233-504: Energetiker/in"@de,
+        "B 26233-504: Energy Engineer"@en ;
+    rdfs:subClassOf ohdab:Q520238 ;
+    skos:altLabel "Energetiker"@de,
+        "Energetikerin"@de .
+
+ohdab:Q1896093 a rdfs:Class ;
+    rdfs:label "A 13210-507: Patient/in"@de,
+        "A 13210-507: Patient"@en ;
+    rdfs:subClassOf ohdab:Q519728 ;
+    skos:altLabel "Patient"@de,
+        "Patientin"@de .
+
+ohdab:Q1896094 a rdfs:Class ;
+    rdfs:label "B 81302-521: Pflegefachmann/-frau"@de,
+        "B 81302-521: Registered Nurse"@en ;
+    rdfs:subClassOf ohdab:Q521166 ;
+    skos:altLabel "Pflegefachfrau"@de,
+        "Pflegefachmann"@de .
+
+ohdab:Q1896095 a rdfs:Class ;
+    rdfs:label "A 54912-504: Blinde/r Passagier/in"@de,
+        "A 54912-504: Stowaway"@en ;
+    rdfs:subClassOf ohdab:Q519822 ;
+    skos:altLabel "Blinde Passagierin"@de,
+        "Blinder Passagier"@de .
+
+ohdab:Q1896736 a rdfs:Class ;
+    rdfs:label "B 94484-500: Filmkurator/in"@de,
+        "B 94484-500: Film Curator"@en ;
+    rdfs:subClassOf ohdab:Q521550 ;
+    skos:altLabel "Filmkurator"@de,
+        "Filmkuratorin"@de .
+
+ohdab:Q1896737 a rdfs:Class ;
+    rdfs:label "B 81753-525: Mentaltrainer/in"@de,
+        "B 81753-525: Mental coach"@en ;
+    rdfs:subClassOf ohdab:Q521217 ;
+    skos:altLabel "Mentaltrainer"@de,
+        "Mentaltrainerin"@de .
+
+ohdab:Q1896740 a rdfs:Class ;
+    rdfs:label "A 40330-501: Philokartist/in"@de,
+        "A 40330-501: Philokartist"@en ;
+    rdfs:subClassOf ohdab:Q1896740 ;
+    skos:altLabel "Philokartist"@de,
+        "Philokartistin"@de .
+
+ohdab:Q1896741 a rdfs:Class ;
+    rdfs:label "B 94382-501: Schmuckeremit/in"@de,
+        "B 94382-501: Ornamental hermit"@en ;
+    rdfs:subClassOf ohdab:Q521537 ;
+    skos:altLabel "Schmuckeremit"@de,
+        "Schmuckeremitin"@de .
+
+ohdab:Q1896742 a rdfs:Class ;
+    rdfs:label "B 94383-504: Podcaster/in"@de,
+        "B 94383-504: Podcaster"@en ;
+    rdfs:subClassOf ohdab:Q521538 ;
+    skos:altLabel "Podcaster"@de,
+        "Podcasterin"@de .
+
+ohdab:Q1896743 a rdfs:Class ;
+    rdfs:label "B 94383-505: Influencer/in"@de,
+        "B 94383-505: Influencer"@en ;
+    rdfs:subClassOf ohdab:Q521538 ;
+    skos:altLabel "Influencer"@de,
+        "Influencerin"@de .
+
+ohdab:Q1896744 a rdfs:Class ;
+    rdfs:label "B 41254-509: Kynologe/-login"@de,
+        "B 41254-509: Canine expert"@en ;
+    rdfs:subClassOf ohdab:Q520562 ;
+    skos:altLabel "Kynologe"@de,
+        "Kynologin"@de .
+
+ohdab:Q1896745 a rdfs:Class ;
+    rdfs:label "A 55124-507: Reformpolitiker/in"@de,
+        "A 55124-507: Reformist politician"@en ;
+    rdfs:subClassOf ohdab:Q519831 ;
+    skos:altLabel "Reformpolitiker"@de,
+        "Reformpolitikerin"@de .
+
+ohdab:Q1896746 a rdfs:Class ;
+    rdfs:label "A 56102-500: Linkssozialist/in"@de,
+        "A 56102-500: Left-wing socialist"@en ;
+    rdfs:subClassOf ohdab:Q1896747 ;
+    skos:altLabel "Linkssozialist"@de,
+        "Linkssozialistin"@de .
+
+ohdab:Q1896747 a rdfs:Class ;
+    rdfs:label "A 56102: Mitglied des linken Parteienspektrums (allgemein)"@de,
+        "A 56102: Member of the left-wing political spectrum (in general)"@en ;
+    rdfs:subClassOf ohdab:Q1896748 .
+
+ohdab:Q1896748 a rdfs:Class ;
+    rdfs:label "A 5610: Angehörige/r des linken Parteienspektrums"@de,
+        "A 5610: Member of the left-wing political spectrum"@en ;
+    rdfs:subClassOf ohdab:Q522564 .
+
+ohdab:Q1896749 a rdfs:Class ;
+    rdfs:label "A 56102-501: Sozialist/in"@de,
+        "A 56102-501: Socialist"@en ;
+    rdfs:subClassOf ohdab:Q1896747 ;
+    skos:altLabel "Sozialist"@de,
+        "Sozialistin"@de .
+
+ohdab:Q1896750 a rdfs:Class ;
+    rdfs:label "A 56102-502: Tschaikist/in"@de,
+        "A 56102-502: Chaikist"@en ;
+    rdfs:subClassOf ohdab:Q1896747 ;
+    skos:altLabel "Tschaikist"@de,
+        "Tschaikistin"@de .
+
+ohdab:Q1896751 a rdfs:Class ;
+    rdfs:label "A 56112-502: Trotzkist/in"@de,
+        "A 56112-502: Trotskyist"@en ;
+    rdfs:subClassOf ohdab:Q519838 ;
+    skos:altLabel "Trotzkist"@de,
+        "Trotzkistin"@de .
+
+ohdab:Q1896752 a rdfs:Class ;
+    rdfs:label "A 56602-501: Nationalsozialist/in"@de,
+        "A 56602-501: Nazi"@en ;
+    rdfs:subClassOf ohdab:Q519841 ;
+    skos:altLabel "Nationalsozialist"@de,
+        "Nationalsozialistin"@de .
+
+ohdab:Q1896753 a rdfs:Class ;
+    rdfs:label "A 57702-502: Politische/r Verfolgte/r"@de,
+        "A 57702-502: Victim of political persecution"@en ;
+    rdfs:subClassOf ohdab:Q1896753 ;
+    skos:altLabel "Politische Verfolgte"@de,
+        "Politischer Verfolgter"@de .
+
+ohdab:Q1896754 a rdfs:Class ;
+    rdfs:label "A 57772-503: Antifaschist/in"@de,
+        "A 57772-503: Anti-fascist"@en ;
+    rdfs:subClassOf ohdab:Q519852 ;
+    skos:altLabel "Antifaschist"@de,
+        "Antifaschistin"@de .
+
+ohdab:Q1896778 a rdfs:Class ;
+    rdfs:label "A 57102-500: Gewerkschaftsmitglied"@de,
+        "A 57102-500: Trade union member"@en ;
+    rdfs:subClassOf ohdab:Q1896779 ;
+    skos:altLabel "Gewerkschaftsmitglied"@de .
+
+ohdab:Q1896779 a rdfs:Class ;
+    rdfs:label "A 57102: Akteure in Gewerkschafts- und Arbeiterbewegungen"@de,
+        "A 57102: Key figures in trade union and labour movements"@en ;
+    rdfs:subClassOf ohdab:Q1896781 .
+
+ohdab:Q1896781 a rdfs:Class ;
+    rdfs:label "A 5710: Gewerkschafts- und Arbeiterbewegungen"@de,
+        "A 5710: Trade union and labour movements"@en ;
+    rdfs:subClassOf ohdab:Q522569 .
+
+ohdab:Q1896783 a rdfs:Class ;
+    rdfs:label "B 93382-512: Fächermacher/in"@de,
+        "B 93382-512: Fan maker"@en ;
+    rdfs:subClassOf ohdab:Q521465 ;
+    skos:altLabel "Fächermacher"@de,
+        "Fächermacherin"@de .
+
+ohdab:Q1896784 a rdfs:Class ;
+    rdfs:label "B 51242-501: Fleetenkieker/in"@de,
+        "B 51242-501: Fleetenkieker/in (Drain cleaner)"@en ;
+    rdfs:subClassOf ohdab:Q520689 ;
+    skos:altLabel "Fleetenkieker"@de,
+        "Fleetenkiekerin"@de .
+
+ohdab:Q1897416 a rdfs:Class ;
+    rdfs:label "B 94243-546: Kampfschwimmer/in"@de,
+        "B 94243-546: Combat swimmer"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Kampfschwimmer"@de,
+        "Kampfschwimmerin"@de .
+
+ohdab:Q1897418 a rdfs:Class ;
+    rdfs:label "B 94243-547: Synchronschwimmer/in"@de,
+        "B 94243-547: Synchronised swimmer"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Synchronschwimmer"@de,
+        "Synchronschwimmerin"@de .
+
+ohdab:Q1897420 a rdfs:Class ;
+    rdfs:label "B 94243-548: Auswechselspieler/in"@de,
+        "B 94243-548: Sport Substitute"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Auswechselspieler"@de,
+        "Auswechselspielerin"@de .
+
+ohdab:Q1897421 a rdfs:Class ;
+    rdfs:label "B 94243-549: Fallschirmspringer/in"@de,
+        "B 94243-549: Parachutist"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Fallschirmspringer"@de,
+        "Fallschirmspringerin"@de .
+
+ohdab:Q1897422 a rdfs:Class ;
+    rdfs:label "B 94243-550: Mannschaftssportler/in"@de,
+        "B 94243-550: Team sports player"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Mannschaftssportler"@de,
+        "Mannschaftssportlerin"@de .
+
+ohdab:Q1897423 a rdfs:Class ;
+    rdfs:label "B 94243-551: Mehrkämpfer/in"@de,
+        "B 94243-551: All-rounder"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Mehrkämpfer"@de,
+        "Mehrkämpferin"@de .
+
+ohdab:Q1897424 a rdfs:Class ;
+    rdfs:label "B 94243-552: Geräteturner/in"@de,
+        "B 94243-552: Apparatus gymnast"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Geräteturner"@de,
+        "Geräteturnerin"@de .
+
+ohdab:Q1897426 a rdfs:Class ;
+    rdfs:label "B 94243-553: Rollkunstläufer/in"@de,
+        "B 94243-553: Roller skater"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Rollkunstläufer"@de,
+        "Rollkunstläuferin"@de .
+
+ohdab:Q1897428 a rdfs:Class ;
+    rdfs:label "B 94243-554: Snowboarder/in"@de,
+        "B 94243-554: Snowboarder"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Snowboarder"@de,
+        "Snowboarderin"@de .
+
+ohdab:Q1897429 a rdfs:Class ;
+    rdfs:label "B 94243-555: Kunstspringer/in"@de,
+        "B 94243-555: Diver"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Kunstspringer"@de,
+        "Kunstspringerin"@de .
+
+ohdab:Q1897430 a rdfs:Class ;
+    rdfs:label "B 94243-556: Kugelstoßer/in"@de,
+        "B 94243-556: Shot putter"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Kugelstoßer"@de,
+        "Kugelstoßerin"@de .
+
+ohdab:Q1897431 a rdfs:Class ;
+    rdfs:label "B 94243-557: Langstreckenläufer/in"@de,
+        "B 94243-557: Long-distance runner"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Langstreckenläuferin"@de .
+
+ohdab:Q1897432 a rdfs:Class ;
+    rdfs:label "B 94243-558: Läufer/in (Sport)"@de,
+        "B 94243-558: Runner (sport)"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Läufer (Sport)"@de,
+        "Läuferin (Sport)"@de .
+
+ohdab:Q1897434 a rdfs:Class ;
+    rdfs:label "B 94243-559: Marathonläufer/in"@de,
+        "B 94243-559: Marathon runner"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Marathonläufer"@de,
+        "Marathonläuferin"@de .
+
+ohdab:Q1897435 a rdfs:Class ;
+    rdfs:label "B 94243-560: Mittelstreckenläufer/in"@de,
+        "B 94243-560: Middle-distance runner"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Mittelstreckenläufer"@de,
+        "Mittelstreckenläuferin"@de .
+
+ohdab:Q1897436 a rdfs:Class ;
+    rdfs:label "B 94243-561: Biathlet/in"@de,
+        "B 94243-561: Biathlete"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Biathlet"@de,
+        "Biathletin"@de .
+
+ohdab:Q1897447 a rdfs:Class ;
+    rdfs:label "B 94243-562: Kampfsportler/in"@de,
+        "B 94243-562: Martial artist"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Kampfsportler"@de,
+        "Kampfsportlerin"@de .
+
+ohdab:Q1897448 a rdfs:Class ;
+    rdfs:label "B 94243-563: Kraftsportler/in"@de,
+        "B 94243-563: Weightlifter"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Kraftsportler"@de,
+        "Kraftsportlerin"@de .
+
+ohdab:Q1897449 a rdfs:Class ;
+    rdfs:label "B 94243-564: Bodybuilder/in"@de,
+        "B 94243-564: Bodybuilder"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Bodybuilder"@de,
+        "Bodybuilderin"@de .
+
+ohdab:Q1897450 a rdfs:Class ;
+    rdfs:label "B 94243-565: Kunstradfahrer/in"@de,
+        "B 94243-565: Artistic cyclist"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Kunstradfahrer"@de,
+        "Kunstradfahrerin"@de .
+
+ohdab:Q1897451 a rdfs:Class ;
+    rdfs:label "B 94243-566: Kletterer/Kletterin"@de,
+        "B 94243-566: Climber"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Kletterer"@de,
+        "Kletterin"@de .
+
+ohdab:Q1897452 a rdfs:Class ;
+    rdfs:label "A 52712-501: Freizeitsportler/in"@de,
+        "A 52712-501: Recreational sports participant"@en ;
+    rdfs:subClassOf ohdab:Q1883098 ;
+    skos:altLabel "Freizeitsportler"@de,
+        "Freizeitsportlerin"@de .
+
+ohdab:Q1897453 a rdfs:Class ;
+    rdfs:label "A 52712-502: Individualsportler/in"@de,
+        "A 52712-502: Individual athlete"@en ;
+    rdfs:subClassOf ohdab:Q1883098 ;
+    skos:altLabel "Individualsportler"@de,
+        "Individualsportlerin"@de .
+
+ohdab:Q1897454 a rdfs:Class ;
+    rdfs:label "B 94243-567: Kricketspieler/in"@de,
+        "B 94243-567: Cricket player"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Kricketspieler"@de,
+        "Kricketspielerin"@de .
+
+ohdab:Q1897455 a rdfs:Class ;
+    rdfs:label "B 94243-568: Badmintonspieler/in"@de,
+        "B 94243-568: Badminton player"@en ;
+    rdfs:subClassOf ohdab:Q521523 ;
+    skos:altLabel "Badmintonspieler"@de,
+        "Badmintonspielerin"@de .
+
+ohdab:Q1897457 a rdfs:Class ;
+    rdfs:label "B 83314-659: Neutestamentler/in"@de,
+        "B 83314-659: New Testament scholar"@en ;
+    rdfs:subClassOf ohdab:Q521315 ;
+    skos:altLabel "Neutestamentler"@de,
+        "Neutestamentlerin"@de .
+
+ohdab:Q1897460 a rdfs:Class ;
+    rdfs:label "A 33112-501: Fiktive Gestalt"@de,
+        "A 33112-501: Fictional character"@en ;
+    rdfs:subClassOf ohdab:Q1896069 ;
+    skos:altLabel "Fiktive Gestalt"@de .
+
+ohdab:Q1897461 a rdfs:Class ;
+    rdfs:label "A 52712-503: Ausdauersportler/in"@de,
+        "A 52712-503: Endurance athlete"@en ;
+    rdfs:subClassOf ohdab:Q1883098 ;
+    skos:altLabel "Ausdauersportler"@de,
+        "Ausdauersportlerin"@de .
+
+ohdab:Q1897463 a rdfs:Class ;
+    rdfs:label "A 33112-502: Literarische Gestalt"@de,
+        "A 33112-502: Literary Character"@en ;
+    rdfs:subClassOf ohdab:Q1896069 ;
+    skos:altLabel "Literarische Gestalt"@de .
+
+ohdab:Q1897465 a rdfs:Class ;
+    rdfs:label "A 33122-500: Märchengestalt"@de,
+        "A 33122-500: Fairy-tale character"@en ;
+    rdfs:subClassOf ohdab:Q1897476 ;
+    skos:altLabel "Märchengestalt"@de .
+
+ohdab:Q1897468 a rdfs:Class ;
+    rdfs:label "A 33122-501: Sagengestalt"@de,
+        "A 33122-501: Legendary figure"@en ;
+    rdfs:subClassOf ohdab:Q1897476 ;
+    skos:altLabel "Sagengestalt"@de .
+
+ohdab:Q1897476 a rdfs:Class ;
+    rdfs:label "A 33122: Rollen und Gestalten in Sagen, Märchen, Fantasy und magischen Kontexten (außer Religion)"@de,
+        "A 33122: Roles and Characters in Legends, Fairy Tales, Fantasy and Magical Contexts (excluding religion)"@en ;
+    rdfs:subClassOf ohdab:Q1897477 .
+
+ohdab:Q1897477 a rdfs:Class ;
+    rdfs:label "A 3312: Fiktive Rollen und Gestalten in Sagen, Märchen, Magie und Fantasy"@de,
+        "A 3312: Fictional Roles and Characters in Legends, Fairy Tales, Magic and Fantasy"@en ;
+    rdfs:subClassOf ohdab:Q1896065 .
+
+ohdab:Q1897478 a rdfs:Class ;
+    rdfs:label "A 33122-502: Übernatürliches Wesen"@de,
+        "A 33122-502: Supernatural Being"@en ;
+    rdfs:subClassOf ohdab:Q1897476 ;
+    skos:altLabel "Übernatürliches Wesen"@de .
+
+ohdab:Q1897479 a rdfs:Class ;
+    rdfs:label "A 54912-505: Schiffsreisende/r"@de,
+        "A 54912-505: Cruise passenger"@en ;
+    rdfs:subClassOf ohdab:Q519822 ;
+    skos:altLabel "Schiffsreisende"@de,
+        "Schiffsreisender"@de .
+
+ohdab:Q1897480 a rdfs:Class ;
+    rdfs:label "A 54912-506: Reisende/r"@de,
+        "A 54912-506: Traveller"@en ;
+    rdfs:subClassOf ohdab:Q519822 ;
+    skos:altLabel "Reisende"@de,
+        "Reisender"@de .
+
+ohdab:Q1897488 a rdfs:Class ;
+    rdfs:label "A 12302-501: Zwangsarbeiter/in"@de,
+        "A 12302-501: Forced labourers"@en ;
+    rdfs:subClassOf ohdab:Q519720 ;
+    skos:altLabel "Zwangsarbeiter"@de,
+        "Zwangsarbeiterin"@de .
+
+ohdab:Q1897494 a rdfs:Class ;
+    rdfs:label "A 1201: Verbrechen durch Institutionen, Organisationen"@de,
+        "A 1201: Crimes committed by institutions and organisations"@en ;
+    rdfs:subClassOf ohdab:Q522499 .
+
+ohdab:Q1897497 a rdfs:Class ;
+    rdfs:label "A 12012: Kriegs- und Militärverbrecher/in"@de,
+        "A 12012: War criminal and military criminal"@en ;
+    rdfs:subClassOf ohdab:Q1897494 .
+
+ohdab:Q1900285 a rdfs:Class ;
+    rdfs:label "A 52722: Breitensport (Amateure): Ball- und Wurfsportarten"@de,
+        "A 52722: Recreational sport (amateurs): Ball and throwing sports"@en ;
+    rdfs:subClassOf ohdab:Q1900301 .
+
+ohdab:Q1900301 a rdfs:Class ;
+    rdfs:label "A 5272: Ball- und Wurfsportarten"@de,
+        "A 5272: Ball and throwing sports"@en ;
+    rdfs:subClassOf ohdab:Q522552 .
+
 ohdab:Q518460 a rdfs:Class ;
     rdfs:label "A 10000: Unbekannte Amts- und Berufsbezeichnungen"@de,
         "A 10000: Unknown official and job titles"@en ;
@@ -750,8 +2469,8 @@ ohdab:Q519719 a rdfs:Class ;
     rdfs:subClassOf ohdab:Q521601 .
 
 ohdab:Q519720 a rdfs:Class ;
-    rdfs:label "A 12302: Kriegsverbrecher"@de,
-        "A 12302: War criminals"@en ;
+    rdfs:label "A 12302: Zwangsarbeiter/in (allgemeine)"@de,
+        "A 12302: Forced labourer (general)"@en ;
     rdfs:subClassOf ohdab:Q521602 .
 
 ohdab:Q519721 a rdfs:Class ;
@@ -10155,8 +11874,8 @@ ohdab:Q521601 a rdfs:Class ;
     rdfs:subClassOf ohdab:Q522501 .
 
 ohdab:Q521602 a rdfs:Class ;
-    rdfs:label "A 1230: Kriegsverbrecher/in"@de,
-        "A 1230: War criminals"@en ;
+    rdfs:label "A 1230: Zwangsarbeiter/in (allgemeine Bezeichnungen)"@de,
+        "A 1230: Forced labourer (general terms)"@en ;
     rdfs:subClassOf ohdab:Q522502 .
 
 ohdab:Q521603 a rdfs:Class ;
@@ -15890,8 +17609,8 @@ ohdab:Q522750 a rdfs:Class ;
     rdfs:subClassOf ohdab:Q522807 .
 
 ohdab:Q522751 a rdfs:Class ;
-    rdfs:label "A 54: Mitglieder von Logen, Zirkeln und studentischen Bewegungen"@de,
-        "A 54: Members of lodges, circles and student movements"@en ;
+    rdfs:label "A 54: Mitglieder von Logen, Zirkeln, studentische Bewegungen, kreative Freizeitbeschäftigungen"@de,
+        "A 54: Members of lodges, circles, student movements, creative leisure activities"@en ;
     rdfs:subClassOf ohdab:Q522807 .
 
 ohdab:Q522752 a rdfs:Class ;
@@ -16160,8 +17879,8 @@ ohdab:Q522804 a rdfs:Class ;
     rdfs:subClassOf ohdab:Q522819 .
 
 ohdab:Q522805 a rdfs:Class ;
-    rdfs:label "A 3: Rechtstitel, Nationalitäten, Religionsgemeinschaften"@de,
-        "A 3: Legal titles, nationalities, religious communities"@en ;
+    rdfs:label "A 3: Rechtstitel, Nationalitäten, Religionsgemeinschaften, Fiktionen"@de,
+        "A 3: Legal titles, nationalities, religious communities, legal fictions"@en ;
     rdfs:subClassOf ohdab:Q522819 .
 
 ohdab:Q522806 a rdfs:Class ;
@@ -17214,9 +18933,9 @@ ohdab:Q522961 a rdfs:Class ;
         "Bagalutin"@de .
 
 ohdab:Q522962 a rdfs:Class ;
-    rdfs:label "A 12002-504: Hinzurichtende/r"@de,
-        "A 12002-504: Executioner"@en ;
-    rdfs:subClassOf ohdab:Q519714 ;
+    rdfs:label "A 12000-541: Hinzurichtende/r"@de,
+        "A 12000-541: Executioner"@en ;
+    rdfs:subClassOf ohdab:Q519713 ;
     skos:altLabel "Hinzurichtende"@de,
         "Hinzurichtender"@de .
 
@@ -17338,9 +19057,9 @@ ohdab:Q522979 a rdfs:Class ;
     skos:altLabel "Niederer Stand"@de .
 
 ohdab:Q522980 a rdfs:Class ;
-    rdfs:label "A 12302-500: NS-Verbrecher/in"@de,
-        "A 12302-500: NS criminal"@en ;
-    rdfs:subClassOf ohdab:Q519720 ;
+    rdfs:label "A 12012-500: NS-Verbrecher/in"@de,
+        "A 12012-500: NS criminal"@en ;
+    rdfs:subClassOf ohdab:Q1897497 ;
     skos:altLabel "NS-Verbrecher"@de,
         "NS-Verbrecherin"@de .
 
@@ -50916,11 +52635,11 @@ ohdab:Q660087 a rdfs:Class ;
         "Marmoristin"@de .
 
 ohdab:Q660088 a rdfs:Class ;
-    rdfs:label "B 21232-500: Wappensteinschneider/in"@de,
-        "B 21232-500: Coat of arms stone cutter"@en ;
+    rdfs:label "B 21232-500: Wappensteinmetz"@de,
+        "B 21232-500: Coat of arms stonemason"@en ;
     rdfs:subClassOf ohdab:Q520024 ;
-    skos:altLabel "Wappensteinschneider"@de,
-        "Wappensteinschneiderin"@de .
+    skos:altLabel "Wappensteinmetz"@de,
+        "Wappensteinmetzin"@de .
 
 ohdab:Q660089 a rdfs:Class ;
     rdfs:label "B 21232-501: Schneidmüllergeselle/-gesellin"@de,
@@ -207429,11 +209148,11 @@ ohdab:Q682674 a rdfs:Class ;
         "Propagandistin"@de .
 
 ohdab:Q682675 a rdfs:Class ;
-    rdfs:label "B 61123-158: Reisende/r"@de,
-        "B 61123-158: Traveller"@en ;
+    rdfs:label "B 61123-158: Reisende/r (Verkauf)"@de,
+        "B 61123-158: Traveller (Sales)"@en ;
     rdfs:subClassOf ohdab:Q520846 ;
-    skos:altLabel "Reisende"@de,
-        "Reisender"@de .
+    skos:altLabel "Reisende (Verkauf)"@de,
+        "Reisender (Verkauf)"@de .
 
 ohdab:Q682676 a rdfs:Class ;
     rdfs:label "B 61123-159: Reisevertreter/in"@de,
@@ -228802,7 +230521,7 @@ ohdab:Q685744 a rdfs:Class ;
 
 ohdab:Q685745 a rdfs:Class ;
     rdfs:label "B 63394-532: Weinwirt/in"@de,
-        "B 63394-532: Wine host"@en ;
+        "B 63394-532: Wine taverner"@en ;
     rdfs:subClassOf ohdab:Q520952 ;
     skos:altLabel "Weinwirt"@de,
         "Weinwirtin"@de .
@@ -287872,11 +289591,11 @@ ohdab:Q694227 a rdfs:Class ;
         "Evangelischer Pfarrer"@de .
 
 ohdab:Q694228 a rdfs:Class ;
-    rdfs:label "B 83314-106: Imam"@de,
+    rdfs:label "B 83314-106: Imam/in"@de,
         "B 83314-106: Imam"@en ;
     rdfs:subClassOf ohdab:Q521315 ;
-    skos:altLabel "-"@de,
-        "Imam"@de .
+    skos:altLabel "Imam"@de,
+        "Imamin"@de .
 
 ohdab:Q694229 a rdfs:Class ;
     rdfs:label "B 83314-107: Orthodoxe/r Theologe/Theologin (Uni)"@de,
@@ -322211,11 +323930,11 @@ ohdab:Q699157 a rdfs:Class ;
         "Musterschmiedin"@de .
 
 ohdab:Q699158 a rdfs:Class ;
-    rdfs:label "B 93522-528: Militärplattner/in"@de,
+    rdfs:label "B 93522-528: Rüstungsplattner/in"@de,
         "B 93522-528: Military plater"@en ;
     rdfs:subClassOf ohdab:Q521481 ;
-    skos:altLabel "Militärplattner"@de,
-        "Militärplattnerin"@de .
+    skos:altLabel "Rüstungsplattner"@de,
+        "Rüstungsplattnerin"@de .
 
 ohdab:Q699159 a rdfs:Class ;
     rdfs:label "B 93522-529: Geschmeidemacher/in"@de,
@@ -336659,6 +338378,7 @@ ohdab:Q902142 a rdfs:Class ;
     dcterms:description "Diese Version der Ontologie der historischen, deutschsprachigen Amts- und Berufsbezeichnungen (OhdAB) wurde über ein Skript automatisch aus FactGrid generiert."@de,
         "This version of the historical German-language nomenclature for offices and professions (OhdAB) was automatically generated via a script from FactGrid."@en ;
     dcterms:hasVersion "1.0.0"^^xsd:string ;
+    dcterms:isVersionOf <https://database.factgrid.de/wiki/Item:Q518459> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:publisher "Olaf Simons" ;
     dcterms:title "Ontologie der historischen, deutschsprachigen Amts- und Berufsbezeichnungen | OhdAB"@de,
