@@ -896,7 +896,10 @@ ohdab:Q1875255 a rdfs:Class ;
 
 ohdab:Q1875256 a rdfs:Class ;
     rdfs:label "B 29232-527: Peler/in (Fleischhacker/in)"@de,
-        "B 29232-527: Peler (meat cutter)"@en .
+        "B 29232-527: Peler (meat cutter)"@en ;
+    rdfs:subClassOf ohdab:Q520371 ;
+    skos:altLabel "Peler (Fleischhacker)"@de,
+        "Pelerin (Fleischhackerin)"@de .
 
 ohdab:Q1875261 a rdfs:Class ;
     rdfs:label "B 71223-538: Organisationssekretär/in"@de,
@@ -908,6 +911,7 @@ ohdab:Q1875261 a rdfs:Class ;
 ohdab:Q1875264 a rdfs:Class ;
     rdfs:label "B 81493-501: Stadtoberphysikus/-physika"@de,
         "B 81493-501: City physician"@en ;
+    rdfs:subClassOf ohdab:Q521192 ;
     skos:altLabel "Stadtoberphysika"@de,
         "Stadtoberphysikus"@de .
 
@@ -1143,7 +1147,10 @@ ohdab:Q1876506 a rdfs:Class ;
 
 ohdab:Q1876507 a rdfs:Class ;
     rdfs:label "B 73283-695: Kassenamtsoffizier/in"@de,
-        "B 73283-695: Cashier officer"@en .
+        "B 73283-695: Cashier officer"@en ;
+    rdfs:subClassOf ohdab:Q521105 ;
+    skos:altLabel "Kassenamtsoffizier"@de,
+        "Kassenamtsoffizierin"@de .
 
 ohdab:Q1876517 a rdfs:Class ;
     rdfs:label "B 73154-606: Studierendenrichter/in"@de,
@@ -1704,6 +1711,7 @@ ohdab:Q1895997 a rdfs:Class ;
 ohdab:Q1895999 a rdfs:Class ;
     rdfs:label "A 52722-500: Amateurfußballspieler/in (Breitensport)"@de,
         "A 52722-500: Amateur footballer (recreational sport)"@en ;
+    rdfs:subClassOf ohdab:Q1900285 ;
     skos:altLabel "Amateurfußballspieler (Breitensport)"@de,
         "Amateurfußballspielerin (Breitensport)"@de .
 
@@ -2309,6 +2317,16 @@ ohdab:Q1897497 a rdfs:Class ;
     rdfs:label "A 12012: Kriegs- und Militärverbrecher/in"@de,
         "A 12012: War criminal and military criminal"@en ;
     rdfs:subClassOf ohdab:Q1897494 .
+
+ohdab:Q1900285 a rdfs:Class ;
+    rdfs:label "A 52722: Breitensport (Amateure): Ball- und Wurfsportarten"@de,
+        "A 52722: Recreational sport (amateurs): Ball and throwing sports"@en ;
+    rdfs:subClassOf ohdab:Q1900301 .
+
+ohdab:Q1900301 a rdfs:Class ;
+    rdfs:label "A 5272: Ball- und Wurfsportarten"@de,
+        "A 5272: Ball and throwing sports"@en ;
+    rdfs:subClassOf ohdab:Q522552 .
 
 ohdab:Q518460 a rdfs:Class ;
     rdfs:label "A 10000: Unbekannte Amts- und Berufsbezeichnungen"@de,
