@@ -1,6 +1,7 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 from rdflib import Graph, Namespace, Literal, URIRef
 from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD, SKOS
+import time
 
 import json
 import os
@@ -139,10 +140,26 @@ def run_query(query: str, cache: bool):
     # ---------------------------------------------
     print("↻ Fetching SPARQL result from FactGrid…")
 
+    MAX_ATTEMPTS = 5
+    REQUEST_TIMEOUT = 45
+    WAIT_BETWEEN_REQUESTS = 5
+
     sparql = SPARQLWrapper(ENDPOINT)
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
-    results = sparql.query().convert()
+    sparql.setTimeout(REQUEST_TIMEOUT)
+    for i in range(5):
+        try:
+            print(f"SPARQL request attempt {i+1}/{MAX_ATTEMPTS}")
+            results = sparql.query().convert()
+            break
+        except Exception as e:
+            print(f"SPARQL request failed with error: {e}")
+            if i+1 < MAX_ATTEMPTS:
+                print(f"Waiting {WAIT_BETWEEN_REQUESTS} seconds before retrying")
+                time.sleep(WAIT_BETWEEN_REQUESTS)
+            else:
+                raise RuntimeError(f"SPARQL request failed after {MAX_ATTEMPTS} attempts") from e
 
     # ---------------------------------------------
     # 3. Save result to cache file
