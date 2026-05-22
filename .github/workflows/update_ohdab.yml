@@ -34,10 +34,12 @@ jobs:
       - name: Check whether issue file exists
         id: issue_file_check
         run: |
-          if [ -s "ohdab/resources/missing_parents_issue_text.txt" ]; then
+          if [ -s "ohdab/resources/missing_parents_issue_text.md" ]; then
             echo "issuefile_exists=true" >> "$GITHUB_OUTPUT"
+            echo "Issue file found. Creating GitHub issue and skipping commit."
           else
             echo "issuefile_exists=false" >> "$GITHUB_OUTPUT"
+            echo "No issue file found. Skipping issue creation and committing OhdAB.ttl."
           fi
 
       - name: Create issue for missing parents
