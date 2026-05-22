@@ -6,6 +6,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   run-python-file:
@@ -20,14 +21,31 @@ jobs:
         with:
           python-version: "3.9"
 
-      - name: install dependencies
+      - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: run ohdab/main.py
+      - name: Run ohdab/main.py
         working-directory: ./ohdab
         run: python main.py
 
-      - name: commit OhdAB.ttl
+      - name: Check whether issue file exists
+        id: issue_file_check
+        run: |
+          if [ -s "ohdab/resources/missing_parents_issue_text.txt" ]; then
+            echo "issuefile_exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "issuefile_exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Trigger issue creation workflow
+        if: steps.issue_file_check.outputs.issuefile_exists == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run ohdab_missing_parents_issue.yml
+            
+
+      - name: Commit OhdAB.ttl
+        if: steps.issue_file_check.outputs.issuefile_exists == 'false'
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
