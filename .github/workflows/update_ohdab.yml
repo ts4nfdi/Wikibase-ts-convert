@@ -3,9 +3,6 @@ on:
   schedule:
     - cron: "4 5 * * 0"
   workflow_dispatch:
-  push:
-    branches:
-      - 16-check-for-missing-parents
 
 permissions:
   contents: write
@@ -47,7 +44,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "Creating issue because classes with missing parents exist. Skipping commit."
           gh issue create --title "OhdAB classes without real parents" --body-file "ohdab/resources/missing_parents_issue_text.md"
             
 
