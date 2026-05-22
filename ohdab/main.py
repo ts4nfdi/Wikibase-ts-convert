@@ -1,7 +1,7 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 from rdflib import Graph, Namespace, Literal, URIRef
 from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD, SKOS
-from issue_text_builder import write_missing_hierarchy_issue_text
+from issue_text_builder import write_missing_parents_issue_text
 
 import json
 import os
@@ -273,7 +273,7 @@ def create_as_classes(g, merged_results):
 
     if classes_without_real_parent:
         print("There are classes which do not have a parent class (except their own)")
-        write_missing_hierarchy_issue_text(classes_without_real_parent)
+        write_missing_parents_issue_text(classes_without_real_parent)
 
 def merge_results(results_de, results_en):
     merged = {}
