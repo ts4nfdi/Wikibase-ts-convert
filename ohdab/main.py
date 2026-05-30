@@ -142,7 +142,7 @@ def run_query(query: str, cache: bool):
     print("↻ Fetching SPARQL result from FactGrid…")
 
     MAX_ATTEMPTS = 5
-    REQUEST_TIMEOUT = 60
+    REQUEST_TIMEOUT = 75
     WAIT_BETWEEN_REQUESTS = 30
 
     sparql = SPARQLWrapper(ENDPOINT)
