@@ -1,6 +1,7 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 from rdflib import Graph, Namespace, Literal, URIRef
 from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD, SKOS
+from issue_text_builder import write_missing_parents_issue_text
 
 import json
 import os
@@ -196,6 +197,8 @@ def create_as_terms(g, results):
 
 
 def create_as_classes(g, merged_results):
+    classes_without_real_parent = []
+
     for entry in merged_results.values():
 
         # Use DE URI (same as EN)
@@ -240,6 +243,7 @@ def create_as_classes(g, merged_results):
         levels = ["OhdAB_01", "OhdAB_02", "OhdAB_03", "OhdAB_04", "OhdAB_05", "OhdAB_AB"]
 
         prev_uri = class_uri
+        has_real_parent = False
 
         for lvl in levels:
             key_de = f"{lvl}_de"
@@ -248,7 +252,9 @@ def create_as_classes(g, merged_results):
 
             if key_de in entry:
                 lvl_uri = URIRef(entry[key_de])
-
+                # this only gets triggered if the class has a parent different from itself
+                if not (prev_uri == lvl_uri):
+                    has_real_parent = True
                 g.add((prev_uri, RDFS.subClassOf, lvl_uri))
                 g.add((lvl_uri, RDF.type, RDFS.Class))
 
@@ -262,6 +268,12 @@ def create_as_classes(g, merged_results):
 
                 prev_uri = lvl_uri
 
+        if not has_real_parent:
+            classes_without_real_parent.append(class_uri)
+
+    if classes_without_real_parent:
+        print("There are classes which do not have a parent class (except their own)")
+        write_missing_parents_issue_text(classes_without_real_parent)
 
 def merge_results(results_de, results_en):
     merged = {}
@@ -304,3 +316,4 @@ if __name__ == "__main__":
     add_ontology_metadata(G)
     G.serialize("OhdAB.ttl", format="turtle")
     print("RDF exported to OhdAB.ttl")
+
