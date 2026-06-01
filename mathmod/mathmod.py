@@ -13,11 +13,12 @@ CACHE_FILE = "./fetchresult.json"
 # SPARQL query
 # NOTE: If you change the query, delete the caching file "fetchresult.json" to get updated results !!!
 QUERY_TEMPLATE = """
-SELECT DISTINCT ?itemLabel ?item ?itemDescription ?itemDepiction ?class ?classLabel ?classDescription ?superClass ?superClassLabel ?superClassDescription 
+SELECT DISTINCT ?itemLabel ?item ?itemDescription ?itemDepiction ?class ?classLabel ?classDescription ?formulaData
 WHERE {
   
   ?item wdt:P1495 wd:Q6534265.
   ?item wdt:P31 ?class.
+  ?item wdt:P989 ?formulaData.
   wd:Q6534265 wdt:P265 ?class.
   OPTIONAL { ?item wdt:P356 ?itemDepiction.}
   
@@ -28,7 +29,7 @@ ORDER BY ?itemLabel
 """
 
 # Namespaces
-OMW = Namespace("https://portal.mardi4nfdi.de")
+OMW = Namespace("https://portal.mardi4nfdi.de/wiki/entity/")
 
 
 # The ontology URI (choose one)
@@ -139,7 +140,9 @@ def create_as_terms(g, results):
                 g.add((class_uri, URIRef("http://schema.org/description"),
                    Literal(entry["classDescription"], lang="en")))
 
-
+        if "formulaData" in entry:
+            g.add((term_uri, URIRef("https://portal.mardi4nfdi.de/wiki/entity/P989"),
+                   Literal(entry["formulaData"])))
 
         #    uri = val(entry, lvl)
         #    if uri:
