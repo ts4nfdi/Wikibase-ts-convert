@@ -1,6 +1,6 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 from rdflib import Graph, Namespace, Literal, URIRef
-from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD, FOAF
+from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD, FOAF,SDO
 
 import json
 import os
@@ -13,14 +13,15 @@ CACHE_FILE = "./fetchresult.json"
 # SPARQL query
 # NOTE: If you change the query, delete the caching file "fetchresult.json" to get updated results !!!
 QUERY_TEMPLATE = """
-SELECT DISTINCT ?itemLabel ?item ?itemDescription ?itemDepiction ?class ?classLabel ?classDescription ?formulaData
+SELECT DISTINCT ?itemLabel ?item ?itemDescription ?itemDepiction ?class ?classLabel ?classDescription ?formulaData ?inDefiningForm
 WHERE {
   
   ?item wdt:P1495 wd:Q6534265.
   ?item wdt:P31 ?class.
-  ?item wdt:P989 ?formulaData.
   wd:Q6534265 wdt:P265 ?class.
-  OPTIONAL { ?item wdt:P356 ?itemDepiction.}
+  OPTIONAL { ?item wdt:P356 ?itemDepiction }
+  OPTIONAL { ?item wdt:P989 ?formulaData }
+  OPTIONAL { ?item wdt:P983 ?inDefiningForm }  
   
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
@@ -111,7 +112,7 @@ def create_as_terms(g, results):
                    Literal(entry["itemLabel"], lang="en")))
 
         if "itemDescription" in entry:
-            g.add((term_uri, URIRef("http://schema.org/description"),
+            g.add((term_uri, SDO.description,
                    Literal(entry["itemDescription"], lang="en")))
 
         if "itemDepiction" in entry:
@@ -137,12 +138,16 @@ def create_as_terms(g, results):
                    Literal(entry["classLabel"], lang="en")))
 
             if "classDescription" in entry:
-                g.add((class_uri, URIRef("http://schema.org/description"),
+                g.add((class_uri, SDO.description,
                    Literal(entry["classDescription"], lang="en")))
 
         if "formulaData" in entry:
             g.add((term_uri, URIRef("https://portal.mardi4nfdi.de/wiki/entity/P989"),
                    Literal(entry["formulaData"])))
+
+        if "inDefiningForm" in entry:
+            g.add((term_uri, URIRef("https://portal.mardi4nfdi.de/wiki/entity/P983"),
+                   Literal(entry["inDefiningForm"])))
 
         #    uri = val(entry, lvl)
         #    if uri:
@@ -243,8 +248,6 @@ if __name__ == "__main__":
     # Namespaces
     G = Graph()
     G.bind("mathmoddb", OMW)
-    G.bind("schemaorg", "http://schema.org/")
-
 
     # results = run_query(QUERY)
     #results_de = run_query(QUERY_TEMPLATE.replace("%LANG%", "de"), False)
