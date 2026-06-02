@@ -2,6 +2,9 @@ name: Update OhdAB ontology
 on:
   schedule:
     - cron: "4 5 * * 0"
+  push:
+    branches:
+      - feat/avoid-duplication-of-tickets
   workflow_dispatch:
 
 permissions:
