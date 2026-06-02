@@ -39,13 +39,44 @@ jobs:
             echo "No issue file found. Skipping issue creation and committing OhdAB.ttl."
           fi
 
-      - name: Create issue for missing parents
-        if: steps.issue_file_check.outputs.issuefile_exists == 'true'
+      - name: Check if issue exists
+        id: issue_check
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh issue create --title "OhdAB classes without real parents" --body-file "ohdab/resources/missing_parents_issue_text.md"
-            
+          ISSUE_NUMBER=$(gh issue list --state open \
+            --json number,title \
+            --jq '[.[] | select(.title == "OhdAB classes without real parents")] | 
+                  if length == 1 then .[0].number
+                  elif length == 0 then empty
+                  else error("More than one matching issue found")
+                  end')
+          
+          if [ -n "$ISSUE_NUMBER" ]; then
+            echo "issue_exists=true" >> "$GITHUB_OUTPUT"
+            echo "issue_number=$ISSUE_NUMBER" >> "$GITHUB_OUTPUT"
+            echo "Issue already exists: #$ISSUE_NUMBER"
+          else
+            echo "issue_exists=false" >> "$GITHUB_OUTPUT"
+            echo "No matching issue found"
+          fi
+          
+
+      - name: Create issue for missing parents
+        if: steps.issue_file_check.outputs.issuefile_exists == 'true' && steps.issue_check.outputs.issue_exists == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh issue create --title "OhdAB classes without real parents" --body-file "ohdab/resources/missing_parents_issue_text.md"
+
+      - name: Edit issue for missing parents
+        if: steps.issue_file_check.outputs.issuefile_exists == 'true' && steps.issue_check.outputs.issue_exists == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh issue edit ${{ steps.issue_check.outputs.issue_number }} --body-file "ohdab/resources/missing_parents_issue_text.md"
+
+      - name: Delete issue for missing parents
+        if: steps.issue_file_check.outputs.issuefile_exists == 'false' && steps.issue_check.outputs.issue_exists == 'false'
+        run: gh issue close ${{ steps.issue_check.outputs.issue_number }} --comment "Newest version of OhdAB contains no IRI's without real parents"
 
       - name: Commit OhdAB.ttl
         if: steps.issue_file_check.outputs.issuefile_exists == 'false'
