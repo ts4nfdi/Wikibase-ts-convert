@@ -1,7 +1,9 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 from rdflib import Graph, Namespace, Literal, URIRef
 from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD, SKOS
+from issue_text_builder import write_missing_parents_issue_text
 
+import time
 import json
 import os
 
@@ -143,10 +145,26 @@ def run_query(query: str, cache: bool):
     # ---------------------------------------------
     print("↻ Fetching SPARQL result from FactGrid…")
 
+    MAX_ATTEMPTS = 5
+    REQUEST_TIMEOUT = 75
+    WAIT_BETWEEN_REQUESTS = 30
+
     sparql = SPARQLWrapper(ENDPOINT)
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
-    results = sparql.query().convert()
+    sparql.setTimeout(REQUEST_TIMEOUT)
+    for i in range(5):
+        try:
+            print(f"SPARQL request attempt {i+1}/{MAX_ATTEMPTS}")
+            results = sparql.query().convert()
+            break
+        except Exception as e:
+            print(f"SPARQL request failed with error: {e}")
+            if i+1 < MAX_ATTEMPTS:
+                print(f"Waiting {WAIT_BETWEEN_REQUESTS} seconds before retrying")
+                time.sleep(WAIT_BETWEEN_REQUESTS)
+            else:
+                raise RuntimeError(f"SPARQL request failed after {MAX_ATTEMPTS} attempts") from e
 
     # ---------------------------------------------
     # 3. Save result to cache file
@@ -200,6 +218,8 @@ def create_as_terms(g, results):
 
 
 def create_as_classes(g, merged_results):
+    classes_without_real_parent = []
+
     for entry in merged_results.values():
 
         # Use DE URI (same as EN)
@@ -244,6 +264,7 @@ def create_as_classes(g, merged_results):
         levels = ["OhdAB_01", "OhdAB_02", "OhdAB_03", "OhdAB_04", "OhdAB_05", "OhdAB_AB"]
 
         prev_uri = class_uri
+        has_real_parent = False
 
         for lvl in levels:
             key_de = f"{lvl}_de"
@@ -252,7 +273,9 @@ def create_as_classes(g, merged_results):
 
             if key_de in entry:
                 lvl_uri = URIRef(entry[key_de])
-
+                # this only gets triggered if the class has a parent different from itself
+                if not (prev_uri == lvl_uri):
+                    has_real_parent = True
                 g.add((prev_uri, RDFS.subClassOf, lvl_uri))
                 g.add((lvl_uri, RDF.type, RDFS.Class))
 
@@ -266,6 +289,12 @@ def create_as_classes(g, merged_results):
 
                 prev_uri = lvl_uri
 
+        if not has_real_parent:
+            classes_without_real_parent.append(class_uri)
+
+    if classes_without_real_parent:
+        print("There are classes which do not have a parent class (except their own)")
+        write_missing_parents_issue_text(classes_without_real_parent)
 
 def merge_results(results_de, results_en):
     merged = {}

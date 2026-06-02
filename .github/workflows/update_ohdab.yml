@@ -6,6 +6,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   run-python-file:
@@ -20,14 +21,34 @@ jobs:
         with:
           python-version: "3.9"
 
-      - name: install dependencies
+      - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: run ohdab/main.py
+      - name: Run ohdab/main.py
         working-directory: ./ohdab
         run: python main.py
 
-      - name: commit OhdAB.ttl
+      - name: Check whether issue file exists
+        id: issue_file_check
+        run: |
+          if [ -s "ohdab/resources/missing_parents_issue_text.md" ]; then
+            echo "issuefile_exists=true" >> "$GITHUB_OUTPUT"
+            echo "Issue file found. Creating GitHub issue and skipping commit."
+          else
+            echo "issuefile_exists=false" >> "$GITHUB_OUTPUT"
+            echo "No issue file found. Skipping issue creation and committing OhdAB.ttl."
+          fi
+
+      - name: Create issue for missing parents
+        if: steps.issue_file_check.outputs.issuefile_exists == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create --title "OhdAB classes without real parents" --body-file "ohdab/resources/missing_parents_issue_text.md"
+            
+
+      - name: Commit OhdAB.ttl
+        if: steps.issue_file_check.outputs.issuefile_exists == 'false'
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
