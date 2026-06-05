@@ -19,7 +19,7 @@
           "https://database.factgrid.de/wiki/Property:P888",
           "https://database.factgrid.de/wiki/Property:P889"
       ],
-      "ontology_purl": "https://raw.githubusercontent.com/ts4nfdi/Wikibase-ts-convert/refs/heads/main/pipelines/ohdab/OhdAB.ttl"
+      "ontology_purl": "https://raw.githubusercontent.com/ts4nfdi/Wikibase-ts-convert/refs/heads/main/pipelines/ohdab/out/OhdAB.ttl"
     }
   ]
 }
