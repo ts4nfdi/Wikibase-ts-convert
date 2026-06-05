@@ -10,7 +10,6 @@ BASE_DIR = Path(__file__).resolve().parent
 def get_mathmod():
     return mathmod_pipeline()
 
-
 def get_ohdab():
     return ohdab_pipeline()
 
@@ -39,10 +38,9 @@ def main(args):
             pipelines_folder = BASE_DIR / "pipelines"
             for subfolder in pipelines_folder.iterdir():
                 if subfolder.is_dir():
-                    for folder_name in ["out", "resources"]:
-                        folder = subfolder / folder_name
-                        if folder.exists() and folder.is_dir():
-                            shutil.rmtree(folder)
+                    resource_dir = subfolder / "resources"
+                    if resource_dir.exists() and resource_dir.is_dir():
+                        shutil.rmtree(resource_dir)
             # returns only if second argument has the value remove
             return
 

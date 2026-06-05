@@ -9,8 +9,9 @@ import os
 
 # Path to folder of this file
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# Resource folder
+
 RESOURCES_DIR = os.path.join(BASE_DIR, "resources")
+OUT_DIR = os.path.join(BASE_DIR, "out")
 
 # FactGrid SPARQL endpoint
 ENDPOINT = "https://database.factgrid.de/sparql"
@@ -334,8 +335,6 @@ def main():
 
     # Save file
     add_ontology_metadata(G)
-    OUT_DIR = os.path.join(BASE_DIR, "out")
-    os.makedirs(OUT_DIR, exist_ok=True)
     G.serialize(os.path.join(OUT_DIR, "OhdAB.ttl"), format="turtle")
     print("RDF exported to OhdAB.ttl")
 
