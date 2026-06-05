@@ -25,7 +25,7 @@
         "https://portal.mardi4nfdi.de/wiki/"
       ],
       "oboSlims": false,
-      "ontology_purl": "https://raw.githubusercontent.com/ts4nfdi/Wikibase-ts-convert/refs/heads/main/mathmod/MathModDB.ttl"
+      "ontology_purl": "https://raw.githubusercontent.com/ts4nfdi/Wikibase-ts-convert/refs/heads/main/pipelines/mathmod/out/MathModDB.ttl"
     }
   ]
 }

@@ -92,10 +92,10 @@
     schema:description "study of the past via material culture"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6534301> a owl:NamedIndividual,
-        <https://portal.mardi4nfdi.de/entity/Q96183> ;
+        <https://portal.mardi4nfdi.de/entity/Q6534237> ;
     rdfs:label "Hamiltonian operator"@en ;
     mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mover><mi>T</mi><mo stretchy=\"false\">̂</mo></mover></mstyle></mrow></math>" ;
-    mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mover><mi>H</mi><mo stretchy=\"false\">̂</mo></mover><mo stretchy=\"false\">=</mo><mover><mi>T</mi><mo stretchy=\"false\">̂</mo></mover><mo stretchy=\"false\">+</mo><mover><mi>V</mi><mo stretchy=\"false\">̂</mo></mover></mstyle></mrow></math>" ;
+    mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mover><mi>H</mi><mo stretchy=\"false\">̂</mo></mover><mo stretchy=\"false\">≡</mo><mover><mi>T</mi><mo stretchy=\"false\">̂</mo></mover><mo stretchy=\"false\">+</mo><mover><mi>V</mi><mo stretchy=\"false\">̂</mo></mover></mstyle></mrow></math>" ;
     schema:description "operator representing the total energy of a quantum system"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6534302> a owl:NamedIndividual,
@@ -116,7 +116,7 @@
 
 <https://portal.mardi4nfdi.de/entity/Q6534305> a owl:NamedIndividual,
         <https://portal.mardi4nfdi.de/entity/Q96183> ;
-    rdfs:label "Schrödinger equation (time dependent)"@en ;
+    rdfs:label "time-dependent Schrödinger equation"@en ;
     mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow data-mjx-texclass=\"ORD\"><mi mathvariant=\"normal\">i</mi></mrow></mstyle></mrow></math>" ;
     mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow data-mjx-texclass=\"ORD\"><mi mathvariant=\"normal\">i</mi></mrow><mi alternate=\"1\">ℏ</mi><mrow data-mjx-texclass=\"ORD\"><mfrac><mrow data-mjx-texclass=\"ORD\"><mi>∂</mi></mrow><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>∂</mi><mi>t</mi></mrow></mrow></mfrac></mrow><mo stretchy=\"false\">|</mo><mi>ψ</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">⟩</mo><mo stretchy=\"false\">=</mo><mover><mi>H</mi><mo stretchy=\"false\">̂</mo></mover><mo stretchy=\"false\">|</mo><mi>ψ</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">⟩</mo></mstyle></mrow></math>" ;
     schema:description "partial differential equation describing how the quantum state of a non-relativistic physical system changes with time"@en .
@@ -124,7 +124,7 @@
 <https://portal.mardi4nfdi.de/entity/Q6534306> a owl:NamedIndividual,
         <https://portal.mardi4nfdi.de/entity/Q6534237> ;
     rdfs:label "quantum eigen energy"@en ;
-    schema:description "specific, quantized energy levels that a quantum system can possess"@en .
+    schema:description "quantized energy levels that a quantum system can possess"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6534308> a owl:NamedIndividual,
         <https://portal.mardi4nfdi.de/entity/Q6534237> ;
@@ -191,10 +191,10 @@
     schema:description "physical property that quantifies an object's interaction with electric fields"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6534324> a owl:NamedIndividual,
-        <https://portal.mardi4nfdi.de/entity/Q96183> ;
+        <https://portal.mardi4nfdi.de/entity/Q6534237> ;
     rdfs:label "quantum Hamiltonian (electric charge)"@en ;
     mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><msub><mi>H</mi><mrow data-mjx-texclass=\"ORD\"><mn>0</mn></mrow></msub></mstyle></mrow></math>" ;
-    mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>H</mi><mo stretchy=\"false\">=</mo><msub><mi>H</mi><mrow data-mjx-texclass=\"ORD\"><mn>0</mn></mrow></msub><mo stretchy=\"false\">+</mo><mi>q</mi><mi>ϕ</mi></mstyle></mrow></math>" ;
+    mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>H</mi><mo stretchy=\"false\">≡</mo><msub><mi>H</mi><mrow data-mjx-texclass=\"ORD\"><mn>0</mn></mrow></msub><mo stretchy=\"false\">+</mo><mi>q</mi><mi>ϕ</mi></mstyle></mrow></math>" ;
     schema:description "quantum-mechanical Hamiltonian for a particle with an electric charge interacting with external electric fields"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6534325> a owl:NamedIndividual,
@@ -1383,7 +1383,7 @@
 
 <https://portal.mardi4nfdi.de/entity/Q6673897> a owl:NamedIndividual,
         <https://portal.mardi4nfdi.de/entity/Q6534237> ;
-    rdfs:label "control system initial value"@en ;
+    rdfs:label "initial value of control system"@en ;
     schema:description "initial value for the state vector of a control system"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6673898> a owl:NamedIndividual,
@@ -2717,10 +2717,10 @@
 
 <https://portal.mardi4nfdi.de/entity/Q6674147> a owl:NamedIndividual,
         <https://portal.mardi4nfdi.de/entity/Q96183> ;
-    rdfs:label "initial control state"@en ;
+    rdfs:label "initial condition for control state"@en ;
     mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><msub><mi>x</mi><mrow data-mjx-texclass=\"ORD\"><mn>0</mn></mrow></msub></mstyle></mrow></math>" ;
     mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>x</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">=</mo><mn>0</mn><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">=</mo><msub><mi>x</mi><mrow data-mjx-texclass=\"ORD\"><mn>0</mn></mrow></msub></mstyle></mrow></math>" ;
-    schema:description "initial state of a control system"@en .
+    schema:description "initial condition for a control system"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6674148> a owl:NamedIndividual,
         <https://portal.mardi4nfdi.de/entity/Q96183> ;
@@ -2851,7 +2851,7 @@
 <https://portal.mardi4nfdi.de/entity/Q6674166> a owl:NamedIndividual,
         <https://portal.mardi4nfdi.de/entity/Q96183> ;
     rdfs:label "initial enzyme - product 1 - complex concentration (bi bi reaction ordered - ODE model)"@en ;
-    mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><msub><mi>c</mi><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>E</mi><msub><mi>P</mi><mrow data-mjx-texclass=\"ORD\"><mn>1</mn></mrow></msub></mrow></mrow></msub></mstyle></mrow></math>" ;
+    mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>t</mi></mstyle></mrow></math>" ;
     mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><msub><mi>c</mi><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>E</mi><msub><mi>P</mi><mrow data-mjx-texclass=\"ORD\"><mn>1</mn></mrow></msub></mrow></mrow></msub><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">=</mo><mn>0</mn><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">=</mo><msub><mi>c</mi><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>E</mi><msub><mi>P</mi><mrow data-mjx-texclass=\"ORD\"><msub><mn>1</mn><mrow data-mjx-texclass=\"ORD\"><mn>0</mn></mrow></msub></mrow></msub></mrow></mrow></msub></mstyle></mrow></math>" ;
     schema:description "initial concentration"@en .
 
@@ -3515,15 +3515,15 @@
 
 <https://portal.mardi4nfdi.de/entity/Q6674261> a owl:NamedIndividual,
         <https://portal.mardi4nfdi.de/entity/Q96183> ;
-    rdfs:label "initial momentum"@en ;
-    mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>t</mi></mstyle></mrow></math>" ;
+    rdfs:label "initial condition for momentum"@en ;
+    mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><msub><mi>p</mi><mrow data-mjx-texclass=\"ORD\"><mn>0</mn></mrow></msub></mstyle></mrow></math>" ;
     mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>p</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">=</mo><mn>0</mn><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">=</mo><msub><mi>p</mi><mrow data-mjx-texclass=\"ORD\"><mn>0</mn></mrow></msub></mstyle></mrow></math>" ;
-    schema:description "initial momentum of a classical particle modeled as point mass"@en .
+    schema:description "initial condition for the momentum of a classical particle modeled as point mass"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6674262> a owl:NamedIndividual,
         <https://portal.mardi4nfdi.de/entity/Q96183> ;
-    rdfs:label "initial position"@en ;
-    mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>t</mi></mstyle></mrow></math>" ;
+    rdfs:label "initial condition for position"@en ;
+    mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><msub><mi>q</mi><mrow data-mjx-texclass=\"ORD\"><mn>0</mn></mrow></msub></mstyle></mrow></math>" ;
     mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>q</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">=</mo><mn>0</mn><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">=</mo><msub><mi>q</mi><mrow data-mjx-texclass=\"ORD\"><mn>0</mn></mrow></msub></mstyle></mrow></math>" ;
     schema:description "initial position of a classical particle modeled as point mass"@en .
 
@@ -3550,7 +3550,7 @@
 
 <https://portal.mardi4nfdi.de/entity/Q6674266> a owl:NamedIndividual,
         <https://portal.mardi4nfdi.de/entity/Q96183> ;
-    rdfs:label "Schrödinger equation (Strang-Marchuk)"@en ;
+    rdfs:label "time-dependent Schrödinger equation (Strang-Marchuk)"@en ;
     mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mover><mi>T</mi><mo stretchy=\"false\">̂</mo></mover></mstyle></mrow></math>" ;
     mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mo stretchy=\"false\">|</mo><mi>ψ</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">+</mo><mi>Δ</mi><mi>t</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">⟩</mo><mo stretchy=\"false\">=</mo><mi>exp</mi><mo>&#x2061;</mo><mo stretchy=\"false\">(</mo><mo stretchy=\"false\">−</mo><mi>i</mi><mi>Δ</mi><mi>t</mi><mover><mi>T</mi><mo stretchy=\"false\">̂</mo></mover><mo lspace=\"0\" rspace=\"0\">/</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi alternate=\"1\">ℏ</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo><mi>exp</mi><mo>&#x2061;</mo><mo stretchy=\"false\">(</mo><mo stretchy=\"false\">−</mo><mi>i</mi><mi>Δ</mi><mi>t</mi><mover><mi>V</mi><mo stretchy=\"false\">̂</mo></mover><mo lspace=\"0\" rspace=\"0\">/</mo><mi alternate=\"1\">ℏ</mi><mo stretchy=\"false\">)</mo><mi>exp</mi><mo>&#x2061;</mo><mo stretchy=\"false\">(</mo><mo stretchy=\"false\">−</mo><mi>i</mi><mi>Δ</mi><mi>t</mi><mover><mi>T</mi><mo stretchy=\"false\">̂</mo></mover><mo lspace=\"0\" rspace=\"0\">/</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi alternate=\"1\">ℏ</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">|</mo><mi>ψ</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">⟩</mo><mo stretchy=\"false\">+</mo><mrow data-mjx-texclass=\"ORD\"><mi data-mjx-variant=\"-tex-calligraphic\">𝒪</mi></mrow><mo stretchy=\"false\">(</mo><mi>Δ</mi><mi>t</mi><msup><mo stretchy=\"false\">)</mo><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msup></mstyle></mrow></math>" ;
     schema:description "second order (Strang-Marchuk) split operator scheme for numerical integration of the time-dependent Schrödinger equation"@en .
@@ -4192,10 +4192,10 @@
 
 <https://portal.mardi4nfdi.de/entity/Q6674369> a owl:NamedIndividual,
         <https://portal.mardi4nfdi.de/entity/Q96183> ;
-    rdfs:label "initial velocity"@en ;
-    mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>v</mi></mstyle></mrow></math>" ;
+    rdfs:label "initial condition for velocity"@en ;
+    mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><msub><mi>v</mi><mrow data-mjx-texclass=\"ORD\"><mn>0</mn></mrow></msub></mstyle></mrow></math>" ;
     mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>v</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">=</mo><mn>0</mn><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">=</mo><msub><mi>v</mi><mrow data-mjx-texclass=\"ORD\"><mn>0</mn></mrow></msub></mstyle></mrow></math>" ;
-    schema:description "initial velocity of a classical particle modeled as point mass"@en .
+    schema:description "initial condition for the velocity of a classical particle modeled as point mass"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6674370> a owl:NamedIndividual,
         <https://portal.mardi4nfdi.de/entity/Q96183> ;
@@ -4809,10 +4809,10 @@
     schema:description "equation for uni uni reaction without product and uncompetitive complete inhibition following steady state assumption"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6674473> a owl:NamedIndividual,
-        <https://portal.mardi4nfdi.de/entity/Q96183> ;
+        <https://portal.mardi4nfdi.de/entity/Q6534237> ;
     rdfs:label "quantum Hamiltonian (linear rotor)"@en ;
-    mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>J</mi></mstyle></mrow></math>" ;
-    mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mover><mi>H</mi><mo stretchy=\"false\">̂</mo></mover><mo stretchy=\"false\">=</mo><mi>B</mi><msup><mover><mi>J</mi><mo stretchy=\"false\">̂</mo></mover><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msup></mstyle></mrow></math>" ;
+    mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mover><mi>H</mi><mo stretchy=\"false\">̂</mo></mover></mstyle></mrow></math>" ;
+    mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mover><mi>H</mi><mo stretchy=\"false\">̂</mo></mover><mo stretchy=\"false\">≡</mo><mi>B</mi><msup><mover><mi>J</mi><mo stretchy=\"false\">̂</mo></mover><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msup></mstyle></mrow></math>" ;
     schema:description "quantum-mechanical represention of a molecule as a linear rotor"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6674474> a owl:NamedIndividual,
@@ -4830,17 +4830,17 @@
     schema:description "expectation value indicating in how far molecular axes point in the same direction as space fxed axes"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6674476> a owl:NamedIndividual,
-        <https://portal.mardi4nfdi.de/entity/Q96183> ;
+        <https://portal.mardi4nfdi.de/entity/Q6534237> ;
     rdfs:label "quantum Hamiltonian (electric polarizability)"@en ;
     mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><msub><mi>H</mi><mrow data-mjx-texclass=\"ORD\"><mn>0</mn></mrow></msub></mstyle></mrow></math>" ;
-    mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>H</mi><mo stretchy=\"false\">=</mo><msub><mi>H</mi><mrow data-mjx-texclass=\"ORD\"><mn>0</mn></mrow></msub><mo stretchy=\"false\">−</mo><mrow data-mjx-texclass=\"ORD\"><mfrac><mrow data-mjx-texclass=\"ORD\"><mn>1</mn></mrow><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></mfrac></mrow><mi>α</mi><msup><mrow data-mjx-texclass=\"ORD\"><mi data-mjx-variant=\"-tex-calligraphic\">ℰ</mi></mrow><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msup></mstyle></mrow></math>" ;
+    mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>H</mi><mo stretchy=\"false\">≡</mo><msub><mi>H</mi><mrow data-mjx-texclass=\"ORD\"><mn>0</mn></mrow></msub><mo stretchy=\"false\">−</mo><mrow data-mjx-texclass=\"ORD\"><mfrac><mrow data-mjx-texclass=\"ORD\"><mn>1</mn></mrow><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></mfrac></mrow><mi>α</mi><msup><mrow data-mjx-texclass=\"ORD\"><mi data-mjx-variant=\"-tex-calligraphic\">ℰ</mi></mrow><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msup></mstyle></mrow></math>" ;
     schema:description "quantum-mechanical Hamiltonian for a system interacting (non-resonantly) through its induced dipole moments with external electric fields"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6674477> a owl:NamedIndividual,
-        <https://portal.mardi4nfdi.de/entity/Q96183> ;
+        <https://portal.mardi4nfdi.de/entity/Q6534237> ;
     rdfs:label "quantum Hamiltonian (electric dipole)"@en ;
     mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><msub><mi>H</mi><mrow data-mjx-texclass=\"ORD\"><mn>0</mn></mrow></msub></mstyle></mrow></math>" ;
-    mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>H</mi><mo stretchy=\"false\">=</mo><msub><mi>H</mi><mrow data-mjx-texclass=\"ORD\"><mn>0</mn></mrow></msub><mo stretchy=\"false\">−</mo><mi>μ</mi><mo stretchy=\"false\">⋅</mo><mrow data-mjx-texclass=\"ORD\"><mi data-mjx-variant=\"-tex-calligraphic\">ℰ</mi></mrow></mstyle></mrow></math>" ;
+    mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>H</mi><mo stretchy=\"false\">≡</mo><msub><mi>H</mi><mrow data-mjx-texclass=\"ORD\"><mn>0</mn></mrow></msub><mo stretchy=\"false\">−</mo><mi>μ</mi><mo stretchy=\"false\">⋅</mo><mrow data-mjx-texclass=\"ORD\"><mi data-mjx-variant=\"-tex-calligraphic\">ℰ</mi></mrow></mstyle></mrow></math>" ;
     schema:description "quantum-mechanical Hamiltonian for a system interacting (resonantly) through its permanent dipole moments with external electric fields"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6674478> a owl:NamedIndividual,
@@ -5134,10 +5134,10 @@
     schema:description "quantum-mechanical represention of molecular vibrations in terms of normal modes"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6674522> a owl:NamedIndividual,
-        <https://portal.mardi4nfdi.de/entity/Q96183> ;
+        <https://portal.mardi4nfdi.de/entity/Q6534237> ;
     rdfs:label "quantum Hamiltonian (normal mode, anharmonic)"@en ;
     mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mover><mi>q</mi><mo stretchy=\"false\">̂</mo></mover></mstyle></mrow></math>" ;
-    mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mover><mi>H</mi><mo stretchy=\"false\">̂</mo></mover><mo stretchy=\"false\">=</mo><mrow data-mjx-texclass=\"ORD\"><mfrac><mrow data-mjx-texclass=\"ORD\"><mn>1</mn></mrow><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></mfrac></mrow><munderover><mo movablelimits=\"false\" stretchy=\"false\">∑</mo><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>i</mi><mo stretchy=\"false\">=</mo><mn>1</mn></mrow></mrow><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mn>3</mn><mi>N</mi><mo stretchy=\"false\">−</mo><mn>6</mn></mrow></mrow></munderover><msub><mi>ω</mi><mrow data-mjx-texclass=\"ORD\"><mi>i</mi></mrow></msub><mrow data-mjx-texclass=\"INNER\"><mo data-mjx-texclass=\"OPEN\">(</mo><msubsup><mover><mi>p</mi><mo stretchy=\"false\">̂</mo></mover><mrow data-mjx-texclass=\"ORD\"><mi>i</mi></mrow><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msubsup><mo stretchy=\"false\">+</mo><msubsup><mover><mi>q</mi><mo stretchy=\"false\">̂</mo></mover><mrow data-mjx-texclass=\"ORD\"><mi>i</mi></mrow><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msubsup><mo data-mjx-texclass=\"CLOSE\">)</mo></mrow><mo stretchy=\"false\">+</mo><mrow data-mjx-texclass=\"ORD\"><mfrac><mrow data-mjx-texclass=\"ORD\"><mn>1</mn></mrow><mrow data-mjx-texclass=\"ORD\"><mn>6</mn></mrow></mfrac></mrow><munder><mo movablelimits=\"false\" stretchy=\"false\">∑</mo><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>i</mi><mi>j</mi><mi>k</mi></mrow></mrow></munder><msub><mi>ϕ</mi><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>i</mi><mi>j</mi><mi>k</mi></mrow></mrow></msub><msub><mi>q</mi><mrow data-mjx-texclass=\"ORD\"><mi>i</mi></mrow></msub><msub><mi>q</mi><mrow data-mjx-texclass=\"ORD\"><mi>j</mi></mrow></msub><msub><mi>q</mi><mrow data-mjx-texclass=\"ORD\"><mi>k</mi></mrow></msub><mo stretchy=\"false\">+</mo><mrow data-mjx-texclass=\"ORD\"><mfrac><mrow data-mjx-texclass=\"ORD\"><mn>1</mn></mrow><mrow data-mjx-texclass=\"ORD\"><mn>24</mn></mrow></mfrac></mrow><munder><mo movablelimits=\"false\" stretchy=\"false\">∑</mo><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>i</mi><mi>j</mi><mi>k</mi><mi>l</mi></mrow></mrow></munder><msub><mi>ϕ</mi><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>i</mi><mi>j</mi><mi>k</mi><mi>l</mi></mrow></mrow></msub><msub><mi>q</mi><mrow data-mjx-texclass=\"ORD\"><mi>i</mi></mrow></msub><msub><mi>q</mi><mrow data-mjx-texclass=\"ORD\"><mi>j</mi></mrow></msub><msub><mi>q</mi><mrow data-mjx-texclass=\"ORD\"><mi>k</mi></mrow></msub><msub><mi>q</mi><mrow data-mjx-texclass=\"ORD\"><mi>l</mi></mrow></msub></mstyle></mrow></math>" ;
+    mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mover><mi>H</mi><mo stretchy=\"false\">̂</mo></mover><mo stretchy=\"false\">≡</mo><mrow data-mjx-texclass=\"ORD\"><mfrac><mrow data-mjx-texclass=\"ORD\"><mn>1</mn></mrow><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></mfrac></mrow><munderover><mo movablelimits=\"false\" stretchy=\"false\">∑</mo><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>i</mi><mo stretchy=\"false\">=</mo><mn>1</mn></mrow></mrow><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mn>3</mn><mi>N</mi><mo stretchy=\"false\">−</mo><mn>6</mn></mrow></mrow></munderover><msub><mi>ω</mi><mrow data-mjx-texclass=\"ORD\"><mi>i</mi></mrow></msub><mrow data-mjx-texclass=\"INNER\"><mo data-mjx-texclass=\"OPEN\">(</mo><msubsup><mover><mi>p</mi><mo stretchy=\"false\">̂</mo></mover><mrow data-mjx-texclass=\"ORD\"><mi>i</mi></mrow><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msubsup><mo stretchy=\"false\">+</mo><msubsup><mover><mi>q</mi><mo stretchy=\"false\">̂</mo></mover><mrow data-mjx-texclass=\"ORD\"><mi>i</mi></mrow><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msubsup><mo data-mjx-texclass=\"CLOSE\">)</mo></mrow><mo stretchy=\"false\">+</mo><mrow data-mjx-texclass=\"ORD\"><mfrac><mrow data-mjx-texclass=\"ORD\"><mn>1</mn></mrow><mrow data-mjx-texclass=\"ORD\"><mn>6</mn></mrow></mfrac></mrow><munder><mo movablelimits=\"false\" stretchy=\"false\">∑</mo><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>i</mi><mi>j</mi><mi>k</mi></mrow></mrow></munder><msub><mi>ϕ</mi><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>i</mi><mi>j</mi><mi>k</mi></mrow></mrow></msub><msub><mi>q</mi><mrow data-mjx-texclass=\"ORD\"><mi>i</mi></mrow></msub><msub><mi>q</mi><mrow data-mjx-texclass=\"ORD\"><mi>j</mi></mrow></msub><msub><mi>q</mi><mrow data-mjx-texclass=\"ORD\"><mi>k</mi></mrow></msub><mo stretchy=\"false\">+</mo><mrow data-mjx-texclass=\"ORD\"><mfrac><mrow data-mjx-texclass=\"ORD\"><mn>1</mn></mrow><mrow data-mjx-texclass=\"ORD\"><mn>24</mn></mrow></mfrac></mrow><munder><mo movablelimits=\"false\" stretchy=\"false\">∑</mo><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>i</mi><mi>j</mi><mi>k</mi><mi>l</mi></mrow></mrow></munder><msub><mi>ϕ</mi><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>i</mi><mi>j</mi><mi>k</mi><mi>l</mi></mrow></mrow></msub><msub><mi>q</mi><mrow data-mjx-texclass=\"ORD\"><mi>i</mi></mrow></msub><msub><mi>q</mi><mrow data-mjx-texclass=\"ORD\"><mi>j</mi></mrow></msub><msub><mi>q</mi><mrow data-mjx-texclass=\"ORD\"><mi>k</mi></mrow></msub><msub><mi>q</mi><mrow data-mjx-texclass=\"ORD\"><mi>l</mi></mrow></msub></mstyle></mrow></math>" ;
     schema:description "quantum-mechanical represention of molecular normal modes of vibration beyond the harmonic approximation"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6674523> a owl:NamedIndividual,
@@ -5148,10 +5148,10 @@
     schema:description "eigenenergies of (single or coupled, for N particles) harmonic oscillators"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6674524> a owl:NamedIndividual,
-        <https://portal.mardi4nfdi.de/entity/Q96183> ;
+        <https://portal.mardi4nfdi.de/entity/Q6534237> ;
     rdfs:label "quantum Hamiltonian (normal mode, harmonic)"@en ;
     mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mover><mi>q</mi><mo stretchy=\"false\">̂</mo></mover></mstyle></mrow></math>" ;
-    mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mover><mi>H</mi><mo stretchy=\"false\">̂</mo></mover><mo stretchy=\"false\">=</mo><mrow data-mjx-texclass=\"ORD\"><mfrac><mrow data-mjx-texclass=\"ORD\"><mn>1</mn></mrow><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></mfrac></mrow><munderover><mo movablelimits=\"false\" stretchy=\"false\">∑</mo><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>i</mi><mo stretchy=\"false\">=</mo><mn>1</mn></mrow></mrow><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mn>3</mn><mi>N</mi><mo stretchy=\"false\">−</mo><mn>6</mn></mrow></mrow></munderover><msub><mi>ω</mi><mrow data-mjx-texclass=\"ORD\"><mi>i</mi></mrow></msub><mrow data-mjx-texclass=\"INNER\"><mo data-mjx-texclass=\"OPEN\">(</mo><msubsup><mover><mi>p</mi><mo stretchy=\"false\">̂</mo></mover><mrow data-mjx-texclass=\"ORD\"><mi>i</mi></mrow><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msubsup><mo stretchy=\"false\">+</mo><msubsup><mover><mi>q</mi><mo stretchy=\"false\">̂</mo></mover><mrow data-mjx-texclass=\"ORD\"><mi>i</mi></mrow><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msubsup><mo data-mjx-texclass=\"CLOSE\">)</mo></mrow></mstyle></mrow></math>" ;
+    mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mover><mi>H</mi><mo stretchy=\"false\">̂</mo></mover><mo stretchy=\"false\">≡</mo><mrow data-mjx-texclass=\"ORD\"><mfrac><mrow data-mjx-texclass=\"ORD\"><mn>1</mn></mrow><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></mfrac></mrow><munderover><mo movablelimits=\"false\" stretchy=\"false\">∑</mo><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>i</mi><mo stretchy=\"false\">=</mo><mn>1</mn></mrow></mrow><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mn>3</mn><mi>N</mi><mo stretchy=\"false\">−</mo><mn>6</mn></mrow></mrow></munderover><msub><mi>ω</mi><mrow data-mjx-texclass=\"ORD\"><mi>i</mi></mrow></msub><mrow data-mjx-texclass=\"INNER\"><mo data-mjx-texclass=\"OPEN\">(</mo><msubsup><mover><mi>p</mi><mo stretchy=\"false\">̂</mo></mover><mrow data-mjx-texclass=\"ORD\"><mi>i</mi></mrow><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msubsup><mo stretchy=\"false\">+</mo><msubsup><mover><mi>q</mi><mo stretchy=\"false\">̂</mo></mover><mrow data-mjx-texclass=\"ORD\"><mi>i</mi></mrow><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msubsup><mo data-mjx-texclass=\"CLOSE\">)</mo></mrow></mstyle></mrow></math>" ;
     schema:description "quantum-mechanical represention of molecular normal modes of vibration within the harmonic approximation"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6674525> a owl:NamedIndividual,
@@ -5333,10 +5333,10 @@
     schema:description "quantum-mechanical eigen energies of a non-rigid rotor"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6674552> a owl:NamedIndividual,
-        <https://portal.mardi4nfdi.de/entity/Q96183> ;
+        <https://portal.mardi4nfdi.de/entity/Q6534237> ;
     rdfs:label "quantum Hamiltonian (symmetric top)"@en ;
     mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><msub><mi>J</mi><mrow data-mjx-texclass=\"ORD\"><mi>B</mi></mrow></msub></mstyle></mrow></math>" ;
-    mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mover><mi>H</mi><mo stretchy=\"false\">̂</mo></mover><mo stretchy=\"false\">=</mo><mi>A</mi><msup><mover><msub><mi>J</mi><mrow data-mjx-texclass=\"ORD\"><mi>A</mi></mrow></msub><mo stretchy=\"false\">̂</mo></mover><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msup><mo stretchy=\"false\">+</mo><mi>B</mi><msup><mover><msub><mi>J</mi><mrow data-mjx-texclass=\"ORD\"><mi>B</mi></mrow></msub><mo stretchy=\"false\">̂</mo></mover><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msup><mo stretchy=\"false\">+</mo><mi>C</mi><msup><mover><msub><mi>J</mi><mrow data-mjx-texclass=\"ORD\"><mi>C</mi></mrow></msub><mo stretchy=\"false\">̂</mo></mover><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msup></mstyle></mrow></math>" ;
+    mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mover><mi>H</mi><mo stretchy=\"false\">̂</mo></mover><mo stretchy=\"false\">≡</mo><mi>A</mi><msup><mover><msub><mi>J</mi><mrow data-mjx-texclass=\"ORD\"><mi>A</mi></mrow></msub><mo stretchy=\"false\">̂</mo></mover><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msup><mo stretchy=\"false\">+</mo><mi>B</mi><msup><mover><msub><mi>J</mi><mrow data-mjx-texclass=\"ORD\"><mi>B</mi></mrow></msub><mo stretchy=\"false\">̂</mo></mover><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msup><mo stretchy=\"false\">+</mo><mi>C</mi><msup><mover><msub><mi>J</mi><mrow data-mjx-texclass=\"ORD\"><mi>C</mi></mrow></msub><mo stretchy=\"false\">̂</mo></mover><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msup></mstyle></mrow></math>" ;
     schema:description "quantum-mechanical represention of a molecule as a symmetric top"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6674553> a owl:NamedIndividual,
@@ -5431,24 +5431,24 @@
 
 <https://portal.mardi4nfdi.de/entity/Q6674566> a owl:NamedIndividual,
         <https://portal.mardi4nfdi.de/entity/Q96183> ;
-    rdfs:label "Schrödinger equation (Chebychev polynomial)"@en ;
+    rdfs:label "time-dependent Schrödinger equation (Chebychev polynomial)"@en ;
     schema:description "Chebchev polynomial scheme for numerical integration of the time-dependent Schrödinger equation"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6674567> a owl:NamedIndividual,
         <https://portal.mardi4nfdi.de/entity/Q96183> ;
-    rdfs:label "Schrödinger equation (differencing scheme)"@en ;
+    rdfs:label "time-dependent Schrödinger equation (differencing scheme)"@en ;
     schema:description "differencing scheme (symmetric combination of Euler forward and backward in time) for numerical integration of the time-dependent Schrödinger equation"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6674568> a owl:NamedIndividual,
         <https://portal.mardi4nfdi.de/entity/Q96183> ;
-    rdfs:label "Schrödinger equation (Lie-Trotter)"@en ;
+    rdfs:label "time-dependent Schrödinger equation (Lie-Trotter)"@en ;
     mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow data-mjx-texclass=\"ORD\"><mi mathvariant=\"normal\">i</mi></mrow></mstyle></mrow></math>" ;
     mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mo stretchy=\"false\">|</mo><mi>ψ</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">+</mo><mi>Δ</mi><mi>t</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">⟩</mo><mo stretchy=\"false\">=</mo><mi>exp</mi><mo>&#x2061;</mo><mo stretchy=\"false\">(</mo><mo stretchy=\"false\">−</mo><mi>i</mi><mi>Δ</mi><mi>t</mi><mover><mi>T</mi><mo stretchy=\"false\">̂</mo></mover><mo lspace=\"0\" rspace=\"0\">/</mo><mi alternate=\"1\">ℏ</mi><mo stretchy=\"false\">)</mo><mi>exp</mi><mo>&#x2061;</mo><mo stretchy=\"false\">(</mo><mo stretchy=\"false\">−</mo><mi>i</mi><mi>Δ</mi><mi>t</mi><mover><mi>V</mi><mo stretchy=\"false\">̂</mo></mover><mo lspace=\"0\" rspace=\"0\">/</mo><mi alternate=\"1\">ℏ</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">|</mo><mi>ψ</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">⟩</mo><mo stretchy=\"false\">+</mo><mrow data-mjx-texclass=\"ORD\"><mi data-mjx-variant=\"-tex-calligraphic\">𝒪</mi></mrow><mo stretchy=\"false\">(</mo><mi>Δ</mi><mi>t</mi><mo stretchy=\"false\">)</mo></mstyle></mrow></math>" ;
     schema:description "first order (Lie-Trotter) split operator scheme for numerical integration of the time-dependent Schrödinger equation"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6674569> a owl:NamedIndividual,
         <https://portal.mardi4nfdi.de/entity/Q96183> ;
-    rdfs:label "Schrödinger equation (split operator)"@en ;
+    rdfs:label "time-dependent Schrödinger equation (split operator)"@en ;
     schema:description "split operator scheme for numerical integration of the time-dependent Schrödinger equation"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6674570> a owl:NamedIndividual,
@@ -7894,7 +7894,7 @@
         <https://portal.mardi4nfdi.de/entity/Q6534237> ;
     rdfs:label "light particle Hamiltonian"@en ;
     mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>V</mi></mstyle></mrow></math>" ;
-    mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mover><mi>h</mi><mo stretchy=\"false\">̂</mo></mover><mo stretchy=\"false\">=</mo><mover><mi>t</mi><mo stretchy=\"false\">̂</mo></mover><mo stretchy=\"false\">+</mo><mover><mi>V</mi><mo stretchy=\"false\">̂</mo></mover></mstyle></mrow></math>" ;
+    mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mover><mi>h</mi><mo stretchy=\"false\">̂</mo></mover><mo stretchy=\"false\">≡</mo><mover><mi>t</mi><mo stretchy=\"false\">̂</mo></mover><mo stretchy=\"false\">+</mo><mover><mi>V</mi><mo stretchy=\"false\">̂</mo></mover></mstyle></mrow></math>" ;
     schema:description "governing the light particle(s) dynamics in quantum-classical models"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6775397> a owl:NamedIndividual,
@@ -9287,7 +9287,7 @@
 <https://portal.mardi4nfdi.de/entity/Q6775753> a owl:NamedIndividual,
         <https://portal.mardi4nfdi.de/entity/Q96183> ;
     rdfs:label "second-moment stochastic process specification"@en ;
-    mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>Z</mi></mstyle></mrow></math>" ;
+    mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow data-mjx-texclass=\"ORD\"><mi data-mjx-variant=\"-tex-calligraphic\">𝒳</mi></mrow></mstyle></mrow></math>" ;
     mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mtable displaystyle=\"true\"><mtr><mtd style=\"padding-bottom: 8pt;\" class=\"mwe-math-columnalign-r\"><mrow data-mjx-texclass=\"ORD\"><mtext>(a)</mtext></mrow><mspace width=\"0.278em\"></mspace></mtd><mtd style=\"padding-bottom: 8pt;\" class=\"mwe-math-columnalign-l\"><mrow data-mjx-texclass=\"ORD\"><mo data-mjx-texclass=\"OPEN\">{</mo><mtable><mtr><mtd class=\"mwe-math-columnalign-l\"><mrow data-mjx-texclass=\"ORD\"><mi>𝔼</mi></mrow><mo stretchy=\"false\">[</mo><mi>Z</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\" lspace=\"0\" rspace=\"0\">+</mo><mi>h</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">−</mo><mi>Z</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo><mo stretchy=\"false\">=</mo><mn>0</mn><mo>,</mo></mtd></mtr><mtr><mtd class=\"mwe-math-columnalign-l\"><mo data-mjx-texclass=\"OP\" mathvariant=\"normal\">Var</mo><mo>&#x2061;</mo><mspace width=\"-0.167em\"></mspace><mo maxsize=\"1.2em\" minsize=\"1.2em\">(</mo><mi>Z</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\" lspace=\"0\" rspace=\"0\">+</mo><mi>h</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">−</mo><mi>Z</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo maxsize=\"1.2em\" minsize=\"1.2em\">)</mo><mo stretchy=\"false\">=</mo><mn>2</mn><mspace width=\"0.167em\"></mspace><mi>γ</mi><mo stretchy=\"false\">(</mo><mi>h</mi><mo stretchy=\"false\">)</mo></mtd></mtr></mtable><mo fence=\"true\" stretchy=\"true\" symmetric=\"true\" data-mjx-texclass=\"CLOSE\"></mo></mrow></mtd></mtr><mtr><mtd style=\"padding-bottom: 8pt;\" class=\"mwe-math-columnalign-r\"><mrow data-mjx-texclass=\"ORD\"><mtext>or alternatively</mtext></mrow></mtd><mtd style=\"padding-bottom: 8pt;\" class=\"mwe-math-columnalign-l\"></mtd></mtr><mtr><mtd style=\"padding-bottom: 8pt;\" class=\"mwe-math-columnalign-r\"><mrow data-mjx-texclass=\"ORD\"><mtext>(b)</mtext></mrow><mspace width=\"0.278em\"></mspace></mtd><mtd style=\"padding-bottom: 8pt;\" class=\"mwe-math-columnalign-l\"><mrow data-mjx-texclass=\"ORD\"><mo data-mjx-texclass=\"OPEN\">{</mo><mtable><mtr><mtd class=\"mwe-math-columnalign-l\"><mrow data-mjx-texclass=\"ORD\"><mi>𝔼</mi></mrow><mo stretchy=\"false\">[</mo><mi>Z</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo><mo stretchy=\"false\">=</mo><mi>m</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>,</mo></mtd></mtr><mtr><mtd class=\"mwe-math-columnalign-l\"><mo data-mjx-texclass=\"OP\" mathvariant=\"normal\">Cov</mo><mo>&#x2061;</mo><mspace width=\"-0.167em\"></mspace><mo maxsize=\"1.2em\" minsize=\"1.2em\">(</mo><mi>Z</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>,</mo><mi>Z</mi><mo stretchy=\"false\">(</mo><msup><mi>x</mi><mo>&#x2032;</mo></msup><mo stretchy=\"false\">)</mo><mo maxsize=\"1.2em\" minsize=\"1.2em\">)</mo><mo stretchy=\"false\">=</mo><mi>C</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>,</mo><msup><mi>x</mi><mo>&#x2032;</mo></msup><mo stretchy=\"false\">)</mo></mtd></mtr></mtable><mo fence=\"true\" stretchy=\"true\" symmetric=\"true\" data-mjx-texclass=\"CLOSE\"></mo></mrow></mtd></mtr><mtr><mtd class=\"mwe-math-columnalign-r\"><mi>x</mi><mo>,</mo><msup><mi>x</mi><mo>&#x2032;</mo></msup><mo>,</mo><mi>h</mi><mo stretchy=\"false\">∈</mo><mrow data-mjx-texclass=\"ORD\"><mi data-mjx-variant=\"-tex-calligraphic\">𝒳</mi></mrow></mtd></mtr></mtable></mstyle></mrow></math>" ;
     schema:description "description of second-moment structure of a stochastic process, including variance, covariance, or variogram relations"@en .
 
@@ -10162,7 +10162,7 @@
 <https://portal.mardi4nfdi.de/entity/Q6821161> a owl:NamedIndividual,
         <https://portal.mardi4nfdi.de/entity/Q96183> ;
     rdfs:label "Toth isotherm equation"@en ;
-    mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><msub><mi>K</mi><mrow data-mjx-texclass=\"ORD\"><mi>T</mi></mrow></msub></mstyle></mrow></math>" ;
+    mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><msub><mi>C</mi><mrow data-mjx-texclass=\"ORD\"><mi>e</mi></mrow></msub></mstyle></mrow></math>" ;
     mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><msub><mi>q</mi><mrow data-mjx-texclass=\"ORD\"><mi>e</mi></mrow></msub><mo stretchy=\"false\">=</mo><mrow data-mjx-texclass=\"ORD\"><mfrac><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><msub><mi>q</mi><mrow data-mjx-texclass=\"ORD\"><mi>m</mi></mrow></msub><msub><mi>C</mi><mrow data-mjx-texclass=\"ORD\"><mi>e</mi></mrow></msub></mrow></mrow><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mo stretchy=\"false\">(</mo><mrow data-mjx-texclass=\"ORD\"><mfrac><mrow data-mjx-texclass=\"ORD\"><mn>1</mn></mrow><mrow data-mjx-texclass=\"ORD\"><msub><mi>K</mi><mrow data-mjx-texclass=\"ORD\"><mi>T</mi></mrow></msub></mrow></mfrac></mrow><mo stretchy=\"false\">+</mo><msubsup><mi>C</mi><mrow data-mjx-texclass=\"ORD\"><mi>e</mi></mrow><mrow data-mjx-texclass=\"ORD\"><msub><mi>m</mi><mrow data-mjx-texclass=\"ORD\"><mi>T</mi></mrow></msub></mrow></msubsup><msup><mo stretchy=\"false\">)</mo><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mfrac><mrow data-mjx-texclass=\"ORD\"><mn>1</mn></mrow><mrow data-mjx-texclass=\"ORD\"><msub><mi>m</mi><mrow data-mjx-texclass=\"ORD\"><mi>T</mi></mrow></msub></mrow></mfrac></mrow></mrow></msup></mrow></mrow></mfrac></mrow></mstyle></mrow></math>" ;
     schema:description "equilibrium uptake with heterogeneity exponent"@en .
 
@@ -12185,7 +12185,7 @@
 <https://portal.mardi4nfdi.de/entity/Q6830604> a owl:NamedIndividual,
         <https://portal.mardi4nfdi.de/entity/Q6534237> ;
     rdfs:label "normal force"@en ;
-    foaf:depiction "http://commons.wikimedia.org/wiki/Special:FilePath/Friction%20relative%20to%20normal%20force%20%28diagram%29.png" ;
+    foaf:depiction "http://commons.wikimedia.org/wiki/Special:FilePath/Incline.svg" ;
     schema:description "force exerted on an object by a body with which it is in contact, and vice versa"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q6830614> a owl:NamedIndividual,
@@ -12351,6 +12351,35 @@
     rdfs:label "astronomy"@en ;
     foaf:depiction "http://commons.wikimedia.org/wiki/Special:FilePath/Laser%20Towards%20Milky%20Ways%20Centre.jpg" ;
     schema:description "scientific study of celestial objects and phenomena"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q7253780> a owl:NamedIndividual,
+        <https://portal.mardi4nfdi.de/entity/Q96183> ;
+    rdfs:label "time-independent Schrödinger equation for electric charges"@en ;
+    mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><msub><mi>ψ</mi><mrow data-mjx-texclass=\"ORD\"><mi>n</mi></mrow></msub></mstyle></mrow></math>" ;
+    mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mover><mi>H</mi><mo stretchy=\"false\">̂</mo></mover><mo stretchy=\"false\">|</mo><msub><mi>ψ</mi><mrow data-mjx-texclass=\"ORD\"><mi>n</mi></mrow></msub><mo stretchy=\"false\">⟩</mo><mo stretchy=\"false\">=</mo><msub><mi>E</mi><mrow data-mjx-texclass=\"ORD\"><mi>n</mi></mrow></msub><mo stretchy=\"false\">|</mo><msub><mi>ψ</mi><mrow data-mjx-texclass=\"ORD\"><mi>n</mi></mrow></msub><mo stretchy=\"false\">⟩</mo></mstyle></mrow></math>" ;
+    schema:description "eigenvalue equation for the quantum-mechanical Hamiltonian operator for electric charges in an electric field"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q7253901> a owl:NamedIndividual,
+        <https://portal.mardi4nfdi.de/entity/Q96183> ;
+    rdfs:label "time-dependent Schrödinger equation  for electric charges"@en ;
+    mathmoddb:P983 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow data-mjx-texclass=\"ORD\"><mi mathvariant=\"normal\">i</mi></mrow></mstyle></mrow></math>" ;
+    mathmoddb:P989 "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"mwe-math-element mwe-math-element-inline\"><mrow data-mjx-texclass=\"ORD\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow data-mjx-texclass=\"ORD\"><mi mathvariant=\"normal\">i</mi></mrow><mi alternate=\"1\">ℏ</mi><mrow data-mjx-texclass=\"ORD\"><mfrac><mrow data-mjx-texclass=\"ORD\"><mi>∂</mi></mrow><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>∂</mi><mi>t</mi></mrow></mrow></mfrac></mrow><mo stretchy=\"false\">|</mo><mi>ψ</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">⟩</mo><mo stretchy=\"false\">=</mo><mover><mi>H</mi><mo stretchy=\"false\">̂</mo></mover><mo stretchy=\"false\">|</mo><mi>ψ</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">⟩</mo></mstyle></mrow></math>" ;
+    schema:description "partial differential equation describing how the quantum state of electric charges in an electric field changes with time"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q7255967> a owl:NamedIndividual,
+        <https://portal.mardi4nfdi.de/entity/Q6534237> ;
+    rdfs:label "initial value of position"@en ;
+    schema:description "initial value of position of a point particle"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q7255968> a owl:NamedIndividual,
+        <https://portal.mardi4nfdi.de/entity/Q6534237> ;
+    rdfs:label "initial value of velocity"@en ;
+    schema:description "initial value of velocity of a point particle"@en .
+
+<https://portal.mardi4nfdi.de/entity/Q7255969> a owl:NamedIndividual,
+        <https://portal.mardi4nfdi.de/entity/Q6534237> ;
+    rdfs:label "initial value of momentum"@en ;
+    schema:description "initial value of momentum of a point particle"@en .
 
 <https://portal.mardi4nfdi.de/entity/Q74913> a owl:NamedIndividual,
         <https://portal.mardi4nfdi.de/entity/Q60231> ;
