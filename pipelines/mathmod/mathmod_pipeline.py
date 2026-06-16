@@ -32,12 +32,14 @@ ORDER BY ?propertyId
 
 # NOTE: If you change the query, delete the caching file "fetchresult.json" to get updated results !!!
 QUERY_TEMPLATE = """
-SELECT DISTINCT ?itemLabel ?item ?itemDescription ?itemDepiction ?class ?classLabel ?classDescription ?formulaData ?inDefiningForm %OPTIONAL_IDS%
+SELECT DISTINCT ?itemLabel ?item ?itemDescription ?itemDepiction ?class ?classLabel ?classDescription %OPTIONAL_IDS%
 WHERE {
   
   ?item wdt:P1495 wd:Q6534265.
   ?item wdt:P31 ?class.
   wd:Q6534265 wdt:P265 ?class.
+  OPTIONAL { ?item wdt:P356 ?itemDepiction }
+
   %OPTIONALS%
 
   
@@ -198,7 +200,7 @@ def create_as_terms(g, results, properties):
                 #print("pkey:"+pkey)
                 #print("entry:"+str(entry))
                 if pkey in entry:
-                    print("exist")
+                    #print("exist")
                     g.add((term_uri, URIRef("https://portal.mardi4nfdi.de/wiki/entity/"+pkey),
                            Literal(entry[pkey])))
 
