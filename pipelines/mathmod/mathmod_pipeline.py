@@ -16,22 +16,46 @@ ENDPOINT = "https://query.portal.mardi4nfdi.de/sparql"
 CACHE_FILE = os.path.join(RESOURCES_DIR, "fetchresult.json")
 
 # SPARQL query
+PROPERTIES_QUERY = """
+SELECT DISTINCT (STRAFTER(STR(?p), "/prop/direct/") AS ?propertyId)
+WHERE {
+ 
+
+  ?item wdt:P1495 wd:Q6534265 .
+  ?item ?p ?value .
+  
+  
+  
+}
+ORDER BY ?propertyId
+"""
+
 # NOTE: If you change the query, delete the caching file "fetchresult.json" to get updated results !!!
 QUERY_TEMPLATE = """
-SELECT DISTINCT ?itemLabel ?item ?itemDescription ?itemDepiction ?class ?classLabel ?classDescription ?formulaData ?inDefiningForm
+SELECT DISTINCT ?itemLabel ?item ?itemDescription ?itemDepiction ?class ?classLabel ?classDescription ?formulaData ?inDefiningForm %OPTIONAL_IDS%
 WHERE {
   
   ?item wdt:P1495 wd:Q6534265.
   ?item wdt:P31 ?class.
   wd:Q6534265 wdt:P265 ?class.
-  OPTIONAL { ?item wdt:P356 ?itemDepiction }
-  OPTIONAL { ?item wdt:P989 ?formulaData }
-  OPTIONAL { ?item wdt:P983 ?inDefiningForm }  
+  %OPTIONALS%
+
   
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ORDER BY ?itemLabel
 """
+#Optionals
+Optionals = {
+    "P356": "itemDepiction",
+    "P558": "namedAfter",
+    "P982": "inDefiningForm",
+    "P989": "formulaData",
+    "P1459": "description",
+    "P1656": "discretizedBy",
+    "P1684": "specializedBy",
+    "P1690": "relatedUrl"
+}
 
 # Namespaces
 OMW = Namespace("https://portal.mardi4nfdi.de/wiki/entity/")
@@ -40,6 +64,20 @@ OMW = Namespace("https://portal.mardi4nfdi.de/wiki/entity/")
 # The ontology URI (choose one)
 ONTOLOGY_URI = URIRef("https://portal.mardi4nfdi.de/wiki/")
 
+def prepare_query(properties):
+
+    optionals = ""
+    optional_ids = ""
+    #print("properties"+str(properties))
+    for entry in properties:
+        #print(entry)
+        if entry['propertyId']['value']:
+            optional_ids += " ?"+str(entry['propertyId']['value'])
+            optionals += f"OPTIONAL {{ ?item wdt:{entry['propertyId']['value']} ?{entry['propertyId']['value']} }}\n"
+
+    print("optionals"+optionals)
+    template = QUERY_TEMPLATE.replace("%OPTIONALS%", optionals).replace("%OPTIONAL_IDS%", optional_ids)
+    return template
 
 def add_ontology_metadata(g: Graph):
     g.add((ONTOLOGY_URI, RDF.type, OWL.Ontology))
@@ -70,6 +108,7 @@ def add_ontology_metadata(g: Graph):
 
 
 def run_query(query: str, cache: bool):
+    print("query: "+query)
     # ---------------------------------------------
     # 1. If file exists → load cached JSON
     # ---------------------------------------------
@@ -101,7 +140,7 @@ def run_query(query: str, cache: bool):
     return results
 
 
-def create_as_terms(g, results):
+def create_as_terms(g, results, properties):
     for uri, entry in results.items():
 
         term_uri = URIRef(uri)
@@ -152,6 +191,18 @@ def create_as_terms(g, results):
         if "inDefiningForm" in entry:
             g.add((term_uri, URIRef("https://portal.mardi4nfdi.de/wiki/entity/P983"),
                    Literal(entry["inDefiningForm"])))
+
+        for prop in properties:
+            if prop['propertyId']['value']:
+                pkey = prop['propertyId']['value']
+                #print("pkey:"+pkey)
+                #print("entry:"+str(entry))
+                if pkey in entry:
+                    print("exist")
+                    g.add((term_uri, URIRef("https://portal.mardi4nfdi.de/wiki/entity/"+pkey),
+                           Literal(entry[pkey])))
+
+
 
         #    uri = val(entry, lvl)
         #    if uri:
@@ -254,7 +305,9 @@ def main():
 
     # results = run_query(QUERY)
     # results_de = run_query(QUERY_TEMPLATE.replace("%LANG%", "de"), False)
-    results_en = run_query(QUERY_TEMPLATE.replace("%LANG%", "en"), False)
+    properties = run_query(PROPERTIES_QUERY, False)['results']['bindings']
+
+    results_en = run_query(prepare_query(properties), False)
     results = prepare_results(results_en)
 
     # Print raw JSON
@@ -262,7 +315,7 @@ def main():
     print(results)
 
     print("\n=== Results ===")
-    create_as_terms(G, results)
+    create_as_terms(G, results, properties)
     # create_as_classes(G, results)
 
     # Save file
