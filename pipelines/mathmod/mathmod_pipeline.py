@@ -34,7 +34,7 @@ ORDER BY ?itemLabel
 """
 
 # Namespaces
-OMW = Namespace("https://portal.mardi4nfdi.de/wiki/entity/")
+OMW = Namespace("https://portal.mardi4nfdi.de/entity/")
 
 
 # The ontology URI (choose one)
@@ -146,11 +146,11 @@ def create_as_terms(g, results):
                    Literal(entry["classDescription"], lang="en")))
 
         if "formulaData" in entry:
-            g.add((term_uri, URIRef("https://portal.mardi4nfdi.de/wiki/entity/P989"),
+            g.add((term_uri, URIRef("https://portal.mardi4nfdi.de/entity/P989"),
                    Literal(entry["formulaData"])))
 
         if "inDefiningForm" in entry:
-            g.add((term_uri, URIRef("https://portal.mardi4nfdi.de/wiki/entity/P983"),
+            g.add((term_uri, URIRef("https://portal.mardi4nfdi.de/entity/P983"),
                    Literal(entry["inDefiningForm"])))
 
         #    uri = val(entry, lvl)
@@ -164,6 +164,20 @@ def create_as_terms(g, results):
                 #g.add((lvl_uri, RDF.type, OMW["term"]))
 
                 #prev_uri = lvl_uri
+
+def get_property_data (g):
+    g.add((URIRef("https://portal.mardi4nfdi.de/entity/P983"),
+                 RDF.type, OWL.AnnotationProperty))
+    g.add((URIRef("https://portal.mardi4nfdi.de/entity/P983"),
+                 RDFS.label, Literal("in defining formula", lang="en")))
+    g.add((URIRef("https://portal.mardi4nfdi.de/entity/P983"),
+                 SDO.description, Literal("any symbol used in the defining formula (P989)", lang="en")))
+    g.add((URIRef("https://portal.mardi4nfdi.de/entity/P989"),
+                 RDF.type, OWL.AnnotationProperty))
+    g.add((URIRef("https://portal.mardi4nfdi.de/entity/P989"),
+                 RDFS.label, Literal("defining formula", lang="en")))
+    g.add((URIRef("https://portal.mardi4nfdi.de/entity/P989"),
+                 SDO.description, Literal("mathematical formula representing a theorem or law. Maximum length: 400 characters", lang="en")))
 
 
 def create_as_classes(g, results):
@@ -264,6 +278,8 @@ def main():
     print("\n=== Results ===")
     create_as_terms(G, results)
     # create_as_classes(G, results)
+
+    get_property_data(G)
 
     # Save file
     add_ontology_metadata(G)
