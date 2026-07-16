@@ -1,4 +1,4 @@
-from SPARQLWrapper import SPARQLWrapper, JSON, POST
+from SPARQLWrapper import SPARQLWrapper, JSON
 from rdflib import Graph, Namespace, Literal, URIRef, BNode
 from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD, SDO
 
