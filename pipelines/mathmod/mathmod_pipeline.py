@@ -15,6 +15,11 @@ ENDPOINT = "https://query.portal.mardi4nfdi.de/sparql"
 
 CACHE_FILE = os.path.join(RESOURCES_DIR, "fetchresult.json")
 
+# Namespaces
+OMW = Namespace("https://portal.mardi4nfdi.de/entity/")
+# The ontology URI (choose one)
+ONTOLOGY_URI = URIRef("https://portal.mardi4nfdi.de/wiki/")
+
 # SPARQL query
 # NOTE: If you change the query, delete the caching file "fetchresult.json" to get updated results !!!
 QUERY_TEMPLATE = """
@@ -29,12 +34,12 @@ SELECT DISTINCT
   ?formulaData
   ?annotatedTarget
   ?linkedTargetItem
+  %%OPTIONAL_IDS%%
 WHERE {
 
   ?item wdt:P1495 wd:Q6534265.
   ?item wdt:P31 ?class.
   wd:Q6534265 wdt:P265 ?class.
-  OPTIONAL { ?item wdt:P356 ?itemDepiction }
 
   OPTIONAL {
     ?item wdt:P989 ?formulaData .
@@ -45,6 +50,9 @@ WHERE {
       ?inDefiningFormStatement pq:P984 ?linkedTargetItem .
     }       
   }
+  
+  %%OPTIONALS%%
+  
 
   SERVICE wikibase:label {
     bd:serviceParam wikibase:language "en" .
@@ -52,16 +60,41 @@ WHERE {
 }
 """
 
-# Namespaces
-OMW = Namespace("https://portal.mardi4nfdi.de/entity/")
+def add_optionals_to_query(queryTemplate, optProperties: dict):
+    optionals = ""
+    optional_ids = ""
 
+    for k, v in optProperties.items():
+        optional_ids += f"?{v} "
+        optionals += f"OPTIONAL {{ ?item wdt:{k} ?{v} }} \n"
 
-# The ontology URI (choose one)
-ONTOLOGY_URI = URIRef("https://portal.mardi4nfdi.de/wiki/")
+    print(optionals, optional_ids)
 
-# dict for linking property names to their uris
-PROPERTIES = {}
+    queryTemplate = queryTemplate.replace("%%OPTIONALS%%", optionals)
+    queryTemplate = queryTemplate.replace("%%OPTIONAL_IDS%%", optional_ids)
 
+    return queryTemplate
+
+def get_optional_properties():
+    query = """
+    SELECT DISTINCT ?property
+    WHERE {
+      ?item wdt:P1495 wd:Q6534265 .
+      ?item ?property ?value .
+    }
+    """
+
+    sparql = SPARQLWrapper(ENDPOINT)
+    sparql.setQuery(query)
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
+
+    optionalProperties = []
+
+    for row in results["results"]["bindings"]:
+        optionalProperties.append(row["property"]["value"])
+
+    return optionalProperties
 
 def add_ontology_metadata(g: Graph):
     g.add((ONTOLOGY_URI, RDF.type, OWL.Ontology))
@@ -158,7 +191,7 @@ def addPropertyData(g: Graph):
 
         # save property in global PROPERTIES dict
         key = result["property"]["value"].split("/")[-1]
-        PROPERTIES[key] = property
+        # PROPERTIES[key] = property
 
         if key == "P984":
             g.add((property, RDF.type, OWL.AnnotationProperty))
@@ -175,11 +208,14 @@ def addPropertyData(g: Graph):
             g.add((property, SDO.description, propertyDescription))
 
         # save property in global PROPERTIES dict
-        key = result["property"]["value"].split("/")[-1]
-        PROPERTIES[key] = property
+        # key = result["property"]["value"].split("/")[-1]
+        # PROPERTIES[key] = property
+
+def get_uri_for_property(property):
+    return URIRef(f"https://portal.mardi4nfdi.de/entity/{property}")
 
 
-def create_as_terms(g, results):
+def create_as_terms(g, results, optProperties: dict):
     for uri, entry in results.items():
 
         term_uri = URIRef(uri)
@@ -204,6 +240,11 @@ def create_as_terms(g, results):
             if not isinstance(depictions, list):
                 depictions = [depictions]
             g.add((term_uri, FOAF.depiction, Literal(json.dumps(depictions)[2:-2])))
+
+
+        for k, v in optProperties.items():
+            if v in entry:
+                g.add((term_uri, get_uri_for_property(k) , Literal(entry[v], lang="en")))
 
         # hierarchy relations (broader)
 
@@ -231,7 +272,7 @@ def create_as_terms(g, results):
             g.add(
                 (
                     term_uri,
-                    PROPERTIES["P989"],
+                    get_uri_for_property("P989"),
                     Literal(entry["formulaData"]),
                 )
             )
@@ -240,13 +281,13 @@ def create_as_terms(g, results):
         if "annotatedTargetsAndItems" in entry:
             for pair in entry["annotatedTargetsAndItems"]:
 
-                g.add((term_uri, PROPERTIES["P983"], Literal(pair["annotatedTarget"])))
+                g.add((term_uri, get_uri_for_property("P983"), Literal(pair["annotatedTarget"])))
                 axiom = BNode()
                 g.add((axiom, RDF.type, OWL.Axiom))
                 g.add((axiom, OWL.annotatedSource, term_uri))
                 g.add((axiom, OWL.annotatedTarget, Literal(pair["annotatedTarget"])))
-                g.add((axiom, OWL.annotatedProperty, PROPERTIES["P983"]))
-                g.add((axiom, PROPERTIES["P984"], Literal(pair["linkedTargetItem"])))
+                g.add((axiom, OWL.annotatedProperty, get_uri_for_property("P983")))
+                g.add((axiom, get_uri_for_property("P984"), Literal(pair["linkedTargetItem"])))
 
         #    uri = val(entry, lvl)
         #    if uri:
@@ -377,17 +418,28 @@ def main():
 
     addPropertyData(G)
 
+    optionalProperties = {
+        "P558": "namedAfter",
+        "P1459": "description",
+        "P1656": "discretizedBy",
+        "P1684": "specializedBy",
+        "P1690": "relatedUrl",
+    }
+
+    query = add_optionals_to_query(QUERY_TEMPLATE, optionalProperties)
+
+    print(query)
+
     # results = run_query(QUERY)
     # results_de = run_query(QUERY_TEMPLATE.replace("%LANG%", "de"), False)
-    results_en = run_query(QUERY_TEMPLATE.replace("%LANG%", "en"), False)
+    results_en = run_query(query.replace("%LANG%", "en"), False)
     results = prepare_results(results_en)
 
     # Print raw JSON
     print("=== Raw JSON ===")
-    print(results)
 
     print("\n=== Results ===")
-    create_as_terms(G, results)
+    create_as_terms(G, results, optionalProperties)
     # create_as_classes(G, results)
 
     # Save file
