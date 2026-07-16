@@ -18,7 +18,6 @@ def get_answer_from_endpoint(query):
     sparql = SPARQLWrapper(ENDPOINT)
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
-    sparql.setMethod(POST)
 
     results = sparql.query().convert()
     results = results["results"]["bindings"]
