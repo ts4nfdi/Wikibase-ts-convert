@@ -1,7 +1,6 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 from rdflib import Graph, Namespace, Literal, URIRef, BNode
 from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD, SDO
-
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -14,6 +13,7 @@ ENDPOINT = "https://query.portal.mardi4nfdi.de/sparql"
 OMW = Namespace("https://portal.mardi4nfdi.de/entity/")
 ONTOLOGY_URI = URIRef("https://portal.mardi4nfdi.de/wiki/")
 
+# helper method for sending a sparql query to the endpoint and cleaning to result
 def get_answer_from_endpoint(query):
     sparql = SPARQLWrapper(ENDPOINT)
     sparql.setQuery(query)
@@ -24,6 +24,9 @@ def get_answer_from_endpoint(query):
 
     return results
 
+# =============================================================================
+# SPARQL QUERIES
+# =============================================================================
 # This query pulls all individuals in the mathmod scope.
 # This query is used to define each individual and add their label and description.
 INDIVIDUALS_QUERY = """
@@ -122,6 +125,9 @@ WHERE {
 }
 """
 
+# =============================================================================
+# METHODS FOR ADDING THE DATA OF THE QUERY RESULTS TO THE GRAPH
+# =============================================================================
 def add_individuals_to_graph(individuals, graph):
     for entry in individuals:
         item_uri = URIRef(entry["item"]["value"])
@@ -135,6 +141,7 @@ def add_individuals_to_graph(individuals, graph):
             graph.add((item_uri, SDO.description, Literal(entry["itemDescription"]["value"], lang="en")))
 
     print(f"added {len(individuals)} classes to graph")
+
 
 def add_classes_to_graph(classes, graph):
     for entry in classes:
@@ -155,6 +162,7 @@ def add_classes_to_graph(classes, graph):
             )
 
     print(f"added {len(classes)} individuals to graph")
+
 
 def add_properties_to_graph(properties, graph):
     uris_of_p983_p989 = {}
@@ -240,6 +248,7 @@ def add_formula_data_to_graph(formula_data, graph, uris_of_p983_p989):
             graph.add((axiom, OWL.annotatedProperty, p983))
             graph.add((axiom, p984, linkedTargetItem))
 
+
 def add_individual_property_value_triples_to_graph(ipv, graph):
     for entry in ipv:
         individual_uri = URIRef(entry["item"]["value"])
@@ -253,7 +262,9 @@ def add_individual_property_value_triples_to_graph(ipv, graph):
 
     print(f"added {len(ipv)} triples with individuals as subject and a wikibase property as property to graph")
 
-
+# =============================================================================
+# ADD ONTOLOGY METADATA
+# =============================================================================
 def add_ontology_metadata(graph):
     graph.add((ONTOLOGY_URI, RDF.type, OWL.Ontology))
 
@@ -295,7 +306,9 @@ def add_ontology_metadata(graph):
 
     print("added ontology metadata to graph")
 
-
+# =============================================================================
+# MAIN - EXECUTION ORDER
+# =============================================================================
 def main():
     g = Graph()
 
