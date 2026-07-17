@@ -145,6 +145,9 @@ def add_individuals_to_graph(individuals, graph):
 def add_classes_to_graph(classes, graph):
     num_classes = len(classes)
 
+    # array that contains the uris of all classes for later use
+    classUris = []
+
     for entry in classes:
         class_uri = URIRef(entry["class"]["value"])
 
@@ -152,6 +155,8 @@ def add_classes_to_graph(classes, graph):
         if class_uri == URIRef("https://portal.mardi4nfdi.de/entity/Q56751"):
             num_classes -= 1
             continue
+
+        classUris.append(class_uri)
 
         graph.add((class_uri, RDF.type, RDFS.Class))
 
@@ -168,6 +173,8 @@ def add_classes_to_graph(classes, graph):
             )
 
     print(f"added {num_classes} classes to graph")
+    print(classUris)
+    return classUris
 
 
 def add_properties_to_graph(properties, graph):
@@ -255,7 +262,7 @@ def add_formula_data_to_graph(formula_data, graph, uris_of_p983_p989):
             graph.add((axiom, p984, linkedTargetItem))
 
 
-def add_individual_property_value_triples_to_graph(ipv, graph):
+def add_individual_property_value_triples_to_graph(ipv, graph, classUris):
     for entry in ipv:
         individual_uri = URIRef(entry["item"]["value"])
         property_uri = URIRef(entry["property"]["value"])
@@ -264,7 +271,13 @@ def add_individual_property_value_triples_to_graph(ipv, graph):
         else:
             property_value = Literal(entry["value"]["value"], lang="en")
 
-        graph.add((individual_uri, property_uri, property_value))
+        # instance of relations should be added as RDF.type relation
+        if property_uri == URIRef("https://portal.mardi4nfdi.de/entity/P31"):
+            # only RDF.type relations to classes that mathmod consists of should be added
+            if property_value in classUris:
+                graph.add((individual_uri, RDF.type, property_value))
+        else:
+            graph.add((individual_uri, property_uri, property_value))
 
     print(f"added {len(ipv)} triples with individuals as subject and a wikibase property as property to graph")
 
@@ -330,7 +343,7 @@ def main():
 
     # add classes to graph
     classes = get_answer_from_endpoint(CLASSES_QUERY)
-    add_classes_to_graph(classes, g)
+    classUris = add_classes_to_graph(classes, g)
 
     # add properties to graph
     properties = get_answer_from_endpoint(PROPERTIES_QUERY)
@@ -342,7 +355,7 @@ def main():
 
     # add all individual property relations
     individual_property_value = get_answer_from_endpoint(INDIVIDUAL_PROPERTY_VALUE_QUERY)
-    add_individual_property_value_triples_to_graph(individual_property_value, g)
+    add_individual_property_value_triples_to_graph(individual_property_value, g, classUris)
 
     # Serialize output
     out_dir = BASE_DIR / "out"
