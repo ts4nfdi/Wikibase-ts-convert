@@ -2,6 +2,7 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 from rdflib import Graph, Namespace, Literal, URIRef, BNode
 from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD, SDO
 from pathlib import Path
+import subprocess
 
 BASE_DIR = Path(__file__).resolve().parent
 RESOURCES_DIR = BASE_DIR / "resources"
@@ -375,8 +376,21 @@ def main():
     out_dir = BASE_DIR / "out"
     out_dir.mkdir(parents=True, exist_ok=True)
     output_file = "MathModDB.owl"
-    g.serialize(destination=out_dir / output_file, format="xml")
+    g.serialize(destination=out_dir / output_file, format="pretty-xml")
     print(f"serialized graph to {output_file}")
+
+    # apply formatter
+    # ontology-formatter.jar uses the OWL API
+    subprocess.run(
+        [
+            "java",
+            "-jar",
+            str(BASE_DIR / "ontology-formatter.jar"),
+            str(out_dir / "MathModDB.owl"),
+            str(out_dir / "MathModDB.owl"),
+        ],
+        check=True,
+    )
 
 if __name__ == "__main__":
     main()
