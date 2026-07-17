@@ -31,10 +31,18 @@ def get_answer_from_endpoint(query):
 # This query is used to define each individual and add their label and description.
 INDIVIDUALS_QUERY = """
 SELECT DISTINCT
-  ?item ?itemLabel ?itemDescription
+  ?item
+  ?itemId
+  ?itemLabel
+  ?itemDescription
 WHERE {
   ?item wdt:P1495 wd:Q6534265 .
-  
+
+  BIND(
+    REPLACE(STR(?item), "^.*/", "")
+    AS ?itemId
+  )
+
   SERVICE wikibase:label {
     bd:serviceParam wikibase:language "en" .
   }
@@ -128,8 +136,15 @@ WHERE {
 # METHODS FOR ADDING THE DATA OF THE QUERY RESULTS TO THE GRAPH
 # =============================================================================
 def add_individuals_to_graph(individuals, graph):
+    num_individuals = len(individuals)
     for entry in individuals:
         item_uri = URIRef(entry["item"]["value"])
+
+        # some properties are defined as part of the MathMod community and therefore are listed in the query result.
+        # Those should not be added as individuals and will later be added as properties with the property query.
+        if entry["itemId"]["value"].startswith("P"):
+            num_individuals -= 1
+            continue
 
         graph.add((item_uri, RDF.type, OWL.NamedIndividual))
 
@@ -139,7 +154,7 @@ def add_individuals_to_graph(individuals, graph):
         if "itemDescription" in entry:
             graph.add((item_uri, SDO.description, Literal(entry["itemDescription"]["value"], lang="en")))
 
-    print(f"added {len(individuals)} individuals to graph")
+    print(f"added {num_individuals} individuals to graph")
 
 
 def add_classes_to_graph(classes, graph):
@@ -173,7 +188,6 @@ def add_classes_to_graph(classes, graph):
             )
 
     print(f"added {num_classes} classes to graph")
-    print(classUris)
     return classUris
 
 
