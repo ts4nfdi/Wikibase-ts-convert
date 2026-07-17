@@ -66,7 +66,7 @@ WHERE {
 }
 """
 
-# This query pulls all classes used by individuals in the mathmod scope.
+# This query pulls all classes the mathmod scope consists of .
 # This query is used to define the classes and their label and description.
 CLASSES_QUERY = """
 SELECT DISTINCT
@@ -74,8 +74,7 @@ SELECT DISTINCT
   ?classLabel
   ?classDescription
 WHERE {
-  ?item wdt:P1495 wd:Q6534265 .
-  ?item wdt:P31 ?class .
+  wd:Q6534265 wdt:P265 ?class .
 
   SERVICE wikibase:label {
     bd:serviceParam wikibase:language "en" .
@@ -140,12 +139,19 @@ def add_individuals_to_graph(individuals, graph):
         if "itemDescription" in entry:
             graph.add((item_uri, SDO.description, Literal(entry["itemDescription"]["value"], lang="en")))
 
-    print(f"added {len(individuals)} classes to graph")
+    print(f"added {len(individuals)} individuals to graph")
 
 
 def add_classes_to_graph(classes, graph):
+    num_classes = len(classes)
+
     for entry in classes:
         class_uri = URIRef(entry["class"]["value"])
+
+        # class "publication" should not be added
+        if class_uri == URIRef("https://portal.mardi4nfdi.de/entity/Q56751"):
+            num_classes -= 1
+            continue
 
         graph.add((class_uri, RDF.type, RDFS.Class))
 
@@ -161,7 +167,7 @@ def add_classes_to_graph(classes, graph):
                 )
             )
 
-    print(f"added {len(classes)} individuals to graph")
+    print(f"added {num_classes} classes to graph")
 
 
 def add_properties_to_graph(properties, graph):
