@@ -7,7 +7,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:entity="https://portal.mardi4nfdi.de/entity/"
+     xmlns:mathmoddb="https://portal.mardi4nfdi.de/entity/"
      xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="https://portal.mardi4nfdi.de/wiki/">
         <owl:versionIRI rdf:resource="https://portal.mardi4nfdi.de/wiki//2.0.0"/>
@@ -24,7 +24,7 @@
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-23</terms:issued>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-23</terms:modified>
-        <terms:publisher xml:lang="en">Mathematical Research Data Initiative (MaRDI,&lt;a href=&quot;https://www.mardi4nfdi.de&quot;&gt;https://www.mardi4nfdi.de&lt;/a&gt;)</terms:publisher>
+        <terms:publisher xml:lang="en">Mathematical Research Data Initiative (MaRDI, https://www.mardi4nfdi.de)</terms:publisher>
         <terms:title xml:lang="en">MathModDB Knowledge Graph of Mathematical Models</terms:title>
         <rdfs:label xml:lang="en">MathModDB Ontology</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://doi.org/10.1007/978-3-031-65990-4_14"/>
