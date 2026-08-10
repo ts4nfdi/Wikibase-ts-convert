@@ -1,8 +1,9 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 from rdflib import Graph, Namespace, Literal, URIRef, BNode
-from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD, SDO
+from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD, SDO, FOAF, DOAP
 from pathlib import Path
 import subprocess
+from datetime import date
 
 BASE_DIR = Path(__file__).resolve().parent
 RESOURCES_DIR = BASE_DIR / "resources"
@@ -302,41 +303,118 @@ def add_individual_property_value_triples_to_graph(ipv, graph, classUris):
 def add_ontology_metadata(graph):
     graph.add((ONTOLOGY_URI, RDF.type, OWL.Ontology))
 
-    graph.add((ONTOLOGY_URI, OWL.versionIRI, URIRef(f"{ONTOLOGY_URI}/1.0.0")))
+    # versionIRI and version
+    graph.add((ONTOLOGY_URI, OWL.versionIRI, URIRef(f"{ONTOLOGY_URI}2.0.0")))
+    graph.add((ONTOLOGY_URI, OWL.versionInfo, Literal("2.0.0", datatype=XSD.string)))
 
+    # title
     graph.add(
         (
             ONTOLOGY_URI,
             DCTERMS.title,
             Literal(
-                "MathModDB Knowledge Graph of Mathematical Models | MathModDB",
+                "MathModDB Knowledge Graph of Mathematical Models",
                 lang="en",
             ),
         )
     )
 
-    # g.add((ONTOLOGY_URI, DCTERMS.creator, Literal("Katrin Moeller")))  # adjust
+    # label
+    graph.add((ONTOLOGY_URI, RDFS.label, Literal("MathModDB Knowledge Graph of Mathematical Models",
+                                                 lang="en")))
 
-    # g.add((ONTOLOGY_URI, DCTERMS.publisher, Literal("Olaf Simons")))  # adjust
+    # description
 
-    # TODO: select license properly
-    # g.add((ONTOLOGY_URI, DCTERMS.license, URIRef("https://creativecommons.org/licenses/by/4.0/")))  # CC-BY default
+    graph.add((ONTOLOGY_URI, DCTERMS.description,
+               Literal("MathModDB is a database of mathematical models developed by the Mathematical "
+                       "Research Data Initiative (MaRDI). It defines a data model with classes (Mathematical Model, "
+                       "Mathematical Formulation, Academic Discipline, Research Problem, Quantity [Kind], Computational "
+                       "Task, Publication), object properties/relations, data properties and annotation properties as "
+                       "an ontology. This ontology is populated with individuals/data from various fields of applied "
+                       "mathematics, making it a knowledge graph. ", lang="en")))
 
-    graph.add((ONTOLOGY_URI, DCTERMS.hasVersion, Literal("1.0.0", datatype=XSD.string)))
+    # abstract
+    graph.add((ONTOLOGY_URI, DCTERMS.abstract,
+               Literal("MathModDB is a database of mathematical models developed by the Mathematical"
+                       " Research Data Initiative (MaRDI). MathModDB defines a data model with classes (Mathematical "
+                       "Model, Mathematical Formulation, Research Field, Research Problem, Quantity [Kind], "
+                       "Computational Task, Publication), object properties/relations, data properties and annotation"
+                       " properties as an ontology. This ontology is populated with individuals/data from various"
+                       " fields of applied mathematics, making it a knowledge graph.", lang="en")))
 
-    # g.add((ONTOLOGY_URI, OMW["releaseDate"],Literal("2023-01-01", datatype=XSD.date)))  # adjust
+    # homepage
+    graph.add((ONTOLOGY_URI, FOAF.homepage, Literal("https://portal.mardi4nfdi.de/wiki/MathModDB",
+                                                    lang="en")))
 
-    # Optional but recommended
-    graph.add(
-        (
-            ONTOLOGY_URI,
-            DCTERMS.description,
-            Literal(
-                "MathModDB defines a data model with classes (Mathematical Model, Mathematical Expression, Academic Discipline, Research Problem, Quantity (Kind), Computational Task, Scholarly Article), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph",
-                lang="en",
-            ),
+    # issue tracker
+    # graph.add((ONTOLOGY_URI, DOAP["bug-database"], URIRef("https://github.com/MaRDI4NFDI/MathModDB/issues")))
+
+    # license
+    graph.add((ONTOLOGY_URI, DCTERMS.license, URIRef("https://creativecommons.org/licenses/by/4.0/")))
+
+    # bibliographic citation
+    graph.add((ONTOLOGY_URI, DCTERMS.bibliographicCitation, Literal("Shehu, A., Schembera, B., Schmidt, B.,"
+                                                                " Biedinger, C., Fiedler, J., Reidelbach, M., Koprucki,"
+                                                                " T. (2025): MathModDB Ontology and Knowledge Graph for"
+                                                                " Mathematical Models", lang="en")))
+
+    # subjects
+    # for subject in ["Computer Science", "Mathematics", "Engineering"]:
+    #    graph.add((ONTOLOGY_URI, DCTERMS.subject, Literal(subject, lang="en")))
+
+    # issued + modified
+    today = date.today()
+    graph.add((ONTOLOGY_URI, DCTERMS.issued, Literal(today, datatype=XSD.dateTime)))
+    graph.add((ONTOLOGY_URI, DCTERMS.modified, Literal(today, datatype=XSD.dateTime)))
+
+    # see also
+    see_also_links = [
+        "https://doi.org/10.1007/978-3-031-65990-4_14",
+        "https://doi.org/10.1007/978-3-031-81974-2_8",
+        "https://doi.org/10.52825/cordi.v1i.255",
+    ]
+
+    for link in see_also_links:
+        graph.add((ONTOLOGY_URI,RDFS.seeAlso,URIRef(link)))
+
+    # publisher
+    graph.add((ONTOLOGY_URI, DCTERMS.publisher, Literal('Mathematical Research Data Initiative (MaRDI,'
+                                                        ' https://www.mardi4nfdi.de)', lang="en")))
+
+    # creators
+
+    creator_values = [
+        "Aurela Shehu (https://orcid.org/0000-0002-1994-0612), "
+        "Weierstrass Institute Berlin for Applied Analysis and Stochastics "
+        "(https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)",
+        "Björn Schembera (https://orcid.org/0000-0003-2860-6621), "
+        "Universität Stuttgart "
+        "(https://ror.org/04vnq7t77, https://isni.org/isni/0000000419369713)",
+        "Burkhard Schmidt (https://orcid.org/0000-0002-9658-499X), "
+        "Weierstrass Institute Berlin for Applied Analysis and Stochastics "
+        "(https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)",
+        "Christine Biedinger (https://orcid.org/0009-0002-5082-8386), "
+        "Fraunhofer Institute for Industrial Mathematics ITWM "
+        "(https://ror.org/019hjw009)",
+        "Jochen Fiedler (https://orcid.org/0000-0002-9176-780X), "
+        "Fraunhofer Institute for Industrial Mathematics ITWM "
+        "(https://ror.org/019hjw009)",
+        "Marco Reidelbach (https://orcid.org/0000-0002-1919-1834), "
+        "Zuse Institute Berlin "
+        "(https://ror.org/02eva5865, https://isni.org/isni/000000011010926X)",
+        "Thomas Koprucki (https://orcid.org/0000-0001-6235-9412), "
+        "Weierstrass Institute Berlin for Applied Analysis and Stochastics "
+        "(https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)",
+    ]
+
+    for creator in creator_values:
+        graph.add(
+            (
+                ONTOLOGY_URI,
+                DCTERMS.creator,
+                Literal(creator, lang="en"),
+            )
         )
-    )
 
     print("added ontology metadata to graph")
 
