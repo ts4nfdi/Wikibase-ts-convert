@@ -304,7 +304,7 @@ def add_ontology_metadata(graph):
     graph.add((ONTOLOGY_URI, RDF.type, OWL.Ontology))
 
     # versionIRI and version
-    graph.add((ONTOLOGY_URI, OWL.versionIRI, URIRef(f"{ONTOLOGY_URI}/2.0.0")))
+    graph.add((ONTOLOGY_URI, OWL.versionIRI, URIRef(f"{ONTOLOGY_URI}2.0.0")))
     graph.add((ONTOLOGY_URI, OWL.versionInfo, Literal("2.0.0", datatype=XSD.string)))
 
     # title
@@ -371,9 +371,8 @@ def add_ontology_metadata(graph):
         graph.add((ONTOLOGY_URI,RDFS.seeAlso,URIRef(link)))
 
     # publisher
-    graph.add((ONTOLOGY_URI, DCTERMS.publisher, Literal('Mathematical Research Data Initiative (MaRDI,' 
-                                                    '<a href="https://www.mardi4nfdi.de">https://www.mardi4nfdi.de</a>)'
-                                                    , lang="en")))
+    graph.add((ONTOLOGY_URI, DCTERMS.publisher, Literal('Mathematical Research Data Initiative (MaRDI,'
+                                                        ' https://www.mardi4nfdi.de)', lang="en")))
 
     # creators
 
