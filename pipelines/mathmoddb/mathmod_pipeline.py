@@ -343,7 +343,8 @@ def add_ontology_metadata(graph):
                        " fields of applied mathematics, making it a knowledge graph.", lang="en")))
 
     # homepage
-    # graph.add((ONTOLOGY_URI, FOAF.homepage, Literal("N/A", lang="en")))
+    graph.add((ONTOLOGY_URI, FOAF.homepage, Literal("https://portal.mardi4nfdi.de/wiki/MathModDB",
+                                                    lang="en")))
 
     # issue tracker
     # graph.add((ONTOLOGY_URI, DOAP["bug-database"], URIRef("https://github.com/MaRDI4NFDI/MathModDB/issues")))
