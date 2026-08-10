@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run main.py ohdab
+      - name: Run ohdab_pipeline.py
         run: python main.py ohdab
 
       - name: Check whether issue file exists
@@ -97,4 +97,3 @@ jobs:
           else
             echo "No changes to commit."
           fi
-          git push
