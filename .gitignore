@@ -281,3 +281,6 @@ fabric.properties
 /.idea/reverse-proxy-flask.iml
 /apivenv/
 /venv/*
+
+# macOS specific files
+.DS_Store

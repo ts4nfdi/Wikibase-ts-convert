@@ -24,14 +24,13 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run ohdab/main.py
-        working-directory: ./ohdab
-        run: python main.py
+      - name: Run main.py ohdab
+        run: python main.py ohdab
 
       - name: Check whether issue file exists
         id: issue_file_check
         run: |
-          if [ -s "ohdab/resources/missing_parents_issue_text.md" ]; then
+          if [ -s "pipelines/ohdab/resources/missing_parents_issue_text.md" ]; then
             echo "issuefile_exists=true" >> "$GITHUB_OUTPUT"
             echo "Issue file found."
           else
@@ -67,7 +66,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh issue create --title "OhdAB classes without real parents" --body-file "ohdab/resources/missing_parents_issue_text.md"
+          gh issue create --title "OhdAB classes without real parents" --body-file "pipelines/ohdab/resources/missing_parents_issue_text.md"
           echo "Created new issue."
 
       - name: Edit issue
@@ -75,7 +74,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh issue edit ${{ steps.issue_check.outputs.issue_number }} --body-file "ohdab/resources/missing_parents_issue_text.md"
+          gh issue edit ${{ steps.issue_check.outputs.issue_number }} --body-file "pipelines/ohdab/resources/missing_parents_issue_text.md"
           echo "Edited existing issue."
 
       - name: Close issue
@@ -91,7 +90,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add ./ohdab/OhdAB.ttl
+          git add ./pipelines/ohdab/out/OhdAB.ttl
           if git commit -m "Update OhdAB.ttl"; then
             git push
             echo "Committed OhdAB.ttl update."

@@ -5,10 +5,15 @@ from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD, FOAF,SDO
 import json
 import os
 
+# Path to folder of this file
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# resources folder
+RESOURCES_DIR = os.path.join(BASE_DIR, "resources")
+
 # FactGrid SPARQL endpoint
 ENDPOINT = "https://query.portal.mardi4nfdi.de/sparql"
 
-CACHE_FILE = "./fetchresult.json"
+CACHE_FILE = os.path.join(RESOURCES_DIR, "fetchresult.json")
 
 # SPARQL query
 # NOTE: If you change the query, delete the caching file "fetchresult.json" to get updated results !!!
@@ -26,7 +31,6 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ORDER BY ?itemLabel
-
 """
 
 # Namespaces
@@ -87,7 +91,7 @@ def run_query(query: str, cache: bool):
     # ---------------------------------------------
     # 3. Save result to cache file
     # ---------------------------------------------
-    os.makedirs("./", exist_ok=True)
+    os.makedirs(RESOURCES_DIR, exist_ok=True)
 
     with open(CACHE_FILE, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
@@ -257,14 +261,13 @@ def prepare_results(data):
 
     return final
 
-
-if __name__ == "__main__":
+def main():
     # Namespaces
     G = Graph()
     G.bind("mathmoddb", OMW)
 
     # results = run_query(QUERY)
-    #results_de = run_query(QUERY_TEMPLATE.replace("%LANG%", "de"), False)
+    # results_de = run_query(QUERY_TEMPLATE.replace("%LANG%", "de"), False)
     results_en = run_query(QUERY_TEMPLATE.replace("%LANG%", "en"), False)
     results = prepare_results(results_en)
 
@@ -274,11 +277,17 @@ if __name__ == "__main__":
 
     print("\n=== Results ===")
     create_as_terms(G, results)
-    #create_as_classes(G, results)
+    # create_as_classes(G, results)
 
     get_property_data(G)
 
     # Save file
     add_ontology_metadata(G)
-    G.serialize("MathModDB.ttl", format="turtle")
+    OUT_DIR = os.path.join(BASE_DIR, "out")
+    os.makedirs(OUT_DIR, exist_ok=True)
+    G.serialize(os.path.join(OUT_DIR, "MathModDB.ttl"), format="turtle")
     print("RDF exported to MathModDB.ttl")
+
+
+if __name__ == "__main__":
+    main()
