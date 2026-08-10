@@ -320,12 +320,18 @@ def add_ontology_metadata(graph):
     )
 
     # label
-    graph.add((ONTOLOGY_URI, RDFS.label, Literal("MathModDB Ontology", lang="en")))
+    graph.add((ONTOLOGY_URI, RDFS.label, Literal("MathModDB Knowledge Graph of Mathematical Models",
+                                                 lang="en")))
 
     # description
 
-    graph.add((ONTOLOGY_URI, DCTERMS.description, Literal("This is the MathModDB Ontology for documenting"
-                                                      " mathematical models.", lang="en")))
+    graph.add((ONTOLOGY_URI, DCTERMS.description,
+               Literal("MathModDB is a database of mathematical models developed by the Mathematical "
+                       "Research Data Initiative (MaRDI). It defines a data model with classes (Mathematical Model, "
+                       "Mathematical Formulation, Academic Discipline, Research Problem, Quantity [Kind], Computational "
+                       "Task, Publication), object properties/relations, data properties and annotation properties as "
+                       "an ontology. This ontology is populated with individuals/data from various fields of applied "
+                       "mathematics, making it a knowledge graph. ", lang="en")))
 
     # abstract
     graph.add((ONTOLOGY_URI, DCTERMS.abstract,
