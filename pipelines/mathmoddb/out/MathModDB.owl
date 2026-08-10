@@ -5,6 +5,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:schema="https://schema.org/"
      xmlns:dcterms="http://purl.org/dc/terms/"
@@ -31,6 +32,7 @@
         <rdfs:seeAlso rdf:resource="https://doi.org/10.1007/978-3-031-81974-2_8"/>
         <rdfs:seeAlso rdf:resource="https://doi.org/10.52825/cordi.v1i.255"/>
         <owl:versionInfo>2.0.0</owl:versionInfo>
+        <foaf:homepage xml:lang="en">https://portal.mardi4nfdi.de/wiki/MathModDB</foaf:homepage>
     </owl:Ontology>
     
 
@@ -107,6 +109,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
     
 
 
