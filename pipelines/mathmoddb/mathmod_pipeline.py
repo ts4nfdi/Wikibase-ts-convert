@@ -28,7 +28,7 @@ def get_answer_from_endpoint(query):
 # =============================================================================
 # SPARQL QUERIES
 # =============================================================================
-# This query pulls all individuals in the mathmod scope.
+# This query pulls all individuals in the mathmoddb scope.
 # This query is used to define each individual and add their label and description.
 INDIVIDUALS_QUERY = """
 SELECT DISTINCT
@@ -50,7 +50,7 @@ WHERE {
 }
 """
 
-# This query pulls all wikibase properties used by individuals in the mathmod scope.
+# This query pulls all wikibase properties used by individuals in the mathmoddb scope.
 # This query is used to define each property.
 PROPERTIES_QUERY = """
 SELECT DISTINCT
@@ -75,7 +75,7 @@ WHERE {
 }
 """
 
-# This query pulls all classes the mathmod scope consists of .
+# This query pulls all classes the mathmoddb scope consists of .
 # This query is used to define the classes and their label and description.
 CLASSES_QUERY = """
 SELECT DISTINCT
@@ -288,7 +288,7 @@ def add_individual_property_value_triples_to_graph(ipv, graph, classUris):
 
         # instance of relations should be added as RDF.type relation
         if property_uri == URIRef("https://portal.mardi4nfdi.de/entity/P31"):
-            # only RDF.type relations to classes that mathmod consists of should be added
+            # only RDF.type relations to classes that mathmoddb consists of should be added
             if property_value in classUris:
                 graph.add((individual_uri, RDF.type, property_value))
         else:
