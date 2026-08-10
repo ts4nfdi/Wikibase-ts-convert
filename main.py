@@ -1,4 +1,4 @@
-from pipelines.mathmod.mathmod_pipeline import main as mathmod_pipeline
+from pipelines.mathmoddb.mathmod_pipeline import main as mathmod_pipeline
 from pipelines.ohdab.ohdab_pipeline import main as ohdab_pipeline
 import sys
 import shutil
@@ -22,7 +22,7 @@ def get_all(pipelines: dict):
 
 def main(args):
     pipelines = {
-        "mathmod": get_mathmod,
+        "mathmoddb": get_mathmod,
         "ohdab": get_ohdab
     }
     # if no argument was passed run all pipelines

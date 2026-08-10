@@ -50,7 +50,7 @@ python main.py <pipeline1> <pipeline2> <pipeline3> ...
 Available pipelines:
 
 - ohdab
-- mathmod
+- mathmoddb
 
 Examples:
 
@@ -59,7 +59,7 @@ Examples:
 python main.py ohdab
 
 # Run multiple pipelines
-python main.py ohdab mathmod
+python main.py ohdab mathmoddb
 ```
 
 **Remove all output and cache data:**
