@@ -4,7 +4,6 @@ from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD, SDO, FOAF, DOAP
 from pathlib import Path
 import subprocess
 from datetime import date
-from pprint import pprint
 
 BASE_DIR = Path(__file__).resolve().parent
 RESOURCES_DIR = BASE_DIR / "resources"
