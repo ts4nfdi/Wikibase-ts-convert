@@ -76,6 +76,34 @@ WHERE {
 }
 """
 
+# This query pulls all properties used as qualifier propertys by statements that are targeted by individuals in the
+# mathmoddb scope. This query is used to define the qualifier properties.
+QUALIFIER_PROPERTIES_QUERY = """
+SELECT DISTINCT
+    ?property
+    ?propertyId
+    ?propertyLabel
+    ?propertyDescription
+WHERE {
+    ?individual wdt:P1495 wd:Q6534265 .
+
+    ?baseProperty wikibase:claim ?statementProperty .
+    ?individual ?statementProperty ?statement .
+
+    ?property wikibase:qualifier ?qualifierProperty .
+    ?statement ?qualifierProperty ?qualifierValue .
+
+    BIND(
+    REPLACE(STR(?property), "^.*/", "")
+    AS ?propertyId
+    )
+
+    SERVICE wikibase:label {
+        bd:serviceParam wikibase:language "en" .
+    }
+}
+"""
+
 # This query pulls all classes the mathmoddb scope consists of .
 # This query is used to define the classes and their label and description.
 CLASSES_QUERY = """
@@ -92,6 +120,31 @@ WHERE {
 }
 """
 
+# This query pulls one row per statement with a qualifier for each individual.
+QUALIFIER_QUERY = """
+SELECT DISTINCT
+    ?individual
+    ?property
+    ?statementValue
+    ?qualifierProperty
+    ?qualifierValue
+WHERE {
+    ?individual wdt:P1495 wd:Q6534265 .
+
+    ?property wikibase:claim ?statementProperty ;
+              wikibase:statementProperty ?statementValueProperty .
+  
+    ?individual ?statementProperty ?statement .
+
+    ?statement ?statementValueProperty ?statementValue .
+
+    ?qualifierProperty wikibase:qualifier ?qualifierPredicate .
+  
+    # The statement must contain a qualifier property and its value.
+    ?statement ?qualifierPredicate ?qualifierValue .
+}
+"""
+
 # This query pulls one row per property on an individual.
 # This query is used to add all properties to the individuals
 INDIVIDUAL_PROPERTY_VALUE_QUERY = """
@@ -104,33 +157,6 @@ WHERE {
   ?item ?directProperty ?value .
 
   ?property wikibase:directClaim ?directProperty .
-
-  FILTER(
-    ?property NOT IN (
-      wd:P983,
-      wd:P984,
-      wd:P989
-    )
-  )
-}
-"""
-
-# This query pulls one row per annotatedTarget in a formula on an individual.
-# This query is used to add the formula as a property and link the linkedTargetItem to the annotatedTarget.
-FORMULA_QUERY = """
-SELECT DISTINCT
-  ?item
-  ?formula
-  ?annotatedTarget
-  ?linkedTargetItem
-WHERE {
-  ?item wdt:P1495 wd:Q6534265 .
-
-  ?item wdt:P989 ?formula .
-
-  ?item p:P983 ?inDefiningFormStatement .
-  ?inDefiningFormStatement ps:P983 ?annotatedTarget .
-  ?inDefiningFormStatement pq:P984 ?linkedTargetItem .
 }
 """
 
@@ -194,17 +220,12 @@ def add_classes_to_graph(classes, graph):
 
 
 def add_properties_to_graph(properties, graph):
-    uris_of_p983_p989 = {}
     for entry in properties:
         property_uri = URIRef(entry["property"]["value"])
 
-        # P983 and P989 should be added as DatatypeProperties and their uris are needed later
+        # P983 and P989 should be added as DatatypeProperties, the rest as AnnotationProperties
         if entry["propertyId"]["value"] in ["P983", "P989"]:
             graph.add((property_uri, RDF.type, OWL.DatatypeProperty))
-            if entry["propertyId"]["value"] == "P983":
-                uris_of_p983_p989["P983"] = property_uri
-            else:
-                uris_of_p983_p989["P989"] = property_uri
         else:
             graph.add((property_uri, RDF.type, OWL.AnnotationProperty))
 
@@ -219,63 +240,38 @@ def add_properties_to_graph(properties, graph):
                     Literal(entry["propertyDescription"]["value"], lang="en"),
                 )
             )
-
     print(f"added {len(properties)} properties to graph")
-    return uris_of_p983_p989
 
 
-def add_formula_data_to_graph(formula_data, graph, uris_of_p983_p989):
+def add_qualifiers_to_graph(qualifier_data, graph):
+    statement_to_axiom = {}
+    for entry in qualifier_data:
+        # set query results as URIs and Literals
+        individual = URIRef(entry["individual"]["value"])
+        property = URIRef(entry["property"]["value"])
+        qualifierProperty = URIRef(entry["qualifierProperty"]["value"])
+        qualifierValue, statementValue = (
+            URIRef(entry[key]["value"]) if entry[key]["type"] == "uri"
+            else Literal(entry[key]["value"], lang="en")
+            for key in ["qualifierValue", "statementValue"]
+        )
 
-    # This query retrieves the data for P984. It is handled separately because P984
-    # is only used as a qualifier on property statements, not as a direct property of individuals.
-    p984_query = """
-    SELECT
-      ?property
-      ?propertyLabel
-      ?propertyDescription
-    WHERE {
-      VALUES ?property {
-        wd:P984
-      }
-    
-      SERVICE wikibase:label {
-        bd:serviceParam wikibase:language "en" .
-      }
-    }
-    """
+        # each statement should link to only one axiom. Therefore, store the related
+        # axiom in the dictionary and only create a new one if none exists yet.
+        if not (individual, property, statementValue) in statement_to_axiom:
+            new_axiom = BNode()
+            graph.add((new_axiom, RDF.type, OWL.Axiom))
+            graph.add((new_axiom, OWL.annotatedSource, individual))
+            graph.add((new_axiom, OWL.annotatedTarget, statementValue))
+            graph.add((new_axiom, OWL.annotatedProperty, property))
 
-    p984_data = get_answer_from_endpoint(p984_query)[0]
+            statement_to_axiom[(individual, property, statementValue)] = new_axiom
 
-    # add p984 to graph
-    p984 = URIRef(p984_data["property"]["value"])
-    graph.add((p984, RDF.type, OWL.AnnotationProperty))
-    if "propertyLabel" in p984_data:
-        graph.add((p984, RDFS.label, Literal(p984_data["propertyLabel"]["value"], lang="en")))
-    if "propertyDescription" in p984_data:
-        graph.add((p984, SDO.description, Literal(p984_data["propertyDescription"]["value"], lang="en")))
+        # add qualifier value and property
+        axiom = statement_to_axiom[(individual, property, statementValue)]
+        graph.add((axiom, qualifierProperty, qualifierValue))
 
-    # add formulas of individuals
-    for entry in formula_data:
-        individual_uri = URIRef(entry["item"]["value"])
-        formula = Literal(entry["formula"]["value"], lang="en")
-
-        p983 = uris_of_p983_p989["P983"]
-        p989 = uris_of_p983_p989["P989"]
-
-        # add defining formula
-        graph.add((individual_uri, p989, formula))
-        if "annotatedTarget" in entry:
-            annotatedTarget = Literal(entry["annotatedTarget"]["value"], lang="en")
-            linkedTargetItem = URIRef(entry["linkedTargetItem"]["value"])
-
-            # add in defining formula and symbol represents
-            graph.add((individual_uri, p983, annotatedTarget))
-            axiom = BNode()
-            graph.add((axiom, RDF.type, OWL.Axiom))
-            graph.add((axiom, OWL.annotatedSource, individual_uri))
-            graph.add((axiom, OWL.annotatedTarget, annotatedTarget))
-            graph.add((axiom, OWL.annotatedProperty, p983))
-            graph.add((axiom, p984, linkedTargetItem))
+    print(f"added {len(qualifier_data)} qualifiers to graph")
 
 
 def add_individual_property_value_triples_to_graph(ipv, graph, classUris):
@@ -438,17 +434,19 @@ def main():
     classes = get_answer_from_endpoint(CLASSES_QUERY)
     classUris = add_classes_to_graph(classes, g)
 
-    # add properties to graph
+    # add properties and qualifier properties to graph
     properties = get_answer_from_endpoint(PROPERTIES_QUERY)
-    uris_of_p983_p989 = add_properties_to_graph(properties, g)
+    q_properties = get_answer_from_endpoint(QUALIFIER_PROPERTIES_QUERY)
+    all_properties = properties + q_properties
+    add_properties_to_graph(all_properties, g)
 
-    # add formula data to graph
-    formula_data = get_answer_from_endpoint(FORMULA_QUERY)
-    add_formula_data_to_graph(formula_data, g, uris_of_p983_p989)
+    # add qualifiers to graph
+    qualifier_data = get_answer_from_endpoint(QUALIFIER_QUERY)
+    add_qualifiers_to_graph(qualifier_data, g)
 
     # add all individual property relations
-    individual_property_value = get_answer_from_endpoint(INDIVIDUAL_PROPERTY_VALUE_QUERY)
-    add_individual_property_value_triples_to_graph(individual_property_value, g, classUris)
+    ipv = get_answer_from_endpoint(INDIVIDUAL_PROPERTY_VALUE_QUERY)
+    add_individual_property_value_triples_to_graph(ipv, g, classUris)
 
     # Serialize output
     out_dir = BASE_DIR / "out"
