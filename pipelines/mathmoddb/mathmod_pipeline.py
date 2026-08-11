@@ -244,7 +244,9 @@ def add_properties_to_graph(properties, graph):
 
 
 def add_qualifiers_to_graph(qualifier_data, graph):
+    statement_to_axiom = {}
     for entry in qualifier_data:
+        # set query results as URIs and Literals
         individual = URIRef(entry["individual"]["value"])
         property = URIRef(entry["property"]["value"])
         qualifierProperty = URIRef(entry["qualifierProperty"]["value"])
@@ -254,11 +256,19 @@ def add_qualifiers_to_graph(qualifier_data, graph):
             for key in ["qualifierValue", "statementValue"]
         )
 
-        axiom = BNode()
-        graph.add((axiom, RDF.type, OWL.Axiom))
-        graph.add((axiom, OWL.annotatedSource, individual))
-        graph.add((axiom, OWL.annotatedTarget, statementValue))
-        graph.add((axiom, OWL.annotatedProperty, property))
+        # each statement should link to only one axiom. Therefore, store the related
+        # axiom in the dictionary and only create a new one if none exists yet.
+        if not (individual, property, statementValue) in statement_to_axiom:
+            new_axiom = BNode()
+            graph.add((new_axiom, RDF.type, OWL.Axiom))
+            graph.add((new_axiom, OWL.annotatedSource, individual))
+            graph.add((new_axiom, OWL.annotatedTarget, statementValue))
+            graph.add((new_axiom, OWL.annotatedProperty, property))
+
+            statement_to_axiom[(individual, property, statementValue)] = new_axiom
+
+        # add qualifier value and property
+        axiom = statement_to_axiom[(individual, property, statementValue)]
         graph.add((axiom, qualifierProperty, qualifierValue))
 
     print(f"added {len(qualifier_data)} qualifiers to graph")

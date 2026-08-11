@@ -3609,44 +3609,11 @@
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P273"/>
-        <owl:annotatedTarget xml:lang="en">statistics</owl:annotatedTarget>
-        <mathmoddb:P165 xml:lang="en">2008-03-13T00:00:00Z</mathmoddb:P165>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P273"/>
-        <owl:annotatedTarget xml:lang="en">statistics</owl:annotatedTarget>
-        <mathmoddb:P34 rdf:resource="https://portal.mardi4nfdi.de/entity/Q56366"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P273"/>
-        <owl:annotatedTarget xml:lang="en">statistics</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">statistics</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P276"/>
         <owl:annotatedTarget xml:lang="en">science/statistics</owl:annotatedTarget>
         <mathmoddb:P43 xml:lang="en">David R. Anderson</mathmoddb:P43>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P276"/>
-        <owl:annotatedTarget xml:lang="en">science/statistics</owl:annotatedTarget>
         <mathmoddb:P43 xml:lang="en">Dennis J. Sweeney</mathmoddb:P43>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P276"/>
-        <owl:annotatedTarget xml:lang="en">science/statistics</owl:annotatedTarget>
         <mathmoddb:P43 xml:lang="en">Thomas A. Williams</mathmoddb:P43>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P276"/>
-        <owl:annotatedTarget xml:lang="en">science/statistics</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">statistics</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -3696,17 +3663,7 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
         <owl:annotatedTarget xml:lang="en">987007531886805171</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">Statistics</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
-        <owl:annotatedTarget xml:lang="en">987007531886805171</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">סטטיסטיקה</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
-        <owl:annotatedTarget xml:lang="en">987007531886805171</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">الإحصاء</mathmoddb:P1887>
     </owl:Axiom>
     <owl:Axiom>
@@ -3720,47 +3677,11 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
         <owl:annotatedTarget xml:lang="en">3591</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">statistics (discipline)</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">3591</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">statistihkka</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1192"/>
-        <owl:annotatedTarget xml:lang="en">Statistics</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">Statistics</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">3591</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">statistik (vetenskaper)</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">3591</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">tilastotiede</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">3591</owl:annotatedTarget>
         <mathmoddb:P1906 xml:lang="en">statistik (vetenskap)</mathmoddb:P1906>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">3591</owl:annotatedTarget>
         <mathmoddb:P1906 xml:lang="en">statistikvetenskap</mathmoddb:P1906>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">3591</owl:annotatedTarget>
         <mathmoddb:P1906 xml:lang="en">statistisk vetenskap</mathmoddb:P1906>
     </owl:Axiom>
     <owl:Axiom>
@@ -3795,12 +3716,6 @@
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1234"/>
-        <owl:annotatedTarget xml:lang="en">4905</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">Statistics</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P375"/>
         <owl:annotatedTarget xml:lang="en">N05.715.360.750</owl:annotatedTarget>
         <mathmoddb:P272 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7281552"/>
@@ -3825,6 +3740,12 @@
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1192"/>
+        <owl:annotatedTarget xml:lang="en">Statistics</owl:annotatedTarget>
+        <mathmoddb:P96 xml:lang="en">Statistics</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P387"/>
         <owl:annotatedTarget xml:lang="en">1804</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Statistics</mathmoddb:P96>
@@ -3834,17 +3755,7 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P391"/>
         <owl:annotatedTarget xml:lang="en">math:Statistics</owl:annotatedTarget>
         <mathmoddb:P34 rdf:resource="https://portal.mardi4nfdi.de/entity/Q56366"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P391"/>
-        <owl:annotatedTarget xml:lang="en">math:Statistics</owl:annotatedTarget>
         <mathmoddb:P392 xml:lang="en">2373</mathmoddb:P392>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P391"/>
-        <owl:annotatedTarget xml:lang="en">math:Statistics</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Statistics</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -3852,29 +3763,13 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P447"/>
         <owl:annotatedTarget xml:lang="en">4163915</owl:annotatedTarget>
         <mathmoddb:P263 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6481150"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P447"/>
-        <owl:annotatedTarget xml:lang="en">4163915</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">СТАТИСТИКА</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1234"/>
-        <owl:annotatedTarget xml:lang="en">490599</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">Statistics not elsewhere classified</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P463"/>
         <owl:annotatedTarget xml:lang="en">535016</owl:annotatedTarget>
         <mathmoddb:P140 xml:lang="en">2023-05-24T00:00:00Z</mathmoddb:P140>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P463"/>
-        <owl:annotatedTarget xml:lang="en">535016</owl:annotatedTarget>
         <mathmoddb:P273 xml:lang="en">statistics</mathmoddb:P273>
     </owl:Axiom>
     <owl:Axiom>
@@ -3894,17 +3789,7 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P649"/>
         <owl:annotatedTarget xml:lang="en">C17167</owl:annotatedTarget>
         <mathmoddb:P1533 xml:lang="en">A branch of applied mathematics concerned with the collection and interpretation of quantitative data and the use of probability theory to estimate population parameters.</mathmoddb:P1533>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P649"/>
-        <owl:annotatedTarget xml:lang="en">C17167</owl:annotatedTarget>
         <mathmoddb:P272 rdf:resource="https://portal.mardi4nfdi.de/entity/Q57515"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P649"/>
-        <owl:annotatedTarget xml:lang="en">C17167</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Statistics</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -3918,6 +3803,18 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P95"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q7281557"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7280512"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1234"/>
+        <owl:annotatedTarget xml:lang="en">4905</owl:annotatedTarget>
+        <mathmoddb:P96 xml:lang="en">Statistics</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1234"/>
+        <owl:annotatedTarget xml:lang="en">490599</owl:annotatedTarget>
+        <mathmoddb:P96 xml:lang="en">Statistics not elsewhere classified</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q57236"/>
@@ -3942,6 +3839,9 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P273"/>
         <owl:annotatedTarget xml:lang="en">statistics</owl:annotatedTarget>
         <mathmoddb:P140 xml:lang="en">2023-05-24T00:00:00Z</mathmoddb:P140>
+        <mathmoddb:P165 xml:lang="en">2008-03-13T00:00:00Z</mathmoddb:P165>
+        <mathmoddb:P34 rdf:resource="https://portal.mardi4nfdi.de/entity/Q56366"/>
+        <mathmoddb:P96 xml:lang="en">statistics</mathmoddb:P96>
     </owl:Axiom>
     
 
@@ -4137,6 +4037,187 @@
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1234"/>
+        <owl:annotatedTarget xml:lang="en">34</owl:annotatedTarget>
+        <mathmoddb:P96 xml:lang="en">CHEMICAL SCIENCES</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1234"/>
+        <owl:annotatedTarget xml:lang="en">3499</owl:annotatedTarget>
+        <mathmoddb:P96 xml:lang="en">Other chemical sciences</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1234"/>
+        <owl:annotatedTarget xml:lang="en">349999</owl:annotatedTarget>
+        <mathmoddb:P96 xml:lang="en">Other chemical sciences not elsewhere classified</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1505"/>
+        <owl:annotatedTarget xml:lang="en">Scheikunde</owl:annotatedTarget>
+        <mathmoddb:P392 xml:lang="en">45067</mathmoddb:P392>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1522"/>
+        <owl:annotatedTarget xml:lang="en">化学</owl:annotatedTarget>
+        <mathmoddb:P140 xml:lang="en">2023-03-09T00:00:00Z</mathmoddb:P140>
+        <mathmoddb:P444 xml:lang="en">11023812</mathmoddb:P444>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P190"/>
+        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56557"/>
+        <mathmoddb:P140 xml:lang="en">2022-10-31T00:00:00Z</mathmoddb:P140>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P2097"/>
+        <owl:annotatedTarget xml:lang="en">isut062</owl:annotatedTarget>
+        <mathmoddb:P96 xml:lang="en">Chemistry</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P2101"/>
+        <owl:annotatedTarget xml:lang="en">31</owl:annotatedTarget>
+        <mathmoddb:P96 xml:lang="en">Chemie</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P242"/>
+        <owl:annotatedTarget xml:lang="en">300054537</owl:annotatedTarget>
+        <mathmoddb:P272 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272976"/>
+        <mathmoddb:P96 xml:lang="en">chemistry</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P267"/>
+        <owl:annotatedTarget xml:lang="en">10636623</owl:annotatedTarget>
+        <mathmoddb:P272 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272976"/>
+        <mathmoddb:P96 xml:lang="en">Chemistry</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P273"/>
+        <owl:annotatedTarget xml:lang="en">chemistry</owl:annotatedTarget>
+        <mathmoddb:P165 xml:lang="en">2008-03-13T00:00:00Z</mathmoddb:P165>
+        <mathmoddb:P34 rdf:resource="https://portal.mardi4nfdi.de/entity/Q56366"/>
+        <mathmoddb:P96 xml:lang="en">Reddit Chemistry - Read the sidebar</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P276"/>
+        <owl:annotatedTarget xml:lang="en">science/chemistry</owl:annotatedTarget>
+        <mathmoddb:P43 xml:lang="en">Alan J. Rocke</mathmoddb:P43>
+        <mathmoddb:P43 xml:lang="en">Melvyn C. Usselman</mathmoddb:P43>
+        <mathmoddb:P96 xml:lang="en">chemistry</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P278"/>
+        <owl:annotatedTarget xml:lang="en">D002621</owl:annotatedTarget>
+        <mathmoddb:P96 xml:lang="en">Chemistry</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
+        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q160648"/>
+        <mathmoddb:P287 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272981"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
+        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q160893"/>
+        <mathmoddb:P96 xml:lang="en">Chemistry</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
+        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56561"/>
+        <mathmoddb:P287 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272979"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
+        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56562"/>
+        <mathmoddb:P287 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272978"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
+        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56563"/>
+        <mathmoddb:P140 xml:lang="en">2021-05-07T00:00:00Z</mathmoddb:P140>
+        <mathmoddb:P96 xml:lang="en">Chemistry</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
+        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56564"/>
+        <mathmoddb:P287 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272980"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
+        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480345"/>
+        <mathmoddb:P287 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272982"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P298"/>
+        <owl:annotatedTarget xml:lang="en">847896929698668544</owl:annotatedTarget>
+        <mathmoddb:P96 xml:lang="en">Chemistry</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P307"/>
+        <owl:annotatedTarget xml:lang="en">15638-4</owl:annotatedTarget>
+        <mathmoddb:P308 rdf:resource="https://portal.mardi4nfdi.de/entity/Q56569"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
+        <owl:annotatedTarget xml:lang="en">987007284921605171</owl:annotatedTarget>
+        <mathmoddb:P1887 xml:lang="en">Chemistry</mathmoddb:P1887>
+        <mathmoddb:P1887 xml:lang="en">כימיה</mathmoddb:P1887>
+        <mathmoddb:P1887 xml:lang="en">الكيمياء</mathmoddb:P1887>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
+        <owl:annotatedTarget xml:lang="en">1801</owl:annotatedTarget>
+        <mathmoddb:P1887 xml:lang="en">chemistry</mathmoddb:P1887>
+        <mathmoddb:P1887 xml:lang="en">kemi</mathmoddb:P1887>
+        <mathmoddb:P1887 xml:lang="en">kemia</mathmoddb:P1887>
+        <mathmoddb:P1887 xml:lang="en">kemiija</mathmoddb:P1887>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P315"/>
+        <owl:annotatedTarget xml:lang="en">ph114237</owl:annotatedTarget>
+        <mathmoddb:P96 xml:lang="en">chemie</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P319"/>
+        <owl:annotatedTarget xml:lang="en">kimya.</owl:annotatedTarget>
+        <mathmoddb:P147 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272994"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P356"/>
+        <owl:annotatedTarget rdf:resource="http://commons.wikimedia.org/wiki/Special:FilePath/Ca%27%20Rezzonico%20-%20Gli%20alchimisti%201757%20-%20Pietro%20Longhi.jpg"/>
+        <mathmoddb:P401 xml:lang="en">The Alchemists (1757), by Pietro Longhi. Ca&apos; Rezzonico, Venice</mathmoddb:P401>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P375"/>
+        <owl:annotatedTarget xml:lang="en">H01.181</owl:annotatedTarget>
+        <mathmoddb:P272 rdf:resource="https://portal.mardi4nfdi.de/entity/Q118774"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P376"/>
         <owl:annotatedTarget xml:lang="en">90494</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Chemistry</mathmoddb:P96>
@@ -4176,11 +4257,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P447"/>
         <owl:annotatedTarget xml:lang="en">4666072</owl:annotatedTarget>
         <mathmoddb:P263 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6481150"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P447"/>
-        <owl:annotatedTarget xml:lang="en">4666072</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">ХИМИЯ</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -4188,11 +4264,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P463"/>
         <owl:annotatedTarget xml:lang="en">1901688</owl:annotatedTarget>
         <mathmoddb:P140 xml:lang="en">2023-05-24T00:00:00Z</mathmoddb:P140>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P463"/>
-        <owl:annotatedTarget xml:lang="en">1901688</owl:annotatedTarget>
         <mathmoddb:P273 xml:lang="en">chemistry</mathmoddb:P273>
     </owl:Axiom>
     <owl:Axiom>
@@ -4206,17 +4277,7 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P649"/>
         <owl:annotatedTarget xml:lang="en">C16414</owl:annotatedTarget>
         <mathmoddb:P1533 xml:lang="en">The science of the composition, structure, properties, and reactions of matter, especially of atomic and molecular systems.</mathmoddb:P1533>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P649"/>
-        <owl:annotatedTarget xml:lang="en">C16414</owl:annotatedTarget>
         <mathmoddb:P272 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272976"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P649"/>
-        <owl:annotatedTarget xml:lang="en">C16414</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Chemistry</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -4224,11 +4285,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P658"/>
         <owl:annotatedTarget xml:lang="en">Chemistry</owl:annotatedTarget>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q57157"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P658"/>
-        <owl:annotatedTarget xml:lang="en">Chemistry</owl:annotatedTarget>
         <mathmoddb:P95 rdf:resource="https://portal.mardi4nfdi.de/entity/Q57158"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -4248,11 +4304,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P85"/>
         <owl:annotatedTarget xml:lang="en">sh85022986</owl:annotatedTarget>
         <mathmoddb:P272 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272976"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P85"/>
-        <owl:annotatedTarget xml:lang="en">sh85022986</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Chemistry</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -4266,252 +4317,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P900"/>
         <owl:annotatedTarget xml:lang="en">chemistry</owl:annotatedTarget>
         <mathmoddb:P34 rdf:resource="https://portal.mardi4nfdi.de/entity/Q56366"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1234"/>
-        <owl:annotatedTarget xml:lang="en">34</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">CHEMICAL SCIENCES</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1234"/>
-        <owl:annotatedTarget xml:lang="en">3499</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">Other chemical sciences</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1234"/>
-        <owl:annotatedTarget xml:lang="en">349999</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">Other chemical sciences not elsewhere classified</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1505"/>
-        <owl:annotatedTarget xml:lang="en">Scheikunde</owl:annotatedTarget>
-        <mathmoddb:P392 xml:lang="en">45067</mathmoddb:P392>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1522"/>
-        <owl:annotatedTarget xml:lang="en">化学</owl:annotatedTarget>
-        <mathmoddb:P140 xml:lang="en">2023-03-09T00:00:00Z</mathmoddb:P140>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1522"/>
-        <owl:annotatedTarget xml:lang="en">化学</owl:annotatedTarget>
-        <mathmoddb:P444 xml:lang="en">11023812</mathmoddb:P444>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P190"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56557"/>
-        <mathmoddb:P140 xml:lang="en">2022-10-31T00:00:00Z</mathmoddb:P140>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P2097"/>
-        <owl:annotatedTarget xml:lang="en">isut062</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">Chemistry</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P2101"/>
-        <owl:annotatedTarget xml:lang="en">31</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">Chemie</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P242"/>
-        <owl:annotatedTarget xml:lang="en">300054537</owl:annotatedTarget>
-        <mathmoddb:P272 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272976"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P242"/>
-        <owl:annotatedTarget xml:lang="en">300054537</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">chemistry</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P267"/>
-        <owl:annotatedTarget xml:lang="en">10636623</owl:annotatedTarget>
-        <mathmoddb:P272 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272976"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P267"/>
-        <owl:annotatedTarget xml:lang="en">10636623</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">Chemistry</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P273"/>
-        <owl:annotatedTarget xml:lang="en">chemistry</owl:annotatedTarget>
-        <mathmoddb:P165 xml:lang="en">2008-03-13T00:00:00Z</mathmoddb:P165>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P273"/>
-        <owl:annotatedTarget xml:lang="en">chemistry</owl:annotatedTarget>
-        <mathmoddb:P34 rdf:resource="https://portal.mardi4nfdi.de/entity/Q56366"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P273"/>
-        <owl:annotatedTarget xml:lang="en">chemistry</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">Reddit Chemistry - Read the sidebar</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P276"/>
-        <owl:annotatedTarget xml:lang="en">science/chemistry</owl:annotatedTarget>
-        <mathmoddb:P43 xml:lang="en">Alan J. Rocke</mathmoddb:P43>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P276"/>
-        <owl:annotatedTarget xml:lang="en">science/chemistry</owl:annotatedTarget>
-        <mathmoddb:P43 xml:lang="en">Melvyn C. Usselman</mathmoddb:P43>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P276"/>
-        <owl:annotatedTarget xml:lang="en">science/chemistry</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">chemistry</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P278"/>
-        <owl:annotatedTarget xml:lang="en">D002621</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">Chemistry</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q160648"/>
-        <mathmoddb:P287 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272981"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q160893"/>
-        <mathmoddb:P96 xml:lang="en">Chemistry</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56561"/>
-        <mathmoddb:P287 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272979"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56562"/>
-        <mathmoddb:P287 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272978"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56563"/>
-        <mathmoddb:P140 xml:lang="en">2021-05-07T00:00:00Z</mathmoddb:P140>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56563"/>
-        <mathmoddb:P96 xml:lang="en">Chemistry</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56564"/>
-        <mathmoddb:P287 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272980"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480345"/>
-        <mathmoddb:P287 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272982"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P298"/>
-        <owl:annotatedTarget xml:lang="en">847896929698668544</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">Chemistry</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P307"/>
-        <owl:annotatedTarget xml:lang="en">15638-4</owl:annotatedTarget>
-        <mathmoddb:P308 rdf:resource="https://portal.mardi4nfdi.de/entity/Q56569"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
-        <owl:annotatedTarget xml:lang="en">987007284921605171</owl:annotatedTarget>
-        <mathmoddb:P1887 xml:lang="en">Chemistry</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
-        <owl:annotatedTarget xml:lang="en">987007284921605171</owl:annotatedTarget>
-        <mathmoddb:P1887 xml:lang="en">כימיה</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
-        <owl:annotatedTarget xml:lang="en">987007284921605171</owl:annotatedTarget>
-        <mathmoddb:P1887 xml:lang="en">الكيمياء</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">1801</owl:annotatedTarget>
-        <mathmoddb:P1887 xml:lang="en">chemistry</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">1801</owl:annotatedTarget>
-        <mathmoddb:P1887 xml:lang="en">kemi</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">1801</owl:annotatedTarget>
-        <mathmoddb:P1887 xml:lang="en">kemia</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">1801</owl:annotatedTarget>
-        <mathmoddb:P1887 xml:lang="en">kemiija</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P315"/>
-        <owl:annotatedTarget xml:lang="en">ph114237</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">chemie</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P319"/>
-        <owl:annotatedTarget xml:lang="en">kimya.</owl:annotatedTarget>
-        <mathmoddb:P147 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272994"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P356"/>
-        <owl:annotatedTarget rdf:resource="http://commons.wikimedia.org/wiki/Special:FilePath/Ca%27%20Rezzonico%20-%20Gli%20alchimisti%201757%20-%20Pietro%20Longhi.jpg"/>
-        <mathmoddb:P401 xml:lang="en">The Alchemists (1757), by Pietro Longhi. Ca&apos; Rezzonico, Venice</mathmoddb:P401>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59308"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P375"/>
-        <owl:annotatedTarget xml:lang="en">H01.181</owl:annotatedTarget>
-        <mathmoddb:P272 rdf:resource="https://portal.mardi4nfdi.de/entity/Q118774"/>
     </owl:Axiom>
     
 
@@ -4726,150 +4531,6 @@
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1234"/>
-        <owl:annotatedTarget xml:lang="en">31</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">BIOLOGICAL SCIENCES</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1234"/>
-        <owl:annotatedTarget xml:lang="en">3199</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">Other biological sciences</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1234"/>
-        <owl:annotatedTarget xml:lang="en">319999</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">Other biological sciences not elsewhere classified</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1505"/>
-        <owl:annotatedTarget xml:lang="en">Biologie</owl:annotatedTarget>
-        <mathmoddb:P392 xml:lang="en">45081</mathmoddb:P392>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1522"/>
-        <owl:annotatedTarget xml:lang="en">生物</owl:annotatedTarget>
-        <mathmoddb:P140 xml:lang="en">2023-03-07T00:00:00Z</mathmoddb:P140>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1522"/>
-        <owl:annotatedTarget xml:lang="en">生物</owl:annotatedTarget>
-        <mathmoddb:P444 xml:lang="en">1664919</mathmoddb:P444>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P190"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56557"/>
-        <mathmoddb:P140 xml:lang="en">2022-10-31T00:00:00Z</mathmoddb:P140>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P2097"/>
-        <owl:annotatedTarget xml:lang="en">isut051</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">Biology</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P2101"/>
-        <owl:annotatedTarget xml:lang="en">21</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">Biologie</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P2102"/>
-        <owl:annotatedTarget xml:lang="en">395</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">biology</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P2102"/>
-        <owl:annotatedTarget xml:lang="en">545</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">biological sciences</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P2109"/>
-        <owl:annotatedTarget xml:lang="en">disciplines/27</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">Biology and Biological Sciences</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P273"/>
-        <owl:annotatedTarget xml:lang="en">biology</owl:annotatedTarget>
-        <mathmoddb:P165 xml:lang="en">2008-03-25T00:00:00Z</mathmoddb:P165>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P273"/>
-        <owl:annotatedTarget xml:lang="en">biology</owl:annotatedTarget>
-        <mathmoddb:P34 rdf:resource="https://portal.mardi4nfdi.de/entity/Q56366"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P273"/>
-        <owl:annotatedTarget xml:lang="en">biology</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">Biology</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P276"/>
-        <owl:annotatedTarget xml:lang="en">science/biology</owl:annotatedTarget>
-        <mathmoddb:P43 xml:lang="en">Edna R. Green</mathmoddb:P43>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P276"/>
-        <owl:annotatedTarget xml:lang="en">science/biology</owl:annotatedTarget>
-        <mathmoddb:P43 xml:lang="en">Kara Rogers</mathmoddb:P43>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P276"/>
-        <owl:annotatedTarget xml:lang="en">science/biology</owl:annotatedTarget>
-        <mathmoddb:P43 xml:lang="en">Susan Heyner Joshi</mathmoddb:P43>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P276"/>
-        <owl:annotatedTarget xml:lang="en">science/biology</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">biology</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P278"/>
-        <owl:annotatedTarget xml:lang="en">D001695</owl:annotatedTarget>
-        <mathmoddb:P96 xml:lang="en">Biology</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P282"/>
-        <owl:annotatedTarget rdf:resource="http://commons.wikimedia.org/wiki/Special:FilePath/Hy-%D4%BF%D5%A5%D5%B6%D5%BD%D5%A1%D5%A2%D5%A1%D5%B6%D5%B8%D6%82%D5%A9%D5%B5%D5%B8%D6%82%D5%B6%20%28Biology%29.ogg"/>
-        <mathmoddb:P169 xml:lang="en">2018-01-01T00:00:00Z</mathmoddb:P169>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P282"/>
-        <owl:annotatedTarget rdf:resource="http://commons.wikimedia.org/wiki/Special:FilePath/Hy-%D4%BF%D5%A5%D5%B6%D5%BD%D5%A1%D5%A2%D5%A1%D5%B6%D5%B8%D6%82%D5%A9%D5%B5%D5%B8%D6%82%D5%B6%20%28Biology%29.ogg"/>
-        <mathmoddb:P34 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272053"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q160648"/>
-        <mathmoddb:P287 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272037"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q160893"/>
-        <mathmoddb:P96 xml:lang="en">Biology</mathmoddb:P96>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56564"/>
         <mathmoddb:P287 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272035"/>
@@ -4921,17 +4582,7 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
         <owl:annotatedTarget xml:lang="en">987007282399205171</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">Biology</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
-        <owl:annotatedTarget xml:lang="en">987007282399205171</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">ביולוגיה</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
-        <owl:annotatedTarget xml:lang="en">987007282399205171</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">علم الأحياء، البيولوجيا</mathmoddb:P1887>
     </owl:Axiom>
     <owl:Axiom>
@@ -4939,23 +4590,8 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
         <owl:annotatedTarget xml:lang="en">1782</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">biologi</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">1782</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">biologia</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">1782</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">biologiija</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">1782</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">biology</mathmoddb:P1887>
     </owl:Axiom>
     <owl:Axiom>
@@ -5011,11 +4647,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P471"/>
         <owl:annotatedTarget xml:lang="en">KSH1998006221</owl:annotatedTarget>
         <mathmoddb:P272 rdf:resource="https://portal.mardi4nfdi.de/entity/Q118774"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P471"/>
-        <owl:annotatedTarget xml:lang="en">KSH1998006221</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">생물학[生物學]</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -5029,17 +4660,7 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P649"/>
         <owl:annotatedTarget xml:lang="en">C16345</owl:annotatedTarget>
         <mathmoddb:P1533 xml:lang="en">The scientific study of living organisms.</mathmoddb:P1533>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P649"/>
-        <owl:annotatedTarget xml:lang="en">C16345</owl:annotatedTarget>
         <mathmoddb:P272 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272030"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P649"/>
-        <owl:annotatedTarget xml:lang="en">C16345</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Biology</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -5059,11 +4680,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P85"/>
         <owl:annotatedTarget xml:lang="en">sh85014203</owl:annotatedTarget>
         <mathmoddb:P272 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272030"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P85"/>
-        <owl:annotatedTarget xml:lang="en">sh85014203</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Biology</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -5083,6 +4699,115 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P900"/>
         <owl:annotatedTarget xml:lang="en">biology</owl:annotatedTarget>
         <mathmoddb:P34 rdf:resource="https://portal.mardi4nfdi.de/entity/Q56366"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1234"/>
+        <owl:annotatedTarget xml:lang="en">31</owl:annotatedTarget>
+        <mathmoddb:P96 xml:lang="en">BIOLOGICAL SCIENCES</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1234"/>
+        <owl:annotatedTarget xml:lang="en">3199</owl:annotatedTarget>
+        <mathmoddb:P96 xml:lang="en">Other biological sciences</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1234"/>
+        <owl:annotatedTarget xml:lang="en">319999</owl:annotatedTarget>
+        <mathmoddb:P96 xml:lang="en">Other biological sciences not elsewhere classified</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1505"/>
+        <owl:annotatedTarget xml:lang="en">Biologie</owl:annotatedTarget>
+        <mathmoddb:P392 xml:lang="en">45081</mathmoddb:P392>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1522"/>
+        <owl:annotatedTarget xml:lang="en">生物</owl:annotatedTarget>
+        <mathmoddb:P140 xml:lang="en">2023-03-07T00:00:00Z</mathmoddb:P140>
+        <mathmoddb:P444 xml:lang="en">1664919</mathmoddb:P444>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P190"/>
+        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56557"/>
+        <mathmoddb:P140 xml:lang="en">2022-10-31T00:00:00Z</mathmoddb:P140>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P2097"/>
+        <owl:annotatedTarget xml:lang="en">isut051</owl:annotatedTarget>
+        <mathmoddb:P96 xml:lang="en">Biology</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P2101"/>
+        <owl:annotatedTarget xml:lang="en">21</owl:annotatedTarget>
+        <mathmoddb:P96 xml:lang="en">Biologie</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P2102"/>
+        <owl:annotatedTarget xml:lang="en">395</owl:annotatedTarget>
+        <mathmoddb:P96 xml:lang="en">biology</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P2102"/>
+        <owl:annotatedTarget xml:lang="en">545</owl:annotatedTarget>
+        <mathmoddb:P96 xml:lang="en">biological sciences</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P2109"/>
+        <owl:annotatedTarget xml:lang="en">disciplines/27</owl:annotatedTarget>
+        <mathmoddb:P96 xml:lang="en">Biology and Biological Sciences</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P273"/>
+        <owl:annotatedTarget xml:lang="en">biology</owl:annotatedTarget>
+        <mathmoddb:P165 xml:lang="en">2008-03-25T00:00:00Z</mathmoddb:P165>
+        <mathmoddb:P34 rdf:resource="https://portal.mardi4nfdi.de/entity/Q56366"/>
+        <mathmoddb:P96 xml:lang="en">Biology</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P276"/>
+        <owl:annotatedTarget xml:lang="en">science/biology</owl:annotatedTarget>
+        <mathmoddb:P43 xml:lang="en">Edna R. Green</mathmoddb:P43>
+        <mathmoddb:P43 xml:lang="en">Kara Rogers</mathmoddb:P43>
+        <mathmoddb:P43 xml:lang="en">Susan Heyner Joshi</mathmoddb:P43>
+        <mathmoddb:P96 xml:lang="en">biology</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P278"/>
+        <owl:annotatedTarget xml:lang="en">D001695</owl:annotatedTarget>
+        <mathmoddb:P96 xml:lang="en">Biology</mathmoddb:P96>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P282"/>
+        <owl:annotatedTarget rdf:resource="http://commons.wikimedia.org/wiki/Special:FilePath/Hy-%D4%BF%D5%A5%D5%B6%D5%BD%D5%A1%D5%A2%D5%A1%D5%B6%D5%B8%D6%82%D5%A9%D5%B5%D5%B8%D6%82%D5%B6%20%28Biology%29.ogg"/>
+        <mathmoddb:P169 xml:lang="en">2018-01-01T00:00:00Z</mathmoddb:P169>
+        <mathmoddb:P34 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272053"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
+        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q160648"/>
+        <mathmoddb:P287 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7272037"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q59666"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
+        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q160893"/>
+        <mathmoddb:P96 xml:lang="en">Biology</mathmoddb:P96>
     </owl:Axiom>
     
 
@@ -6120,11 +5845,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534306"/>
         <mathmoddb:P1869 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775730"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534340"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534306"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480295"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -6132,11 +5852,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534308"/>
         <mathmoddb:P1869 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775731"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534340"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534308"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480295"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -6150,11 +5865,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775735"/>
         <mathmoddb:P1869 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775705"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534340"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775735"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480299"/>
     </owl:Axiom>
     
@@ -6780,17 +6490,7 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1525"/>
         <owl:annotatedTarget xml:lang="en">area_res-85def1d6-adad-11eb-94e0-00271042e8d9</owl:annotatedTarget>
         <mathmoddb:P26 xml:lang="en">Thesaurus</mathmoddb:P26>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673693"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1525"/>
-        <owl:annotatedTarget xml:lang="en">area_res-85def1d6-adad-11eb-94e0-00271042e8d9</owl:annotatedTarget>
         <mathmoddb:P28 xml:lang="en">2018-01-01T00:00:00Z</mathmoddb:P28>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673693"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1525"/>
-        <owl:annotatedTarget xml:lang="en">area_res-85def1d6-adad-11eb-94e0-00271042e8d9</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Area</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -6834,11 +6534,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q7265035"/>
         <mathmoddb:P116 xml:lang="en">3-3</mathmoddb:P116>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673693"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q7265035"/>
         <mathmoddb:P96 xml:lang="en">area</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -6846,11 +6541,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q7265036"/>
         <mathmoddb:P116 xml:lang="en">3-3</mathmoddb:P116>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673693"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q7265036"/>
         <mathmoddb:P96 xml:lang="en">area</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -6882,11 +6572,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
         <owl:annotatedTarget xml:lang="en">987007295555305171</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">Area measurement</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673693"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
-        <owl:annotatedTarget xml:lang="en">987007295555305171</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">מדידה אזורית</mathmoddb:P1887>
     </owl:Axiom>
     <owl:Axiom>
@@ -6894,35 +6579,10 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
         <owl:annotatedTarget xml:lang="en">6765</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">area</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673693"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">6765</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">pinta-ala</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673693"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">6765</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">surface area</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673693"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">6765</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">viidodat</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673693"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">6765</owl:annotatedTarget>
         <mathmoddb:P1906 xml:lang="en">areal</mathmoddb:P1906>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673693"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">6765</owl:annotatedTarget>
         <mathmoddb:P1906 xml:lang="en">ytvidd</mathmoddb:P1906>
     </owl:Axiom>
     <owl:Axiom>
@@ -6930,11 +6590,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P321"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56573"/>
         <mathmoddb:P322 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7265241"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673693"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P321"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56573"/>
         <mathmoddb:P322 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7265433"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -6960,11 +6615,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P382"/>
         <owl:annotatedTarget xml:lang="en">area</owl:annotatedTarget>
         <mathmoddb:P28 xml:lang="en">2013-01-01T00:00:00Z</mathmoddb:P28>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673693"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P382"/>
-        <owl:annotatedTarget xml:lang="en">area</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Area</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -6972,35 +6622,10 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P383"/>
         <owl:annotatedTarget xml:lang="en">area</owl:annotatedTarget>
         <mathmoddb:P16 rdf:resource="https://portal.mardi4nfdi.de/entity/Q561497"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673693"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P383"/>
-        <owl:annotatedTarget xml:lang="en">area</owl:annotatedTarget>
         <mathmoddb:P16 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7265431"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673693"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P383"/>
-        <owl:annotatedTarget xml:lang="en">area</owl:annotatedTarget>
         <mathmoddb:P16 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7265432"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673693"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P383"/>
-        <owl:annotatedTarget xml:lang="en">area</owl:annotatedTarget>
         <mathmoddb:P16 rdf:resource="https://portal.mardi4nfdi.de/entity/Q769189"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673693"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P383"/>
-        <owl:annotatedTarget xml:lang="en">area</owl:annotatedTarget>
         <mathmoddb:P28 xml:lang="en">1929-01-01T00:00:00Z</mathmoddb:P28>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673693"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P383"/>
-        <owl:annotatedTarget xml:lang="en">area</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">AREA</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -7014,11 +6639,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P385"/>
         <owl:annotatedTarget xml:lang="en">area</owl:annotatedTarget>
         <mathmoddb:P28 xml:lang="en">1996-01-01T00:00:00Z</mathmoddb:P28>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673693"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P385"/>
-        <owl:annotatedTarget xml:lang="en">area</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Àrea</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -7026,11 +6646,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P391"/>
         <owl:annotatedTarget xml:lang="en">math:Area</owl:annotatedTarget>
         <mathmoddb:P34 rdf:resource="https://portal.mardi4nfdi.de/entity/Q56366"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673693"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P391"/>
-        <owl:annotatedTarget xml:lang="en">math:Area</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Area</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -7614,11 +7229,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P2269"/>
         <owl:annotatedTarget xml:lang="en">151073532</owl:annotatedTarget>
         <mathmoddb:P1533 xml:lang="en">(mathematics) a number of the form a+bi where a and b are real numbers and i is the square root of -1</mathmoddb:P1533>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673708"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P2269"/>
-        <owl:annotatedTarget xml:lang="en">151073532</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">imaginary number | imaginary | complex quantity | complex number</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -7626,11 +7236,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P2305"/>
         <owl:annotatedTarget xml:lang="en">001443</owl:annotatedTarget>
         <mathmoddb:P1533 xml:lang="en">a complex number is an element of a number system that extends the real numbers with an imaginary unit i. Every complex number can be expressed in the form a + bi, where a and b are real numbers.</mathmoddb:P1533>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673708"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P2305"/>
-        <owl:annotatedTarget xml:lang="en">001443</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">complex number</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -7656,11 +7261,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P304"/>
         <owl:annotatedTarget xml:lang="en">13751538-n</owl:annotatedTarget>
         <mathmoddb:P1533 xml:lang="en">(mathematics) a number of the form a+bi where a and b are real numbers and i is the square root of -1</mathmoddb:P1533>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673708"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P304"/>
-        <owl:annotatedTarget xml:lang="en">13751538-n</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">complex number, complex quantity, imaginary, imaginary number</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -7668,11 +7268,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
         <owl:annotatedTarget xml:lang="en">987007538749605171</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">Numbers, Complex</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673708"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
-        <owl:annotatedTarget xml:lang="en">987007538749605171</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">מספרים מרוכבים</mathmoddb:P1887>
     </owl:Axiom>
     <owl:Axiom>
@@ -7680,23 +7275,8 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
         <owl:annotatedTarget xml:lang="en">7849</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">complex numbers</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673708"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">7849</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">kompleaksalogut</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673708"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">7849</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">kompleksiluvut</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673708"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">7849</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">komplexa tal</mathmoddb:P1887>
     </owl:Axiom>
     <owl:Axiom>
@@ -7728,11 +7308,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P382"/>
         <owl:annotatedTarget xml:lang="en">numero-complesso</owl:annotatedTarget>
         <mathmoddb:P28 xml:lang="en">2013-01-01T00:00:00Z</mathmoddb:P28>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673708"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P382"/>
-        <owl:annotatedTarget xml:lang="en">numero-complesso</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">numero complesso</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -7764,11 +7339,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P881"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56573"/>
         <mathmoddb:P322 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7265050"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673708"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P881"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56573"/>
         <mathmoddb:P322 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7271313"/>
     </owl:Axiom>
     
@@ -8237,11 +7807,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1903"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6481274"/>
         <mathmoddb:P263 rdf:resource="https://portal.mardi4nfdi.de/entity/Q56595"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673724"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1903"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6481274"/>
         <mathmoddb:P370 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7265976"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -8261,29 +7826,9 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
         <owl:annotatedTarget xml:lang="en">11028</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">hela tal</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673724"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">11028</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">integers</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673724"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">11028</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">kokonaisluvut</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673724"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">11028</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">čavdelogut</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673724"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">11028</owl:annotatedTarget>
         <mathmoddb:P1906 xml:lang="en">heltal</mathmoddb:P1906>
     </owl:Axiom>
     <owl:Axiom>
@@ -8309,11 +7854,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P382"/>
         <owl:annotatedTarget xml:lang="en">numero-intero</owl:annotatedTarget>
         <mathmoddb:P28 xml:lang="en">2013-01-01T00:00:00Z</mathmoddb:P28>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673724"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P382"/>
-        <owl:annotatedTarget xml:lang="en">numero-intero</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Numero intero</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -8321,41 +7861,11 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P881"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56573"/>
         <mathmoddb:P322 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480773"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673724"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P881"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56573"/>
         <mathmoddb:P322 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480774"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673724"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P881"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56573"/>
         <mathmoddb:P322 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7265168"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673724"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P881"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56573"/>
         <mathmoddb:P322 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7265895"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673724"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P881"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56573"/>
         <mathmoddb:P322 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7266068"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673724"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P881"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56573"/>
         <mathmoddb:P322 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7270589"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673724"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P881"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56573"/>
         <mathmoddb:P322 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7276932"/>
     </owl:Axiom>
     
@@ -10535,17 +10045,7 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
         <owl:annotatedTarget xml:lang="en">987007284973605171</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">Center of mass</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673847"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
-        <owl:annotatedTarget xml:lang="en">987007284973605171</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">מרכז המסה</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673847"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
-        <owl:annotatedTarget xml:lang="en">987007284973605171</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">مركز الكتلة</mathmoddb:P1887>
     </owl:Axiom>
     <owl:Axiom>
@@ -10559,11 +10059,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P447"/>
         <owl:annotatedTarget xml:lang="en">4674820</owl:annotatedTarget>
         <mathmoddb:P263 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6481150"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673847"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P447"/>
-        <owl:annotatedTarget xml:lang="en">4674820</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">ЦЕНТР ИНЕРЦИИ</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -19047,6 +18542,24 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674178"/>
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P983"/>
+        <owl:annotatedTarget xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
+        <mathmoddb:P984 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534304"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674178"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P983"/>
+        <owl:annotatedTarget xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mfrac&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;S&lt;/mi&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;msub&gt;&lt;mi&gt;S&lt;/mi&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
+        <mathmoddb:P984 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673957"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674178"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P983"/>
+        <owl:annotatedTarget xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;msub&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;P&lt;/mi&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;msub&gt;&lt;mi&gt;P&lt;/mi&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
+        <mathmoddb:P984 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673699"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674178"/>
+        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P983"/>
         <owl:annotatedTarget xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;msub&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;S&lt;/mi&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
         <mathmoddb:P984 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673699"/>
     </owl:Axiom>
@@ -19085,24 +18598,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P983"/>
         <owl:annotatedTarget xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;msub&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mo stretchy=&quot;false&quot;&gt;−&lt;/mo&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
         <mathmoddb:P984 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673803"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674178"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P983"/>
-        <owl:annotatedTarget xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
-        <mathmoddb:P984 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534304"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674178"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P983"/>
-        <owl:annotatedTarget xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mfrac&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;S&lt;/mi&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;msub&gt;&lt;mi&gt;S&lt;/mi&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
-        <mathmoddb:P984 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673957"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674178"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P983"/>
-        <owl:annotatedTarget xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;msub&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;P&lt;/mi&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;msub&gt;&lt;mi&gt;P&lt;/mi&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
-        <mathmoddb:P984 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673699"/>
     </owl:Axiom>
     
 
@@ -28322,11 +27817,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1684"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674365"/>
         <mathmoddb:P1674 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674366"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674363"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1684"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674365"/>
         <mathmoddb:P1674 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674367"/>
     </owl:Axiom>
     
@@ -32781,11 +32271,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P983"/>
         <owl:annotatedTarget xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;ℓ&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
         <mathmoddb:P984 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674049"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674482"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P983"/>
-        <owl:annotatedTarget xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;ℓ&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
         <mathmoddb:P984 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675430"/>
     </owl:Axiom>
     
@@ -38906,11 +38391,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674292"/>
         <mathmoddb:P146 xml:lang="en">2</mathmoddb:P146>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675169"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674292"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7270342"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -38918,11 +38398,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674294"/>
         <mathmoddb:P146 xml:lang="en">3</mathmoddb:P146>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675169"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674294"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7270342"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -38930,11 +38405,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674297"/>
         <mathmoddb:P146 xml:lang="en">1</mathmoddb:P146>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675169"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674297"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7270342"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -38942,11 +38412,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674412"/>
         <mathmoddb:P146 xml:lang="en">4</mathmoddb:P146>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675169"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674412"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534264"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -39055,11 +38520,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674274"/>
         <mathmoddb:P146 xml:lang="en">5</mathmoddb:P146>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675263"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674274"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534262"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -39067,11 +38527,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674393"/>
         <mathmoddb:P146 xml:lang="en">2</mathmoddb:P146>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675263"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674393"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7270342"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -39079,11 +38534,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674413"/>
         <mathmoddb:P146 xml:lang="en">4</mathmoddb:P146>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675263"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674413"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534264"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -39091,11 +38541,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674560"/>
         <mathmoddb:P146 xml:lang="en">3</mathmoddb:P146>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675263"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674560"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7270342"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -39103,11 +38548,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674586"/>
         <mathmoddb:P146 xml:lang="en">1</mathmoddb:P146>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675263"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674586"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7270342"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -42458,11 +41898,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534329"/>
         <mathmoddb:P146 xml:lang="en">8</mathmoddb:P146>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675396"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534329"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534259"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -42470,11 +41905,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534333"/>
         <mathmoddb:P146 xml:lang="en">11</mathmoddb:P146>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675396"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534333"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534259"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -42494,11 +41924,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674284"/>
         <mathmoddb:P146 xml:lang="en">2</mathmoddb:P146>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675396"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674284"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7270342"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -42506,11 +41931,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674285"/>
         <mathmoddb:P146 xml:lang="en">3</mathmoddb:P146>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675396"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674285"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7270342"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -42518,11 +41938,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674308"/>
         <mathmoddb:P146 xml:lang="en">1</mathmoddb:P146>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675396"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674308"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7270342"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -42530,11 +41945,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674312"/>
         <mathmoddb:P146 xml:lang="en">9</mathmoddb:P146>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675396"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674312"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534259"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -42542,11 +41952,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674313"/>
         <mathmoddb:P146 xml:lang="en">10</mathmoddb:P146>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675396"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674313"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534259"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -42554,11 +41959,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674322"/>
         <mathmoddb:P146 xml:lang="en">12</mathmoddb:P146>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675396"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674322"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534259"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -42566,11 +41966,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674323"/>
         <mathmoddb:P146 xml:lang="en">13</mathmoddb:P146>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675396"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674323"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534259"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -42949,11 +42344,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1684"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675405"/>
         <mathmoddb:P1674 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674366"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675406"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1684"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6675405"/>
         <mathmoddb:P1674 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674367"/>
     </owl:Axiom>
     
@@ -44710,11 +44100,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673863"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480295"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6684559"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673863"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480299"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -44722,11 +44107,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673871"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480295"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6684559"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673871"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480299"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -44734,11 +44114,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673873"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480295"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6684559"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673873"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480299"/>
     </owl:Axiom>
     
@@ -44990,11 +44365,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775789"/>
         <mathmoddb:P1869 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775743"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6684566"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775789"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480295"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -45002,11 +44372,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775790"/>
         <mathmoddb:P1869 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775742"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6684566"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775790"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480341"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -45020,11 +44385,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775795"/>
         <mathmoddb:P1869 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775744"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6684566"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775795"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480299"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -45038,11 +44398,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775797"/>
         <mathmoddb:P1869 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775744"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6684566"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775797"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480299"/>
     </owl:Axiom>
     
@@ -45099,11 +44454,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775789"/>
         <mathmoddb:P1869 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775743"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6684567"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775789"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480295"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -45111,11 +44461,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775790"/>
         <mathmoddb:P1869 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775742"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6684567"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775790"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480341"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -45129,11 +44474,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775795"/>
         <mathmoddb:P1869 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775744"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6684567"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775795"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480299"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -45147,11 +44487,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775797"/>
         <mathmoddb:P1869 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775744"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6684567"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775797"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480299"/>
     </owl:Axiom>
     
@@ -45207,11 +44542,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775789"/>
         <mathmoddb:P1869 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775743"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6684568"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775789"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480295"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -45219,11 +44549,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775790"/>
         <mathmoddb:P1869 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775742"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6684568"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775790"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480341"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -45237,11 +44562,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775795"/>
         <mathmoddb:P1869 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775744"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6684568"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775795"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480299"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -45255,11 +44575,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775797"/>
         <mathmoddb:P1869 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775744"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6684568"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775797"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480299"/>
     </owl:Axiom>
     
@@ -47738,11 +47053,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673880"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480295"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6684616"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673880"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480299"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -51201,11 +50511,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775585"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775640"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775296"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775585"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7270342"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -52743,17 +52048,7 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
         <owl:annotatedTarget xml:lang="en">19222</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">random numbers</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775403"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">19222</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">satunnaisluvut</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775403"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P312"/>
-        <owl:annotatedTarget xml:lang="en">19222</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">slumptal</mathmoddb:P1887>
     </owl:Axiom>
     
@@ -53107,17 +52402,7 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1198"/>
         <owl:annotatedTarget xml:lang="en">variabile-aleatoria</owl:annotatedTarget>
         <mathmoddb:P28 xml:lang="en">2012-01-01T00:00:00Z</mathmoddb:P28>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775415"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1198"/>
-        <owl:annotatedTarget xml:lang="en">variabile-aleatoria</owl:annotatedTarget>
         <mathmoddb:P43 xml:lang="en">Samantha Leorato</mathmoddb:P43>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775415"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1198"/>
-        <owl:annotatedTarget xml:lang="en">variabile-aleatoria</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Variabile aleatoria</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -53137,17 +52422,7 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P282"/>
         <owl:annotatedTarget rdf:resource="http://commons.wikimedia.org/wiki/Special:FilePath/Vari%C3%A1vel%20aleat%C3%B3ria.ogg"/>
         <mathmoddb:P169 xml:lang="en">2017-01-01T00:00:00Z</mathmoddb:P169>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775415"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P282"/>
-        <owl:annotatedTarget rdf:resource="http://commons.wikimedia.org/wiki/Special:FilePath/Vari%C3%A1vel%20aleat%C3%B3ria.ogg"/>
         <mathmoddb:P34 rdf:resource="https://portal.mardi4nfdi.de/entity/Q56998"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775415"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P282"/>
-        <owl:annotatedTarget rdf:resource="http://commons.wikimedia.org/wiki/Special:FilePath/Vari%C3%A1vel%20aleat%C3%B3ria.ogg"/>
         <mathmoddb:P34 rdf:resource="https://portal.mardi4nfdi.de/entity/Q60174"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -53155,11 +52430,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q7265151"/>
         <mathmoddb:P116 xml:lang="en">2.10</mathmoddb:P116>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775415"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q7265151"/>
         <mathmoddb:P96 xml:lang="en">random variable</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -53173,17 +52443,7 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
         <owl:annotatedTarget xml:lang="en">987007563129305171</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">Random variables</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775415"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
-        <owl:annotatedTarget xml:lang="en">987007563129305171</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">משתנים אקראיים</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775415"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
-        <owl:annotatedTarget xml:lang="en">987007563129305171</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">المتغيرات العشوائية</mathmoddb:P1887>
     </owl:Axiom>
     <owl:Axiom>
@@ -53191,11 +52451,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P321"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56573"/>
         <mathmoddb:P322 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7265153"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775415"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P321"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56573"/>
         <mathmoddb:P322 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7280374"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -53203,11 +52458,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P382"/>
         <owl:annotatedTarget xml:lang="en">variabile-aleatoria</owl:annotatedTarget>
         <mathmoddb:P28 xml:lang="en">2013-01-01T00:00:00Z</mathmoddb:P28>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775415"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P382"/>
-        <owl:annotatedTarget xml:lang="en">variabile-aleatoria</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Variabile aleatoria</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -53215,11 +52465,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P382"/>
         <owl:annotatedTarget xml:lang="en">variabile-casuale</owl:annotatedTarget>
         <mathmoddb:P28 xml:lang="en">2013-01-01T00:00:00Z</mathmoddb:P28>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775415"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P382"/>
-        <owl:annotatedTarget xml:lang="en">variabile-casuale</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Variabile casuale</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -53227,11 +52472,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P447"/>
         <owl:annotatedTarget xml:lang="en">4161614</owl:annotatedTarget>
         <mathmoddb:P263 rdf:resource="https://portal.mardi4nfdi.de/entity/Q105343"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775415"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P447"/>
-        <owl:annotatedTarget xml:lang="en">4161614</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">СРЕДНЯЯ ВЕЛИЧИНА</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -57269,11 +56509,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P382"/>
         <owl:annotatedTarget xml:lang="en">coordinate-polari</owl:annotatedTarget>
         <mathmoddb:P28 xml:lang="en">2013-01-01T00:00:00Z</mathmoddb:P28>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775604"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P382"/>
-        <owl:annotatedTarget xml:lang="en">coordinate-polari</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Coordinate polari</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -57507,11 +56742,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775773"/>
         <mathmoddb:P1869 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775705"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775614"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775773"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480299"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -57519,11 +56749,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775774"/>
         <mathmoddb:P1869 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775706"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775614"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775774"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480295"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -57531,11 +56756,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775775"/>
         <mathmoddb:P1869 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775707"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775614"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775775"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480299"/>
     </owl:Axiom>
     
@@ -57840,11 +57060,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P983"/>
         <owl:annotatedTarget xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mover&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;̂&lt;/mo&gt;&lt;/mover&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
         <mathmoddb:P984 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534304"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775622"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P983"/>
-        <owl:annotatedTarget xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mover&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;̂&lt;/mo&gt;&lt;/mover&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
         <mathmoddb:P984 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775396"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -57915,11 +57130,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775583"/>
         <mathmoddb:P1566 xml:lang="en">1</mathmoddb:P1566>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775627"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775583"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480341"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -57927,11 +57137,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775600"/>
         <mathmoddb:P1566 xml:lang="en">10</mathmoddb:P1566>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775627"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775600"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480341"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -57939,23 +57144,8 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775608"/>
         <mathmoddb:P1614 xml:lang="en">-4</mathmoddb:P1614>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775627"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775608"/>
         <mathmoddb:P1615 xml:lang="en">4</mathmoddb:P1615>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775627"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775608"/>
         <mathmoddb:P2640 xml:lang="en">121</mathmoddb:P2640>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775627"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775608"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480299"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -57963,23 +57153,8 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775609"/>
         <mathmoddb:P1614 xml:lang="en">-4</mathmoddb:P1614>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775627"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775609"/>
         <mathmoddb:P1615 xml:lang="en">4</mathmoddb:P1615>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775627"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775609"/>
         <mathmoddb:P2640 xml:lang="en">121</mathmoddb:P2640>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775627"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775609"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480299"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -60736,11 +59911,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P250"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q7266364"/>
         <mathmoddb:P251 rdf:resource="https://portal.mardi4nfdi.de/entity/Q56804"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775750"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P250"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q7266364"/>
         <mathmoddb:P869 xml:lang="en">univers</mathmoddb:P869>
     </owl:Axiom>
     <owl:Axiom>
@@ -60754,11 +59924,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q7265151"/>
         <mathmoddb:P116 xml:lang="en">2.1</mathmoddb:P116>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775750"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P286"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q7265151"/>
         <mathmoddb:P96 xml:lang="en">sample space</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -60772,17 +59937,7 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P83"/>
         <owl:annotatedTarget xml:lang="en">4242151-2</owl:annotatedTarget>
         <mathmoddb:P263 rdf:resource="https://portal.mardi4nfdi.de/entity/Q56595"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775750"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P83"/>
-        <owl:annotatedTarget xml:lang="en">4242151-2</owl:annotatedTarget>
         <mathmoddb:P370 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7266365"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775750"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P83"/>
-        <owl:annotatedTarget xml:lang="en">4242151-2</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Stichprobenraum</mathmoddb:P96>
     </owl:Axiom>
     
@@ -65805,17 +64960,7 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1525"/>
         <owl:annotatedTarget xml:lang="en">angolo_res-81e0c266-adad-11eb-94e0-00271042e8d9</owl:annotatedTarget>
         <mathmoddb:P26 xml:lang="en">Thesaurus</mathmoddb:P26>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821149"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1525"/>
-        <owl:annotatedTarget xml:lang="en">angolo_res-81e0c266-adad-11eb-94e0-00271042e8d9</owl:annotatedTarget>
         <mathmoddb:P28 xml:lang="en">2018-01-01T00:00:00Z</mathmoddb:P28>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821149"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1525"/>
-        <owl:annotatedTarget xml:lang="en">angolo_res-81e0c266-adad-11eb-94e0-00271042e8d9</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Angolo</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -65841,11 +64986,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P250"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q7271173"/>
         <mathmoddb:P251 rdf:resource="https://portal.mardi4nfdi.de/entity/Q56804"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821149"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P250"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q7271173"/>
         <mathmoddb:P869 xml:lang="en">Winkel</mathmoddb:P869>
     </owl:Axiom>
     <owl:Axiom>
@@ -65895,11 +65035,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
         <owl:annotatedTarget xml:lang="en">987007294852305171</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">Angles (Geometry)</mathmoddb:P1887>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821149"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P309"/>
-        <owl:annotatedTarget xml:lang="en">987007294852305171</owl:annotatedTarget>
         <mathmoddb:P1887 xml:lang="en">זוויות (גאומטריה)</mathmoddb:P1887>
     </owl:Axiom>
     <owl:Axiom>
@@ -65907,11 +65042,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P321"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56573"/>
         <mathmoddb:P322 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7271174"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821149"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P321"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q56573"/>
         <mathmoddb:P322 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7271183"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -65919,11 +65049,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P382"/>
         <owl:annotatedTarget xml:lang="en">angolo</owl:annotatedTarget>
         <mathmoddb:P28 xml:lang="en">2013-01-01T00:00:00Z</mathmoddb:P28>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821149"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P382"/>
-        <owl:annotatedTarget xml:lang="en">angolo</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Angolo</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -65931,29 +65056,9 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P383"/>
         <owl:annotatedTarget xml:lang="en">angolo</owl:annotatedTarget>
         <mathmoddb:P28 xml:lang="en">1929-01-01T00:00:00Z</mathmoddb:P28>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821149"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P383"/>
-        <owl:annotatedTarget xml:lang="en">angolo</owl:annotatedTarget>
         <mathmoddb:P43 xml:lang="en">Federigo Enriques</mathmoddb:P43>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821149"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P383"/>
-        <owl:annotatedTarget xml:lang="en">angolo</owl:annotatedTarget>
         <mathmoddb:P43 xml:lang="en">Luigi Volta</mathmoddb:P43>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821149"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P383"/>
-        <owl:annotatedTarget xml:lang="en">angolo</owl:annotatedTarget>
         <mathmoddb:P43 xml:lang="en">Raffaello Niccoli</mathmoddb:P43>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821149"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P383"/>
-        <owl:annotatedTarget xml:lang="en">angolo</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">ANGOLO</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -65973,11 +65078,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P391"/>
         <owl:annotatedTarget xml:lang="en">math:Angle</owl:annotatedTarget>
         <mathmoddb:P34 rdf:resource="https://portal.mardi4nfdi.de/entity/Q56366"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821149"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P391"/>
-        <owl:annotatedTarget xml:lang="en">math:Angle</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Angle</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -65985,11 +65085,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P447"/>
         <owl:annotatedTarget xml:lang="en">4215205</owl:annotatedTarget>
         <mathmoddb:P263 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6481150"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821149"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P447"/>
-        <owl:annotatedTarget xml:lang="en">4215205</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">УГОЛ</mathmoddb:P96>
     </owl:Axiom>
     <owl:Axiom>
@@ -67999,11 +67094,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1684"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775728"/>
         <mathmoddb:P1674 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821057"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821221"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1684"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775728"/>
         <mathmoddb:P1674 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821219"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -68083,11 +67173,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1684"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775722"/>
         <mathmoddb:P1674 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821057"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821222"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1684"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775722"/>
         <mathmoddb:P1674 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821219"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -68135,11 +67220,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1684"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775721"/>
         <mathmoddb:P1674 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821057"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821223"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1684"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775721"/>
         <mathmoddb:P1674 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821219"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -72959,11 +72039,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P391"/>
         <owl:annotatedTarget xml:lang="en">math:Side</owl:annotatedTarget>
         <mathmoddb:P34 rdf:resource="https://portal.mardi4nfdi.de/entity/Q56366"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821513"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P391"/>
-        <owl:annotatedTarget xml:lang="en">math:Side</owl:annotatedTarget>
         <mathmoddb:P96 xml:lang="en">Side</mathmoddb:P96>
     </owl:Axiom>
     
@@ -74638,11 +73713,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1684"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821398"/>
         <mathmoddb:P1674 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674366"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6822086"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1684"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821398"/>
         <mathmoddb:P1674 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674367"/>
     </owl:Axiom>
     
@@ -74736,11 +73806,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1684"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821156"/>
         <mathmoddb:P1674 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674366"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6822089"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1684"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821156"/>
         <mathmoddb:P1674 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674367"/>
     </owl:Axiom>
     
@@ -74791,11 +73856,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1684"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821154"/>
         <mathmoddb:P1674 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674366"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6822090"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1684"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821154"/>
         <mathmoddb:P1674 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674367"/>
     </owl:Axiom>
     
@@ -74833,11 +73893,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1684"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821153"/>
         <mathmoddb:P1674 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674366"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6822091"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1684"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6821153"/>
         <mathmoddb:P1674 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674367"/>
     </owl:Axiom>
     
@@ -75553,11 +74608,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6822171"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480295"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6822166"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6822171"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775641"/>
     </owl:Axiom>
     
@@ -75822,11 +74872,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6822173"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480295"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6822174"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6822173"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775641"/>
     </owl:Axiom>
     
@@ -75863,11 +74908,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775619"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775618"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6822179"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775619"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7270342"/>
     </owl:Axiom>
     
@@ -76673,11 +75713,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6823150"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775618"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6824221"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6823150"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7270342"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -76685,11 +75720,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6823151"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775618"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6824221"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6823151"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7270342"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -76697,11 +75727,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6823152"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775618"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6824221"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6823152"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q7270342"/>
     </owl:Axiom>
     
@@ -78147,11 +77172,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6830685"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480295"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6830767"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6830685"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775641"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -78159,11 +77179,6 @@
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
         <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6830686"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6480295"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6830767"/>
-        <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P1560"/>
-        <owl:annotatedTarget rdf:resource="https://portal.mardi4nfdi.de/entity/Q6830686"/>
         <mathmoddb:P560 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6775641"/>
     </owl:Axiom>
     
