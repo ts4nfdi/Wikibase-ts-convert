@@ -1,0 +1,75 @@
+# Synchronize MathModDB.owl through a PR with the MathModDB repository
+name: Sync MathModDB.owl
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "pipelines/mathmoddb/out/MathModDB.owl"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source repository
+        uses: actions/checkout@v4
+
+      - name: Checkout target repository
+        uses: actions/checkout@v4
+        with:
+          repository: MaRDI4NFDI/MathModDB
+          path: target-repo
+          token: ${{ secrets.MATHMODDB_REPO_TOKEN }}
+
+      - name: Checkout update branch
+        working-directory: target-repo
+        run: |
+           if git ls-remote --exit-code --heads origin update-mathmoddb-owl > /dev/null 2>&1; then
+             git fetch origin update-mathmoddb-owl
+             git switch -C update-mathmoddb-owl FETCH_HEAD
+           else
+             git switch -c update-mathmoddb-owl
+           fi
+
+      - name: Copy MathModDB.owl
+        run: |
+          cp pipelines/mathmoddb/out/MathModDB.owl target-repo/MathModDB.owl
+
+      - name: Commit and push changes
+        id: commit
+        working-directory: target-repo
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add MathModDB.owl
+
+          if git commit -m "Update MathModDB.owl"; then
+            git push origin update-mathmoddb-owl
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Committed MathModDB.owl update."
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes to commit."
+          fi
+
+      - name: Create pull request
+        if: steps.commit.outputs.changed == 'true'
+        working-directory: target-repo
+        env:
+          GH_TOKEN: ${{ secrets.MATHMODDB_REPO_TOKEN }}
+        # todo: set contact person correctly
+        run: |
+          if [ -n "$(gh pr list --head update-mathmoddb-owl --state open --json number --jq '.[0].number')" ]; then
+            echo "Pull request already exists."
+          else
+            gh pr create \
+              --base main \
+              --head update-mathmoddb-owl \
+              --title "Update MathModDB.owl" \
+              --body $'This pull request was automatically created by a workflow in the `Wikibase-ts-convert` repository to keep the `MathModDB.owl` file consistent and up to date.\n\nFor any questions regarding this automated update, please contact ...'
+            echo "Created new Pull request"
+          fi
+      
+    
