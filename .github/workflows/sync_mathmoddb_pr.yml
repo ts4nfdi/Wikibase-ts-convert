@@ -6,6 +6,10 @@ on:
       - main
     paths:
       - "pipelines/mathmoddb/out/MathModDB.owl"
+  schedule:
+    - cron: "12 8 * * 0"
+  workflow_dispatch:
+
 
 jobs:
   sync:
