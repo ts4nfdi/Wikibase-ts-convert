@@ -59,7 +59,6 @@ jobs:
         working-directory: target-repo
         env:
           GH_TOKEN: ${{ secrets.MATHMODDB_REPO_TOKEN }}
-        # todo: set contact person correctly
         run: |
           if [ -n "$(gh pr list --head update-mathmoddb-owl --state open --json number --jq '.[0].number')" ]; then
             echo "Pull request already exists."
@@ -68,7 +67,7 @@ jobs:
               --base main \
               --head update-mathmoddb-owl \
               --title "Update MathModDB.owl" \
-              --body $'This pull request was automatically created by a workflow in the `Wikibase-ts-convert` repository to keep the `MathModDB.owl` file consistent and up to date.\n\nFor any questions regarding this automated update, please contact ...'
+              --body $'This pull request was automatically created by a workflow in the [Wikibase-ts-convert](https://github.com/ts4nfdi/Wikibase-ts-convert) repository to keep the `MathModDB.owl` file consistent and up to date.\n\nThe data used to generate `MathModDB.owl` is retrieved from the MaRDI Knowledge Graph via its [SPARQL endpoint](https://query.portal.mardi4nfdi.de).\n\nFor any questions regarding this automated update, please either open an issue in the [Wikibase-ts-convert](https://github.com/ts4nfdi/Wikibase-ts-convert) repository or contact the TS4NFDI team.'
             echo "Created new Pull request"
           fi
       
