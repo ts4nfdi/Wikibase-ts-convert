@@ -1,9 +1,9 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 from rdflib import Graph, Namespace, Literal, URIRef, BNode
-from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD, SDO, FOAF, DOAP
+from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, XSD, SDO, FOAF
 from pathlib import Path
 import subprocess
-from datetime import date
+import datetime
 
 BASE_DIR = Path(__file__).resolve().parent
 RESOURCES_DIR = BASE_DIR / "resources"
@@ -15,6 +15,7 @@ ENDPOINT = "https://query.portal.mardi4nfdi.de/sparql"
 OMW = Namespace("https://portal.mardi4nfdi.de/entity/")
 ONTOLOGY_URI = URIRef("https://portal.mardi4nfdi.de/wiki/")
 
+
 # helper method for sending a sparql query to the endpoint and cleaning to result
 def get_answer_from_endpoint(query):
     sparql = SPARQLWrapper(ENDPOINT)
@@ -25,6 +26,7 @@ def get_answer_from_endpoint(query):
     results = results["results"]["bindings"]
 
     return results
+
 
 # =============================================================================
 # SPARQL QUERIES
@@ -76,7 +78,7 @@ WHERE {
 }
 """
 
-# This query pulls all properties used as qualifier propertys by statements that are targeted by individuals in the
+# This query pulls all properties used as qualifier properties by statements that are targeted by individuals in the
 # mathmoddb scope. This query is used to define the qualifier properties.
 QUALIFIER_PROPERTIES_QUERY = """
 SELECT DISTINCT
@@ -160,6 +162,7 @@ WHERE {
 }
 """
 
+
 # =============================================================================
 # METHODS FOR ADDING THE DATA OF THE QUERY RESULTS TO THE GRAPH
 # =============================================================================
@@ -189,7 +192,7 @@ def add_classes_to_graph(classes, graph):
     num_classes = len(classes)
 
     # array that contains the uris of all classes for later use
-    classUris = []
+    class_uris = []
 
     for entry in classes:
         class_uri = URIRef(entry["class"]["value"])
@@ -199,7 +202,7 @@ def add_classes_to_graph(classes, graph):
             num_classes -= 1
             continue
 
-        classUris.append(class_uri)
+        class_uris.append(class_uri)
 
         graph.add((class_uri, RDF.type, RDFS.Class))
 
@@ -216,7 +219,7 @@ def add_classes_to_graph(classes, graph):
             )
 
     print(f"added {num_classes} classes to graph")
-    return classUris
+    return class_uris
 
 
 def add_properties_to_graph(properties, graph):
@@ -248,33 +251,33 @@ def add_qualifiers_to_graph(qualifier_data, graph):
     for entry in qualifier_data:
         # set query results as URIs and Literals
         individual = URIRef(entry["individual"]["value"])
-        property = URIRef(entry["property"]["value"])
-        qualifierProperty = URIRef(entry["qualifierProperty"]["value"])
-        qualifierValue, statementValue = (
+        curr_property = URIRef(entry["property"]["value"])
+        qualifier_property = URIRef(entry["qualifier_property"]["value"])
+        qualifier_value, statement_value = (
             URIRef(entry[key]["value"]) if entry[key]["type"] == "uri"
             else Literal(entry[key]["value"], lang="en")
-            for key in ["qualifierValue", "statementValue"]
+            for key in ["qualifier_value", "statement_value"]
         )
 
         # each statement should link to only one axiom. Therefore, store the related
         # axiom in the dictionary and only create a new one if none exists yet.
-        if not (individual, property, statementValue) in statement_to_axiom:
+        if not (individual, curr_property, statement_value) in statement_to_axiom:
             new_axiom = BNode()
             graph.add((new_axiom, RDF.type, OWL.Axiom))
             graph.add((new_axiom, OWL.annotatedSource, individual))
-            graph.add((new_axiom, OWL.annotatedTarget, statementValue))
-            graph.add((new_axiom, OWL.annotatedProperty, property))
+            graph.add((new_axiom, OWL.annotatedTarget, statement_value))
+            graph.add((new_axiom, OWL.annotatedProperty, curr_property))
 
-            statement_to_axiom[(individual, property, statementValue)] = new_axiom
+            statement_to_axiom[(individual, curr_property, statement_value)] = new_axiom
 
         # add qualifier value and property
-        axiom = statement_to_axiom[(individual, property, statementValue)]
-        graph.add((axiom, qualifierProperty, qualifierValue))
+        axiom = statement_to_axiom[(individual, curr_property, statement_value)]
+        graph.add((axiom, qualifier_property, qualifier_value))
 
     print(f"added {len(qualifier_data)} qualifiers to graph")
 
 
-def add_individual_property_value_triples_to_graph(ipv, graph, classUris):
+def add_individual_property_value_triples_to_graph(ipv, graph, class_uris):
     for entry in ipv:
         individual_uri = URIRef(entry["item"]["value"])
         property_uri = URIRef(entry["property"]["value"])
@@ -286,12 +289,13 @@ def add_individual_property_value_triples_to_graph(ipv, graph, classUris):
         # instance of relations should be added as RDF.type relation
         if property_uri == URIRef("https://portal.mardi4nfdi.de/entity/P31"):
             # only RDF.type relations to classes that mathmoddb consists of should be added
-            if property_value in classUris:
+            if property_value in class_uris:
                 graph.add((individual_uri, RDF.type, property_value))
         else:
             graph.add((individual_uri, property_uri, property_value))
 
     print(f"added {len(ipv)} triples with individuals as subject and a wikibase property as property to graph")
+
 
 # =============================================================================
 # ADD ONTOLOGY METADATA
@@ -324,8 +328,8 @@ def add_ontology_metadata(graph):
     graph.add((ONTOLOGY_URI, DCTERMS.description,
                Literal("MathModDB is a database of mathematical models developed by the Mathematical "
                        "Research Data Initiative (MaRDI). It defines a data model with classes (Mathematical Model, "
-                       "Mathematical Formulation, Academic Discipline, Research Problem, Quantity [Kind], Computational "
-                       "Task, Publication), object properties/relations, data properties and annotation properties as "
+                       "Mathematical Formulation, Academic Discipline, Research Problem, Quantity [Kind], Computational"
+                       " Task, Publication), object properties/relations, data properties and annotation properties as "
                        "an ontology. This ontology is populated with individuals/data from various fields of applied "
                        "mathematics, making it a knowledge graph. ", lang="en")))
 
@@ -349,19 +353,19 @@ def add_ontology_metadata(graph):
     graph.add((ONTOLOGY_URI, DCTERMS.license, URIRef("https://creativecommons.org/licenses/by/4.0/")))
 
     # bibliographic citation
-    graph.add((ONTOLOGY_URI, DCTERMS.bibliographicCitation, Literal("Shehu, A., Schembera, B., Schmidt, B.,"
-                                                                " Biedinger, C., Fiedler, J., Reidelbach, M., Koprucki,"
-                                                                " T. (2025): MathModDB Ontology and Knowledge Graph for"
-                                                                " Mathematical Models", lang="en")))
+    graph.add((ONTOLOGY_URI, DCTERMS.bibliographicCitation, Literal("Shehu, A., Schembera, B., Schmidt, B., "
+                                                                    " Biedinger, C., Fiedler, J., Reidelbach, M., "
+                                                                    "Koprucki, T. (2025): MathModDB Ontology and "
+                                                                    "Knowledge Graph for Mathematical Models",
+                                                                    lang="en")))
 
     # subjects
     # for subject in ["Computer Science", "Mathematics", "Engineering"]:
     #    graph.add((ONTOLOGY_URI, DCTERMS.subject, Literal(subject, lang="en")))
 
     # issued + modified
-    today = date.today()
-    graph.add((ONTOLOGY_URI, DCTERMS.issued, Literal(today, datatype=XSD.dateTime)))
-    graph.add((ONTOLOGY_URI, DCTERMS.modified, Literal(today, datatype=XSD.dateTime)))
+    graph.add((ONTOLOGY_URI, DCTERMS.issued, Literal(datetime.datetime(2026, 7, 23), datatype=XSD.dateTime)))
+    graph.add((ONTOLOGY_URI, DCTERMS.modified, Literal(datetime.datetime.today(), datatype=XSD.dateTime)))
 
     # see also
     see_also_links = [
@@ -371,7 +375,7 @@ def add_ontology_metadata(graph):
     ]
 
     for link in see_also_links:
-        graph.add((ONTOLOGY_URI,RDFS.seeAlso,URIRef(link)))
+        graph.add((ONTOLOGY_URI, RDFS.seeAlso, URIRef(link)))
 
     # publisher
     graph.add((ONTOLOGY_URI, DCTERMS.publisher, Literal('Mathematical Research Data Initiative (MaRDI,'
@@ -414,6 +418,7 @@ def add_ontology_metadata(graph):
 
     print("added ontology metadata to graph")
 
+
 # =============================================================================
 # MAIN - EXECUTION ORDER
 # =============================================================================
@@ -432,7 +437,7 @@ def main():
 
     # add classes to graph
     classes = get_answer_from_endpoint(CLASSES_QUERY)
-    classUris = add_classes_to_graph(classes, g)
+    class_uris = add_classes_to_graph(classes, g)
 
     # add properties and qualifier properties to graph
     properties = get_answer_from_endpoint(PROPERTIES_QUERY)
@@ -446,7 +451,7 @@ def main():
 
     # add all individual property relations
     ipv = get_answer_from_endpoint(INDIVIDUAL_PROPERTY_VALUE_QUERY)
-    add_individual_property_value_triples_to_graph(ipv, g, classUris)
+    add_individual_property_value_triples_to_graph(ipv, g, class_uris)
 
     # Serialize output
     out_dir = BASE_DIR / "out"
@@ -467,6 +472,7 @@ def main():
         ],
         check=True,
     )
+
 
 if __name__ == "__main__":
     main()
