@@ -22,9 +22,9 @@
         <dcterms:creator xml:lang="en">Marco Reidelbach (https://orcid.org/0000-0002-1919-1834), Zuse Institute Berlin (https://ror.org/02eva5865, https://isni.org/isni/000000011010926X)</dcterms:creator>
         <dcterms:creator xml:lang="en">Thomas Koprucki (https://orcid.org/0000-0001-6235-9412), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)</dcterms:creator>
         <dcterms:description xml:lang="en">MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative (MaRDI). It defines a data model with classes (Mathematical Model, Mathematical Formulation, Academic Discipline, Research Problem, Quantity [Kind], Computational Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph. </dcterms:description>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-11</dcterms:issued>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-23T00:00:00</dcterms:issued>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-11</dcterms:modified>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-13T10:51:48.235734</dcterms:modified>
         <dcterms:publisher xml:lang="en">Mathematical Research Data Initiative (MaRDI, https://www.mardi4nfdi.de)</dcterms:publisher>
         <dcterms:title xml:lang="en">MathModDB Knowledge Graph of Mathematical Models</dcterms:title>
         <rdfs:label xml:lang="en">MathModDB Knowledge Graph of Mathematical Models</rdfs:label>
@@ -1146,7 +1146,7 @@
 
 
     <owl:AnnotationProperty rdf:about="https://portal.mardi4nfdi.de/entity/P1994">
-        <rdfs:label xml:lang="en">zbMATH conecept ID</rdfs:label>
+        <rdfs:label xml:lang="en">zbMATH concept ID</rdfs:label>
         <schema:description xml:lang="en">unique identifier for a zbMATH concept</schema:description>
     </owl:AnnotationProperty>
     
@@ -31858,10 +31858,10 @@
 
     <owl:NamedIndividual rdf:about="https://portal.mardi4nfdi.de/entity/Q6674473">
         <rdf:type rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534237"/>
-        <mathmoddb:P983 xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</mathmoddb:P983>
-        <mathmoddb:P983 xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;J&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</mathmoddb:P983>
-        <mathmoddb:P983 xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mover&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;̂&lt;/mo&gt;&lt;/mover&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</mathmoddb:P983>
-        <mathmoddb:P989 xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mover&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;̂&lt;/mo&gt;&lt;/mover&gt;&lt;mo stretchy=&quot;false&quot;&gt;≡&lt;/mo&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;msup&gt;&lt;mover&gt;&lt;mi&gt;J&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;̂&lt;/mo&gt;&lt;/mover&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</mathmoddb:P989>
+        <mathmoddb:P983 xml:lang="en">&lt;math class=&quot;mwe-math-element mwe-math-element-inline&quot; xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</mathmoddb:P983>
+        <mathmoddb:P983 xml:lang="en">&lt;math class=&quot;mwe-math-element mwe-math-element-inline&quot; xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;J&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</mathmoddb:P983>
+        <mathmoddb:P983 xml:lang="en">&lt;math class=&quot;mwe-math-element mwe-math-element-inline&quot; xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mover&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;̂&lt;/mo&gt;&lt;/mover&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</mathmoddb:P983>
+        <mathmoddb:P989 xml:lang="en">&lt;math class=&quot;mwe-math-element mwe-math-element-inline&quot; xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mover&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;̂&lt;/mo&gt;&lt;/mover&gt;&lt;mo stretchy=&quot;false&quot;&gt;≡&lt;/mo&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;msup&gt;&lt;mover&gt;&lt;mi&gt;J&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;̂&lt;/mo&gt;&lt;/mover&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</mathmoddb:P989>
         <rdfs:label xml:lang="en">quantum Hamiltonian (linear rotor)</rdfs:label>
         <mathmoddb:P1460 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534271"/>
         <mathmoddb:P1495 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534265"/>
@@ -31874,19 +31874,19 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674473"/>
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P983"/>
-        <owl:annotatedTarget xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">&lt;math class=&quot;mwe-math-element mwe-math-element-inline&quot; xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
         <mathmoddb:P984 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673746"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674473"/>
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P983"/>
-        <owl:annotatedTarget xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;J&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">&lt;math class=&quot;mwe-math-element mwe-math-element-inline&quot; xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;J&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
         <mathmoddb:P984 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674107"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674473"/>
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P983"/>
-        <owl:annotatedTarget xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mover&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;̂&lt;/mo&gt;&lt;/mover&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">&lt;math class=&quot;mwe-math-element mwe-math-element-inline&quot; xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mover&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;̂&lt;/mo&gt;&lt;/mover&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
         <mathmoddb:P984 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674473"/>
     </owl:Axiom>
     
@@ -32043,11 +32043,11 @@
 
     <owl:NamedIndividual rdf:about="https://portal.mardi4nfdi.de/entity/Q6674478">
         <rdf:type rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534237"/>
-        <mathmoddb:P983 xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</mathmoddb:P983>
-        <mathmoddb:P983 xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;D&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</mathmoddb:P983>
-        <mathmoddb:P983 xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</mathmoddb:P983>
-        <mathmoddb:P983 xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;J&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</mathmoddb:P983>
-        <mathmoddb:P989 xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mover&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;̂&lt;/mo&gt;&lt;/mover&gt;&lt;mo stretchy=&quot;false&quot;&gt;≡&lt;/mo&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;msup&gt;&lt;mover&gt;&lt;mi&gt;J&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;̂&lt;/mo&gt;&lt;/mover&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;mo stretchy=&quot;false&quot;&gt;+&lt;/mo&gt;&lt;mi&gt;D&lt;/mi&gt;&lt;msup&gt;&lt;mover&gt;&lt;mi&gt;J&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;̂&lt;/mo&gt;&lt;/mover&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</mathmoddb:P989>
+        <mathmoddb:P983 xml:lang="en">&lt;math class=&quot;mwe-math-element mwe-math-element-inline&quot; xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</mathmoddb:P983>
+        <mathmoddb:P983 xml:lang="en">&lt;math class=&quot;mwe-math-element mwe-math-element-inline&quot; xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;D&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</mathmoddb:P983>
+        <mathmoddb:P983 xml:lang="en">&lt;math class=&quot;mwe-math-element mwe-math-element-inline&quot; xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</mathmoddb:P983>
+        <mathmoddb:P983 xml:lang="en">&lt;math class=&quot;mwe-math-element mwe-math-element-inline&quot; xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;J&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</mathmoddb:P983>
+        <mathmoddb:P989 xml:lang="en">&lt;math class=&quot;mwe-math-element mwe-math-element-inline&quot; xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mover&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;̂&lt;/mo&gt;&lt;/mover&gt;&lt;mo stretchy=&quot;false&quot;&gt;≡&lt;/mo&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;msup&gt;&lt;mover&gt;&lt;mi&gt;J&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;̂&lt;/mo&gt;&lt;/mover&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;mo stretchy=&quot;false&quot;&gt;+&lt;/mo&gt;&lt;mi&gt;D&lt;/mi&gt;&lt;msup&gt;&lt;mover&gt;&lt;mi&gt;J&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;̂&lt;/mo&gt;&lt;/mover&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</mathmoddb:P989>
         <rdfs:label xml:lang="en">quantum Hamiltonian (non-rigid rotor)</rdfs:label>
         <mathmoddb:P1460 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534271"/>
         <mathmoddb:P1495 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534265"/>
@@ -32061,25 +32061,25 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674478"/>
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P983"/>
-        <owl:annotatedTarget xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">&lt;math class=&quot;mwe-math-element mwe-math-element-inline&quot; xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
         <mathmoddb:P984 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673746"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674478"/>
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P983"/>
-        <owl:annotatedTarget xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;D&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">&lt;math class=&quot;mwe-math-element mwe-math-element-inline&quot; xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;D&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
         <mathmoddb:P984 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6673849"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674478"/>
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P983"/>
-        <owl:annotatedTarget xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">&lt;math class=&quot;mwe-math-element mwe-math-element-inline&quot; xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
         <mathmoddb:P984 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6534301"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674478"/>
         <owl:annotatedProperty rdf:resource="https://portal.mardi4nfdi.de/entity/P983"/>
-        <owl:annotatedTarget xml:lang="en">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; class=&quot;mwe-math-element mwe-math-element-inline&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;J&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">&lt;math class=&quot;mwe-math-element mwe-math-element-inline&quot; xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;&gt;&lt;mi&gt;J&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/math&gt;</owl:annotatedTarget>
         <mathmoddb:P984 rdf:resource="https://portal.mardi4nfdi.de/entity/Q6674107"/>
     </owl:Axiom>
     
