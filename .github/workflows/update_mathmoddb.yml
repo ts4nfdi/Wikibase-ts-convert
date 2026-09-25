@@ -1,0 +1,40 @@
+name: Update MathModDB ontology
+on:
+  schedule:
+    - cron: "12 5 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  run-python-file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run mathmod_pipeline.py
+        run: python main.py mathmoddb
+
+      - name: Commit MathModDB.owl
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add ./pipelines/mathmoddb/out/MathModDB.owl
+          if git commit -m "Update MathModDB.owl"; then
+            git push
+            echo "Committed and pushed MathModDB.owl update."
+          else
+            echo "No changes to commit."
+          fi
