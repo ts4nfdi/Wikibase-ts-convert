@@ -1,5 +1,6 @@
 from pipelines.mathmoddb.mathmod_pipeline import main as mathmod_pipeline
 from pipelines.ohdab.ohdab_pipeline import main as ohdab_pipeline
+from pipelines.CPR.cpr_pipeline import main as cpr_pipeline
 import sys
 import shutil
 from pathlib import Path
@@ -13,6 +14,9 @@ def get_mathmod():
 def get_ohdab():
     return ohdab_pipeline()
 
+def get_cpr():
+    return cpr_pipeline()
+
 def get_all(pipelines: dict):
     for pipe in pipelines:
         print("Executing " + pipe + " pipeline")
@@ -23,7 +27,8 @@ def get_all(pipelines: dict):
 def main(args):
     pipelines = {
         "mathmoddb": get_mathmod,
-        "ohdab": get_ohdab
+        "ohdab": get_ohdab,
+        "cpr": get_cpr
     }
     # if no argument was passed run all pipelines
     if len(args) == 1:
@@ -34,7 +39,7 @@ def main(args):
         user_input = args[1].strip().casefold()
 
         if user_input == "remove":
-            # looks in each ontology folder if an "out" folder exists, if yes removes it and its content
+            # looks in each ontology folder if a "resource" folder exists, if yes removes it and its content
             pipelines_folder = BASE_DIR / "pipelines"
             for subfolder in pipelines_folder.iterdir():
                 if subfolder.is_dir():

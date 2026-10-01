@@ -176,7 +176,7 @@ def apply_formatter():
         [
             "java",
             "-jar",
-            str(BASE_DIR / "ontology-formatter.jar"),
+            str(BASE_DIR.parent / "resources" / "ontology-formatter.jar"),
             str(OUT_DIR / "ClimatePolicyRadar.owl"),
             str(OUT_DIR / "ClimatePolicyRadar.owl")
         ],
