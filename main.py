@@ -19,9 +19,14 @@ def get_cpr():
 
 def get_all(pipelines: dict):
     for pipe in pipelines:
-        print("Executing " + pipe + " pipeline")
+        print_executing_pipeline(pipe)
         pipelines[pipe]()
     return
+
+def print_executing_pipeline(pipeline):
+    print("\n" + "=" *60)
+    print(f"{pipeline.upper()} PIPELINE")
+    print("=" *60)
 
 
 def main(args):
@@ -60,7 +65,7 @@ def main(args):
         arg = arg.strip().casefold()
         if arg in pipelines and arg not in already_executed:
             already_executed.append(arg)
-            print("Executing " + arg + " pipeline")
+            print_executing_pipeline(arg)
             pipelines[arg]()
         else:
             print("Unknown ontology: " + arg)
