@@ -13,12 +13,7 @@ saves it in a turtle file.
 
 The output of this pipeline will be generated in the `out` directory within this pipeline's directory.
 
-- Filename: `MathModDB.ttl`
-
-### Cache files
-
-The pipeline creates cache files, which can be enabled for use in the script if desired. The cache files are generated
-in the `resources` directory within this pipeline folder.
+- Filename: `MathModDB.owl`
 
 ## Setup
 
@@ -28,5 +23,5 @@ To execute only this pipeline:
 
 ```
 # this command has to be executed from the Wikibase-ts-convert folder
-python main.py mathmod
+python main.py mathmoddb
 ```
