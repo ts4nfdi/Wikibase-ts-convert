@@ -13,7 +13,7 @@ ENDPOINT = "https://query.portal.mardi4nfdi.de/sparql"
 
 # Namespaces
 OMW = Namespace("https://portal.mardi4nfdi.de/entity/")
-ONTOLOGY_URI = URIRef("https://portal.mardi4nfdi.de/wiki/")
+ONTOLOGY_URI = URIRef("https://portal.mardi4nfdi.de/entity/")
 
 
 # helper method for sending a sparql query to the endpoint and cleaning to result
