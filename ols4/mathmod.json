@@ -4,7 +4,7 @@
       "id": "mathmod",
       "preferredPrefix": "MathModDB-sparql",
       "title": "Ontology and knowledge graph of mathematical models, developed and maintained by task area 4 of MaRDI",
-      "uri": "https://portal.mardi4nfdi.de/wiki/Item:Q6534265",
+      "uri": "https://portal.mardi4nfdi.de/wiki/MathModDB",
       "description": "Automatically generated terminology from https://portal.mardi4nfdi.de/",
       "homepage": "https://portal.mardi4nfdi.de/",
       "label_property": [
