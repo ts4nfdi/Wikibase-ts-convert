@@ -1,6 +1,6 @@
 from pipelines.mathmoddb.mathmod_pipeline import main as mathmod_pipeline
 from pipelines.ohdab.ohdab_pipeline import main as ohdab_pipeline
-from pipelines.CPR.cpr_pipeline import main as cpr_pipeline
+from pipelines.cpr.cpr_pipeline import main as cpr_pipeline
 import sys
 import shutil
 from pathlib import Path
