@@ -28,5 +28,5 @@ To execute only this pipeline:
 
 ```
 # this command has to be executed from the Wikibase-ts-convert folder
-python main.py mathmod
+python main.py mathmoddb
 ```
