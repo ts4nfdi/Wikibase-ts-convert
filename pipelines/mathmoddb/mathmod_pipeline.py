@@ -13,7 +13,7 @@ ENDPOINT = "https://query.portal.mardi4nfdi.de/sparql"
 
 # Namespaces
 OMW = Namespace("https://portal.mardi4nfdi.de/entity/")
-ONTOLOGY_URI = URIRef("https://portal.mardi4nfdi.de/wiki/")
+ONTOLOGY_URI = URIRef("https://portal.mardi4nfdi.de/wiki/MathModDB/")
 
 
 # helper method for sending a sparql query to the endpoint and cleaning to result
@@ -252,11 +252,11 @@ def add_qualifiers_to_graph(qualifier_data, graph):
         # set query results as URIs and Literals
         individual = URIRef(entry["individual"]["value"])
         curr_property = URIRef(entry["property"]["value"])
-        qualifier_property = URIRef(entry["qualifier_property"]["value"])
+        qualifier_property = URIRef(entry["qualifierProperty"]["value"])
         qualifier_value, statement_value = (
             URIRef(entry[key]["value"]) if entry[key]["type"] == "uri"
             else Literal(entry[key]["value"], lang="en")
-            for key in ["qualifier_value", "statement_value"]
+            for key in ["qualifierValue", "statementValue"]
         )
 
         # each statement should link to only one axiom. Therefore, store the related
@@ -354,7 +354,7 @@ def add_ontology_metadata(graph):
 
     # bibliographic citation
     graph.add((ONTOLOGY_URI, DCTERMS.bibliographicCitation, Literal("Shehu, A., Schembera, B., Schmidt, B., "
-                                                                    " Biedinger, C., Fiedler, J., Reidelbach, M., "
+                                                                    "Biedinger, C., Fiedler, J., Reidelbach, M., "
                                                                     "Koprucki, T. (2025): MathModDB Ontology and "
                                                                     "Knowledge Graph for Mathematical Models",
                                                                     lang="en")))
