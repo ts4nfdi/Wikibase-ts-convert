@@ -11,32 +11,37 @@ OUT_DIR = BASE_DIR / "out"
 # sparql endpoint
 ENDPOINT = "https://climatepolicyradar.wikibase.cloud/query/sparql"
 
+# root classes
+ROOT_CLASSES = [
+    "Q32", "Q47", "Q218", "Q557", "Q567", "Q638", "Q672",
+    "Q709", "Q975", "Q1171", "Q1343", "Q1367", "Q1651", "Q1829"
+]
+
+ROOT_VALUES = " ".join(f"wd:{root}" for root in ROOT_CLASSES)
+
 # namespaces
-OMW = Namespace("https://climatepolicyradar.wikibase.cloud/entity/")
+CPR = Namespace("https://climatepolicyradar.wikibase.cloud/entity/")
 ONTOLOGY_URI = URIRef("https://climatepolicyradar.wikibase.cloud/wiki/")
 
 # queries
-# all queries are restricted to individuals that are descendants of Q1171 or Q1651, regardless of hierarchy depth.
-INDIVIDUALS_QUERY = """
+# all queries are restricted to entities that are descendants of Q1171 or Q1651, regardless of hierarchy depth.
+CLASSES_QUERY = f"""
 PREFIX wd: <https://climatepolicyradar.wikibase.cloud/entity/>
 PREFIX wdt: <https://climatepolicyradar.wikibase.cloud/prop/direct/>
 
 SELECT DISTINCT ?entity ?entityLabel ?entityDescription ?entityAltLabel
-WHERE {
-  VALUES ?root {
-    wd:Q1171
-    wd:Q1651
-  }
+WHERE {{
+  VALUES ?root {{ {ROOT_VALUES} }}
 
-  ?entity wdt:P2+ ?root .
+  ?entity wdt:P2* ?root .
 
-  SERVICE wikibase:label {
+  SERVICE wikibase:label {{
     bd:serviceParam wikibase:language "en" .
-  }
-}
+  }}
+}}
 """
 
-PROPERTIES_QUERY = """
+PROPERTIES_QUERY = f"""
 PREFIX wd: <https://climatepolicyradar.wikibase.cloud/entity/>
 PREFIX wdt: <https://climatepolicyradar.wikibase.cloud/prop/direct/>
 
@@ -45,54 +50,55 @@ SELECT DISTINCT
   ?propertyLabel
   ?propertyDescription
   ?propertyAltLabel
-WHERE {
-    VALUES ?root {
-    wd:Q1171
-    wd:Q1651
-  }
+WHERE {{
+    VALUES ?root {{ {ROOT_VALUES} }}
 
-  ?entity wdt:P2+ ?root .
+  ?entity wdt:P2* ?root .
   
   ?entity ?directProperty ?value .
 
   ?property wikibase:directClaim ?directProperty .
 
-  SERVICE wikibase:label {
+  SERVICE wikibase:label {{
     bd:serviceParam wikibase:language "en" .
-  }
-}
+  }}
+}}
 """
 
-
-TRIPLES_QUERY = """
+TRIPLES_QUERY = f"""
 PREFIX wd: <https://climatepolicyradar.wikibase.cloud/entity/>
 PREFIX wdt: <https://climatepolicyradar.wikibase.cloud/prop/direct/>
 
 SELECT DISTINCT ?entity ?property ?value
-WHERE {
-  VALUES ?root {
-    wd:Q32
-    wd:Q47
-    wd:Q218
-    wd:Q557
-    wd:Q567
-    wd:Q638
-    wd:Q672
-    wd:Q709
-    wd:Q975
-    wd:Q1171
-    wd:Q1343
-    wd:Q1367
-    wd:Q1651
-    wd:Q1829
-  }
+WHERE {{
+  VALUES ?root {{ {ROOT_VALUES} }}
 
-  ?entity wdt:P2+ ?root .
+  ?entity wdt:P2* ?root .
 
   ?entity ?directProperty ?value .
 
   ?property wikibase:directClaim ?directProperty .
-}
+
+  FILTER(
+    ?property != wd:P2 ||
+    EXISTS {{
+      ?value wdt:P2* ?root .
+    }}
+  )
+}}
+"""
+
+SAME_AS_QUERY = f"""
+PREFIX wd: <https://climatepolicyradar.wikibase.cloud/entity/>
+PREFIX wdt: <https://climatepolicyradar.wikibase.cloud/prop/direct/>
+SELECT ?entity ?replacement
+WHERE {{
+  VALUES ?root {{ {ROOT_VALUES} }}
+  
+  ?entity owl:sameAs ?replacement .
+  
+  ?replacement wdt:P2* ?root
+}}
 """
 
 def get_answer_from_endpoint(query):
@@ -108,11 +114,11 @@ def get_answer_from_endpoint(query):
 
     return response.json()["results"]["bindings"]
 
-def add_individuals_to_graph(individuals, graph):
-    for entry in individuals:
+def add_classes_to_graph(classes, graph):
+    for entry in classes:
         entity_uri = URIRef(entry["entity"]["value"])
 
-        graph.add((entity_uri, RDF.type, OWL.NamedIndividual))
+        graph.add((entity_uri, RDF.type, OWL.Class))
 
         if "entityLabel" in entry:
             graph.add((entity_uri, RDFS.label, Literal(entry["entityLabel"]["value"], lang="en")))
@@ -121,10 +127,14 @@ def add_individuals_to_graph(individuals, graph):
         if "entityAltLabel" in entry:
             graph.add((entity_uri, SKOS.altLabel, Literal(entry["entityAltLabel"]["value"], lang="en")))
 
-    print(f"added {len(individuals)} individuals to graph")
+    print(f"added {len(classes)} classes to graph")
 
 def add_properties_to_graph(properties, graph):
     for entry in properties:
+
+        if entry["property"]["value"] == str(CPR.P1) or entry["property"]["value"] == str(CPR.P2):
+            continue
+
         property_uri = URIRef(entry["property"]["value"])
 
         graph.add((property_uri, RDF.type, OWL.AnnotationProperty))
@@ -139,15 +149,37 @@ def add_properties_to_graph(properties, graph):
     print(f"added {len(properties)} properties to graph")
 
 
-def add_triples_to_graph(triples, graph):
+def create_same_as_map(same_as_classes):
+    same_as_map = {}
+    for entry in same_as_classes:
+        entity_uri = URIRef(entry["entity"]["value"])
+        replacement_uri = URIRef(entry["replacement"]["value"])
+        same_as_map[entity_uri] = replacement_uri
+    return same_as_map
+
+
+def add_triples_to_graph(triples, graph, same_as_map):
     for entry in triples:
-        individual = URIRef(entry["entity"]["value"])
+        subject = URIRef(entry["entity"]["value"])
+
         predicate = URIRef(entry["property"]["value"])
 
         if entry["value"]["type"] == "uri":
-            graph.add((individual, predicate, URIRef(entry["value"]["value"])))
+            obj = URIRef(entry["value"]["value"])
+            if obj in same_as_map:
+                obj = same_as_map[obj]
         else:
-            graph.add((individual, predicate, Literal(entry["value"]["value"], lang="en")))
+            obj = Literal(entry["value"]["value"], lang="en")
+
+        # P1 is hasSubclass -> for subClassOf subject and object need to be switched
+        if predicate == CPR.P1:
+            graph.add((obj, RDFS.subClassOf, subject))
+        # P2 is subClassOf -> only add if subject is no root class
+        elif predicate == CPR.P2:
+            if subject not in {CPR[root] for root in ROOT_CLASSES}:
+                graph.add((subject, RDFS.subClassOf, obj))
+        else:
+            graph.add((subject, predicate, obj))
 
     print(f"added {len(triples)} triples to graph")
 
@@ -206,18 +238,22 @@ def apply_formatter():
 def main():
     graph = Graph()
 
-    graph.bind("cpr", OMW)
+    graph.bind("cpr", CPR)
 
     add_ontology_metadata(graph)
 
-    individuals = get_answer_from_endpoint(INDIVIDUALS_QUERY)
-    add_individuals_to_graph(individuals, graph)
+    classes = get_answer_from_endpoint(CLASSES_QUERY)
+    add_classes_to_graph(classes, graph)
 
     properties = get_answer_from_endpoint(PROPERTIES_QUERY)
     add_properties_to_graph(properties, graph)
 
+    same_as_classes = get_answer_from_endpoint(SAME_AS_QUERY)
+    same_as_map = create_same_as_map(same_as_classes)
+    print(same_as_map)
+
     triples = get_answer_from_endpoint(TRIPLES_QUERY)
-    add_triples_to_graph(triples, graph)
+    add_triples_to_graph(triples, graph, same_as_map)
 
     serialize_graph(graph)
 
