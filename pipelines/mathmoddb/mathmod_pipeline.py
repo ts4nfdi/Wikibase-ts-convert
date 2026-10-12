@@ -13,7 +13,7 @@ ENDPOINT = "https://query.portal.mardi4nfdi.de/sparql"
 
 # Namespaces
 OMW = Namespace("https://portal.mardi4nfdi.de/entity/")
-ONTOLOGY_URI = URIRef("https://portal.mardi4nfdi.de/wiki/")
+ONTOLOGY_URI = URIRef("https://portal.mardi4nfdi.de/wiki/MathModDB/")
 
 
 # helper method for sending a sparql query to the endpoint and cleaning to result
@@ -354,7 +354,7 @@ def add_ontology_metadata(graph):
 
     # bibliographic citation
     graph.add((ONTOLOGY_URI, DCTERMS.bibliographicCitation, Literal("Shehu, A., Schembera, B., Schmidt, B., "
-                                                                    " Biedinger, C., Fiedler, J., Reidelbach, M., "
+                                                                    "Biedinger, C., Fiedler, J., Reidelbach, M., "
                                                                     "Koprucki, T. (2025): MathModDB Ontology and "
                                                                     "Knowledge Graph for Mathematical Models",
                                                                     lang="en")))

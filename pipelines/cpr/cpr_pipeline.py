@@ -2,7 +2,7 @@ import requests
 from pathlib import Path
 from rdflib import Graph, URIRef, Literal, Namespace
 import subprocess
-from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, SDO, SKOS
+from rdflib.namespace import OWL, RDF, RDFS, DCTERMS, SDO, SKOS, FOAF
 
 BASE_DIR = Path(__file__).resolve().parent
 OUT_DIR = BASE_DIR / "out"
@@ -71,8 +71,20 @@ PREFIX wdt: <https://climatepolicyradar.wikibase.cloud/prop/direct/>
 SELECT DISTINCT ?entity ?property ?value
 WHERE {
   VALUES ?root {
+    wd:Q32
+    wd:Q47
+    wd:Q218
+    wd:Q557
+    wd:Q567
+    wd:Q638
+    wd:Q672
+    wd:Q709
+    wd:Q975
     wd:Q1171
+    wd:Q1343
+    wd:Q1367
     wd:Q1651
+    wd:Q1829
   }
 
   ?entity wdt:P2+ ?root .
@@ -144,13 +156,20 @@ def add_ontology_metadata(graph):
     graph.add((ONTOLOGY_URI, RDF.type, OWL.Ontology))
 
     # title
-    graph.add((ONTOLOGY_URI, DCTERMS.title, Literal("Climate Policy Radar", lang="en")))
+    graph.add((ONTOLOGY_URI, DCTERMS.title, Literal("Climate Policy Radar - concept store", lang="en")))
 
     # label
-    graph.add((ONTOLOGY_URI, RDFS.label, Literal("Climate Policy Radar", lang="en")))
+    graph.add((ONTOLOGY_URI, RDFS.label, Literal("Climate Policy Radar - concept store", lang="en")))
 
     # description
-    # graph.add((ONTOLOGY_URI, DCTERMS.description, Literal("To be added", lang="en")))
+    graph.add((ONTOLOGY_URI, DCTERMS.description, Literal("The concept store is an internal tool used to "
+                                                          "structure and manage key concepts in climate policy. It "
+                                                          "helps power automated concept detection in our datasets. ",
+                                                          lang="en")))
+
+    # homepage
+    graph.add((ONTOLOGY_URI, FOAF.homepage, Literal("https://www.climatepolicyradar.org/",
+                                                    lang="en")))
 
     # license
     graph.add((ONTOLOGY_URI, DCTERMS.license, URIRef("https://creativecommons.org/licenses/by/4.0/")))
@@ -161,7 +180,7 @@ def add_ontology_metadata(graph):
 def serialize_graph(graph):
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    output_file = "ClimatePolicyRadar.owl"
+    output_file = "cpr.owl"
 
     graph.serialize(
         destination=OUT_DIR / output_file,
@@ -177,8 +196,8 @@ def apply_formatter():
             "java",
             "-jar",
             str(BASE_DIR.parent / "resources" / "ontology-formatter.jar"),
-            str(OUT_DIR / "ClimatePolicyRadar.owl"),
-            str(OUT_DIR / "ClimatePolicyRadar.owl")
+            str(OUT_DIR / "cpr.owl"),
+            str(OUT_DIR / "cpr.owl")
         ],
         check=True
     )
