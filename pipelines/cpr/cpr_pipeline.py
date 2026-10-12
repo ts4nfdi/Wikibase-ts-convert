@@ -19,6 +19,12 @@ ROOT_CLASSES = [
 
 ROOT_VALUES = " ".join(f"wd:{root}" for root in ROOT_CLASSES)
 
+# prefixes for queries
+PREFIXES = """
+PREFIX wd: <https://climatepolicyradar.wikibase.cloud/entity/>
+PREFIX wdt: <https://climatepolicyradar.wikibase.cloud/prop/direct/>
+"""
+
 # namespaces
 CPR = Namespace("https://climatepolicyradar.wikibase.cloud/entity/")
 ONTOLOGY_URI = URIRef("https://climatepolicyradar.wikibase.cloud/wiki/")
@@ -26,9 +32,7 @@ ONTOLOGY_URI = URIRef("https://climatepolicyradar.wikibase.cloud/wiki/")
 # queries
 # all queries are restricted to entities that are descendants of Q1171 or Q1651, regardless of hierarchy depth.
 CLASSES_QUERY = f"""
-PREFIX wd: <https://climatepolicyradar.wikibase.cloud/entity/>
-PREFIX wdt: <https://climatepolicyradar.wikibase.cloud/prop/direct/>
-
+{PREFIXES}
 SELECT DISTINCT ?entity ?entityLabel ?entityDescription ?entityAltLabel
 WHERE {{
   VALUES ?root {{ {ROOT_VALUES} }}
@@ -42,9 +46,7 @@ WHERE {{
 """
 
 PROPERTIES_QUERY = f"""
-PREFIX wd: <https://climatepolicyradar.wikibase.cloud/entity/>
-PREFIX wdt: <https://climatepolicyradar.wikibase.cloud/prop/direct/>
-
+{PREFIXES}
 SELECT DISTINCT
   ?property
   ?propertyLabel
@@ -66,9 +68,7 @@ WHERE {{
 """
 
 TRIPLES_QUERY = f"""
-PREFIX wd: <https://climatepolicyradar.wikibase.cloud/entity/>
-PREFIX wdt: <https://climatepolicyradar.wikibase.cloud/prop/direct/>
-
+{PREFIXES}
 SELECT DISTINCT ?entity ?property ?value
 WHERE {{
   VALUES ?root {{ {ROOT_VALUES} }}
@@ -89,8 +89,7 @@ WHERE {{
 """
 
 SAME_AS_QUERY = f"""
-PREFIX wd: <https://climatepolicyradar.wikibase.cloud/entity/>
-PREFIX wdt: <https://climatepolicyradar.wikibase.cloud/prop/direct/>
+{PREFIXES}
 SELECT ?entity ?replacement
 WHERE {{
   VALUES ?root {{ {ROOT_VALUES} }}
@@ -250,7 +249,6 @@ def main():
 
     same_as_classes = get_answer_from_endpoint(SAME_AS_QUERY)
     same_as_map = create_same_as_map(same_as_classes)
-    print(same_as_map)
 
     triples = get_answer_from_endpoint(TRIPLES_QUERY)
     add_triples_to_graph(triples, graph, same_as_map)
