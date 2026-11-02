@@ -2,7 +2,8 @@
 
 ## Overview
 
-This script queries data from the [Climate Policy Radar](https://climatepolicyradar.wikibase.cloud/wiki/Main_Page) by only including subconcepts of [Target](https://climatepolicyradar.wikibase.cloud/wiki/Item:Q1651) and [Policy Instrument](https://climatepolicyradar.wikibase.cloud/wiki/Item:Q1171).
+This script queries data from the [Climate Policy Radar](https://climatepolicyradar.wikibase.cloud/wiki/Main_Page) by only including subconcepts of 
+Q32, Q47, Q218, Q557, Q567, Q638, Q672, Q709, Q975, Q1171, Q1343, Q1367, Q1651 and Q1829.
 
 ### Input
 
@@ -12,7 +13,7 @@ This script queries data from the [Climate Policy Radar](https://climatepolicyra
 
 The output of this pipeline will be generated in the `out` directory within this pipeline's directory.
 
-- Filename: `ClimatePolicyRadar.owl`
+- Filename: `cpr.owl`
 
 ## Setup
 

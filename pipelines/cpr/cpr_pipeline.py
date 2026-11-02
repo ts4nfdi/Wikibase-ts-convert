@@ -30,41 +30,84 @@ CPR = Namespace("https://climatepolicyradar.wikibase.cloud/entity/")
 ONTOLOGY_URI = URIRef("https://climatepolicyradar.wikibase.cloud/wiki/")
 
 # queries
-# all queries are restricted to entities that are descendants of Q1171 or Q1651, regardless of hierarchy depth.
+# all queries are restricted to entities that are descendants of root classes, regardless of hierarchy depth.
+
+# labels, descriptions and altLabels get returned in one string each where multiple values are separated through |SEP|.
+# If no value exists it still returns an empty string.
 CLASSES_QUERY = f"""
 {PREFIXES}
-SELECT DISTINCT ?entity ?entityLabel ?entityDescription ?entityAltLabel
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?entity
+       (GROUP_CONCAT(DISTINCT ?label; separator="|SEP|") AS ?entityLabel)
+       (GROUP_CONCAT(DISTINCT ?description; separator="|SEP|") AS ?entityDescription)
+       (GROUP_CONCAT(DISTINCT ?altLabel; separator="|SEP|") AS ?entityAltLabel)
 WHERE {{
-  VALUES ?root {{ {ROOT_VALUES} }}
+  {{
+    SELECT DISTINCT ?entity
+    WHERE {{
+      VALUES ?root {{ {ROOT_VALUES} }}
+      ?entity wdt:P2* ?root .
+    }}
+  }}
 
-  ?entity wdt:P2* ?root .
+  OPTIONAL {{
+    ?entity rdfs:label ?label .
+    FILTER(LANG(?label) = "en")
+  }}
 
-  SERVICE wikibase:label {{
-    bd:serviceParam wikibase:language "en" .
+  OPTIONAL {{
+    ?entity schema:description ?description .
+    FILTER(LANG(?description) = "en")
+  }}
+
+  OPTIONAL {{
+    ?entity skos:altLabel ?altLabel .
+    FILTER(LANG(?altLabel) = "en")
   }}
 }}
+GROUP BY ?entity
 """
 
 PROPERTIES_QUERY = f"""
 {PREFIXES}
-SELECT DISTINCT
-  ?property
-  ?propertyLabel
-  ?propertyDescription
-  ?propertyAltLabel
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?property
+       (GROUP_CONCAT(DISTINCT ?label; separator="|SEP|") AS ?propertyLabel)
+       (GROUP_CONCAT(DISTINCT ?description; separator="|SEP|") AS ?propertyDescription)
+       (GROUP_CONCAT(DISTINCT ?altLabel; separator="|SEP|") AS ?propertyAltLabel)
 WHERE {{
-    VALUES ?root {{ {ROOT_VALUES} }}
+  {{
+    SELECT DISTINCT ?property
+    WHERE {{
+      VALUES ?root {{ {ROOT_VALUES} }}
+      ?entity wdt:P2* ?root .
+      ?entity ?directProperty ?value .
+      ?property wikibase:directClaim ?directProperty .
+    }}
+  }}
 
-  ?entity wdt:P2* ?root .
-  
-  ?entity ?directProperty ?value .
+  OPTIONAL {{
+    ?property rdfs:label ?label .
+    FILTER(LANG(?label) = "en")
+  }}
 
-  ?property wikibase:directClaim ?directProperty .
+  OPTIONAL {{
+    ?property schema:description ?description .
+    FILTER(LANG(?description) = "en")
+  }}
 
-  SERVICE wikibase:label {{
-    bd:serviceParam wikibase:language "en" .
+  OPTIONAL {{
+    ?property skos:altLabel ?altLabel .
+    FILTER(LANG(?altLabel) = "en")
   }}
 }}
+GROUP BY ?property
 """
 
 TRIPLES_QUERY = f"""
@@ -100,6 +143,7 @@ WHERE {{
 }}
 """
 
+
 def get_answer_from_endpoint(query):
     response = requests.get(
         ENDPOINT,
@@ -113,20 +157,24 @@ def get_answer_from_endpoint(query):
 
     return response.json()["results"]["bindings"]
 
+
 def add_classes_to_graph(classes, graph):
     for entry in classes:
         entity_uri = URIRef(entry["entity"]["value"])
 
         graph.add((entity_uri, RDF.type, OWL.Class))
 
-        if "entityLabel" in entry:
-            graph.add((entity_uri, RDFS.label, Literal(entry["entityLabel"]["value"], lang="en")))
-        if "entityDescription" in entry:
-            graph.add((entity_uri, SDO.description, Literal(entry["entityDescription"]["value"], lang="en")))
-        if "entityAltLabel" in entry:
-            graph.add((entity_uri, SKOS.altLabel, Literal(entry["entityAltLabel"]["value"], lang="en")))
-
+        if entry["entityLabel"]["value"] != "":
+            for label in entry["entityLabel"]["value"].split("|SEP|"):
+                graph.add((entity_uri, RDFS.label, Literal(label, lang="en")))
+        if entry["entityDescription"]["value"] != "":
+            for description in entry["entityDescription"]["value"].split("|SEP|"):
+                graph.add((entity_uri, SDO.description, Literal(description, lang="en")))
+        if entry["entityAltLabel"]["value"] != "":
+            for alt_label in entry["entityAltLabel"]["value"].split("|SEP|"):
+                graph.add((entity_uri, SKOS.altLabel, Literal(alt_label, lang="en")))
     print(f"added {len(classes)} classes to graph")
+
 
 def add_properties_to_graph(properties, graph):
     for entry in properties:
@@ -138,14 +186,16 @@ def add_properties_to_graph(properties, graph):
 
         graph.add((property_uri, RDF.type, OWL.AnnotationProperty))
 
-        if "propertyLabel" in entry:
-            graph.add((property_uri, RDFS.label, Literal(entry["propertyLabel"]["value"], lang="en")))
-        if "propertyDescription" in entry:
-            graph.add((property_uri, SDO.description, Literal(entry["propertyDescription"]["value"], lang="en")))
-        if "propertyAltLabel" in entry:
-            graph.add((property_uri, SKOS.altLabel, Literal(entry["propertyAltLabel"]["value"], lang="en")))
-
-    print(f"added {len(properties)} properties to graph")
+        if entry["propertyLabel"]["value"] != "":
+            for label in entry["propertyLabel"]["value"].split("|SEP|"):
+                graph.add((property_uri, RDFS.label, Literal(label, lang="en")))
+        if entry["propertyDescription"]["value"] != "":
+            for description in entry["propertyDescription"]["value"].split("|SEP|"):
+                graph.add((property_uri, SDO.description, Literal(description, lang="en")))
+        if entry["propertyAltLabel"]["value"] != "":
+            for alt_label in entry["propertyAltLabel"]["value"].split("|SEP|"):
+                graph.add((property_uri, SKOS.altLabel, Literal(alt_label, lang="en")))
+    print(f"added {len(properties) -2} properties to graph")
 
 
 def create_same_as_map(same_as_classes):
