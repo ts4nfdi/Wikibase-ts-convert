@@ -326,10 +326,10 @@ def main():
     results = merge_results(results_de, results_en)
 
     # Print raw JSON
-    print("=== Raw JSON ===")
-    print(results)
+    # print("=== Raw JSON ===")
+    # print(results)
 
-    print("\n=== Results ===")
+    # print("\n=== Results ===")
     # create_as_terms(G, results)
     create_as_classes(G, results)
 

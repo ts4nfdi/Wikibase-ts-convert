@@ -466,7 +466,7 @@ def main():
         [
             "java",
             "-jar",
-            str(BASE_DIR / "ontology-formatter.jar"),
+            str(BASE_DIR.parent / "resources" / "ontology-formatter.jar"),
             str(out_dir / "MathModDB.owl"),
             str(out_dir / "MathModDB.owl"),
         ],
