@@ -24,10 +24,40 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Save previous MathModDB.owl
+        run: cp pipelines/mathmoddb/out/MathModDB.owl "$RUNNER_TEMP/MathModDB.owl"
+
       - name: Run mathmod_pipeline.py
         run: python main.py mathmoddb
 
+      - name: Check for MathModDB changes
+        id: check_mathmoddb
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+
+          previous_path = Path(os.environ["RUNNER_TEMP"]) / "MathModDB.owl"
+          generated_path = Path("pipelines/mathmoddb/out/MathModDB.owl")
+
+          def without_modified_line(path: Path) -> str:
+              lines = path.read_text(encoding="utf-8").splitlines(keepends=True)
+              return "".join(
+                  line for line in lines
+                  if "dcterms:modified" not in line
+              )
+
+          meaningful_change = (
+              without_modified_line(previous_path)
+              != without_modified_line(generated_path)
+          )
+
+          with open(os.environ["GITHUB_OUTPUT"], "a") as output:
+              output.write(f"changed={'true' if meaningful_change else 'false'}\n")
+          PY
+
       - name: Commit MathModDB.owl
+        if: steps.check_mathmoddb.outputs.changed == 'true'
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"

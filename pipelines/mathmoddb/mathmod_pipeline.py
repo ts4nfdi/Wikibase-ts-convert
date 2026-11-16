@@ -364,8 +364,8 @@ def add_ontology_metadata(graph):
     #    graph.add((ONTOLOGY_URI, DCTERMS.subject, Literal(subject, lang="en")))
 
     # issued + modified
-    graph.add((ONTOLOGY_URI, DCTERMS.issued, Literal(datetime.datetime(2026, 7, 23), datatype=XSD.dateTime)))
-    graph.add((ONTOLOGY_URI, DCTERMS.modified, Literal(datetime.datetime.today(), datatype=XSD.dateTime)))
+    graph.add((ONTOLOGY_URI, DCTERMS.issued, Literal(datetime.date(2026, 7, 23), datatype=XSD.dateTime)))
+    graph.add((ONTOLOGY_URI, DCTERMS.modified, Literal(datetime.date.today(), datatype=XSD.dateTime)))
 
     # see also
     see_also_links = [
